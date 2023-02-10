@@ -6,4 +6,4 @@
 - Vinegar is an alternative to [Grapejuice](https://brinkervii.gitlab.io/grapejuice/).
 - While the application does work, it is still under development, so there may be major changes.
 
-To get started, proceed to [the installation guide](Installation/Installation.md)!
+To get started, proceed to [the installation guide](Installation/index.md)!
