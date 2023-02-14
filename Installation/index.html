@@ -136,8 +136,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="installation-guide"><a class="header" href="#installation-guide">Installation guide</a></h1>
-<p>TBD</p>
+                        <h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<p>Currently, the only ways to install Vinegar is via the Flatpak or via <code>make</code>.
+As the flatpak has not been pushed to flathub as of yet, <code>make</code> should be used.</p>
+<p>To install vinegar and it's icon and desktop files:</p>
+<pre><code>make PREFIX=/usr install
+</code></pre>
+<p>Setting the prefix is mandatory for browsers and MIME to recognize the desktop files.</p>
+<p>To set Vinegar as the launcher for Roblox Player and Studio:</p>
+<pre><code>xdg-mime default io.github.vinegarhq.Vinegar.player.desktop x-scheme-handler/roblox-player
+xdg-mime default io.github.vinegarhq.Vinegar.studio.desktop x-scheme-handler/roblox-studio
+</code></pre>
+<p>Alternatively, the following lines can be appended to <code>mimeapps.list</code>, for users
+who do not have the <code>xdg-mime</code> programm on their system:</p>
+<pre><code>[Default Applications]
+x-scheme-handler/roblox-player=io.github.vinegarhq.Vinegar.player.desktop
+x-scheme-handler/roblox-studio=io.github.vinegarhq.Vinegar.studio.desktop
+</code></pre>
 
                     </main>
 
