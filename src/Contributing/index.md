@@ -1,7 +1,6 @@
 # Contributing
 
-As Vinegar is open source, contributions with documentation, translations, and 
-code are greatly appreciated!
+As Vinegar is open source, contributions with documentation, translations, and code are greatly appreciated!
 
 You can contribute bug fixes, or features to the [Vinegar repository](https://github.com/vinegarhq/vinegar) source code, or contribute documentation to the [documentation repository](https://github.com/vinegarhq/vinegarhq.github.io).
 
