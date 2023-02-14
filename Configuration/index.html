@@ -74,7 +74,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Home.html">Home</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../Installation/index.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="../Configuration/index.html" class="active"><strong aria-hidden="true">2.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../Contributing/index.html"><strong aria-hidden="true">3.</strong> Contributing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Contributing/Contributing-to-the-cli.html"><strong aria-hidden="true">3.1.</strong> Contributing to the CLI</a></li><li class="chapter-item expanded "><a href="../Contributing/Contributing-to-documentation.html"><strong aria-hidden="true">3.2.</strong> Contributing to the docs</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Contributing to the Flatpak</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Contributing with translations</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Home.html">Home</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../Installation/index.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="../Configuration/index.html" class="active"><strong aria-hidden="true">2.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../Contributing/index.html"><strong aria-hidden="true">3.</strong> Contributing</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Contributing to the CLI</div></li><li class="chapter-item expanded "><a href="../Contributing/Contributing-to-documentation.html"><strong aria-hidden="true">3.2.</strong> Contributing to the docs</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Contributing to the Flatpak</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Contributing with translations</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -137,9 +137,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="configuration"><a class="header" href="#configuration">Configuration</a></h1>
-<p>To change Vinegar's behavior, you may edit the <code>config.toml</code> 
-at <code>~/.config/vinegar/config.toml</code> (or <code>$XDG_CONFIG_HOME/vinegar/config.toml</code> if applicable).</p>
-<p>Here is a example configuration of what the file would look like:</p>
+<p>To change Vinegar's behavior, you may edit the <code>config.toml</code> file at <code>~/.config/vinegar/config.toml</code> (or <code>$XDG_CONFIG_HOME/vinegar/config.toml</code> if applicable).</p>
+<p>Anything added to the configuration file is an override over the default values, which are designed to be the best for the average user. However, by editing the configuration file you can tune your performance or apply other customizations.</p>
+<p>Example configuration:</p>
 <pre><code class="language-toml">renderer = &quot;Vulkan&quot;
 applyrco = true
 autorfpsu = false
@@ -147,31 +147,38 @@ autorfpsu = false
 [fflags]
 FFlagFoo = &quot;bar&quot;
 FFlagBar = true
+FFlagBaz = 123
 
 [env]
 variablefoo = &quot;bar&quot;
 </code></pre>
-<p>It is important to clarify the usage of double quotes for the TOML parser to know which type
-to use, for variables specifically this wouldn't change much.</p>
-<p><code>applyrco</code> will apply <a href="https://github.com/L8X/Roblox-Client-Optimizer">RCO</a>'s FFlags to the
-Roblox Player automatically, if the user specifies FFlags it will simply be appended. RCO
-is a set of Roblox FFlags made to optimize Roblox Player's performance, for more information
-see the <a href="https://github.com/L8X/Roblox-Client-Optimizer/blob/main/README.md">README</a> about it.</p>
-<p><code>autorfpsu</code> will launch <a href="https://github.com/axstin/rbxfpsunlocker">rbxfpsunlocker</a> automatically
-after the Roblox Player has launched. Please note that any configuration done to rbxfpsunlocker
-via the system tray will not be applied, as Vinegar sets its own rbxfpsunlocker configuration for
-a much faster startup.</p>
-<p><code>renderer</code> forces what the Roblox Player should use as its renderer. Note that the final performance
-will vary system to system. The possible values are:</p>
+<p><strong>Note:</strong> it is important to ensure double quotes wherever needed - this shows we are working with text (strings).</p>
+<h2 id="configuration-fields"><a class="header" href="#configuration-fields">Configuration fields</a></h2>
+<p>This section will explain what each field in the configuration file represents.</p>
+<ul>
+<li>
+<p><code>applyrco</code>: applies <a href="https://github.com/L8X/Roblox-Client-Optimizer">RCO</a>'s FFlags to the Roblox Player automatically. If the user specifies FFlags it will simply be appended. RCO is a set of Roblox FFlags made to optimize Roblox Player's performance, for more information see the <a href="https://github.com/L8X/Roblox-Client-Optimizer/blob/main/README.md">README</a> about it.</p>
+</li>
+<li>
+<p><code>autorfpsu</code>: launches <a href="https://github.com/axstin/rbxfpsunlocker">rbxfpsunlocker</a> automatically after the Roblox Player has launched. Please note that any configuration done to rbxfpsunlocker via the system tray will not be applied, as Vinegar sets its own rbxfpsunlocker configuration for a much faster startup.</p>
+</li>
+<li>
+<p><code>renderer</code>: selects the rendering engine to be used by Roblox. The final performance will vary from system to system. Possible values:</p>
 <ul>
 <li><code>&quot;OpenGL&quot;</code></li>
 <li><code>&quot;D3D11FL10&quot;</code></li>
 <li><code>&quot;D3D11&quot;</code></li>
 <li><code>&quot;Vulkan&quot;</code></li>
 </ul>
-<p>the OpenGL renderer may increase performance on some systems, while <code>Vulkan</code> does some of the same.
-<code>D3D11</code> should be used when DXVK has been installed, as DXVK will translate DirectX 11 (<code>D3D11</code>) calls to
-native Vulkan, while <code>Vulkan</code> is simply going to use Roblox's Vulkan renderer.</p>
+<p>DirectX (<code>&quot;D3D11&quot;</code>) should only be used when <a href="https://github.com/doitsujin/dxvk">DXVK</a> has been installed. This might perform better than Roblox's Vulkan implementation on some systems.</p>
+</li>
+<li>
+<p><code>[fflags]</code>: used to set <a href="https://fflag.eryn.io/about">Fast Flags</a> before launching Roblox. They can be set to <code>true</code>/<code>false</code>, numbers, or strings, depending on each one.</p>
+</li>
+<li>
+<p><code>[env]</code>: used to set environment variables. These can only be strings.</p>
+</li>
+</ul>
 
                     </main>
 
