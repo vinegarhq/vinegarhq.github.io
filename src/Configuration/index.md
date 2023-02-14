@@ -10,11 +10,15 @@ applyrco = true
 autorfpsu = false
 
 [fflags]
-FFlagFoo = bar
+FFlagFoo = "bar"
+FFlagBar = true
 
 [env]
-variablefoo = bar
+variablefoo = "bar"
 ```
+
+It is important to clarify the usage of double quotes for the TOML parser to know which type
+to use, for variables specifically this wouldn't change much.
 
 `applyrco` will apply [RCO](https://github.com/L8X/Roblox-Client-Optimizer)'s FFlags to the
 Roblox Player automatically, if the user specifies FFlags it will simply be appended. RCO
