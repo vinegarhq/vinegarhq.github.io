@@ -143,6 +143,7 @@
 <pre><code class="language-toml">renderer = &quot;Vulkan&quot;
 applyrco = true
 autorfpsu = false
+gamemode = false
 
 [fflags]
 FFlagFoo = &quot;bar&quot;
@@ -161,6 +162,9 @@ variablefoo = &quot;bar&quot;
 </li>
 <li>
 <p><code>autorfpsu</code>: launches <a href="https://github.com/axstin/rbxfpsunlocker">rbxfpsunlocker</a> automatically after the Roblox Player has launched. Please note that any configuration done to rbxfpsunlocker via the system tray will not be applied, as Vinegar sets its own rbxfpsunlocker configuration for a much faster startup.</p>
+</li>
+<li>
+<p><code>gamemode</code>: automatically launches Roblox with <a href="https://github.com/FeralInteractive/gamemode"><code>gamemoderun</code></a>.</p>
 </li>
 <li>
 <p><code>renderer</code>: selects the rendering engine to be used by Roblox. The final performance will vary from system to system. Possible values:</p>
