@@ -10,6 +10,7 @@ Example configuration:
 renderer = "Vulkan"
 applyrco = true
 autorfpsu = false
+gamemode = false
 
 [fflags]
 FFlagFoo = "bar"
@@ -29,6 +30,8 @@ This section will explain what each field in the configuration file represents.
 -   `applyrco`: applies [RCO](https://github.com/L8X/Roblox-Client-Optimizer)'s FFlags to the Roblox Player automatically. If the user specifies FFlags it will simply be appended. RCO is a set of Roblox FFlags made to optimize Roblox Player's performance, for more information see the [README](https://github.com/L8X/Roblox-Client-Optimizer/blob/main/README.md) about it.
 
 -   `autorfpsu`: launches [rbxfpsunlocker](https://github.com/axstin/rbxfpsunlocker) automatically after the Roblox Player has launched. Please note that any configuration done to rbxfpsunlocker via the system tray will not be applied, as Vinegar sets its own rbxfpsunlocker configuration for a much faster startup.
+
+-   `gamemode`: automatically launches Roblox with [`gamemoderun`](https://github.com/FeralInteractive/gamemode).
 
 -   `renderer`: selects the rendering engine to be used by Roblox. The final performance will vary from system to system. Possible values:
 
