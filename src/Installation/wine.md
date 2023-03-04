@@ -9,10 +9,8 @@ See [WineHQ's guide](https://wiki.winehq.org/Ubuntu).
 
 ### Arch based distributions.
 
-First, make sure to add the multilib repository and the community repository. [Official repositories](https://wiki.archlinux.org/title/Official_repositories)
-
-After that it should just be as simple as a `pacman -S wine`
+Arch has a great guide on installing Wine, see [the guide](https://wiki.archlinux.org/title/Wine).
 
 ### Fedora
 
-See [WineHQ's guide](https://wiki.winehq.org/Fedora)
+See [WineHQ's guide](https://wiki.winehq.org/Fedora).
