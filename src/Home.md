@@ -7,3 +7,5 @@
 - While the application does work, it is still under development, so there may be major changes.
 
 To get started, proceed to [the installation guide](Installation/index.md)!
+
+The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2).
