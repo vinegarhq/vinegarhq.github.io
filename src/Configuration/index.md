@@ -27,8 +27,9 @@ variablefoo = "bar"
 ```
 
 The configuration above, except `fflags` and `env`, is the default configuration of Vinegar.
-
 **Note:** it is important to ensure double quotes wherever needed - this shows we are working with text (strings).
+
+If you wish to edit Vinegar's configuration, it is **highly** reccomended to use `vinegar edit`, as it will prevent configuration failures.
 
 ## Configuration fields
 
