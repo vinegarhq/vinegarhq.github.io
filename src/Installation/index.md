@@ -12,18 +12,16 @@ cd vinegar
 make PREFIX=/usr install
 ```
 
-Above command will git clone (fetch) vinegar's source code, compile it, and install Vinegar with it's appropiate desktop files and icons.
+Above command will git clone (fetch) vinegar's source code, compile it, and install Vinegar with it's appropiate desktop files and icons. Setting the prefix is mandatory for browsers and MIME to recognize the desktop files.
 
 To use the flatpak, you need `flatpak-builder` and the following:
 ```
 git clone https://github.com/vinegarhq/io.github.vinegarhq.Vinegar
 cd io.github.vinegarhq.Vinegar
 make
-
 ```
-It may fail with missing runtimes, make sure to install those with `flatpak install --user <runtime>`.
 
-Setting the prefix is mandatory for browsers and MIME to recognize the desktop files.
+It may fail with missing runtimes, make sure to install those with `flatpak install --user <runtime>`.
 
 To set Vinegar as the launcher for Roblox Player and Studio:
 
