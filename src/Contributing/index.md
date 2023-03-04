@@ -6,4 +6,4 @@ You can contribute bug fixes, or features to the [Vinegar repository](https://gi
 
 Also, on existing pages, the pencil button on the top right of the page can be clicked.
 
-You may also contribute to the community by providing support to users.
+You may also contribute to the community by providing support to users, or by finding bugs.

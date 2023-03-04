@@ -1,12 +1,27 @@
 # Installation
 
-Currently, the only way to install Vinegar is via the Flatpak or `make`. As the flatpak has not been pushed to Flathub yet, `make` should be used.
+Currently, the only way to install Vinegar is via the Flatpak or `make`. As the experimental flatpak has not been pushed to Flathub yet, `make` should be used.
 
-To install Vinegar along with its icon and desktop files:
+To fetch and install Vinegar along with its icon and desktop files:
+
+Note: you will need the `go` program, to compile Vinegar.
 
 ```sh
+git clone https://github.com/vinegarhq/vinegar
+cd vinegar
 make PREFIX=/usr install
 ```
+
+Above command will git clone (fetch) vinegar's source code, compile it, and install Vinegar with it's appropiate desktop files and icons.
+
+To use the flatpak, you need `flatpak-builder` and the following:
+```
+git clone https://github.com/vinegarhq/io.github.vinegarhq.Vinegar
+cd io.github.vinegarhq.Vinegar
+make
+
+```
+It may fail with missing runtimes, make sure to install those with `flatpak install --user <runtime>`.
 
 Setting the prefix is mandatory for browsers and MIME to recognize the desktop files.
 
