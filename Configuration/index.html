@@ -140,10 +140,15 @@
 <p>To change Vinegar's behavior, you may edit the <code>config.toml</code> file at <code>~/.config/vinegar/config.toml</code> (or <code>$XDG_CONFIG_HOME/vinegar/config.toml</code> if applicable).</p>
 <p>Anything added to the configuration file is an override over the default values, which are designed to be the best for the average user. However, by editing the configuration file you can tune your performance or apply other customizations.</p>
 <p>Example configuration:</p>
-<pre><code class="language-toml">renderer = &quot;Vulkan&quot;
-applyrco = true
+<pre><code class="language-toml">applyrco = true
 autorfpsu = false
+autokillpfx = true
+dxvk = true
 gamemode = false
+log = true
+
+version = &quot;win10&quot;
+renderer = &quot;D3D11&quot;
 
 [fflags]
 FFlagFoo = &quot;bar&quot;
@@ -153,6 +158,7 @@ FFlagBaz = 123
 [env]
 variablefoo = &quot;bar&quot;
 </code></pre>
+<p>The configuration above, except <code>fflags</code> and <code>env</code>, is the default configuration of Vinegar.</p>
 <p><strong>Note:</strong> it is important to ensure double quotes wherever needed - this shows we are working with text (strings).</p>
 <h2 id="configuration-fields"><a class="header" href="#configuration-fields">Configuration fields</a></h2>
 <p>This section will explain what each field in the configuration file represents.</p>
@@ -164,17 +170,28 @@ variablefoo = &quot;bar&quot;
 <p><code>autorfpsu</code>: launches <a href="https://github.com/axstin/rbxfpsunlocker">rbxfpsunlocker</a> automatically after the Roblox Player has launched. Please note that any configuration done to rbxfpsunlocker via the system tray will not be applied, as Vinegar sets its own rbxfpsunlocker configuration for a much faster startup.</p>
 </li>
 <li>
+<p><code>autokillpfx</code>: automatically kills the Wineprefix after Vinegar detects that Roblox is no longer running, Please note that sometimes Roblox will hang and the process will still exist, which it is reccomended to run <code>vinegar kill</code>.</p>
+</li>
+<li>
+<p><code>dxvk</code>: automatically installs DXVK onto the wineprefix upon Roblox launch, when set to false it will automatically uninstall as well.</p>
+</li>
+<li>
 <p><code>gamemode</code>: automatically launches Roblox with <a href="https://github.com/FeralInteractive/gamemode"><code>gamemoderun</code></a>.</p>
 </li>
 <li>
-<p><code>renderer</code>: selects the rendering engine to be used by Roblox. The final performance will vary from system to system. Possible values:</p>
+<p><code>log</code>: enables logging for Vinegar itself, found in <code>~/.cache/vinegar/vinegar-*.log</code>.</p>
+</li>
+<li>
+<p><code>version</code>: is the value of the Wineprefix version, it has been set to <code>win10</code> for some performance increase, if you wish to change you should look for the valid versions via <code>vinegar exec winecfg /?</code>.</p>
+</li>
+<li>
+<p><code>renderer</code>: selects the rendering engine to be used by Roblox. The final performance will vary from system to system. Possible values are:</p>
 <ul>
 <li><code>&quot;OpenGL&quot;</code></li>
 <li><code>&quot;D3D11FL10&quot;</code></li>
 <li><code>&quot;D3D11&quot;</code></li>
 <li><code>&quot;Vulkan&quot;</code></li>
 </ul>
-<p>DirectX (<code>&quot;D3D11&quot;</code>) should only be used when <a href="https://github.com/doitsujin/dxvk">DXVK</a> has been installed. This might perform better than Roblox's Vulkan implementation on some systems.</p>
 </li>
 <li>
 <p><code>[fflags]</code>: used to set <a href="https://fflag.eryn.io/about">Fast Flags</a> before launching Roblox. They can be set to <code>true</code>/<code>false</code>, numbers, or strings, depending on each one.</p>
