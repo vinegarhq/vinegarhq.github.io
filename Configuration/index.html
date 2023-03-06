@@ -160,7 +160,9 @@ variablefoo = &quot;bar&quot;
 </code></pre>
 <p>The configuration above, except <code>fflags</code> and <code>env</code>, is the default configuration of Vinegar.
 <strong>Note:</strong> it is important to ensure double quotes wherever needed - this shows we are working with text (strings).</p>
-<p>If you wish to edit Vinegar's configuration, it is <strong>highly</strong> reccomended to use <code>vinegar edit</code>, as it will prevent configuration failures.</p>
+<p>If you wish to edit Vinegar's configuration, it is <strong>highly</strong> reccomended to use <code>vinegar edit</code>, as it will prevent configuration failures. If it fails to edit with the aformentioned command with the following error: <code>unable to find editor: no $EDITOR variable set</code>, you may have to set the <code>EDITOR</code> variable temporarily like so: <code>EDITOR=nano vinegar edit</code>; you may change the editor according to your preference.</p>
+<p>Note that RCO is going to also unlock the FPS in Roblox by default, so using rbxfpsunlocker is reccomended only when not using RCO.
+RCO unlocks FPS by setting the FFlag <code>DFIntTaskSchedulerTargetFps</code> to a arbitrary big value (<code>10000</code>). </p>
 <h2 id="configuration-fields"><a class="header" href="#configuration-fields">Configuration fields</a></h2>
 <p>This section will explain what each field in the configuration file represents.</p>
 <ul>
