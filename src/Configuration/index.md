@@ -32,7 +32,7 @@ The configuration above, except `fflags` and `env`, is the default configuration
 If you wish to edit Vinegar's configuration, it is **highly** reccomended to use `vinegar edit`, as it will prevent configuration failures. If it fails to edit with the aformentioned command with the following error: `unable to find editor: no $EDITOR variable set`, you may have to set the `EDITOR` variable temporarily like so: `EDITOR=nano vinegar edit`; you may change the editor according to your preference.
 
 Note that RCO is going to also unlock the FPS in Roblox by default, so using rbxfpsunlocker is reccomended only when not using RCO.
-RCO unlocks FPS by setting the FFlag `DFIntTaskSchedulerTargetFps` to a arbitrary big value (`10000`). 
+RCO unlocks FPS by setting the FFlag `DFIntTaskSchedulerTargetFps` to a arbitrary big value (`10000`). However, if you also want to limit the FPS you may set the FFlag's value to your requested limit (eg. `30`)
 
 ## Configuration fields
 
