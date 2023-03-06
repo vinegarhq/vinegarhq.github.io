@@ -41,7 +41,7 @@ This section will explain what each field in the configuration file represents.
 
 - `autokillpfx`: automatically kills the Wineprefix after Vinegar detects that Roblox is no longer running, Please note that sometimes Roblox will hang and the process will still exist, which it is reccomended to run `vinegar kill`.
 
-- `dxvk`: automatically installs DXVK onto the wineprefix upon Roblox launch, when set to false it will automatically uninstall as well.
+- `dxvk`: automatically installs DXVK onto the wineprefix upon Roblox launch, when set to false it will automatically uninstall as well. (NOTE: switching dxvk on and off on the flatpak does not do anything.)
 
 - `gamemode`: automatically launches Roblox with [`gamemoderun`](https://github.com/FeralInteractive/gamemode).
 
