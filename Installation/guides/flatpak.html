@@ -138,14 +138,14 @@
                     <main>
                         <h1 id="installation-from-flatpak"><a class="header" href="#installation-from-flatpak">Installation from Flatpak</a></h1>
 <p>Currently, the Flatpak distribution of Vinegar has not been pushed to Flathub yet, the Flatpak will have to be compiled from source. </p>
-<p><strong>Note</strong>: Vinegar's Flatpak comes with it's own in-house Wine, so be prepared to compile Wine.</p>
-<p>to build Vinegar, you will need <code>flatpak-builder</code> installed on your system.</p>
+<p><strong>Note</strong>: Vinegar's Flatpak comes with it's own Wine build-system, so be prepared to compile Wine.</p>
+<p>To build Vinegar, you will need <code>flatpak-builder</code> installed on your system.</p>
 <p>Clone Vinegar's Flatpak git repository manifests and build the Flatpak:</p>
 <pre><code>git clone https://github.com/vinegarhq/io.github.vinegarhq.Vinegar
 cd io.github.vinegarhq.Vinegar
 make
 </code></pre>
-<p>It may fail with missing runtimes, make sure to install those with <code>flatpak install --user &lt;runtime&gt;</code>.</p>
+<p>If you see errors about missing runtimes, make sure to install those with <code>flatpak install --user &lt;runtime&gt;</code>.</p>
 
                     </main>
 
