@@ -1,6 +1,19 @@
 # Installation from Flatpak
 
-Currently, the Flatpak distribution of Vinegar has not been pushed to Flathub yet, the Flatpak will have to be compiled from source. 
+Vinegar's Flatpak can be found [here](https://flathub.org/apps/details/io.github.vinegarhq.Vinegar). 
+
+Installing it manually from a terminal:
+```
+flatpak install flathub io.github.vinegarhq.Vinegar
+flatpak run io.github.vinegarhq.Vinegar
+```
+
+To uninstall manually from a terminal:
+```
+flatpak uninstall --delete-data io.github.vinegarhq.Vinegar
+``` 
+
+# Building Flatpak from source
 
 **Note**: Vinegar's Flatpak comes with it's own Wine build-system, so be prepared to compile Wine.
 
