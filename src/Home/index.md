@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="max-width: 30%" src="favicon.svg">
+  <img style="max-width: 30%" src="/favicon.svg">
 </p>
 
 ## Welcome to the documentation of the Vinegar project!

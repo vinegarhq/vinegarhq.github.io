@@ -1,81 +1,54 @@
 # Configuration
 
-To change Vinegar's behavior, you may edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable).
+To change Vinegar's behavior, you may edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable), via `vinegar edit`.
+It is **highly** reccomended to use `vinegar edit`, as it will check if the configuration is valid for vinegar to use, and will let you re-edit.
 
-If you wish to edit Vinegar's configuration, it is **highly** reccomended to use `vinegar edit`, as it will prevent configuration failures. If it fails to edit with the aformentioned command with the following error: `unable to find editor: no $EDITOR variable set`, you may have to set the `EDITOR` variable temporarily like so: `EDITOR=nano vinegar edit`; you may change the editor according to your preference.
-
+If `vinegar edit` fails with the following error: `unable to find editor: no $EDITOR variable set`, you may have to set the `EDITOR` variable temporarily: `EDITOR=nano vinegar edit`; you may change the editor according to your preference. Note that if your Vinegar installation is Flatpak, it will always use `nano` unless specified.
 
 Anything added to the configuration file is an override over the default values, which are designed to be the best for the average user. However, by editing the configuration file you can tune your performance or apply other customizations.
 
-Example configuration:
-
-```toml
-applyrco = true
-autokillpfx = true
-autorfpsu = false
-dxvk = true
-log = true
-prime = false
-
-launcher = ""
-renderer = "D3D11"
-version = "win10"
-wineroot = ""
-
-[env]
-variablefoo = "bar"
-
-[fflags]
-FFlagFoo = "bar"
-FFlagBar = true
-FFlagBaz = 123
-```
-
-The configuration above (excluding `fflags` and `env`), is the default configuration of Vinegar.
-
-It's reccomended to *not* copy the example configuration, as if you copied them the values are already implicit, as they are already set.
-
-It is important to ensure double quotes wherever needed - this shows we are working with text (strings).
-
-Note that RCO is going to also unlock the FPS in Roblox by default, so using rbxfpsunlocker is reccomended only when not using RCO.
-RCO unlocks FPS by setting the FFlag `DFIntTaskSchedulerTargetFps` to a arbitrary big value (`10000`). However, if you also want to limit the FPS you may set the FFlag's value to your requested limit (eg. `30`)
-
 ## Configuration fields
-
 This section will explain what each field in the configuration file represents.
 
-- `applyrco`: applies [RCO](https://github.com/L8X/Roblox-Client-Optimizer)'s FFlags to the Roblox Player automatically. If the user specifies FFlags it will simply be appended. RCO is a set of Roblox FFlags made to optimize Roblox Player's performance, for more information see the [README](https://github.com/L8X/Roblox-Client-Optimizer/blob/main/README.md) about it.
+| Option        | Description                                                                                                | Default   |
+| ------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
+| `applyrco`    | applies [RCO](https://github.com/L8X/Roblox-Client-Optimizer)'s FFlags to the Roblox Player.               | `true`    |
+| `autokillpfx` | automatically kills the Wineprefix after Roblox is no longer running.                                      | `true`    |
+| `dxvk`        | automatically (un)installs DXVK to the wineprefix before Roblox launches.                                  | `true`    |
+| `log`         | enables logging for Vinegar itself, does not disable logging for Roblox.                                   | `true`    |
+| `prime`       | sets the environmental variables required for using NVIDIA's dedicated graphics.                           | `false`   |
+| `launcher`    | the program that is used to launch Wine when launching Roblox; can be set to `gamemoderun`.                | `""`      |
+| `renderer`    | selects the rendering engine to be used by Roblox via FFlags.                                              | `"D3D11"` |
+| `version`     | the value of the Wineprefix version.                                                                       | `"win10"` |
+| `wineroot`    | the path to a valid Wine 'root' installation directory.                                                    | `""`      |
+| `[env]`       | the section used to set environmental variables.                                                           |           |
+| `[fflags]`    | the section used to set FFlags for the Roblox Player.                                                      |           |
 
-- `autokillpfx`: automatically kills the Wineprefix after Vinegar detects that Roblox is no longer running, Please note that sometimes Roblox will hang and the process will still exist, which it is reccomended to run `vinegar kill`. **Warning: Linux 2.6.33 and up is required for this feature, it may not work on FreeBSD as such.**
+#### Notes
+* `applyrco` will always fetch the RCO FFlags when launching Roblox.
+* `autokillpfx` requires Linux 2.6.33 and up, since `/proc/*/comm` is scanned.
+* `prime` sets the following variables:
+  * `DRI_PRIME=1`
+  * `__NV_PRIME_RENDER_OFFLOAD=1`
+  * `__VK_LAYER_NV_optimus=NVIDIA_only`
+  * `__GLX_VENDOR_LIBRARY_NAME=nvidia`
+* `renderer` must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`
 
-- `autorfpsu`: launches [rbxfpsunlocker](https://github.com/axstin/rbxfpsunlocker) automatically after the Roblox Player has launched. Please note that any configuration done to rbxfpsunlocker via the system tray will not be applied, as Vinegar sets its own rbxfpsunlocker configuration for a much faster startup.
+Some miscellaneous environmental variables that can be set under the `[env]` section:
++ `WINEESYNC`: allows Wine Staging to use Esync, please see [HowToEsync](https://github.com/lutris/docs/blob/master/HowToEsync.md) for more information.
++ `WINEDEBUG`: for performance reasons, this has been set to `-all`, which disables most of the logging, when wanting to debug crashes of Wine, it is reccomended to set this to an empty string (`""`).
++ `DXVK_HUD`: is a variable used by DXVK for a hud, for more information about it you can see the [DXVK README](https://github.com/doitsujin/dxvk#hud), which includes various other variables that can be set.
 
-- `dxvk`: automatically installs DXVK onto the wineprefix upon Roblox launch, when set to false it will automatically uninstall as well. **Warning: Disabling DXVK on Wayland while using the D3D11 or D3D11FL10 renderer will cause Roblox to crash!**
+RCO unlocks FPS by setting the FFlag `DFIntTaskSchedulerTargetFps` to a arbitrary big value (`10000`). However, if you also want to limit the FPS you may set the FFlag's value to your requested limit (eg. `30`)
 
-- `log`: enables logging for Vinegar itself, found in `~/.cache/vinegar/vinegar-*.log`.
+### Example configuration
+```toml
+applyrco = false
+launcher = "gamemoderun"
 
-- `prime`: automatically sets the following PRIME variables:
-  - `DRI_PRIME=1`
-  - `__NV_PRIME_RENDER_OFFLOAD=1`
-  - `__VK_LAYER_NV_optimus=NVIDIA_only`
-  - `__GLX_VENDOR_LIBRARY_NAME=nvidia`
-  They are equivalent to setting them manually in the `[env]` section.
+[env]
+WINEESYNC = "1"
 
-- `launcher`: is the program that is used to launch Wine during launch of Roblox, it can be set to `gamemoderun` to use GameMode.
-
-- `renderer`: selects the rendering engine to be used by Roblox. The final performance will vary from system to system. Possible values are:
-    - `"OpenGL"`
-    - `"D3D11FL10"`
-    - `"D3D11"`
-    - `"Vulkan"`
-
-- `version`: is the value of the Wineprefix version, it has been set to `win10` for some performance increase, if you wish to change you should look for the valid versions via `vinegar exec winecfg /?`.
-
-- `wineroot`: is the path to a valid Wine installation directory, it should be treated as a normal root filesystem hierarchy; `wineroot/bin`, etc.
-
-- `[env]`: used to set environment variables. These can only be strings. Some miscellaneous variables include:
-  - `WINEDEBUG`: for performance reasons, this has been set to `-all`, which disables most of the logging, when wanting to debug crashes of Wine, it is reccomended to set this to an empty string (`""`) or `"fixme-all,-wininet,-ntlm,-winediag,-kerberos"`, which can make the log output a bit cleaner.
-  - `DXVK_HUD`: is a variable used by DXVK for a hud, for more information about it you can see the [README](https://github.com/doitsujin/dxvk#hud) about it.
-
-
-- `[fflags]`: used to set [Fast Flags](https://fflag.eryn.io/about) before launching Roblox. They can be set to `true`/`false`, numbers, or strings, depending on each one.
+[fflags]
+DFIntTaskSchedulerTargetFps = 30
+```

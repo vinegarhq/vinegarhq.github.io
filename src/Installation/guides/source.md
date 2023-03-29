@@ -1,5 +1,16 @@
 # Installation from source
 
+## Installing Wine
+Before you can install Vinegar, you will first have to install Wine first, you can see the guide for your distribution: [Wine Wiki: Download](https://wiki.winehq.org/Download), you may visit the page according to your preferred Linux distribution of choice. The guide for installing Wine can also be found on your distributions Wiki pages, such as [Arch](https://wiki.archlinux.org/title/wine) and [Gentoo](https://wiki.gentoo.org/wiki/Wine). Additionally, you will need the GnuTLS library in-order for Roblox networking to function properly:
+
+- Arch: `lib32-gnutls`
+- Void: `gnutls-32bit` via `void-repo-multilib`
+- Gentoo: `net-libs/gnutls` via `ABI_X86="64 32"`, refer to [Gentoo Wiki: package.use](https://wiki.gentoo.org/wiki//etc/portage/package.use)
+
+It is reccomended to make sure you have installed Wine 8.3 and up on your system, as it can give a significant performance increase.
+
+## Building Vinegar
+
 To build Vinegar from source, you will need to install Go; it can be found packaged as `golang` or `go` on some Linux distributions.
 
 Clone Vinegar's git repository and build Vinegar:
@@ -12,7 +23,7 @@ make
 
 ## Installing Vinegar
 
-To install Vinegar:
+To install Vinegar (in the source directory of vinegar):
 ```sh
 make PREFIX=/usr install
 ```
@@ -23,10 +34,14 @@ Afterwards, you may set Vinegar as the default launcher or handler for Roblox Pl
 make mime
 ```
 
-Alternatively, the following lines can be appended to `mimeapps.list` for users without [`xdg-mime`](https://linux.die.net/man/1/xdg-mime) on their system:
+Alternatively, the following lines can be appended to `mimeapps.list` for users without [`xdg-mime`](https://linux.die.net/man/1/xdg-mime) on their system, which is used by the Makefile `mime` target:
 
 ```
 [Default Applications]
 x-scheme-handler/roblox-player=io.github.vinegarhq.Vinegar.player.desktop
+x-scheme-handler/roblox=io.github.vinegarhq.Vinegar.player.desktop
 x-scheme-handler/roblox-studio=io.github.vinegarhq.Vinegar.studio.desktop
+x-scheme-handler/roblox-studio-auth=io.github.vinegarhq.Vinegar.studio.desktop
+application/x-roblox-rbxl=io.github.vinegarhq.Vinegar.studio.desktop
+application/x-roblox-rbxlx=io.github.vinegarhq.Vinegar.studio.desktop
 ```
