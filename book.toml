@@ -1,12 +1,12 @@
 [book]
 authors = ["Vinegar contributors"]
 language = "en"
-multilingual = false
-src = "src"
 title = "Vinegar"
 description = "The documentation of the Vinegar project, which makes Roblox on Linux more convenient."
 
 [output.html]
+default-theme = "light"
+preferred-dark-theme = "coal"
 git-repository-url = "https://github.com/vinegarhq/vinegar"
 edit-url-template = "https://github.com/vinegarhq/vinegarhq.github.io/edit/main/{path}"
 
