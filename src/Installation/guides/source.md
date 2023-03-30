@@ -7,7 +7,7 @@ Before you can install Vinegar, you will first have to install Wine first, you c
 - Void: `gnutls-32bit` via `void-repo-multilib`
 - Gentoo: `net-libs/gnutls` via `ABI_X86="64 32"`, refer to [Gentoo Wiki: package.use](https://wiki.gentoo.org/wiki//etc/portage/package.use)
 
-It is reccomended to make sure you have installed Wine 8.3 and up on your system, as it can give a significant performance increase.
+It is recommended to make sure you have installed Wine 8.3 and up on your system, as it can give a significant performance increase.
 
 ## Building Vinegar
 
@@ -27,7 +27,7 @@ To install Vinegar (in the source directory of vinegar):
 ```sh
 make PREFIX=/usr install
 ```
-This will install Vinegar itself and it's icons for Roblox and Vinegar, it will also install the desktop files required for recognition by MIME.
+This will install Vinegar itself and it's icons for Roblox and Vinegar. It will also install the desktop files required for recognition by MIME.
 
 Afterwards, you may set Vinegar as the default launcher or handler for Roblox Player and Studio respectively with the following command:
 ```sh

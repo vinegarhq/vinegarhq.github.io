@@ -1,7 +1,7 @@
 # Configuration
 
-To change Vinegar's behavior, you may edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable), via `vinegar edit`.
-It is **highly** reccomended to use `vinegar edit`, as it will check if the configuration is valid for vinegar to use, and will let you re-edit.
+To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable), via `vinegar edit`.
+It is **highly** recommended to use `vinegar edit`, as it will check if the configuration is valid for vinegar to use.
 
 If `vinegar edit` fails with the following error: `unable to find editor: no $EDITOR variable set`, you may have to set the `EDITOR` variable temporarily: `EDITOR=nano vinegar edit`; you may change the editor according to your preference. Note that if your Vinegar installation is Flatpak, it will always use `nano` unless specified.
 
@@ -36,7 +36,7 @@ This section will explain what each field in the configuration file represents.
 
 Some miscellaneous environmental variables that can be set under the `[env]` section:
 + `WINEESYNC`: allows Wine Staging to use Esync, please see [HowToEsync](https://github.com/lutris/docs/blob/master/HowToEsync.md) for more information.
-+ `WINEDEBUG`: for performance reasons, this has been set to `-all`, which disables most of the logging, when wanting to debug crashes of Wine, it is reccomended to set this to an empty string (`""`).
++ `WINEDEBUG`: for performance reasons, this has been set to `-all`, which disables most of the logging, when wanting to debug crashes of Wine, it is recommended to set this to an empty string (`""`).
 + `DXVK_HUD`: is a variable used by DXVK for a hud, for more information about it you can see the [DXVK README](https://github.com/doitsujin/dxvk#hud), which includes various other variables that can be set.
 
 RCO unlocks FPS by setting the FFlag `DFIntTaskSchedulerTargetFps` to a arbitrary big value (`10000`). However, if you also want to limit the FPS you may set the FFlag's value to your requested limit (eg. `30`)
