@@ -5,7 +5,7 @@
 
 This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either the D3D11 renderer with DVXK or Vulkan. Additionally, numerous users of Vinegar have reported that RCO will provide a significant performance boost. 
 
-It is also recommended to use Wine Staging with Vinegar, as it contains patches such as Esync that can provide a noticable perofmrance boost (Set the env variable `WINEESYNC=1` to enable it, if it is available.)
+It is also recommended to use Wine Staging with Vinegar, as it contains patches such as Esync that can provide a noticable performance boost (Set the env variable `WINEESYNC=1` to enable it, if it is available.)
 
 Vinegar also changes the Wineprefix version. While this does not increase performance, it increases compatibility.
 
