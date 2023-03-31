@@ -44,3 +44,13 @@ The only real difference is that Roblox's Vulkan is native, which means there is
 ### Why Go?
 
 We chose Golang for its library management, performance, and ease-of-programming. As most of Vinegar's development team contributed to Grapejuice previously, we encountered major difficulties due to its choice of language, Python. For instance, packaging Python libraries was extremely tedious; Grapejuice relied on pip being able to connect to the internet, a privilege not available in Flatpak packaging. Additionally, Grapejuice relied on a highly complex internal build system, which produced several files in various locations, while Golang can output single executables. As a compiled language, Golang also offers superior performance to interpreted languages like Grapejuice, helping Vinegar launch quicker. Golang is also easier to program than Python; we find that semi-static typing and lack of classes helps keep our code linear and easily readible.
+
+### How do i update Vinegar?
+
+It depends. If you have installed from source, you simply fetch the remote Vinegar repository and re-install, in the Vinegar source directory.
+```
+cd /path/to/vinegar
+git pull
+make PREFIX=/usr install
+```
+As for flatpak, you will refer to your distributions flatpak management, whether being a GUI 'Store' app or from the command line `flatpak update`.
