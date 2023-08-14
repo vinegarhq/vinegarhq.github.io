@@ -12,10 +12,10 @@ makepkg -si
 
 ### Gentoo
 
-You will need to add Username404's overlay:
+You will need to add the Vinegar overlay:
 
 ```sh
-eselect repository add "Username404" git https://github.com/Username404-59/gentoo_overlay.git
+eselect repository add "vinegar" git https://github.com/vinegarhq/ebuild.git
 emaint sync
 ```
 And then emerge the package:
