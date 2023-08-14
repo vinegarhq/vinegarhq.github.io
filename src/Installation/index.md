@@ -4,4 +4,4 @@ Installing from Flatpak is recommended for users who don't want to deal with bui
 
 - [Installing from source](guides/source.md)
 - [Installing from Flatpak](guides/flatpak.md)
-- [Installing from your package manager](guides/package.md)
+- [Installing from package](guides/package.md)
