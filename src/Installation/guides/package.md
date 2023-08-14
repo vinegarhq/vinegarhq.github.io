@@ -2,13 +2,12 @@
 
 ### Arch Linux or derivatives (AUR)
 
-To install Vinegar, run the following commands (where "version" is the current version of Vinegar):
+To install Vinegar, run the following commands:
 
 ```sh
 git clone https://aur.archlinux.org/vinegar.git
 cd vinegar
 makepkg -si
-pacman -U vinegar-version-x86_64.pkg.tar.zst
 ```
 
 ### Gentoo
