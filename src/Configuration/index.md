@@ -31,11 +31,6 @@ For Studio or Player configurations, you will need to specify it as a table, an 
 * `app` in `[app.fflags]` or `[app.env]`, should be renamed to `player` or `studio`, eg. `[player.fflags]`.
 * `DFIntTaskSchedulerTargetFps` is set to `640` by default for Player; if you also want to change the FPS limit you may set the FFlag's value to your requested limit (eg. `30`)
 
-#### Miscellaneous environmental variables
-+ `WINEESYNC`: allows Wine Staging to use Esync, please see [HowToEsync](https://github.com/lutris/docs/blob/master/HowToEsync.md) for more information.
-+ `WINEDEBUG`: for performance reasons, this has been set to `-all`, which disables most of the logging, when wanting to debug crashes of Wine, it is recommended to set this to an empty string (`""`).
-+ `DXVK_HUD`: is a variable used by DXVK for a hud, for more information about it you can see the [DXVK README](https://github.com/doitsujin/dxvk#hud), which includes various other variables that can be set. This is set to `fps` by default, allowing you to see the FPS when using DXVK.
-
 ### Example configuration
 ```toml
 wineroot = "/home/meow/wine-ge"
