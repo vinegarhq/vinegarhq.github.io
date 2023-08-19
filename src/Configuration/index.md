@@ -1,9 +1,6 @@
 # Configuration
 
-To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable), via `vinegar edit`.
-It is **highly** recommended to use `vinegar edit`, as it will check if the configuration is valid for vinegar to use.
-
-If `vinegar edit` fails with the following error: `unable to find editor: no $EDITOR variable set`, you may have to set the `EDITOR` variable temporarily: `EDITOR=nano vinegar edit`; you may change the editor according to your preference. Note that if your Vinegar installation is Flatpak, it will always use `nano` unless specified.
+To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable).
 
 Anything added to the configuration file is an override over the default values, which are designed to be the best for the average user. However, by editing the configuration file you can tune your performance or apply other customizations.
 
