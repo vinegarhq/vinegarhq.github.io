@@ -14,7 +14,8 @@ DFIntCanHideGuiGroupId = true
 FFlagDisableNewIGMinDUA = true
 FFlagEnableInGameMenuControls = true
 
-FFlagFixGraphicsQuality = 20 # Allows for 20 bars in the graphics quality
+# true for 21 bars, false for 10 bars; in graphics quality
+FFlagFixGraphicsQuality = true
 
 DFFlagDebugRenderForceTechnologyVoxel = false # Voxel
 FFlagDebugForceFutureIsBrightPhase2 = false # ShadowMap
