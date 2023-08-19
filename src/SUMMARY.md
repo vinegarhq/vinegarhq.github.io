@@ -6,5 +6,6 @@
   - [Installing from source](./Installation/guides/source.md)
   - [Installing from Flatpak](./Installation/guides/flatpak.md)
 - [Configuration](./Configuration/index.md)
+  - [Tips and tricks](./Configuration/tips-and-tricks/index.md)
 - [Contributing](./Contributing/index.md)
 - [Troubleshooting](./Troubleshooting/index.md)
