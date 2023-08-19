@@ -3,35 +3,11 @@
 
 ### What is the best configuration?
 
-This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either the D3D11 renderer with DVXK or Vulkan. Additionally, numerous users of Vinegar have reported that RCO will provide a significant performance boost. 
+This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either the D3D11 renderer with DVXK or Vulkan.
 
-It is also recommended to use Wine Staging with Vinegar, as it contains patches such as Esync that can provide a noticable performance boost (Set the env variable `WINEESYNC=1` to enable it, if it is available.)
+It is also recommended to use Wine Staging with Vinegar, as it contains patches such as Esync that can provide a noticable performance boost; set the environment variable `WINEESYNC=1`, additionally if your Wine build is TKG or is patched with Fsync, you can use the environment variable `WINEFSYNC=1` to enable it.
 
 Vinegar also changes the Wineprefix version. While this does not increase performance, it increases compatibility.
-
-### Is RCO safe?
-
-RCO is a set of FFlags. We only apply the FFlags file directly from the GitHub repository, without using their executable, so it should be safe. We hope Roblox doesn't have some backdoor via the FFlags :D. Sometimes RCO may break, due to the maintainers of RCO messing up on the JSON file, or not testing their changes ahead of time (a Roblox game has broken because of this).
-
-### What does RCO do?
-
-As stated in the RCO README:
-
-> + Unlocks FPS (For most people)
-> + Optimizes Caching
-> + Optimizes Graphics
-> + Optimizes Textures
-> + Increases user privacy
-> + (May change) Disables the V3 ingame menu
-> + Disables Crashpad / Backtrace crash metrics
-> + Disables a large portion of client telemetry
-> + Disables AbuseReportScreenshot
-> + Enables font and texture item preloading
-> + Enables memory prioritization and performance control
-> + Enables FULL graphics quality options (21 instead of 10!)
-> + Enables QuickGameLaunch
-> + Enables ParallelHumanoidManager
-> + Enables BatchAssetApi
 
 ### What is the difference between DXVK and Vulkan?
 
