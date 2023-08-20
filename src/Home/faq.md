@@ -26,6 +26,7 @@ We chose Golang for its library management, performance, and ease-of-programming
 If you have installed from source, you can simply fetch the remote Vinegar repository from inside the existing source directory using the commands:
 ```
 cd /path/to/vinegar
+make clean
 git pull
 make PREFIX=/usr install
 ```
