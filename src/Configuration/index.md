@@ -1,6 +1,6 @@
 # Configuration
 
-To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable).
+To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml` if you're using the Flatpak.).
 
 Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user. Editing the configuration file allows you to tune your performance or apply other customizations.
 
