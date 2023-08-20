@@ -3,9 +3,9 @@
 
 ### What is the best configuration?
 
-This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either the D3D11 renderer with DVXK or Vulkan.
+This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either the D3D11 renderer with DXVK or Vulkan.
 
-It is also recommended to use Wine Staging with Vinegar, as it contains patches such as Esync that can provide a noticable performance boost; set the environment variable `WINEESYNC=1`, additionally if your Wine build is TKG or is patched with Fsync, you can use the environment variable `WINEFSYNC=1` to enable it.
+It is also recommended to use Wine Staging with Vinegar, as it contains patches such as Esync that can provide a noticeable performance boost; set the environment variable `WINEESYNC=1`, additionally if your Wine build is TKG or is patched with Fsync, you can use the environment variable `WINEFSYNC=1` to enable it.
 
 Vinegar also changes the Wineprefix version. While this does not increase performance, it increases compatibility.
 

@@ -1,6 +1,6 @@
 # Troubleshooting
 
-If there are any issues here that are un-documented, feel free to [create an issue!](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose)
+If there are any issues here that are undocumented, feel free to [create an issue!](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose)
 
 #### Cursor fails to lock
 

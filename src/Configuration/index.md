@@ -20,7 +20,7 @@ For Studio or Player configurations, you will need to specify it as a table, an 
 | `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                   | `"D3D11"`                       |
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version. | none                            |
 | `auto_kill_prefix` | tells Vinegar to automatically kill the wineprefix after the application closes.                | `false`                         |
-| `dxvk`             | automatically uses DXVK for the application and installs if neccessary.                         | Player: `true`, Studio: `false` |
+| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                         | Player: `true`, Studio: `false` |
 | `[app.fflags]`     | the table used to set FFlags for the given application type.                                    | See below.                      |
 | `[app.env]`        | the table used to set environment variables for the given application type.                     | Player: `DXVK_HUD=fps`          |
 
