@@ -2,14 +2,14 @@
 
 To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `$XDG_CONFIG_HOME/vinegar/config.toml` if applicable).
 
-Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)), which are designed to be the best for the average user. However, by editing the configuration file you can tune your performance or apply other customizations.
+Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user. Editing the configuration file allows you to tune your performance or apply other customizations.
 
 ## Configuration Values
 This section will explain what each value in the global configuration file represents.
 
 | Option        | Description                                                                                                | Default   |
 | ------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
-| `launcher`    | the program that is used to launch Wine when launching Roblox; can be set to `gamemoderun`.                | none      |
+| `launcher`    | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`.           | none      |
 | `wineroot`    | the path to a valid Wine 'root' installation directory.                                                    | none      |
 
 For Studio or Player configurations, you will need to specify it as a table, an example can be seen below.
@@ -20,7 +20,7 @@ For Studio or Player configurations, you will need to specify it as a table, an 
 | `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                   | `"D3D11"`                       |
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version. | none                            |
 | `auto_kill_prefix` | tells Vinegar to automatically kill the wineprefix after the application closes.                | `false`                         |
-| `dxvk`             | automatically uses DXVK for the application, installs if neccessary.                            | Player: `true`, Studio: `false` |
+| `dxvk`             | automatically uses DXVK for the application and installs if neccessary.                         | Player: `true`, Studio: `false` |
 | `[app.fflags]`     | the table used to set FFlags for the given application type.                                    | See below.                      |
 | `[app.env]`        | the table used to set environment variables for the given application type.                     | Player: `DXVK_HUD=fps`          |
 
