@@ -23,6 +23,7 @@ jobs:
         echo $(for file in $markdown_files; do cat $file | aspell list -M --personal=./custom-words.txt; done) > spellcheck.txt
 
     - name: Upload spellcheck.txt artifact
+      if: ${{ steps.spellcheck.outputs.spellcheck_output != '' }}
       uses: actions/upload-artifact@v2
       with:
         name: spellcheck
