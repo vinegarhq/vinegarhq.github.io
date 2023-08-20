@@ -23,7 +23,7 @@ And then emerge the package:
 emerge -av games-util/vinegar
 ```
 
-Alternatively, you can use the live EBuild by creating a `/etc/portage/package.accept_keywords/vinegar` file with the following content:
+Alternatively, you can use the live ebuild by creating a `/etc/portage/package.accept_keywords/vinegar` file with the following content:
 ```
 games-util/vinegar **
 ```

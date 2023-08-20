@@ -1,0 +1,29 @@
+name: Spell Check Markdown Files
+on: [push]
+
+jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Aspell
+      run: |
+        sudo apt-get update
+        sudo apt-get install aspell aspell-en
+
+    - name: Run Aspell Spell Check
+      run: |
+        # Find and list all .md files in the repository
+        markdown_files=$(find . -type f -name "*.md")
+
+        # Perform spell check and write misspelled words to spellcheck.txt
+        echo $(for file in $markdown_files; do cat $file | aspell list -M --personal=./custom-words.txt; done) > spellcheck.txt
+
+    - name: Upload spellcheck.txt artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: spellcheck
+        path: spellcheck.txt
