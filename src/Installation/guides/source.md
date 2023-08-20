@@ -40,7 +40,7 @@ To install Vinegar (in the source directory of vinegar):
 ```sh
 sudo make PREFIX=/usr install
 ```
-In this example we will use the /usr directory so of course we will need root permissions, so sudo is needed (you can change the directory if wanted, though this is the recommended directory for the installation). This will install Vinegar itself and it's icons for Roblox and Vinegar. It will also install the desktop files required for recognition by MIME.
+In this example we will install Vinegar on the system, which requires the `/usr` prefix in-order to be recognized by other applications, this will install Vinegar itself and it's icons for Roblox and Vinegar. It will also install the desktop files required for recognition by MIME.
 
 Afterwards, you may set Vinegar as the default launcher or handler for Roblox Player and Studio respectively with the following command:
 ```sh
