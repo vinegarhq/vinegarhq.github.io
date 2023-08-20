@@ -4,7 +4,7 @@
 
 ## Welcome to the documentation of the Vinegar project!
 
-- Vinegar is a transparent, minimal, configurable, and fast bootstrapper and launcher for Roblox Player and Roblox Studio.
+- Vinegar is a transparent, minimal, configurable, and fast bootstrapper for Roblox Player and Roblox Studio.
 - The software and documentation are both open source, and can be accessed [on GitHub](https://github.com/vinegarhq).
 - There is no <abbr title="Graphical User Interface">GUI</abbr> for Vinegar at this time.
 - Vinegar is an alternative to [Grapejuice](https://brinkervii.gitlab.io/grapejuice/).
