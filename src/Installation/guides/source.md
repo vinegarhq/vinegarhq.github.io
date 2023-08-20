@@ -13,6 +13,19 @@ It is recommended to ensure that you have installed Wine 8.3 or above on your sy
 
 To build Vinegar from source, you will need to install Go; it can be found packaged as `golang` or `go` on some Linux distributions.
 
+## For Arch and derived:
+```sh
+sudo pacman -S go
+```
+## For Ubuntu and derived:
+```sh
+sudo apt install golang-go
+```
+## For Fedora and derived:
+```sh
+sudo dnf install golang
+```
+
 Clone Vinegar's git repository and build Vinegar:
 
 ```sh
@@ -25,9 +38,9 @@ make
 
 To install Vinegar (in the source directory of vinegar):
 ```sh
-make PREFIX=/usr install
+sudo make PREFIX=/usr install
 ```
-This will install Vinegar itself and it's icons for Roblox and Vinegar. It will also install the desktop files required for recognition by MIME.
+In this example we will use the /usr directory so of course we will need root permissions, so sudo is needed (you can change the directory if wanted, though this is the recommended directory for the installation). This will install Vinegar itself and it's icons for Roblox and Vinegar. It will also install the desktop files required for recognition by MIME.
 
 Afterwards, you may set Vinegar as the default launcher or handler for Roblox Player and Studio respectively with the following command:
 ```sh
