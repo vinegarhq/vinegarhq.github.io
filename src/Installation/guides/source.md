@@ -19,7 +19,8 @@ sudo pacman -S go
 ```
 ## For Ubuntu and derived:
 ```sh
-sudo apt install golang-go
+golang in the repositories is a bit out-dated and won't work with vinegar(vinegar requires v1.20), though don't worry because Florennum is making a script for you.
+BUT meanwhile you can compile it yourself.
 ```
 ## For Fedora and derived:
 ```sh
