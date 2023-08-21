@@ -1,6 +1,6 @@
 # Configuration
 
-To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml` if you're using the Flatpak.).
+To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml` if you're using the Flatpak), ensure that you have created the configuration directory first, as it is not created by default (eg. `~/.config/vinegar`)
 
 Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user. Editing the configuration file allows you to tune your performance or apply other customizations.
 
@@ -30,6 +30,7 @@ For Studio or Player configurations, you will need to specify it as a table, an 
 * When using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
 * `app` in `[app.fflags]` or `[app.env]`, should be renamed to `player` or `studio`, eg. `[player.fflags]`.
 * `DFIntTaskSchedulerTargetFps` is set to `640` by default for Player; if you also want to change the FPS limit you may set the FFlag's value to your requested limit (eg. `30`)
+* If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 
 ### Example configuration
 ```toml
