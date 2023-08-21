@@ -8,5 +8,6 @@
   - [Installing from package](./Installation/guides/package.md)
 - [Configuration](./Configuration/index.md)
   - [Tips and tricks](./Configuration/tips-and-tricks/index.md)
+- [Multiple instances](./Multiple-instances/index.md)
 - [Contributing](./Contributing/index.md)
 - [Troubleshooting](./Troubleshooting/index.md)
