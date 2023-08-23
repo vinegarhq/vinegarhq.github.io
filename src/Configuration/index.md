@@ -37,6 +37,9 @@ For Studio or Player configurations, you will need to specify it as a table, an 
 * If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 
 ### Example configuration
+
+> **Note:** The following configuration file is not meant to be copied or used. It is only shown for demonstrating how the configuration values above are laid out in the actual file.
+
 ```toml
 wineroot = "/home/meow/wine-ge"
 launcher = "gamemoderun"
