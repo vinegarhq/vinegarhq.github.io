@@ -4,7 +4,9 @@ To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/
 
 For your convenience, you may use the editor feature by running `vinegar edit` (or `flatpak run io.github.vinegarhq.Vinegar editor` if you're using the Flatpak).
 
-Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user. Editing the configuration file allows you to tune your performance or apply other customizations.
+Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user.
+
+> **Note:** You only need to edit the configuration file if you want to fine tune Roblox's behavior. Having a configuration file is completely optional!
 
 ## Configuration Values
 This section will explain what each value in the global configuration file represents.
@@ -35,6 +37,9 @@ For Studio or Player configurations, you will need to specify it as a table, an 
 * If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 
 ### Example configuration
+
+> **Note:** The following configuration file is not meant to be copied or used. It is only shown for demonstrating how the configuration values above are laid out in the actual file.
+
 ```toml
 wineroot = "/home/meow/wine-ge"
 launcher = "gamemoderun"
