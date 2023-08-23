@@ -2,7 +2,7 @@
 
 To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml` if you're using the Flatpak), ensure that you have created the configuration directory first, as it is not created by default (eg. `~/.config/vinegar`)
 
-For your convenience, you may use the editor feature by running `vinegar edit` (or `flatpak run io.github.vinegarhq.Vinegar editor` if you're using the Flatpak).
+For your convenience, you may use the editor feature by running `vinegar edit` (or `flatpak run io.github.vinegarhq.Vinegar edit` if you're using the Flatpak).
 
 Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user.
 
