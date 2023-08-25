@@ -12,13 +12,18 @@ makepkg -si
 
 ### Gentoo
 
-You will need to add the Vinegar overlay:
+Firstly, make sure the repository module for eselect is installed:
+```sh
+emerge app-eselect/eselect-repository
+```
+
+Then you will need to add the Vinegar overlay:
 
 ```sh
 eselect repository add "vinegar" git https://github.com/vinegarhq/ebuild.git
 emaint sync
 ```
-And then emerge the package:
+And emerge the package:
 ```sh
 emerge -av games-util/vinegar
 ```
