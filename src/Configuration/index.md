@@ -1,12 +1,24 @@
 # Configuration
 
-To change Vinegar's behavior, edit the `config.toml` file at `~/.config/vinegar/config.toml` (or `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml` if you're using the Flatpak), ensure that you have created the configuration directory first, as it is not created by default (eg. `~/.config/vinegar`)
+To adjust Vinegar or Roblox's behavior, the configuration may be edited. This is done through a configuration file. To edit this file, you may follow the steps below.
 
-For your convenience, you may use the editor feature by running `vinegar edit` (or `flatpak run io.github.vinegarhq.Vinegar edit` if you're using the Flatpak).
+> **Note:** You only need to edit the configuration file if you want to fine tune Roblox's behavior. Having a configuration file is completely optional!
+
+## Editing the configuration
 
 Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user.
 
-> **Note:** You only need to edit the configuration file if you want to fine tune Roblox's behavior. Having a configuration file is completely optional!
+### Using `vinegar edit` (recommended)
+
+The configuration file may be easily edited by running the `vinegar edit` command. By using the `edit` command, error validation is also included.
+
+If using Flatpak, the command is `flatpak run io.github.vinegarhq.Vinegar edit`.
+
+If getting an error about an `EDITOR` variable, this can be temporarily fixed by running the command as `export EDITOR=nano; vinegar edit` (which will cause the `nano` editor to be used). Though, it is preferrable to set an `EDITOR` variable permanently, in a place like `.bashrc`.
+
+### Manually
+
+The configuration file, `config.toml`, is read from `~/.config/vinegar/config.toml` (or `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml` if using the Flatpak). It may be edited using any text editor (such as `nano`). First ensure the `config/vinegar` directory is created.
 
 ## Configuration Values
 This section will explain what each value in the global configuration file represents.
