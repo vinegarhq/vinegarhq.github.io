@@ -41,7 +41,7 @@ For Studio or Player configurations, you will need to specify it as a table, an 
 | `[app.env]`        | the table used to set environment variables for the given application type.                     | Player: `DXVK_HUD=fps`          |
 
 ### Notes
-* If you're using Nvidia PRIME, the drivers and/or dxvk should automatically use your dGPU by default.
+* If you're using Nvidia PRIME, the drivers (on X server 1.20.7 and newer) and/or dxvk should automatically use your dGPU by default.
 * `renderer` must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`.
 * Ensure that when setting a string, the value must be in quotes: `channel = "zintegration"`
 * When using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
