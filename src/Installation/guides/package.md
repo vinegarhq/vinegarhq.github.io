@@ -1,5 +1,12 @@
 # Installation from your package manager
 
+### Alpine linux
+
+If you are using Alpine Linux Edge with the testing repo enabled (more info [here](https://wiki.alpinelinux.org/wiki/Repositories#Edge) you can install the package by simply running the following with root privileges:
+```sh
+apk add vinegar
+```
+
 ### Arch Linux or derivatives (AUR)
 
 To install Vinegar, run the following commands:
