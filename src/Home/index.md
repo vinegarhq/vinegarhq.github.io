@@ -9,6 +9,6 @@
 - There is no <abbr title="Graphical User Interface">GUI</abbr> for Vinegar at this time.
 - Vinegar is an alternative to [Grapejuice](https://brinkervii.gitlab.io/grapejuice/).
 
-To get started, proceed to [the installation guide](Installation/index.md)!
+To get started, proceed to [the installation guide](/Installation/index.md)!
 
 The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2).
