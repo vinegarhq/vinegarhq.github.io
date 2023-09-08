@@ -21,32 +21,37 @@ If getting an error about an `EDITOR` variable, this can be temporarily fixed by
 The configuration file, `config.toml`, is read from `~/.config/vinegar/config.toml` (or `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml` if using the Flatpak). It may be edited using any text editor (such as `nano`). First ensure the `config/vinegar` directory is created.
 
 ## Configuration Values
-This section will explain what each value in the global configuration file represents.
 
-| Option        | Description                                                                                                | Default   |
-| ------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
-| `launcher`    | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`.           | none      |
-| `wineroot`    | the path to a valid Wine 'root' installation directory.                                                    | none      |
+| Option               | Description                                                                                                | Default   |
+| -------------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
+| `launcher`           | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`.           | none      |
+| `wineroot`           | the path to a valid Wine 'root' installation directory. For Flatpak users; see Notes.                      | none      |
+| `dxvk_version`       | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan. | `"2.3"`   |
+| `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously                                        | `false`   |
+| `sanitize_env`       | sanitize the global environment, hand-picked variables are allowed through.                                | `false`   |
 
-For Studio or Player configurations, you will need to specify it as a table, an example can be seen below.
+For Studio or Player configurations, they are specified under the `[player]` or `[studio]` section.
 
 | Option             | Description                                                                                     | Default                         |
 | ------------------ | ------------------------------------------------------------------------------------------------| ------------------------------- |
 | `channel`          | the Roblox release channel                                                                      | `"live"`                        |
-| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                   | `"D3D11"`                       |
+| `renderer`         | selects the rendering engine to be used by Roblox via FFlags. See Notes for accepted renders.   | `"D3D11"`                       |
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version. | none                            |
 | `auto_kill_prefix` | tells Vinegar to automatically kill the wineprefix after the application closes.                | Player: `true`, Studio: `false` |
 | `dxvk`             | automatically uses DXVK for the application and installs if necessary.                          | Player: `true`, Studio: `false` |
-| `[app.fflags]`     | the table used to set FFlags for the given application type.                                    | See below.                      |
-| `[app.env]`        | the table used to set environment variables for the given application type.                     | Player: `DXVK_HUD=fps`          |
+
+Sub-sections for FFlags and environment variables for Player or Studio are specified as `[player.env]`/`[studio.env]` or `[player.fflags]`/`[studio.fflags]`
+
+| Sub-section | Description                                                                       | Default                                     |
+| ----------- | ----------------------------------------------------------------------------------| ------------------------------------------- |
+| `[fflags]`  | the sub-section used to set FFlags for the given application type.                | Player: `DFIntTaskSchedulerTargetFps = 640` |
+| `[env]`     | the sub-section used to set environment variables for the given application type. | Player: `DXVK_HUD = "fps"`                  |
 
 ### Notes
 * If you're using Nvidia PRIME, the drivers (on X server 1.20.7 and newer) and/or dxvk should automatically use your dGPU by default.
-* `renderer` must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`.
+* The renderer must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`.
 * Ensure that when setting a string, the value must be in quotes: `channel = "zintegration"`
 * When using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
-* `app` in `[app.fflags]` or `[app.env]`, should be renamed to `player` or `studio`, eg. `[player.fflags]`.
-* `DFIntTaskSchedulerTargetFps` is set to `640` by default for Player; if you also want to change the FPS limit you may set the FFlag's value to your requested limit (eg. `30`)
 * If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 
 ### Example configuration
