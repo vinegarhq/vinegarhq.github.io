@@ -25,7 +25,7 @@ make
 
 To install Vinegar (in the source directory of vinegar):
 ```sh
-make PREFIX=/usr install
+make install
 ```
 This will install Vinegar itself and it's icons for Roblox and Vinegar. It will also install the desktop files required for recognition by MIME.
 
