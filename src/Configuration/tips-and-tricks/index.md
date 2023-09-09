@@ -1,7 +1,22 @@
 # Tips and tricks
 
 ## Overlay
-In Vinegar, a directory under the configuration directory called `overlay` will be copied directly to the Roblox Player and Studio upon launching; this can be used to override files of Roblox, allowing for modifications!
+In Vinegar, a directory called `overlay` will be copied directly to the Roblox Player and Studio upon launching; this can be used to override files of Roblox, allowing for modifications!
+
+The `overlay` folder is not created by default, and it is located always along with the configuration file, which is depending on your install method:
+
+- On Flatpak, it's located in `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/overlay`
+- On other methods, it's located in `~/.config/vinegar/overlay`
+
+Vinegar requires no extra configuration for the folder to work.
+
+Example replacement of Roblox's default death sound:
+```
+── overlay
+   └── content
+       └── sounds
+           └── ouch.ogg
+```
 
 ## FFlags
 This section is undocumented; below is a list of fflags that can be set. Credits to [Bloxstrap](https://github.com/pizzaboxer/bloxstrap/blob/main/Bloxstrap/FastFlagManager.cs).
