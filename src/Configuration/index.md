@@ -6,7 +6,7 @@ To adjust Vinegar or Roblox's behavior, the configuration may be edited. This is
 
 ## Editing the configuration
 
-Anything added to the configuration file is an override over the default values (the default configuration file can be seen [here](https://github.com/vinegarhq/vinegar/blob/master/internal/config/config.toml)) which are designed to be the best for the average user.
+Anything added to the configuration file is an override over the default configuration.
 
 ### Using `vinegar edit` (recommended)
 
