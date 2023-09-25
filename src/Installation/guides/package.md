@@ -39,3 +39,6 @@ Alternatively, you can use the live ebuild by creating a `/etc/portage/package.a
 ```
 games-util/vinegar **
 ```
+
+# Uninstalling from your package manager
+The process to uninstall Vinegar if you used this method will vary according to your distro, please refer to your distro's documentation regarding package management, in most installs, the package name is `vinegar`.

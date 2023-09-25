@@ -2,7 +2,7 @@
 
 - [Home](./Home/index.md)
   - [FAQ](./Home/faq.md)
-- [Installation](./Installation/index.md)
+- [Installation and Uninstallation](./Installation/index.md)
   - [Installing from source](./Installation/guides/source.md)
   - [Installing from Flatpak](./Installation/guides/flatpak.md)
   - [Installing from package](./Installation/guides/package.md)

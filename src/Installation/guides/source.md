@@ -45,3 +45,11 @@ x-scheme-handler/roblox-studio-auth=io.github.vinegarhq.Vinegar.studio.desktop
 application/x-roblox-rbxl=io.github.vinegarhq.Vinegar.studio.desktop
 application/x-roblox-rbxlx=io.github.vinegarhq.Vinegar.studio.desktop
 ```
+
+# Uninstalling Vinegar
+To uninstall Vinegar from your system if your install method was source, run the following command:
+```sh
+make uninstall
+```
+This command will uninstall Vinegar, along with the MIME handler configuration and desktop files associated. It will require root/sudo privileges.
+

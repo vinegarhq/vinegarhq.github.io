@@ -8,10 +8,7 @@ flatpak install flathub io.github.vinegarhq.Vinegar
 flatpak run io.github.vinegarhq.Vinegar
 ```
 
-To uninstall manually from a terminal:
-```
-flatpak uninstall --delete-data io.github.vinegarhq.Vinegar
-``` 
+
 
 # Building Flatpak from source
 
@@ -27,3 +24,9 @@ make
 ```
 
 If you see errors about missing runtimes, make sure to install those with `flatpak install --user <runtime>`.
+
+# Uninstalling from flatpak
+To uninstall Vinegar from a terminal:
+```
+flatpak uninstall --delete-data io.github.vinegarhq.Vinegar
+``` 
