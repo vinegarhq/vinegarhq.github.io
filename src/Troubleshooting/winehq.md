@@ -71,7 +71,7 @@ If you followed these instructions correctly, Vinegar...
 
 Caveat: Your .desktop files will obviously not be affected by this. This means you won't be able to log into studio or open links/games from roblox.com. The workaround is to manually edit the desktop file so it uses the right `-config` flag and `WINEPREFIX`. They can be found at `usr/share/applications`. 
 
-Note that env variables in .desktop Exec commands must be declared with the `env`. For example: Do `env WINEPREFIX = /tmp/report vinegar -config /home/jrelvas/Documents/winehq-report.toml player` instead of `WINEPREFIX=/tmp/report vinegar -config /home/jrelvas/Documents/winehq-report.toml player`
+Note that env variables in .desktop Exec commands must be declared with the `env` command. For example: Do `env WINEPREFIX = /tmp/report vinegar -config /home/jrelvas/Documents/winehq-report.toml player` instead of `WINEPREFIX=/tmp/report vinegar -config /home/jrelvas/Documents/winehq-report.toml player`
 
 **Warning**: After following these steps, ensure your report follows [WineHQ.org's bug report guidelines](https://wiki.winehq.org/Bugs).
 
