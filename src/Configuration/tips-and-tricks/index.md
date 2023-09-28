@@ -23,7 +23,7 @@ This section is undocumented; below is a list of fflags that can be set. Credits
 
 ```toml
 # See https://github.com/pizzaboxer/bloxstrap/wiki/A-guide-to-FastFlags#gui-hiding
-DFIntCanHideGuiGroupId = true
+DFIntCanHideGuiGroupId = 32380007
 
 # See IGMenuVersions in Bloxstrap for more details
 FFlagDisableNewIGMinDUA = true
