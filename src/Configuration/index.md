@@ -60,6 +60,8 @@ Sub-sections for FFlags and environment variables for Player or Studio are speci
 > **Note:** The following configuration file is not meant to be copied or used. It is only shown for demonstrating how the configuration values above are laid out in the actual file.
 
 ```toml
+# DO NOT COPY, USE ONLY AS EXAMPLE
+
 wineroot = "/home/meow/wine-ge"
 launcher = "gamemoderun"
 
@@ -73,6 +75,7 @@ channel = "zcanary"
 
 [player.env]
 DXVK_HUD = "0"
+MANGOHUD = "1"
 
 [player.fflags]
 DFIntTaskSchedulerTargetFps = 144
