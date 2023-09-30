@@ -24,7 +24,6 @@ The configuration file, `config.toml`, is read from `~/.config/vinegar/config.to
 
 | Option               | Description                                                                                                | Default   |
 | -------------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
-| `launcher`           | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`.           | none      |
 | `wineroot`           | the path to a valid Wine 'root' installation directory. For Flatpak users; see Notes.                      | none      |
 | `dxvk_version`       | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan. | `"2.3"`   |
 | `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously                                        | `false`   |
@@ -33,7 +32,8 @@ The configuration file, `config.toml`, is read from `~/.config/vinegar/config.to
 For Studio or Player configurations, they are specified under the `[player]` or `[studio]` section.
 
 | Option             | Description                                                                                     | Default                         |
-| ------------------ | ------------------------------------------------------------------------------------------------| ------------------------------- |
+| ------------------ | ----------------------------------------------------------------------------------------------- | ------------------------------- |
+| `launcher`         | the program that is used to launch Wine when launching Roblox                                   | none                            |
 | `channel`          | the Roblox release channel                                                                      | `"live"`                        |
 | `renderer`         | selects the rendering engine to be used by Roblox via FFlags. See Notes for accepted renders.   | `"D3D11"`                       |
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version. | none                            |
@@ -64,12 +64,12 @@ Sub-sections for FFlags and environment variables for Player or Studio are speci
 # DO NOT COPY, USE ONLY AS EXAMPLE
 
 wineroot = "/home/meow/wine-ge"
-launcher = "gamemoderun"
 
 [env]
 WINEFSYNC = "1"
 
 [player]
+launcher = "gamemoderun"
 dxvk = false
 renderer = "Vulkan"
 channel = "zcanary"
