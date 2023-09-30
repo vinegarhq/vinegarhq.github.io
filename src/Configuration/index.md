@@ -55,6 +55,7 @@ Sub-sections for FFlags and environment variables for Player or Studio are speci
 * If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 * If you're using the Vinegar Flatpak and wish to use gamescope through the "launcher" setting, you MUST use their Flatpak versions, "com.valvesoftware.Steam.Utility.gamescope". Using gamescope from your distro will not work.
 * When using MangoHud and using the Flatpak (`MANGOHUD` set to `"1"`), please make sure to run `flatpak override --user --filesystem=xdg-config/MangoHud:ro`, to allow the Vinegar Flatpak to access the MangoHud configuration in your home.
+* The launcher option is not global, if it's under [player] it will only affect roblox, if it's under [studio] it will only affect studio.
 
 ### Example configuration
 
@@ -64,12 +65,12 @@ Sub-sections for FFlags and environment variables for Player or Studio are speci
 # DO NOT COPY, USE ONLY AS EXAMPLE
 
 wineroot = "/home/meow/wine-ge"
-launcher = "gamemoderun"
 
 [env]
 WINEFSYNC = "1"
 
 [player]
+launcher = "gamemoderun"
 dxvk = false
 renderer = "Vulkan"
 channel = "zcanary"
@@ -82,5 +83,6 @@ MANGOHUD = "1"
 DFIntTaskSchedulerTargetFps = 144
 
 [studio]
+launcher = "gamescope --"
 renderer = "OpenGL"
 ```
