@@ -39,3 +39,14 @@ Alternatively, you can use the live ebuild by creating a `/etc/portage/package.a
 ```
 games-util/vinegar **
 ```
+
+### Source Mage
+First, make sure the games grimoire is added:
+```sh
+scribe add games
+```
+Then, cast the spell:
+```sh
+cast vinegar
+```
+(Do note that on 64-bit systems, 32-bit wine and gnutls will have to be sourced elsewhere as there is no multilib support)
