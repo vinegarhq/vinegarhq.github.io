@@ -20,7 +20,7 @@ flatpak uninstall --delete-data io.github.vinegarhq.Vinegar
 To build Vinegar, you will need `flatpak-builder` installed on your system.
 
 Clone Vinegar's Flatpak git repository manifests and build the Flatpak:
-```
+```sh
 git clone https://github.com/vinegarhq/io.github.vinegarhq.Vinegar
 cd io.github.vinegarhq.Vinegar
 make
