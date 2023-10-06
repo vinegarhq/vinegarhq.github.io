@@ -1,7 +1,7 @@
 # Installation from source
 
 ## Installing Wine
-Before you can install Vinegar, you will first have to install Wine first. You can use the guide for your distribution on the [wine wiki](https://wiki.winehq.org/Download). For instance, you can find guides for [Arch](https://wiki.archlinux.org/title/wine) and [Gentoo](https://wiki.gentoo.org/wiki/Wine). Additionally, you will need the GnuTLS library in-order for Roblox networking to function properly:
+Before you can install Vinegar, you will have to install Wine first. You can use the guide for your distribution on the [wine wiki](https://wiki.winehq.org/Download). For instance, you can find guides for [Arch](https://wiki.archlinux.org/title/wine) and [Gentoo](https://wiki.gentoo.org/wiki/Wine). Additionally, you will need the GnuTLS library in-order for Roblox networking to function properly:
 
 - Arch: `lib32-gnutls`
 - Void: `gnutls-32bit` via `void-repo-multilib`
