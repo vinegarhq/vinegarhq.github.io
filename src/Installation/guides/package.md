@@ -16,6 +16,7 @@ git clone https://aur.archlinux.org/vinegar.git
 cd vinegar
 makepkg -si
 ```
+Or install `vinegar` with a aur helper
 
 ### Gentoo
 
