@@ -2,9 +2,9 @@
 
 **Warning**: This guide is only recommended for advanced users. If facing issues, please follow [Troubleshooting](./index.md) instructions first.
 
-Vinegar can be configured to help you diagnose if a bug/issue is caused by Wine and make a report to WineHQ without violating their reporting guidelines.
+Vinegar can be configured to help you determine whether a bug/issue is caused by Wine, so you can submit a report to WineHQ without violating their guidelines.
 
-First of all, create a new toml configuration file in an appropriate location, with the following content:
+To begin, create a new toml configuration file in an appropriate location, with the following content:
 ```toml
 # Written for Vinegar v1.4.4.
 
