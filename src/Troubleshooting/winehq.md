@@ -1,6 +1,6 @@
 # Reporting issues to WineHQ
 
-**Warning**: This guide is not recommended unless you're an advanced user. Please follow [Troubleshooting](./index.md)'s instructions instead.
+**Warning**: This guide is only recommended for advanced users. If facing issues, please follow [Troubleshooting](./index.md) instructions first.
 
 Vinegar can be configured to help you diagnose if a bug/issue is caused by Wine and make a report to WineHQ without violating their reporting guidelines.
 
