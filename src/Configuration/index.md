@@ -26,7 +26,7 @@ The configuration file, `config.toml`, is read from `~/.config/vinegar/config.to
 | -------------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
 | `wineroot`           | the path to a valid Wine 'root' installation directory. For Flatpak users; see Notes.                      | none      |
 | `dxvk_version`       | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan. | `"2.3"`   |
-| `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously                                        | `false`   |
+| `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously; see notes about ESYNC                 | `false`   |
 | `sanitize_env`       | sanitize the global environment, hand-picked variables are allowed through.                                | `false`   |
 
 For Studio or Player configurations, they are specified under the `[player]` or `[studio]` section.
@@ -47,7 +47,14 @@ Sub-sections for FFlags and environment variables for Player or Studio are speci
 | `[fflags]`  | the sub-section used to set FFlags for the given application type.                | Player: `DFIntTaskSchedulerTargetFps = 640` |
 | `[env]`     | the sub-section used to set environment variables for the given application type. | Player: `DXVK_HUD = "fps"`                  |
 
+UI Settings
+
+| Option      | Description                                                                       | Default                                               |
+| ----------- | ----------------------------------------------------------------------------------| ----------------------------------------------------- |
+| `enabled`   | enables and disables the UI.                                                      | Player: `enabled = true`, Studio: `enabled = true`    |
+
 ### Notes
+* If using `multiple_instances`, WINEESYNC must be set to "0" in env. Otherwise, Roblox will not start!
 * If you're using Nvidia PRIME, the drivers (on X server 1.20.7 and newer) and/or dxvk should automatically use your dGPU by default.
 * The renderer must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`.
 * Ensure that when setting a string, the value must be in quotes: `channel = "zintegration"`
