@@ -60,7 +60,7 @@ UI Settings
 * Ensure that when setting a string, the value must be in quotes: `channel = "zintegration"`
 * When using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
 * If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
-* If you're using the Vinegar Flatpak and wish to use gamescope through the "launcher" setting, you MUST use their Flatpak versions, "com.valvesoftware.Steam.Utility.gamescope". Using gamescope from your distro will not work.
+* If you're using the Vinegar Flatpak and wish to use gamescope through the `launcher` setting, you MUST use their Flatpak versions, `org.freedesktop.Platform.VulkanLayer.gamescope`. Using gamescope from your distro will not work.
 * When using MangoHud and using the Flatpak (`MANGOHUD` set to `"1"`), please make sure to run `flatpak override --user --filesystem=xdg-config/MangoHud:ro`, to allow the Vinegar Flatpak to access the MangoHud configuration in your home.
 
 ### Example configuration
