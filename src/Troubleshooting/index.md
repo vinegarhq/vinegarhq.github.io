@@ -14,37 +14,31 @@ This may also be your GPU not supporting Vulkan or not supporting modern Vulkan;
 
 #### "Make sure there are no stable wineservers running"
 
+This is because it failed to run the ESync Shared Memory File, so you will manually have to kill the `wineserver`.
+
 You need to end the `wineserver` process. Using System Monitor from many Desktop Environments, or TUI System Monitors like Btop.
 Or you can wait until the wineserver process will end.
 
-#### Not launching Roblox Studio
+If you want to make your life easier, you can also type `vinegar kill` in the terminal.
+
+#### Roblox Studio stuck on Loading Screen
 
 You need to set the DPI to 97. By executing the command `vinegar exec winecfg`, then open the Graphics section and you can change the DPI to 97.
 
-The only Downside of this is that the Font for Roblox Player will be a bit blurry. Even Numbers for DPI will fix this issue, but Roblox Studio and Player will have a bigger GUI size.
+The only downside of this is that the fonts for Roblox will be a bit blurry, an even number for the DPI would fix this issue, but Roblox will have a bigger interface on both Player and Studio.
 
 #### WebView2 installer stuck on installing
 
 Theres an unknown reason for how this error occured, so unfortunately we can't explain whats the issue. Luckily we do have the solution.
 
-You must change the Windows Version to 7 in `winecfg`.
-You can set the Windows Version to 7 by executing the command `vinegar exec winecfg`. And a GUI will pop up, then you can finally set the Windows Version to 7.
+You must change the Windows Version to 7,
+You can set the Windows Version to 7 by executing the command `vinegar exec winecfg /v win7`. And WebView2 will successfully install.
 
-#### Cannot login to Studio or Player
+#### Cannot login to Studio or Player due to Verification System not working
 
-This is because of the horrible way WebView2 runs on Wine.
+This is because of the horrible way WebView2 runs on Wine, and it would just show a White Screen when the Verification System is trying to load.
 
 Login to the [Roblox Website](https://roblox.com) and join a game from there, The login will be synced perfectly with Studio and Player.
-
-#### Bad Performance
-
-There are a few fixes for this, listed here.
-
-You can install the Vulkan Drivers on the 
-[Lutris Docs: Installing Drivers](https://github.com/lutris/docs/blob/master/InstallingDrivers.md)
-
-Or you can enable esync/fsync and enable the Vulkan Renderer in the Configuration File of Vinegar (Another great alternative is DXVK which allows more functionality for Studio). You can change 
-[Vinegar Configuration File](https://vinegarhq.github.io/Configuration/index.html) here.
 
 #### "Your GPU is incompatible" error when launching Roblox Studio
 
@@ -54,12 +48,10 @@ Disable DXVK in the configuration file of Vinegar, Downside of this is that ther
 #### Memory Dump
 
 This is because of a few patches (Wine 8.16 and newer) causing Roblox to create a memory dump.
+Here is the patch that caused this issue;
+[ntdll: Ignore attempts to change segment registers on x86-64](https://gitlab.winehq.org/wine/wine/-/commit/ea640f6cece7660ffc853b7d574fbe52af34901a)
 
 To fix this, you can use the [Flatpak version of Vinegar](https://vinegarhq.github.io/Installation/guides/flatpak.html) or use [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom/releases) created by Glorious Eggroll setting as `wineroot` in Vinegar configuration.
-
-#### Change FPS Limit, Changing Renderer
-
-Please read the [Vinegar Documentation](https://vinegarhq.github.io/Configuration/index.html) for the Configuration File.
 
 #### Half of Roblox Studio fonts aren't appearing
 
@@ -69,20 +61,26 @@ You must allow DXVK in Studio to fix this issue.
 #### How to use the Vinegar Patches
 
 You can install the [Flatpak Version of Vinegar](https://vinegarhq.github.io/Installation/guides/flatpak.html) to allow the patches that makes Roblox Player/App to work under Wine 8.16 or newer.
-
-#### FPS Counter not appearing
-
-You can enable `DXVK_HUD` in the [Vinegar Configuration](https://vinegarhq.github.io/Configuration/index.html), and set the value to 1.
-
-Or, you can just press `shift` and `f5` to show the Roblox FPS Counter instead.
+If you are
 
 #### Vulkan/Vulkan.h not founded when compiling Vinegar
 
 You can install the Devel Packages for Vulkan according to your Package Manager, For example;
 `sudo pacman -Sy vulkan-devel` for Arch and Arch-based distributions.
 
+You can also compile it following the Instructions in the Website below;
+[Build Instructions](https://github.com/KhronosGroup/Vulkan-Loader/blob/main/BUILD.md#building-on-linux)
+
+
 #### Shortcuts for Roblox App/Studio not appearing
 
-This only happens when you use the Flatpak Version of Vinegar,
+This only happens when you use the Flatpak Version of Vinegar. when you install any application via Flatpak, You can't launch it
+The directories shown below;
+
+'/var/lib/flatpak/exports/share'
+
+'/home/example/.local/share/flatpak/exports/share'
+
+are not in the search path set by the XDG_DATA_DIRS environment variable.
 The fix is to reboot your Desktop/Laptop.
 
