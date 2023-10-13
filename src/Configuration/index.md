@@ -18,21 +18,12 @@ If getting an error about an `EDITOR` variable, this can be temporarily fixed by
 
 | Name                 | Description                                                                                                | Default   |
 | -------------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
-| `wineroot`           | the path to a valid Wine 'root' installation directory. For Flatpak users; see Notes.                      | none      |
+| `wineroot`           | the path to a valid Wine 'root' installation directory.                                                    | none      |
 | `dxvk_version`       | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan. | `"2.3"`   |
 | `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously; see notes about ESYNC                 | `false`   |
 | `sanitize_env`       | sanitize the global environment, hand-picked variables are allowed through.                                | `false`   |
 
 If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
-
-| Option             | Description                                                                                     | Default                         |
-| ------------------ | ----------------------------------------------------------------------------------------------- | ------------------------------- |
-| `launcher`         | the program that is used to launch Wine when launching Roblox                                   | none                            |
-| `channel`          | the Roblox release channel                                                                      | `"live"`                        |
-| `renderer`         | selects the rendering engine to be used by Roblox via FFlags. See Notes for accepted renders.   | `"D3D11"`                       |
-| `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version. | none                            |
-| `auto_kill_prefix` | tells Vinegar to automatically kill the wineprefix after the application closes.                | Player: `true`, Studio: `false` |
-| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                          | Player: `true`, Studio: `false` |
 
 | Section    | Description                                                                                                               |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -41,7 +32,6 @@ If you're using the Flatpak, ensure that the path of the `wineroot` configuratio
 | `[studio]` | Binary configuration for Studio                                                                                           |
 | `[env]`    | Global environment, this is similar to `[global.env]`.                                                                    |
 | `[splash]` | Configuraton for the loading screen of Vinegar                                                                            |
-
 
 ### Splash Configuration
 
@@ -65,7 +55,7 @@ This section are the available options for the global, Studio or Player configur
 | ------------------ | ------------------------------------------------------------------------------------------------ | --------- |
 | `channel`          | the Roblox release channel                                                                       | `"live"`  |
 | `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none      |
-| `renderer`         | selects the rendering engine to be used by Roblox via FFlags. See Notes for accepted renders.    | `"D3D11"` |
+| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"` |
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none      |
 | `auto_kill_prefix` | automatically kill the wineprefix after the process exits                      .                 | `true`    |
 | `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`    |
