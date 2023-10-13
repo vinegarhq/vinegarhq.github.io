@@ -40,6 +40,22 @@ If you're using the Flatpak, ensure that the path of the `wineroot` configuratio
 | `[player]` | Binary configuration for Player                                                                                           |
 | `[studio]` | Binary configuration for Studio                                                                                           |
 | `[env]`    | Global environment, this is similar to `[global.env]`.                                                                    |
+| `[splash]` | Configuraton for the loading screen of Vinegar                                                                            |
+
+
+### Splash Configuration
+
+| Option       | Description                                   | Default    |
+| ------------ | --------------------------------------------- | ---------- |
+| `enabled`    | Deterimes if the splash window appears or not | `true`     |
+| `background` | background of the splash window               | `0x242424` |
+| `foreground` | foreground of the text in the splash          | `0xfafafa` |
+| `Red`        | background color of the 'Cancel' button       | `0xcc241d` |
+| `Gray1`      | background color of the progress bar          | `0x303030` |
+| `Gray2`      | foreground color of the description           | `0x777777` |
+| `Accent`     | color of the 'Show Log' and progress bar      | `0x8fbc5e` |
+
+The colors are in hexadecimal format, stored as numbers internally such as `0xff00ff`.
 
 ### Binary Configuration
 
@@ -63,7 +79,6 @@ Sub-sections for FFlags and environment variables are specified with the section
 | ----------- | ------------------------------------------- |
 | `[fflags]`  | Player: `DFIntTaskSchedulerTargetFps = 640` |
 | `[env]`     | none                                        |
->>>>>>> 2d7b7d2 (update configuration)
 
 ### Example configuration
 
