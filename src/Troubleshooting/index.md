@@ -16,7 +16,7 @@ This may also indicate your GPU not supporting Vulkan or not supporting modern V
 
 There are multiple reasons why this'd occur, but `vinegar kill` will suffice in order to fix the issue.
 
-### Roblox Studio stuck on the splash
+#### Roblox Studio stuck on the splash
 
 This usually happens due to issues with the DPI. In order to fix it, set your DPI to 97 by running `vinegar exec winecfg` to open the wine configuration, and then heading to the Graphics tab. You should be able to find a DPI option at the bottom of the page.
 
