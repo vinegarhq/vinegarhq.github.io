@@ -36,8 +36,10 @@ There are 2 workarounds:
 
 This issue is most commonly caused by the Wine build not having the Vulkan ChildWindow patch applied. To fix it:
 
+- Use the [Vinegar flatpak](https://vinegarhq.github.io/Installation/guides/flatpak.html), which includes the ChildWindow patch,
+  
 - Use a Wine build that has the ChildWindow patch enabled (such as [Wine GE](https://github.com/GloriousEggroll/wine-ge-custom)), or:
-
+  
 - Disable DXVK in the Vinegar configuration.
 
 #### Memory Dump
@@ -62,8 +64,8 @@ Vulkan development tools are required for building Vinegar with splash screen su
 - `vulkan-devel` in Arch-based distros.
 
   
-distribution that doesn't ship the development packages/tools.
-If using a distribution that doesn't ship the development packages, they may be compiled using the following guide: [Vulkan-Loader Build Instructions](https://github.com/KhronosGroup/Vulkan-Loader/blob/main/BUILD.md#building-on-linux).
+Distributions that don't ship the development packages/tools:
+If you're using a distribution that doesn't ship the development packages, they may be compiled using the following guide: [Vulkan-Loader Build Instructions](https://github.com/KhronosGroup/Vulkan-Loader/blob/main/BUILD.md#building-on-linux).
 
 #### Shortcuts for Roblox App/Studio not appearing
 
