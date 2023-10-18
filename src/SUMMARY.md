@@ -10,3 +10,4 @@
   - [Tips and tricks](./Configuration/tips-and-tricks/index.md)
 - [Contributing](./Contributing/index.md)
 - [Troubleshooting](./Troubleshooting/index.md)
+  - [Reporting issues to WineHQ](./Troubleshooting/winehq.md)
