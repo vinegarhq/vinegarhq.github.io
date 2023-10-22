@@ -51,14 +51,17 @@ The colors are in hexadecimal format, stored as numbers internally such as `0xff
 
 This section are the available options for the global, Studio or Player configurations, they are specified under their sections as listed above.
 
-| Option             | Description                                                                                      | Default   |
-| ------------------ | ------------------------------------------------------------------------------------------------ | --------- |
-| `channel`          | the Roblox release channel                                                                       | `"live"`  |
-| `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none      |
-| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"` |
-| `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none      |
-| `auto_kill_prefix` | automatically kill the wineprefix after the process exits                      .                 | `true`    |
-| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`    |
+| Option             | Description                                                                                      | Default        |
+| ------------------ | ------------------------------------------------------------------------------------------------ | -------------- |
+| `channel`          | the Roblox release channel                                                                       | `"live"`       |
+| `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none           |
+| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`      |
+| `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true` |
+| `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none           |
+| `auto_kill_prefix` | automatically kill the wineprefix after the process exits                      .                 | `true`         |
+| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`         |
+
+Rich presence for Studio may not function correctly, as the BloxstrapRPC protocol had only been implemented for Player; keep in mind that Discord RPC includes telemetry by default.
 
 The renderer must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`;
 when using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
