@@ -1,5 +1,10 @@
 # Installation from Flatpak
 
+#Auto Installer
+git clone https://github.com/vinegarhq/vinegar
+cd vinegar
+./flatpak_installer.sh
+
 Vinegar's Flatpak can be found [here](https://flathub.org/apps/details/io.github.vinegarhq.Vinegar). 
 
 Installing it manually from a terminal:
