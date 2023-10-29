@@ -1,6 +1,7 @@
 # Installation from Flatpak
 
-#Auto Installer
+# Auto Installer
+
 git clone https://github.com/vinegarhq/vinegar
 cd vinegar
 ./flatpak_installer.sh
