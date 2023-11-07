@@ -23,6 +23,8 @@ $ make
 
 ## Installing Vinegar
 
+To get Vinegar's GUI (Splash) dependencies, you need to install Gio's (the GUI framework we use) dependencies, you can find them and the relevant section for your distribution [here](https://gioui.org/doc/install/linux)
+
 To install Vinegar (in the source directory of vinegar):
 ```sh
 # make install
