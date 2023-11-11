@@ -60,6 +60,15 @@ This section are the available options for the global, Studio or Player configur
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none           |
 | `auto_kill_prefix` | automatically kill the wineprefix after the process exits                      .                 | `true`         |
 | `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`         |
+| `gpu`              | specifies what gpu to use.                                                                       |`prime-discrete`|
+
+`prime-discrete` does nothing on non-prime systems.
+
+The options for `gpu` are the following:
+
+`prime-discrete` makes Vinegar use a prime enabled gpu (Nvidia);                                                                                                                                                                                       
+`integrated` makes Vinegar use integrated graphics (If present);                                                                                                                                                                                       
+`0` to `9` makes Vinegar use a specific gpu based on their number;                                                                                                                                                                                     
 
 Rich presence for Studio may not function correctly, as the BloxstrapRPC protocol had only been implemented for Player; keep in mind that Discord RPC includes telemetry by default.
 
