@@ -27,3 +27,5 @@ The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2
 - Graphics: Vulkan 1.1 support.
 - Wine: At least Wine 8.0.
   - The [childwindow patch](https://github.com/flathub/io.github.vinegarhq.Vinegar/blob/master/patches/wine/childwindow.patch) is required for acceptable performance and stability.
+
+Roblox® is a registered Roblox Corporation trademark. VinegarHQ is not affiliated with Roblox Corporation.
