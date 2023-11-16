@@ -116,4 +116,3 @@ This is a known issue with WineD3D. Enabling DXVK in the configuration file shou
 ### Flickering widgets and plugin windows
 
 This is a known issue with WineD3D. Enabling DXVK in the configuration file should solve this issue.
-----
