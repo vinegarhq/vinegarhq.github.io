@@ -18,3 +18,4 @@ The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2
 - X86-64 CPU with support for [AVX](/Troubleshooting/index.md)
 - GPU that has atleast support for OpenGL 4.0 or Vulkan 1.1
 
+Roblox® is a registered Roblox Corporation trademark. VinegarHQ is not affiliated with Roblox Corporation.
