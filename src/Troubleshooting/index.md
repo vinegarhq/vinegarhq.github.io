@@ -22,6 +22,10 @@ Known Vinegar issues which affect both Roblox Player and Roblox Studio:
   
   There are multiple reasons for why this would occur, but `vinegar kill` will suffice in order to fix the issue.
 
+- ### Flatpak unable to use Wine builds outside of the filesystem
+
+  By default flatpak can only access files in its filesystem so you need to override it with `flatpak override --user --filesystem=path/to/winebuild`
+
 - ### Shortcuts for Roblox App/Studio not appearing
 
   This usually happens with the Vinegar Flatpak. The fix is rebooting the system.
