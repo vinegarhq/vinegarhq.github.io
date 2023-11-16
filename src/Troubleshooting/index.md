@@ -4,6 +4,15 @@ If there are any issues here that are undocumented, feel free to [create an issu
 
 ----
 
+## Checking AVX Compatibility
+
+There are 2 ways to check if your CPU supports AVX:
+
+- Open up a terminal and type the following command: `grep avx /proc/cpuinfo` it will highlight with red the AVX flags, if you get no output it means that your current CPU doesn't support AVX.
+- While having Vinegar installed type the following command: `vinegar sysinfo` or if using flatpak: `flatpak run io.github.vinegarhq.Vinegar sysinfo` it will show information about your system, this includes support for AVX.
+
+----
+
 ## General Issues
 
 Known Vinegar issues which affect both Roblox Player and Roblox Studio:
