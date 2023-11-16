@@ -15,6 +15,15 @@ The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2
 
 ### Requirements
 
-- X86-64 CPU with support for [AVX](/Troubleshooting/index.md)
-- GPU that has atleast support for OpenGL 4.0 or Vulkan 1.1
+[Roblox's official minimum requirements](https://en.help.roblox.com/hc/en-us/articles/203312800) must be met. 
 
+#### Roblox Player
+- Processor: X86-64 CPU with [AVX](/Troubleshooting/index.md#checking-avx-compatibility) support.
+- Graphics: OpenGL 4.0 or Vulkan 1.1 support.
+- Wine: At least Wine 8.0.
+  - Depending on the version, the [segregrevert patch](https://github.com/flathub/io.github.vinegarhq.Vinegar/blob/master/patches/wine/segregrevert.patch) might be required.
+#### Roblox Studio
+- Processor: X86-64 CPU.
+- Graphics: Vulkan 1.1 support.
+- Wine: At least Wine 8.0.
+  - The [childwindow patch](https://github.com/flathub/io.github.vinegarhq.Vinegar/blob/master/patches/wine/childwindow.patch) is required for acceptable performance and stability.
