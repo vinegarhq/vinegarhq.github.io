@@ -18,4 +18,3 @@ The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2
 - X86-64 CPU with support for [AVX2](/Troubleshooting/index.md)
 - GPU that has atleast support for OpenGL 4.0 or Vulkan 1.1
 
-__Notice: Vinegar is compatible with both Musl and Glibc.__
