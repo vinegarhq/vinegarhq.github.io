@@ -53,7 +53,7 @@ There's no known fix (as of October 14th, 2023), but the following workarounds m
 
 Known Roblox Player issues:
 
-### Memory Dump
+### Memory dump
 
 This is because of [commit ea640f6c](https://gitlab.winehq.org/wine/wine/-/commit/ea640f6cece7660ffc853b7d574fbe52af34901a) (on Wine 8.16 and newer) causing Roblox to create a memory dump.
 
@@ -78,13 +78,17 @@ Known Roblox Studio issues:
 
 ### Stuck on the splash screen
 
-This usually happens due to issues with the DPI. In order to fix it, set the DPI to 97 (already done by default) by running `vinegar exec winecfg` to open the Wine configuration, and then head to the Graphics tab. There should be a DPI option at the bottom of the page.
+Studio is currently broken with 96 DPI rendering. Set the DPI to 97 (already done by default) by running `vinegar exec winecfg` to open the Wine configuration, and then head to the Graphics tab. There should be a DPI option at the bottom of the page.
 
-A DPI greater than 96 could be set, but this causes in-game GUIs to be larger than normal. Also, because of a Wine issue, using a non-default DPI will cause the Roblox viewport to be a bit blurry. Additionally, make sure that the DPI is an even number, otherwise GUIs will be blurry.
+Other DPI values work, as long as they're **NOT** 96. Note that values not divisible by 96 will make the interface blurrier, and that the game world view becomes blurrier as DPI increases. This is a limitation with Wine's X11 implementation.
 
-### Unable to log in
+### Unable to log in - WebView2 error
 
-This occurs due to WebView2 issues with Wine. The only workaround is to log in through the [Roblox website](https://roblox.com) and launch/edit an experience, or to log in through the same method but launching Player, which authenticates Studio in the process.
+WebView2 is currently not supported, so there's no way to log in directly inside of studio.
+
+Follow the on-screen prompt and click "Log in via browser". This will open an authentication website in your browser. Once you're done authenticating, you might be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
+
+If all steps were followed correctly, studio should automatically log into your account.
 
 ### "Your GPU is incompatible" error
 
@@ -98,6 +102,9 @@ This issue is most commonly caused by the Wine build not having the Vulkan Child
 
 ### Buggy QT fonts
 
-This is due to an incompatibility with WineD3D. Enabling DXVK in the configuration file should solve this issue.
+This is a known issue with WineD3D. Enabling DXVK in the configuration file should solve this issue.
 
+### Flickering widgets and plugin windows
+
+This is a known issue with WineD3D. Enabling DXVK in the configuration file should solve this issue.
 ----
