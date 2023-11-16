@@ -21,7 +21,7 @@ The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2
 - Processor: X86-64 CPU with [AVX](/Troubleshooting/index.md#checking-avx-compatibility) support.
 - Graphics: OpenGL 4.0 or Vulkan 1.1 support.
 - Wine: At least Wine 8.0.
-  - Depending on the version, the [segregrevert patch](https://github.com/flathub/io.github.vinegarhq.Vinegar/blob/master/patches/wine/segregrevert.patch) might be required.
+  - The [segregrevert patch](https://github.com/flathub/io.github.vinegarhq.Vinegar/blob/master/patches/wine/segregrevert.patch) is required starting Wine 8.16.
 #### Roblox Studio
 - Processor: X86-64 CPU.
 - Graphics: Vulkan 1.1 support.
