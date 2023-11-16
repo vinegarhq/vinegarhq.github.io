@@ -15,6 +15,6 @@ The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2
 
 ### Requirements
 
-- X86-64 CPU with support for [AVX2](/Troubleshooting/index.md)
+- X86-64 CPU with support for [AVX](/Troubleshooting/index.md)
 - GPU that has atleast support for OpenGL 4.0 or Vulkan 1.1
 
