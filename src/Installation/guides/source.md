@@ -10,10 +10,7 @@ Before you can install Vinegar, you will have to install Wine first. You can use
 It is recommended to ensure that you have installed Wine 8.3 or above on your system, as Roblox requires a minimum version of 8.0 and may encounter stability issues under 8.3. 
 
 ## Building Dependencies
-If on Ubuntu or Fedora you may need to install the following dependencies:
-
-- Ubuntu: `apt install pkg-config libwayland-dev libx11-dev libx11-xcb-dev libxkbcommon-x11-dev libgles2-mesa-dev libegl1-mesa-dev libffi-dev libxcursor-dev libvulkan-dev`
-- Fedora: `dnf install pkg-config wayland-devel libX11-devel libxkbcommon-x11-devel mesa-libGLES-devel mesa-libEGL-devel libXcursor-devel vulkan-headers`
+If on Ubuntu, Fedora or Nixos you may need to install the dependencies needed by Gioui, Those can be found [here](https://gioui.org/doc/install/linux)
 
 ## Building Vinegar
 
