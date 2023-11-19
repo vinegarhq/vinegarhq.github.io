@@ -9,13 +9,12 @@ Before you can install Vinegar, you will have to install Wine first. You can use
 
 It is recommended to ensure that you have installed Wine 8.3 or above on your system, as Roblox requires a minimum version of 8.0 and may encounter stability issues under 8.3. 
 
-## Building Dependencies
-You will need to install the dependencies needed by Gio. The documentation can be found [here](https://gioui.org/doc/install/linux)
-You can disable the splash window provided by Vinegar (Which is implemented with Gio) by appending the `nosplash` build tag to the build parameters (`VINEGAR_GOFLAGS=--tags=nosplash`)
-
 ## Building Vinegar
 
 To build Vinegar from source, you will need to install Go; it can be found packaged as `golang` or `go` on some Linux distributions.
+
+Aditionally will need to install the dependencies needed by Gio. The documentation can be found [here](https://gioui.org/doc/install/linux), However you are able to disable the splash window (which uses Gio) by appending the `nosplash` build tag to the build parameters (`VINEGAR_GOFLAGS=--tags=nosplash`).
+
 
 Clone Vinegar's git repository and build Vinegar:
 
