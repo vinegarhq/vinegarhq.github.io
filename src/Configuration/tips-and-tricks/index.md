@@ -19,23 +19,7 @@ Example replacement of Roblox's default death sound:
 ```
 
 ## FFlags
-This section is undocumented; below is a list of fflags that can be set. Credits to [Bloxstrap](https://github.com/pizzaboxer/bloxstrap/blob/main/Bloxstrap/FastFlagManager.cs).
-
-```toml
-# See https://github.com/pizzaboxer/bloxstrap/wiki/A-guide-to-FastFlags#gui-hiding
-DFIntCanHideGuiGroupId = 32380007
-
-# See IGMenuVersions in Bloxstrap for more details
-FFlagDisableNewIGMinDUA = true
-FFlagEnableInGameMenuControls = true
-
-# true for 21 bars, false for 10 bars; in graphics quality
-FFlagFixGraphicsQuality = true
-
-DFFlagDebugRenderForceTechnologyVoxel = false # Voxel
-FFlagDebugForceFutureIsBrightPhase2 = false # ShadowMap
-FFlagDebugForceFutureIsBrightPhase = true # Future
-```
+See [Bloxstrap's guide to FastFlags](https://github.com/pizzaboxer/bloxstrap/wiki/A-guide-to-FastFlags).
 
 ## Environmental variables
 + `WINEESYNC`: allows Wine Staging to use Esync, please see [HowToEsync](https://github.com/lutris/docs/blob/master/HowToEsync.md) for more information.
