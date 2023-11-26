@@ -11,6 +11,18 @@ There are 2 ways to check if your CPU supports AVX:
 - Open up a terminal and type the following command: `grep avx /proc/cpuinfo` it will highlight with red the AVX flags, if you get no output it means that your current CPU doesn't support AVX.
 - While having Vinegar installed type the following command: `vinegar sysinfo` or if using flatpak: `flatpak run io.github.vinegarhq.Vinegar sysinfo` it will show information about your system, this includes support for AVX.
 
+## Disabling Split Lock Detection
+
+Currently, Roblox uses split lock operations. Unfortunately, [this is not considered a good practice](https://lwn.net/Articles/790464/), so by default, the Linux Kernel will throttle any programs that do so. This has been reported to have a major performance hit, sometimes reducing Roblox's frame rate to a mere fraction of what it's supposed to be.
+
+Fortunately, you can disable the throttling by setting the [`split_lock_detect`](https://docs.kernel.org/arch/x86/buslock.html#software-handling) kernel parameter to `"off"`. The correct way to do this depends on both your distro and which bootloader your system uses. We recommend you to check your distro's documentation for more information:
+
+- Debian-based distributions (Debian, Ubuntu, Mint, etc.): [Debian manual - 5.3. Boot Parameters](https://www.debian.org/releases/stable/amd64/ch05s03.en.html)
+- Fedora-based distributions: [Fedora Docs - Making Persistent Changes to a GRUB 2 Menu Using the grubby Tool](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/kernel-module-driver-configuration/Working_with_the_GRUB_2_Boot_Loader/#sec-Making_Persistent_Changes_to_a_GRUB_2_Menu_Using_the_grubby_Tool)
+- Arch-based distributions (Arch Linux, Manjaro, etc.): [Arch Linux Wiki - Kernel parameters](https://wiki.archlinux.org/title/Kernel_parameters)
+
+If you're unsure on how to do this, please ask in your distro's support channels.
+
 ----
 
 ## General Issues
