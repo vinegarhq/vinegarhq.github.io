@@ -7,7 +7,7 @@ Vinegar can be configured to help you determine whether a bug/issue is caused by
 To begin, create a new toml configuration file in an appropriate location, with the following content:
 
 ```toml
-# Written for Vinegar v1.5.8.
+# Written for Vinegar v1.5.9.
 
 # WARNING: This should be left empty if your system has WineHQ packages installed (https://wiki.winehq.org/Download).
 # Otherwise, either install WineHQ packages or set wineroot to a staging/development wine's path.
@@ -46,6 +46,13 @@ auto_kill_prefix = false      # (X)
 launcher = ""                 # (X)
 gpu = ""                      # (X)
 discord_rpc = false           # (X)
+gamemode = false              # (X)
+
+[player.env]
+OBS_VKCAPTURE = ""            # (X)
+
+[player.fflags]
+DFIntTaskSchedulerTargetFps = 60 # (X)
 
 [studio]
 channel = ""                  # (?): Use this to debug a specific Roblox version.
@@ -56,9 +63,8 @@ auto_kill_prefix = false      # (X)
 launcher = ""                 # (X)
 gpu = ""                      # (X)
 discord_rpc = false           # (X)
+gamemode = false              # (X)
 
-[player.fflags]
-DFIntTaskSchedulerTargetFps = 60 # (X)
 ```
 
 Read over every option carefully and follow the instructions in the comments.
