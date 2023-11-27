@@ -6,7 +6,7 @@ Vinegar can be configured to help you determine whether a bug/issue is caused by
 
 To begin, create a new toml configuration file in an appropriate location, with the following content:
 ```toml
-# Written for Vinegar v1.4.4.
+# Written for Vinegar v1.5.8.
 
 # WARNING: This should be left empty if your system has WineHQ packages installed (https://wiki.winehq.org/Download).
 # Otherwise, either install WineHQ packages or set wineroot to a staging/development wine's path.
@@ -18,33 +18,43 @@ wineroot = ""
 # (?)   = This option may be edited. In case of doubt, do not change.
 # (...) = User defined options can be added here (not recommended, may invalidate your report)
 
-dxvk_version = ""           # (X)
-multiple_instances = false  # (X)
-sanitize_env = false        # (X)
+dxvk_version = ""             # (X)
+multiple_instances = false    # (X)
+sanitize_env = false          # (X)
 
-[env]
-WINEDEBUG = ""              # (?): Use this to increase Wine log verbosity.
+[splash]
+enabled = false               # (X)
+
+[global.env]
+WINEDEBUG = ""                   # (?): Use this to increase Wine log verbosity.
+MESA_GL_VERSION_OVERRIDE = ""    # (?): OpenGL debugging
+__GL_THREADED_OPTIMIZATIONS = "" # (?): OpenGL debugging
 # (...)
-DXVK_LOG_PATH = ""          # (X)
-WINEESYNC = ""              # (X)
-WINEFSYNC = ""              # (X)
-WINEDLLOVERRIDES = ""       # (X)
+DXVK_LOG_LEVEL = ""              # (X)
+DXVK_LOG_PATH = ""               # (X)
+WINEESYNC = ""                   # (X)
+WINEFSYNC = ""                   # (X)
+WINEDLLOVERRIDES = ""            # (X)
 
 [player]
-channel = ""                # (?): Use this to debug a specific Roblox version.           
-forced_version = ""         # (?): Use this to debug a specific Roblox version.       
-renderer = "D3D11"          # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
-dxvk = false                # (X)
-auto_kill_prefix = false    # (X)
-launcher = ""               # (X)
+channel = ""                  # (?): Use this to debug a specific Roblox version.           
+forced_version = ""           # (?): Use this to debug a specific Roblox version.       
+renderer = "D3D11"            # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
+dxvk = false                  # (X)
+auto_kill_prefix = false      # (X)
+launcher = ""                 # (X)
+gpu = ""                      # (X)
+discord_rpc = false           # (X)
 
 [studio]
-channel = ""                # (?): Use this to debug a specific Roblox version.           
-forced_version = ""         # (?): Use this to debug a specific Roblox version.       
-renderer = "D3D11"          # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
-dxvk = false                # (X)
-auto_kill_prefix = false    # (X)
-launcher = ""               # (X)
+channel = ""                  # (?): Use this to debug a specific Roblox version.           
+forced_version = ""           # (?): Use this to debug a specific Roblox version.       
+renderer = "D3D11"            # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
+dxvk = false                  # (X)
+auto_kill_prefix = false      # (X)
+launcher = ""                 # (X)
+gpu = ""                      # (X)
+discord_rpc = false           # (X)
 
 [player.fflags]
 DFIntTaskSchedulerTargetFps = 60 # (X)
