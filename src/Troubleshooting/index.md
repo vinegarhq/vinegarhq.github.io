@@ -11,7 +11,7 @@ There are 2 ways to check if your CPU supports AVX:
 - Open up a terminal and type the following command: `grep avx /proc/cpuinfo` it will highlight with red the AVX flags, if you get no output it means that your current CPU doesn't support AVX.
 - While having Vinegar installed type the following command: `vinegar sysinfo` or if using flatpak: `flatpak run io.github.vinegarhq.Vinegar sysinfo` it will show information about your system, this includes support for AVX.
 
-## Disabling Split Lock Detection
+## Disabling Split Lock Detection (only for Intel CPU's)
 
 Currently, Roblox uses split lock operations. Unfortunately, [this is not considered a good practice](https://lwn.net/Articles/790464/), so by default, the Linux Kernel will throttle any programs that do so. This has been reported to have a major performance hit, sometimes reducing Roblox's frame rate to a mere fraction of what it's supposed to be.
 
