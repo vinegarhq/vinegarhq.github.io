@@ -9,7 +9,7 @@ Vinegar is an open-source, transparent, minimal, configurable, and fast bootstra
 ### Before getting started
 - The comprehensive documentation and source code for Vinegar are readily available on [GitHub](https://github.com/vinegarhq).
 - Vinegar currently lacks a graphical configuration interface at this time.
-- Vinegar serves as a viable alternative to [Grapejuice](https://brinkervii.gitlab.io/grapejuice/), another popular Roblox bootstrapper for Linux.
+- Vinegar is a viable alternative to [Grapejuice](https://brinkervii.gitlab.io/grapejuice/), another popular Roblox bootstrapper for Linux.
 
 **To get started**, you can proceed to [the installation guide](/Installation/index.md)!
 
