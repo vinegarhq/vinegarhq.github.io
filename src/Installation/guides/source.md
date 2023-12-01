@@ -43,10 +43,10 @@ Alternatively, the following lines can be appended to `mimeapps.list` for users 
 
 ```
 [Default Applications]
-x-scheme-handler/roblox-player=io.github.vinegarhq.Vinegar.player.desktop
-x-scheme-handler/roblox=io.github.vinegarhq.Vinegar.player.desktop
-x-scheme-handler/roblox-studio=io.github.vinegarhq.Vinegar.studio.desktop
-x-scheme-handler/roblox-studio-auth=io.github.vinegarhq.Vinegar.studio.desktop
-application/x-roblox-rbxl=io.github.vinegarhq.Vinegar.studio.desktop
-application/x-roblox-rbxlx=io.github.vinegarhq.Vinegar.studio.desktop
+x-scheme-handler/roblox-player=org.vinegarhq.Vinegar.player.desktop
+x-scheme-handler/roblox=org.vinegarhq.Vinegar.player.desktop
+x-scheme-handler/roblox-studio=org.vinegarhq.Vinegar.studio.desktop
+x-scheme-handler/roblox-studio-auth=org.vinegarhq.Vinegar.studio.desktop
+application/x-roblox-rbxl=org.vinegarhq.Vinegar.studio.desktop
+application/x-roblox-rbxlx=org.vinegarhq.Vinegar.studio.desktop
 ```

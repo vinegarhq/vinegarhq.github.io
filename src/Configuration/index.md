@@ -10,7 +10,7 @@ Anything added to the configuration file is an override over the default configu
 
 The configuration file (`config.toml`) may be easily edited by running the `vinegar edit` command. By using the `edit` command, error validation is also included.
 
-If using Flatpak, the command is `flatpak run io.github.vinegarhq.Vinegar edit`.
+If using Flatpak, the command is `flatpak run org.vinegarhq.Vinegar edit`.
 
 If getting an error about an `EDITOR` variable, this can be temporarily fixed by running the command as `export EDITOR=nano; vinegar edit` (which will cause the `nano` editor to be used). Though, it is preferrable to set an `EDITOR` variable permanently, in a place like `.bashrc`.
 
@@ -23,7 +23,7 @@ If getting an error about an `EDITOR` variable, this can be temporarily fixed by
 | `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously; see notes about ESYNC                 | `false` |
 | `sanitize_env`       | sanitize the global environment, hand-picked variables are allowed through.                                | `false` |
 
-If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/io.github.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
+If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/org.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 
 | Section    | Description                                                                                                               |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------- |

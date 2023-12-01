@@ -9,7 +9,7 @@ If there are any issues here that are undocumented, feel free to [create an issu
 There are 2 ways to check if your CPU supports AVX:
 
 - Open up a terminal and type the following command: `grep avx /proc/cpuinfo` it will highlight with red the AVX flags, if you get no output it means that your current CPU doesn't support AVX.
-- While having Vinegar installed type the following command: `vinegar sysinfo` or if using flatpak: `flatpak run io.github.vinegarhq.Vinegar sysinfo` it will show information about your system, this includes support for AVX.
+- While having Vinegar installed type the following command: `vinegar sysinfo` or if using flatpak: `flatpak run org.vinegarhq.Vinegar sysinfo` it will show information about your system, this includes support for AVX.
 
 ## Disabling Split Lock Detection
 
@@ -80,7 +80,7 @@ This is because of [commit ea640f6c](https://gitlab.winehq.org/wine/wine/-/commi
 
 There are 2 workarounds:
 
-- Using the [Vinegar flatpak](https://vinegarhq.github.io/Installation/guides/flatpak.html).
+- Using the [Vinegar flatpak](https://vinegarhq.org/Installation/guides/flatpak.html).
 
 - Using [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom/releases) or a patched build of Wine with the above commit reverted.
 
@@ -115,7 +115,7 @@ If all steps were followed correctly, studio should automatically log into your 
 
 This issue is most commonly caused by the Wine build not having the Vulkan ChildWindow patch applied. There are a couple solutions:
 
-- Using the [Vinegar flatpak](https://vinegarhq.github.io/Installation/guides/flatpak.html), which includes the ChildWindow patch;
+- Using the [Vinegar flatpak](https://vinegarhq.org/Installation/guides/flatpak.html), which includes the ChildWindow patch;
 
 - Using a Wine build that has the ChildWindow patch enabled (such as [Wine GE](https://github.com/GloriousEggroll/wine-ge-custom));
 

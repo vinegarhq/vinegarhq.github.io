@@ -5,7 +5,7 @@ In Vinegar, a directory called `overlay` will be copied directly to the Roblox P
 
 The `overlay` folder is not created by default, and it is located always along with the configuration file, which is depending on your install method:
 
-- On Flatpak, it's located in `~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/overlay`
+- On Flatpak, it's located in `~/.var/app/org.vinegarhq.Vinegar/config/vinegar/overlay`
 - On other methods, it's located in `~/.config/vinegar/overlay`
 
 Vinegar requires no extra configuration for the folder to work.
