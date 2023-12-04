@@ -1,5 +1,7 @@
 # Installation from your package manager
 
+> If using wine 5.16+ you will need a version of wine that has the sigregrevert patch, the easiest choice is to use Wine-GE, there is a [guide](https://vinegarhq.org/Troubleshooting/) on how to do that in the Troubleshooting section
+
 ### Alpine linux
 
 If you are using Alpine Linux Edge with the testing repo enabled (more info [here](https://wiki.alpinelinux.org/wiki/Repositories#Edge) you can install the package by simply running the following with root privileges:
