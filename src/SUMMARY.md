@@ -2,6 +2,7 @@
 
 - [Home](./Home/index.md)
   - [FAQ](./Home/faq.md)
+- [Requirements](./Requirements/index.md) 
 - [Installation](./Installation/index.md)
   - [Installing from Flatpak](./Installation/guides/flatpak.md)
   - [Installing from package](./Installation/guides/package.md)
