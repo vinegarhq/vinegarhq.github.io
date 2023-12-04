@@ -1,6 +1,6 @@
 # Installation from your package manager
 
-> If using wine 5.16+ you will need a version of Wine that has the sigregrevert patch, the easiest choice is to use Wine-GE, there is a [guide](https://vinegarhq.org/Troubleshooting/) on how to do that in the Troubleshooting section
+> If using wine 5.16+ you will need to compile Wine or use a version of Wine that has the sigregrevert patch, the easiest choice is to use Wine-GE, there is a [guide](https://vinegarhq.org/Troubleshooting/) on how to do that in the Troubleshooting section
 
 ### Alpine linux
 
