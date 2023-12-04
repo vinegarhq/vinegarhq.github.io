@@ -71,8 +71,3 @@ Then, cast the spell:
 cast vinegar
 ```
 (Do note that on 64-bit systems, 32-bit wine and gnutls will have to be sourced elsewhere as there is no multilib support)
-
-### Snap
-
-[![Snap Package](https://img.shields.io/badge/Snapcraft-edge-e95420)](https://snapcraft.io/vinegar)
-

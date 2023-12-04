@@ -7,6 +7,7 @@
   - [Installing from Flatpak](./Installation/guides/flatpak.md)
   - [Installing from package](./Installation/guides/package.md)
   - [Installing from source](./Installation/guides/source.md)
+  - [Installing from Snap](./Installation/guides/snap.md)
 - [Configuration](./Configuration/index.md)
   - [Tips and tricks](./Configuration/tips-and-tricks/index.md)
 - [Contributing](./Contributing/index.md)
