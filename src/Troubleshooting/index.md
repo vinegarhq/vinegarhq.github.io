@@ -23,11 +23,11 @@ Fortunately, you can disable the throttling by setting the [`split_lock_detect`]
 
 If you're unsure on how to do this, please ask in your distro's support channels.
 
-## Roblox Doesn't Launch on Wine 8.16+
+## Roblox Doesn't Work on Wine 8.16+
 
 > This doesn't apply to Flatpak
 
-Currently, Roblox doesn't launch on Wine 8.16+ without the sigregrevert patch, the easiest choice is to use [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom/releases).
+Currently, Roblox doesn't work on Wine 8.16+ without the sigregrevert patch, the easiest choice is to use [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom/releases).
 
 After downloading and extracting the archive, configure the Wineroot in the Vinegar config, For example:
 
