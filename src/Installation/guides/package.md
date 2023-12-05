@@ -53,9 +53,9 @@ games-util/vinegar **
 
 [![Alpine Linux Edge](https://repology.org/badge/version-for-repo/alpine_edge/vinegar.svg?header=Alpine%20Linux%20Edge)](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/vinegar)
 
-If you are using Alpine Linux Edge with the [testing repo enabled](https://wiki.alpinelinux.org/wiki/Repositories#Edge) you can install the package by simply running the following with root privileges:
+Vinegar's Alpine package resides within the [Edge testing repository](https://wiki.alpinelinux.org/wiki/Repositories#Edge), see more on how to set it up [here](https://wiki.alpinelinux.org/wiki/Repositories#Managing_repositories)
 ```sh
-apk add vinegar
+# apk add vinegar
 ```
 
 ### Source Mage
