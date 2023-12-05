@@ -1,6 +1,5 @@
 # FAQ
 
-
 ### What is the best configuration?
 
 This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either the D3D11 renderer with DXVK or Vulkan.
@@ -24,10 +23,12 @@ We chose Golang for its library management, performance, and ease-of-programming
 ### How do I update Vinegar?
 
 If you have installed from source, you can simply fetch the remote Vinegar repository from inside the existing source directory using the commands:
+
 ```
 cd /path/to/vinegar/src
 make clean
 git pull
 make PREFIX=/usr install
 ```
-As for the flatpak, you can update through your distribution's GUI 'Store' app or from the command line using `flatpak update`.
+
+As for the Flatpak, you can update through your distribution's GUI 'Store' app or from the command line using `flatpak update`.
