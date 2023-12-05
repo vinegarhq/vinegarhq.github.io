@@ -33,7 +33,7 @@ After downloading and extracting the archive, configure the Wineroot in the Vine
 
 `Wineroot = "Path/to/Wine-GE"`
 
-You may need to delete the Wine prefix folder after specifing the Wineroot, The folder is located in `~/.local/share/vinegar/`
+You may need to delete the Wine prefix folder after specifing the Wineroot, the command to do that is `vinegar delete`
 
 ----
 
