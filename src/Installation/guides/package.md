@@ -24,7 +24,7 @@ Alternatively install `vinegar` with an AUR helper.
 
 ### Gentoo
 
-[![Gentoo Package](https://img.shields.io/badge/Gentoo-ebuild-6e56af&style=flat-square)](https://github.com/vinegarhq/ebuild)
+[![Gentoo Package](https://img.shields.io/badge/Gentoo-ebuild-6e56af?style=flat-square)](https://github.com/vinegarhq/ebuild)
 
 Firstly, make sure the repository module for eselect is installed:
 ```console
@@ -58,7 +58,7 @@ Vinegar's Alpine package resides within the [Edge testing repository](https://wi
 
 ### Source Mage
 
-[![Source Mage Package](https://img.shields.io/badge/Source%20Mage-spell-fe0000&style=flat-square)](https://github.com/sourcemage/grimoire-z-rejected/tree/master/z-games/vinegar)
+[![Source Mage Package](https://img.shields.io/badge/Source%20Mage-spell-fe0000?style=flat-square)](https://github.com/sourcemage/grimoire-z-rejected/tree/master/z-games/vinegar)
 
 First, make sure the games grimoire is added:
 ```console
