@@ -1,13 +1,9 @@
 # Installation from your package manager
 
-### Alpine linux
+The Vinegar community hosts a couple distribution-specific packages to make native installation easier.
 
-If you are using Alpine Linux Edge with the testing repo enabled (more info [here](https://wiki.alpinelinux.org/wiki/Repositories#Edge) you can install the package by simply running the following with root privileges:
-```sh
-apk add vinegar
-```
-
-### Arch Linux or derivatives (AUR)
+### Arch Linux and derivatives (AUR)
+[![AUR Package](https://img.shields.io/aur/version/vinegar?label=AUR)](https://aur.archlinux.org/packages/vinegar)
 
 To install Vinegar, run the following commands:
 
@@ -16,9 +12,19 @@ git clone https://aur.archlinux.org/vinegar.git
 cd vinegar
 makepkg -si
 ```
-Alternatively install `vinegar` with a aur helper
+Alternatively install `vinegar` with an AUR helper.
+
+### Fedora (COPR)
+[![COPR Package](https://img.shields.io/badge/dynamic/json?color=50a4db&label=Fedora%20COPR&query=builds.latest.source_package.version&url=https%3A%2F%2Fcopr.fedorainfracloud.org%2Fapi_3%2Fpackage%3Fownername%3Dthegu5%26projectname%3Dvinegar%26packagename%3Dvinegar%26with_latest_build%3DTrue)](https://copr.fedorainfracloud.org/coprs/thegu5/vinegar/)
+
+```sh
+# dnf copr enable thegu5/vinegar
+# dnf install vinegar
+```
 
 ### Gentoo
+
+[![Gentoo Package](https://img.shields.io/badge/Gentoo-ebuild-6e56af)](https://github.com/vinegarhq/ebuild)
 
 Firstly, make sure the repository module for eselect is installed:
 ```sh
@@ -41,7 +47,19 @@ Alternatively, you can use the live ebuild by creating a `/etc/portage/package.a
 games-util/vinegar **
 ```
 
+### Alpine Linux
+
+[![Alpine Linux Edge](https://repology.org/badge/version-for-repo/alpine_edge/vinegar.svg?header=Alpine%20Linux%20Edge)](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/vinegar)
+
+Vinegar's Alpine package resides within the [Edge testing repository](https://wiki.alpinelinux.org/wiki/Repositories#Edge), see more on how to set it up [here](https://wiki.alpinelinux.org/wiki/Repositories#Managing_repositories)
+```sh
+# apk add vinegar
+```
+
 ### Source Mage
+
+[![Source Mage Package](https://img.shields.io/badge/Source%20Mage-spell-fe0000)](https://github.com/sourcemage/grimoire-z-rejected/tree/master/z-games/vinegar)
+
 First, make sure the games grimoire is added:
 ```sh
 scribe add games
