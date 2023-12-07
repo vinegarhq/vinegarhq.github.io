@@ -26,16 +26,6 @@ $ flatpak uninstall --delete-data org.vinegarhq.Vinegar
 
 ## Using other methods
 
-<div class="warning">
-
-**Unless you have a very good reason not to, you should install Vinegar using Flatpak.**
-
-Most issues related to running Roblox stem from not having a proper Wine build, missing libraries, or improper configuration/installation, which, most of the time, will be the case in all alternative installation methods.
-
-Configuring things properly is possible, but involves a lot of effort and debugging if Roblox doesn't work out of the box.
-
-</div>
-
 Alternative installation methods are:
 
 -   [Installing from package](guides/package.md)
