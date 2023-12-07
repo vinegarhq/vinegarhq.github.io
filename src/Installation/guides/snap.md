@@ -2,7 +2,7 @@
 
 <div class="warning">
 
-**Unless you have a good reason not to use it, it is strongly recommended to install Vinegar using Flatpak.**
+**Unless you have a good reason not to use it, it is strongly recommended to [install Vinegar using Flatpak](../index.md).**
 
 Running Vinegar and Roblox without Flatpak is prone to issues such as an incorrect Wine build, missing libraries, or improper configuration/installation.
 
