@@ -28,6 +28,6 @@ $ flatpak uninstall --delete-data org.vinegarhq.Vinegar
 
 Alternative installation methods are:
 
--   [Installing from package](guides/package.md)
--   [Installing from source](guides/source.md)
--   [Installing from Snap](guides/snap.md)
+- [Installing from package](guides/package.md)
+- [Installing from source](guides/source.md)
+- [Installing from Snap](guides/snap.md)

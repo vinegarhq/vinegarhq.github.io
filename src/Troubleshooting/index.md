@@ -2,7 +2,7 @@
 
 If there are any issues here that are undocumented, feel free to [create an issue!](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose)
 
-----
+---
 
 ## Checking AVX Compatibility
 
@@ -23,7 +23,7 @@ Fortunately, you can disable the throttling by setting the [`split_lock_detect`]
 
 If you're unsure on how to do this, please ask in your distro's support channels.
 
-----
+---
 
 ## General Issues
 
@@ -44,7 +44,7 @@ Usually, this is a sign of missing graphics libraries which Wine depends on to w
 This may also indicate that your GPU doesn't meet the minimum Vulkan requirements; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan supported by your GPU.
 
 ### Stale wineserver
-  
+
 Although this normally doesn't happen, the wineserver might continue running in certain cases. Using the `vinegar kill` command should stop it.
 
 ### No Roblox desktop entries/shortcuts
@@ -68,7 +68,7 @@ There's no known fix (as of October 14th, 2023), but the following workarounds m
   If none of the workarounds above work or apply, consider using Roblox windowed instead of fullscreen.
   This may also be your GPU not supporting Vulkan or not supporting modern Vulkan; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan that your GPU supports.
 
-----
+---
 
 ## Player Issues
 
@@ -91,7 +91,7 @@ Some users have reported that creating a [v4l2 loopback](https://github.com/umla
 
 This issue should be eventually fixed once Wine has a native pipewire driver, but there's currently no predicted ETA or schedule for that. Until then, **webcam support is out of Vinegar's scope**, as we have no feasible way of fixing the underlying problems.
 
-----
+---
 
 ## Studio Issues
 
