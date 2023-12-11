@@ -69,7 +69,7 @@ This section are the available options for the global, Studio or Player configur
 | `"prime-discrete"` | Runs Roblox with your discrete gpu.*                                                                                                                      |
 | `"integrated"`     | Runs Roblox with your integrated graphics.*                                                                                                               |
 | `""`               | Skip logic; leave gpu choice up to your Vulkan/OpenGL drivers. Vulkan typically chooses the fastest gpu in your system, while OpenGL chooses the default. |
-| `"[int]"`          | Runs Roblox with the gpu corresponding to the given index.<br/>Use the `sysinfo` command to show a list of gpus in your system and their indexes.         |
+| `"<int>"`          | Runs Roblox with the gpu corresponding to the given index.<br/>Use the `sysinfo` command to show a list of gpus in your system and their indexes.         |
 
 <p><sub>*On non-PRIME systems, this value has the same effect as `""`.</sub></p>
 
