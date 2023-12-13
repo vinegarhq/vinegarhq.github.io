@@ -33,6 +33,45 @@ If you're using the Flatpak, ensure that the path of the `wineroot` configuratio
 | `[env]`    | Global environment, this is similar to `[global.env]`.                                                                    |
 | `[splash]` | Configuraton for the loading screen of Vinegar                                                                            |
 
+### Binary Configuration
+
+This section are the available options for the global, Studio or Player configurations, they are specified under their sections as listed above.
+
+| Option             | Description                                                                                      | Default            |
+| ------------------ | ------------------------------------------------------------------------------------------------ | ------------------ |
+| `channel`          | the Roblox release channel                                                                       | `"live"`           |
+| `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none               |
+| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`          |
+| `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true`     |
+| `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none               |
+| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`             |
+| `gpu`              | the GPU which Vinegar should use for running Roblox, see below table for valid values.           | `"prime-discrete"` |
+| `gamemode`         | automatically enable gamemode via D-Bus desktop portals.                                         | `true`             |
+
+
+The renderer must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`;
+when using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
+
+Rich presence for Studio may not function correctly, as the BloxstrapRPC protocol had only been implemented for Player; keep in mind that Discord RPC includes telemetry by default.
+
+Sub-sections for FFlags and environment variables are specified with the section (eg. `[player.env]`)
+
+| Sub-section | Default                                     |
+| ----------- | ------------------------------------------- |
+| `[fflags]`  | Player: `DFIntTaskSchedulerTargetFps = 640` |
+| `[env]`     | none                                        |
+
+Refer to the following table for valid `gpu` values:
+
+| Value              | Effect                                                                                                                                                    |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `"prime-discrete"` | Runs Roblox with your discrete gpu.*                                                                                                                      |
+| `"integrated"`     | Runs Roblox with your integrated graphics.*                                                                                                               |
+| `""`               | Skip logic; leave gpu choice up to your Vulkan/OpenGL drivers. Vulkan typically chooses the fastest gpu in your system, while OpenGL chooses the default. |
+| `"<int>"`          | Runs Roblox with the gpu corresponding to the given index.<br/>Use the `sysinfo` command to show a list of gpus in your system and their indexes.         |
+
+<p><sub>*On non-PRIME systems, this value has the same effect as `""`.</sub></p>
+
 ### Splash Configuration
 
 | Option       | Description                                   | Default    |
@@ -46,44 +85,6 @@ If you're using the Flatpak, ensure that the path of the `wineroot` configuratio
 | `Accent`     | color of the 'Show Log' and progress bar      | `0x8fbc5e` |
 
 The colors are in hexadecimal format, stored as numbers internally such as `0xff00ff`.
-
-### Binary Configuration
-
-This section are the available options for the global, Studio or Player configurations, they are specified under their sections as listed above.
-
-| Option             | Description                                                                                      | Default            |
-| ------------------ | ------------------------------------------------------------------------------------------------ | ------------------ |
-| `channel`          | the Roblox release channel                                                                       | `"live"`           |
-| `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none               |
-| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`          |
-| `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true`     |
-| `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none               |
-| `auto_kill_prefix` | automatically kill the wineprefix after the process exits                      .                 | `true`             |
-| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`             |
-| `gpu`              | the gpu which Vinegar should use for running Roblox.                                             | `"prime-discrete"` |
-
-<br/>Refer to the following table for valid `gpu` values:
-
-| Value              | Effect                                                                                                                                                    |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `"prime-discrete"` | Runs Roblox with your discrete gpu.*                                                                                                                      |
-| `"integrated"`     | Runs Roblox with your integrated graphics.*                                                                                                               |
-| `""`               | Skip logic; leave gpu choice up to your Vulkan/OpenGL drivers. Vulkan typically chooses the fastest gpu in your system, while OpenGL chooses the default. |
-| `"<int>"`          | Runs Roblox with the gpu corresponding to the given index.<br/>Use the `sysinfo` command to show a list of gpus in your system and their indexes.         |
-
-<p><sub>*On non-PRIME systems, this value has the same effect as `""`.</sub></p>
-
-<br/>Rich presence for Studio may not function correctly, as the BloxstrapRPC protocol had only been implemented for Player; keep in mind that Discord RPC includes telemetry by default.
-
-The renderer must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`;
-when using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
-
-Sub-sections for FFlags and environment variables are specified with the section (eg. `[player.env]`)
-
-| Sub-section | Default                                     |
-| ----------- | ------------------------------------------- |
-| `[fflags]`  | Player: `DFIntTaskSchedulerTargetFps = 640` |
-| `[env]`     | none                                        |
 
 ### Example configuration
 
@@ -101,9 +102,6 @@ WINEFSYNC = "1"
 launcher = "gamemoderun"
 dxvk = false
 renderer = "Vulkan"
-
-[player]
-channel = "zcanary"
 
 [player.env]
 DXVK_HUD = "0"
