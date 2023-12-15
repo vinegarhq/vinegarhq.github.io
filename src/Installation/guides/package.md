@@ -90,4 +90,4 @@ Then, cast the spell:
 # cast vinegar
 ```
 
-(Do note that on 64-bit systems, 32-bit wine and gnutls will have to be sourced elsewhere as there is no multilib support)
+(Do note that on 64-bit systems, 32-bit Wine will have to be sourced elsewhere as there is no multilib support)
