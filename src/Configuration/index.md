@@ -58,7 +58,7 @@ This section are the available options for the global, Studio or Player configur
 | `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`          |
 | `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true`     |
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none               |
-| `auto_kill_prefix` | automatically kill the wineprefix after the process exits .                                      | `true`             |
+| `auto_kill_prefix` | automatically kill the wineprefix after the process exits.                                       | `true`             |
 | `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`             |
 | `gpu`              | the gpu which Vinegar should use for running Roblox.                                             | `"prime-discrete"` |
 
