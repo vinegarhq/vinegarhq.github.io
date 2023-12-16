@@ -44,6 +44,7 @@ This section are the available options for the global, Studio or Player configur
 | `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`          |
 | `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true`     |
 | `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none               |
+| `auto_kill_prefix` | automatically kill the wineprefix after the process exits.                                       | `true`             |
 | `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`             |
 | `gpu`              | the GPU which Vinegar should use for running Roblox, see below table for valid values.           | `"prime-discrete"` |
 | `gamemode`         | automatically enable gamemode via D-Bus desktop portals.                                         | `true`             |
@@ -65,12 +66,12 @@ Refer to the following table for valid `gpu` values:
 
 | Value              | Effect                                                                                                                                                    |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `"prime-discrete"` | Runs Roblox with your discrete gpu.*                                                                                                                      |
-| `"integrated"`     | Runs Roblox with your integrated graphics.*                                                                                                               |
+| `"prime-discrete"` | Runs Roblox with your discrete gpu.                                                                                                                       |
+| `"integrated"`     | Runs Roblox with your integrated graphics.                                                                                                                |
 | `""`               | Skip logic; leave gpu choice up to your Vulkan/OpenGL drivers. Vulkan typically chooses the fastest gpu in your system, while OpenGL chooses the default. |
 | `"<int>"`          | Runs Roblox with the gpu corresponding to the given index.<br/>Use the `sysinfo` command to show a list of gpus in your system and their indexes.         |
 
-<p><sub>*On non-PRIME systems, this value has the same effect as `""`.</sub></p>
+On non-PRIME systems, `"prime-discrete"` and `"integrated"` have the same effect as `""`.
 
 ### Splash Configuration
 

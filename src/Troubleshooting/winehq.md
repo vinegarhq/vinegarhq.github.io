@@ -5,16 +5,17 @@
 Vinegar can be configured to help you determine whether a bug/issue is caused by Wine, so you can submit a report to WineHQ without violating their guidelines.
 
 To begin, create a new toml configuration file in an appropriate location, with the following content:
+
 ```toml
 # Written for Vinegar v1.5.8.
 
 # WARNING: This should be left empty if your system has WineHQ packages installed (https://wiki.winehq.org/Download).
 # Otherwise, either install WineHQ packages or set wineroot to a staging/development wine's path.
 # TL;DR: Ensure Vinegar uses a staging/development wine, otherwise your report is INVALID.
-wineroot = "" 
+wineroot = ""
 
 # Symbols definition:
-# (X)   = DO NOT EDIT: This option should never be changed. (will invalidate all reports) 
+# (X)   = DO NOT EDIT: This option should never be changed. (will invalidate all reports)
 # (?)   = This option may be edited. In case of doubt, do not change.
 # (...) = User defined options can be added here (not recommended, may invalidate your report)
 
@@ -37,8 +38,8 @@ WINEFSYNC = ""                   # (X)
 WINEDLLOVERRIDES = ""            # (X)
 
 [player]
-channel = ""                  # (?): Use this to debug a specific Roblox version.           
-forced_version = ""           # (?): Use this to debug a specific Roblox version.       
+channel = ""                  # (?): Use this to debug a specific Roblox version.
+forced_version = ""           # (?): Use this to debug a specific Roblox version.
 renderer = "D3D11"            # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
 dxvk = false                  # (X)
 auto_kill_prefix = false      # (X)
@@ -47,8 +48,8 @@ gpu = ""                      # (X)
 discord_rpc = false           # (X)
 
 [studio]
-channel = ""                  # (?): Use this to debug a specific Roblox version.           
-forced_version = ""           # (?): Use this to debug a specific Roblox version.       
+channel = ""                  # (?): Use this to debug a specific Roblox version.
+forced_version = ""           # (?): Use this to debug a specific Roblox version.
 renderer = "D3D11"            # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
 dxvk = false                  # (X)
 auto_kill_prefix = false      # (X)
@@ -59,11 +60,12 @@ discord_rpc = false           # (X)
 [player.fflags]
 DFIntTaskSchedulerTargetFps = 60 # (X)
 ```
+
 Read over every option carefully and follow the instructions in the comments.
 
 **Critical**: This configuration file depends heavily on your Vinegar version! <u>Do **NOT** reuse it</u>, especially after updating Vinegar. Recheck this guide to ensure you have the latest version of the configuration.
 
-Once the file is ready, set the `WINEPREFIX` env var to a temporary location, then run Vinegar with the `-config (filepath)` flag to use the cfg you just created. 
+Once the file is ready, set the `WINEPREFIX` env var to a temporary location, then run Vinegar with the `-config (filepath)` flag to use the cfg you just created.
 
 The command should be similar to this if all steps were followed correctly: `WINEPREFIX=/tmp/report vinegar -config /home/jrelvas/Documents/winehq-report.toml player`.
 

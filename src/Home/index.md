@@ -11,6 +11,6 @@
 
 The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2).
 
-----
+---
 
 _Roblox® is a registered Roblox Corporation trademark. VinegarHQ is not affiliated with Roblox Corporation._
