@@ -1,7 +1,6 @@
 # Summary
 
 - [Home](./Home/index.md)
-- [Requirements](./Requirements/index.md)
 - [Installation](./Installation/index.md)
   - [Installing from package](./Installation/guides/package.md)
   - [Installing from source](./Installation/guides/source.md)
