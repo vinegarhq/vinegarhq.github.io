@@ -1,5 +1,7 @@
 # Installation from Snap
 
+<div class="warning">
+
 Vinegar Snap is currently unmaintained.
 
 </div>
