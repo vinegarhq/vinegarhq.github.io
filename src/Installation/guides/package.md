@@ -78,7 +78,7 @@ Vinegar's Alpine package resides within the [Edge testing repository](https://wi
 
 ### NixOS
 
-[![Nixpkgs Unstable Package](https://repology.org/badge/version-for-repo/nix_unstable/vinegar.svg?header=Nixpkgs%20Unstable%20Package&style=flat-square)](https://search.nixos.org/packages?channel=unstable&show=vinegar&from=0&size=50&sort=relevance&type=packages&query=vinegar)
+[![Nixpkgs Unstable Package](https://repology.org/badge/version-for-repo/nix_unstable/vinegar.svg?header=Nixpkgs%20Unstable%20Package&style=flat-square)](https://search.nixos.org/packages?channel=unstable&show=vinegar)
 
 Vinegar's Nix package resides in the [Unstable repository](https://nixos.wiki/wiki/Nix_channels). It can be installed system-wide with [`environment.systemPackages`](https://search.nixos.org/options?show=environment.systemPackages):
 
