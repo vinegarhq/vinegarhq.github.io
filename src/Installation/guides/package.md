@@ -88,10 +88,10 @@ environment.systemPackages = [
 ];
 ```
 
-Or just for your user using [`home.programs`](https://search.nixos.org/options?show=home.programs):
+Or just for your user using [`home.packages`](https://nix-community.github.io/home-manager/options.xhtml#opt-home.packages) via [Home Manager](https://nixos.wiki/wiki/Home_Manager):
 
 ```nix
-home.programs = [
+home.packages = [
   pkgs.vinegar
 ];
 ```
