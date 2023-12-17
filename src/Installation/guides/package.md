@@ -88,7 +88,7 @@ environment.systemPackages = [
 ];
 ```
 
-Or just for your user using [`home.programs`](https://search.nixos.org/options?show=home.programs) via [home-manager](https://nixos.wiki/wiki/Home_Manager):
+Or just for your user using [`home.programs`](https://search.nixos.org/options?show=home.programs) via [Home Manager](https://nixos.wiki/wiki/Home_Manager):
 
 ```nix
 home.programs = [
