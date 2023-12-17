@@ -76,6 +76,28 @@ Vinegar's Alpine package resides within the [Edge testing repository](https://wi
 # apk add vinegar
 ```
 
+### NixOS
+
+[![Nixpkgs Unstable Package](https://repology.org/badge/version-for-repo/nix_unstable/vinegar.svg?header=Nixpkgs%20Unstable%20Package&style=flat-square)](https://search.nixos.org/packages?channel=unstable&show=vinegar&from=0&size=50&sort=relevance&type=packages&query=vinegar)
+
+Vinegar's Nix package resides in the [Unstable repository](https://nixos.wiki/wiki/Nix_channels). It can be installed system-wide with [`environment.systemPackages`](https://search.nixos.org/options?show=environment.systemPackages):
+
+```nix
+environment.systemPackages = [
+  pkgs.vinegar
+];
+```
+
+Or just for your user using [`home.programs`](https://search.nixos.org/options?show=home.programs):
+
+```nix
+home.programs = [
+  pkgs.vinegar
+];
+```
+
+Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`
+
 ### Source Mage
 
 [![Source Mage Package](https://img.shields.io/badge/Source%20Mage-spell-fe0000?style=flat-square)](https://github.com/sourcemage/grimoire-z-rejected/tree/master/z-games/vinegar)
