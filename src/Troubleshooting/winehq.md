@@ -19,12 +19,12 @@ wineroot = ""
 # (?)   = This option may be edited. In case of doubt, do not change.
 # (...) = User defined options can be added here (not recommended, may invalidate your report)
 
-dxvk_version = ""             # (X)
-multiple_instances = false    # (X)
-sanitize_env = false          # (X)
+dxvk_version = ""                # (X)
+multiple_instances = false       # (X)
+sanitize_env = false             # (X)
 
 [splash]
-enabled = false               # (X)
+enabled = false                  # (X)
 
 [global.env]
 WINEDEBUG = ""                   # (?): Use this to increase Wine log verbosity.
@@ -38,33 +38,32 @@ WINEFSYNC = ""                   # (X)
 WINEDLLOVERRIDES = ""            # (X)
 
 [player]
-channel = ""                  # (?): Use this to debug a specific Roblox version.
-forced_version = ""           # (?): Use this to debug a specific Roblox version.
-renderer = "D3D11"            # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
-dxvk = false                  # (X)
-auto_kill_prefix = false      # (X)
-launcher = ""                 # (X)
-gpu = ""                      # (X)
-discord_rpc = false           # (X)
-gamemode = false              # (X)
+channel = ""                     # (?): Use this to debug a specific Roblox version.
+forced_version = ""              # (?): Use this to debug a specific Roblox version.
+renderer = "D3D11"               # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
+dxvk = false                     # (X)
+auto_kill_prefix = false         # (X)
+launcher = ""                    # (X)
+gpu = ""                         # (X)
+discord_rpc = false              # (X)
+gamemode = false                 # (X)
 
 [player.env]
-OBS_VKCAPTURE = ""            # (X)
+OBS_VKCAPTURE = ""               # (X)
 
 [player.fflags]
 DFIntTaskSchedulerTargetFps = 60 # (X)
 
 [studio]
-channel = ""                  # (?): Use this to debug a specific Roblox version.
-forced_version = ""           # (?): Use this to debug a specific Roblox version.
-renderer = "D3D11"            # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
-dxvk = false                  # (X)
-auto_kill_prefix = false      # (X)
-launcher = ""                 # (X)
-gpu = ""                      # (X)
-discord_rpc = false           # (X)
-gamemode = false              # (X)
-
+channel = ""                     # (?): Use this to debug a specific Roblox version.
+forced_version = ""              # (?): Use this to debug a specific Roblox version.
+renderer = "D3D11"               # (?): Use this to debug a specific renderer. (D3D11 will use Wine's built-in D3D opengl conversion.)
+dxvk = false                     # (X)
+auto_kill_prefix = false         # (X)
+launcher = ""                    # (X)
+gpu = ""                         # (X)
+discord_rpc = false              # (X)
+gamemode = false                 # (X)
 ```
 
 Read over every option carefully and follow the instructions in the comments.
