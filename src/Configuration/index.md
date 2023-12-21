@@ -27,15 +27,14 @@ If you're using the Flatpak, ensure that the path of the `wineroot` configuratio
 
 | Section    | Description                                                                                                               |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `[global]` | The global binary configuration for both Player and Studio, either can override, but FFlags and Environment are appended. |
 | `[player]` | Binary configuration for Player                                                                                           |
 | `[studio]` | Binary configuration for Studio                                                                                           |
-| `[env]`    | Global environment, this is similar to `[global.env]`.                                                                    |
+| `[env]`    | Global environment                                                                                                        |
 | `[splash]` | Configuraton for the loading screen of Vinegar                                                                            |
 
 ### Binary Configuration
 
-This section are the available options for the global, Studio or Player configurations, they are specified under their sections as listed above.
+This section are the available options for the Studio and Player configurations, they are specified under their sections as listed above.
 
 | Option             | Description                                                                                      | Default            |
 | ------------------ | ------------------------------------------------------------------------------------------------ | ------------------ |
@@ -99,7 +98,7 @@ wineroot = "/home/meow/wine-ge"
 [env]
 WINEFSYNC = "1"
 
-[global]
+[player]
 launcher = "gamemoderun"
 dxvk = false
 renderer = "Vulkan"

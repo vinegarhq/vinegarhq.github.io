@@ -7,7 +7,7 @@ Vinegar can be configured to help you determine whether a bug/issue is caused by
 To begin, create a new toml configuration file in an appropriate location, with the following content:
 
 ```toml
-# Written for Vinegar v1.5.9.
+# Written for Vinegar v1.6.0.
 
 # WARNING: This should be left empty if your system has WineHQ packages installed (https://wiki.winehq.org/Download).
 # Otherwise, either install WineHQ packages or set wineroot to a staging/development wine's path.
@@ -26,7 +26,7 @@ sanitize_env = false             # (X)
 [splash]
 enabled = false                  # (X)
 
-[global.env]
+[env]
 WINEDEBUG = ""                   # (?): Use this to increase Wine log verbosity.
 MESA_GL_VERSION_OVERRIDE = ""    # (?): OpenGL debugging
 __GL_THREADED_OPTIMIZATIONS = "" # (?): OpenGL debugging
