@@ -25,12 +25,12 @@ If getting an error about an `EDITOR` variable, this can be temporarily fixed by
 
 If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/org.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 
-| Section    | Description                                                                                                               |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `[player]` | Binary configuration for Player                                                                                           |
-| `[studio]` | Binary configuration for Studio                                                                                           |
-| `[env]`    | Global environment                                                                                                        |
-| `[splash]` | Configuraton for the loading screen of Vinegar                                                                            |
+| Section    | Description                                    |
+| ---------- | ---------------------------------------------- |
+| `[player]` | Binary configuration for Player                |
+| `[studio]` | Binary configuration for Studio                |
+| `[env]`    | Global environment                             |
+| `[splash]` | Configuraton for the loading screen of Vinegar |
 
 ### Binary Configuration
 
@@ -47,7 +47,6 @@ This section are the available options for the Studio and Player configurations,
 | `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`             |
 | `gpu`              | the GPU which Vinegar should use for running Roblox, see below table for valid values.           | `"prime-discrete"` |
 | `gamemode`         | automatically enable gamemode via D-Bus desktop portals.                                         | `true`             |
-
 
 The renderer must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`;
 when using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
@@ -74,15 +73,24 @@ On non-PRIME systems, `"prime-discrete"` and `"integrated"` have the same effect
 
 ### Splash Configuration
 
-| Option       | Description                                   | Default    |
-| ------------ | --------------------------------------------- | ---------- |
-| `enabled`    | Deterimes if the splash window appears or not | `true`     |
-| `background` | background of the splash window               | `0x242424` |
-| `foreground` | foreground of the text in the splash          | `0xfafafa` |
-| `Red`        | background color of the 'Cancel' button       | `0xcc241d` |
-| `Gray1`      | background color of the progress bar          | `0x303030` |
-| `Gray2`      | foreground color of the description           | `0x777777` |
-| `Accent`     | color of the 'Show Log' and progress bar      | `0x8fbc5e` |
+| Option       | Description                                                     | Default     |
+| ------------ | --------------------------------------------------------------- | ----------- |
+| `enabled`    | show the splash window when opening Roblox.                     | `true`      |
+| `logo_path`  | logo file path used to load and render the logo.                | N/A         |
+| `style`      | style for the splash window's layout.                           | `"compact"` |
+| `background` | background color for the splash window.                         | `0x242424`  |
+| `foreground` | font color for text on the splash window.                       | `0xfafafa`  |
+| `cancel`     | accent color for 'Cancel' buttons.                              | `0xbc3c3c`  |
+| `accent`     | accent color for progress bars and action/confirmation buttons. | `0x8fbc5e`  |
+| `track`      | background color for progress bars.                             | `0x303030`  |
+| `info`       | background color for text containing binary information.        | `0x777777`  |
+
+The  following styles are available:
+
+| Style        | Look                       |
+| ------------ | -------------------------- |
+| `"compact"`  | ![](./splash-compact.png)  |
+| `"familiar"` | ![](./splash-familiar.png) |
 
 The colors are in hexadecimal format, stored as numbers internally such as `0xff00ff`.
 
