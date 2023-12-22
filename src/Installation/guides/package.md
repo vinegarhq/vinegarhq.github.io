@@ -41,10 +41,10 @@ Alternatively install `vinegar` with an AUR helper.
 
 [![Gentoo Package](https://img.shields.io/badge/Gentoo-ebuild-6e56af?style=flat-square)](https://github.com/vinegarhq/ebuild)
 
-Firstly, make sure the repository module for eselect is installed:
+Firstly, make sure the repository module for eselect and git are both installed:
 
 ```console
-# emerge app-eselect/eselect-repository
+# emerge app-eselect/eselect-repository dev-vcs/git
 ```
 
 Then you will need to add the Vinegar overlay:
