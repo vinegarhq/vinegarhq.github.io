@@ -111,6 +111,8 @@ Follow the on-screen prompt and click "Log in via browser". This will open an au
 
 If all steps were followed correctly, studio should automatically log into your account.
 
+If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`. Studio authentication is known to be broken with certain DNS providers. 
+
 ### "Your GPU is incompatible" error
 
 This issue is most commonly caused by the Wine build not having the Vulkan ChildWindow patch applied. There are a couple solutions:
