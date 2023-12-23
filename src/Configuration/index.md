@@ -16,12 +16,12 @@ If getting an error about an `EDITOR` variable, this can be temporarily fixed by
 
 ## Configuration Values
 
-| Name                 | Description                                                                                                | Default |
-| -------------------- | ---------------------------------------------------------------------------------------------------------- | ------- |
-| `wineroot`           | the path to a valid Wine 'root' installation directory.                                                    | none    |
-| `dxvk_version`       | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan. | `"2.3"` |
-| `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously; see notes about ESYNC                 | `false` |
-| `sanitize_env`       | sanitize the global environment, hand-picked variables are allowed through.                                | `false` |
+| Name                 | Description                                                                                                 | Default |
+| -------------------- | ----------------------------------------------------------------------------------------------------------- | ------- |
+| `wineroot`           | the path to a valid Wine 'root' installation directory.                                                     | none    |
+| `dxvk_version`       | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan.  | `"2.3"` |
+| `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously; requires setting `WINEESYNC` to `"0"`. | `false` |
+| `sanitize_env`       | sanitize the global environment, hand-picked variables are allowed through.                                 | `false` |
 
 If you're using the Flatpak, ensure that the path of the `wineroot` configuration option is allowed access from the Flatpak, as if it is a path outside of `~/.var/app/org.vinegarhq.Vinegar` Vinegar won't be able to access the directory: `flatpak override --user --filesystem=/path/to/wineroot`
 
@@ -38,7 +38,7 @@ This section are the available options for the Studio and Player configurations,
 
 | Option             | Description                                                                                      | Default            |
 | ------------------ | ------------------------------------------------------------------------------------------------ | ------------------ |
-| `channel`          | the deployment channel to be used; **DO NOT CHANGE, ONLY KEPT FOR DEVELOPERS**                   | `"live"`           |
+| `channel`          | the deployment channel to be used; **DO NOT CHANGE, ONLY KEPT FOR DEVELOPERS**                   | `"LIVE"`           |
 | `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none               |
 | `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`          |
 | `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true`     |
