@@ -111,7 +111,7 @@ Follow the on-screen prompt and click "Log in via browser". This will open an au
 
 If all steps were followed correctly, studio should automatically log into your account.
 
-In the case that you are still unable to log in, a possible fix is to change your DNS to a viable alternative such as 1.1.1.1 or 8.8.8.8
+If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`. Studio authentication is known to be broken with certain DNS providers. 
 
 ### "Your GPU is incompatible" error
 
