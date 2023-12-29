@@ -2,7 +2,12 @@
 title: "Vinegar Merlin Hardware Survey Report (Dec 2023)"
 author: "lunarlattice"
 date: "`r Sys.Date()`"
-output: html_document
+output: 
+  html_document:
+    theme: united
+    toc: yes
+    toc_float:
+      collapsed: true
 ---
 
 ```{r include=FALSE}
@@ -52,8 +57,6 @@ Our GPU data collection only includes driver name, but will be improved in a fut
 
 ## Results
 
-### Raw Data
-
 The results of the survey can be retrieved at <https://merlin.vinegarhq.org>
 
 ```{r}
@@ -63,7 +66,7 @@ head(merlin)
 
 There are `r nrow(merlin)` submissions at the time of writing.
 
-#### Processor Model Statistics
+### Processor Model Statistics
 
 ```{r echo=FALSE}
 merlin %>%
@@ -77,15 +80,15 @@ cpu_stats$cpu_prop_as_perc = (cpu_stats$cpu_prop * 100)
 kable(cpu_stats)
 ```
 
-Steam Decks are the largest group in the processor sample population, making up nearly `r (sum(grepl('AMD Custom APU 0405', merlin$cpu)) / nrow(merlin)) * 100`% of submissions.
+Steam Decks are the largest group in the processor sample population, making up `r (sum(grepl('AMD Custom APU 0405|AMD Custom APU 0932', merlin$cpu)) / nrow(merlin)) * 100`% of submissions.
 
 Considering the great number Steam Deck of users, Roblox may benefit from tapping into providing the userbase with a native binary. Additionally, Roblox's concerns over compatbility would be minimal on Steam Deck, as users not only have identical hardware, but are also only able to use Flatpak, ensuring a stable software platform.
 
-#### Processor Age Statistics
+### Processor Age Statistics
 
-#### AVX Support
+### AVX Support
 
-#### GPU Statistics
+### GPU Statistics
 
 ```{r echo=FALSE}
 merlin %>%
@@ -106,4 +109,8 @@ Additionally, `r (sum(grepl("nouveau", merlin$gpu)) / nrow(merlin)) * 100`% of u
 
 The sizeable usage of irregular or poorly-performing drivers could explain performance issues affecting our userbase.
 
-#### Flatpak Usage
+### Flatpak Usage
+
+With `r (sum(as.logical(merlin$flatpak)) / nrow(merlin)) * 100`% of users on Flatpak, we are considering dropping support (but not discontinuing) for non-Flatpak installations. Non-Flatpak installations have been difficult to troubleshoot due to the irregularities between systems' Wine installations.
+
+Additionally, the large percentage of individuals successfully on Flatpak may indicate its viability as a platform for official Roblox support.
