@@ -66,7 +66,7 @@ Our GPU data collection only includes driver name, but will be improved in a fut
 The results of the survey can be retrieved at <https://merlin.vinegarhq.org>
 
 ```{r}
-merlin <- read.csv("https://merlin.vinegarhq.org/")
+merlin <- read.csv("./merlin.csv")
 head(merlin)
 ```
 
@@ -96,14 +96,35 @@ Considering the great number Steam Deck of users, Roblox may benefit from tappin
 
 ### Processor Age Statistics
 
-```{r include=FALSE}
-amd_age_lookup <- function(cpuname) {
+```{r eval=FALSE, include=FALSE}
+age_calc <- function(date) {
+
+  date <- as.Date(date, format = "%m/%d/%Y")
+  return(abs(as.numeric(difftime(date, Sys.Date(), unit="weeks")) / 52.25))
+  #return the age of the CPU in years
+}
+```
+
+
+
+```{r cpuscraper}
+# WikiChip scraper
+# WARNING: WikiChip is missing a LOT of data, so prepare to do a lot of manual editing.
+
+cpu_age_lookup_wikichip <- function(cpuname) {
   ua <- user_agent("Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0")
-  cpuname <- str_remove(cpuname, regex("(\\h[0-9A-z]+-Core\\h.*| (with(.*)))"))
-  cpuname_url_sani <- gsub(" ", "+", cpuname)
   
+  # AMD CPU name mangling
+  if (grepl("AMD", cpuname)) {
+    cpuname <- str_remove(cpuname, regex("(\\h[0-9A-z]+-Core\\h.*| (with(.*)))"))
+    cpuname <- gsub(" ", "+", cpuname)
+  } else if (grepl("Intel", cpuname)) {
+    str_remove(cpuname, "CPU") %>% # remove "CPU"
+      str_extract(regex("(\\h[A-z]+\\(.*\\)\\h)(.+?)( CPU @| @| $)"), group = 2) %>%
+        str_remove_all(regex("\\s+")) -> cpuname
+  }
   # Navigate to JSON API page
-  paste0("https://en.wikichip.org/w/api.php?action=opensearch&search=", cpuname_url_sani) %>%
+  paste0("https://en.wikichip.org/w/api.php?action=opensearch&search=", cpuname) %>%
     print() %>% # For debugging purposes...
       session(ua) -> json_page # JSON results page
   
@@ -132,21 +153,69 @@ amd_age_lookup <- function(cpuname) {
   # return the age of the CPU in years
 }
 
+cpu_age_lookup_tpu <- function(cpuname) {
+  ua <- user_agent("Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0")
+  if (grepl("AMD", cpuname)) { # AMD CPU name mangling
+    cpuname <- str_remove(cpuname, regex("(\\h[0-9A-z]+-Core\\h.*| (with(.*)))"))
+    cpuname <- str_remove(cpuname, regex("(?i)(radeon).*"))
+    cpuname <- gsub(" ", "+", cpuname)
+  } else if (grepl("Intel", cpuname)) { # Intel CPU name mangling
+    str_remove(cpuname, "CPU") %>% # remove "CPU"
+      str_extract(regex("(\\h[A-z]+\\(.*\\)\\h)(.+?)( CPU @| @| $)"), group = 2) %>%
+      str_remove_all(regex("\\s+")) -> cpuname
+      cpuname <- gsub(" ", "+", cpuname)
+  }
+  
+  if(is.na(cpuname)) {
+    print("CPU name mangling failed.")
+    return (NA)
+  }
+  
+  # navigate to techpowerup
+  paste0("https://www.techpowerup.com/cpu-specs/?ajaxsrch=", cpuname) %>% print() %>%
+    session(ua) -> results_page
+  
+  if (is.na(html_element(results_page, xpath = "/html/body/table/tr[1]/td[1]/a"))) {
+    print("No results.")
+    return (NA)
+  }
+  
+  session_follow_link(results_page, xpath = "/html/body/table/tr[1]/td[1]/a") %>%
+    html_element(xpath = "/html/body/div[1]/div[3]/div[1]/div[5]/section[2]/table/tr[3]") %>%
+       html_text2() %>%
+         str_remove_all("Release Date:") %>%
+           str_remove_all("\\t") %>%
+             str_replace(regex("[a-z]{2},"), ",") %>%
+               as.Date(format = "%b %d, %Y") -> release_date
+   
+  return(abs(as.numeric(difftime(release_date, Sys.Date(), unit="weeks")) / 52.25))
+  #return the age of the CPU in years
+}
+
 cpu_stats$cpu_age_in_years <- as.numeric(NA)
 
-for (x in 1:length(cpu_stats$cpu)) {
+for (x in 61:length(cpu_stats$cpu)) { # change starting IDX as csv is filled.
   print(paste0(((x / length(cpu_stats$cpu)) * 100),"% completed"))
-  if (grepl("AMD", cpu_stats$cpu[x])) {
-    try(
-      cpu_stats$cpu_age_in_years[x] <- amd_age_lookup(cpu_stats$cpu[x])
+    tryCatch(
+      {
+        cpu_stats$cpu_age_in_years[x] <- cpu_age_lookup_tpu(cpu_stats$cpu[x])
+      },
+      error = function(cond) {
+        cpu_stats$cpu_age_in_years[x] <- NA
+      }
     )
-  }
-  Sys.sleep(1.5)
+    Sys.sleep(1) # only sleep if there was a request made.
 }
 ```
 
-```{r}
-kable(cpu_stats)
+```{r eval=FALSE, include=FALSE}
+read.csv("CPUAgeStats.csv") %>%
+  uncount(n) -> ages_uncounted
+
+ages_uncounted %>%
+    ggplot(aes(cpu_age_in_years)) + 
+      geom_histogram(na.rm = TRUE)
+
 ```
 
 ### AVX Support
@@ -188,4 +257,8 @@ Additionally, the large percentage of individuals successfully on Flatpak may in
 
 ## License
 
-[Vinegar Merlin Hardware Survey Report (Dec 2023)](https://vinegarhq.org/VinegarSystemSurvey.html) © 2024 by [lunarlattice](https://github.com/lunarlettuce) is licensed under [CC BY-SA 4.0 ![](https://chooser-beta.creativecommons.org/img/cc-logo.f0ab4ebe.svg)![](https://chooser-beta.creativecommons.org/img/cc-by.21b728bb.svg)](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+Merlin is licensed under GPL 3.0. See the Merlin GitHub page for more information.
+
+[Vinegar Merlin Hardware Survey Report (Dec 2023)](https://vinegarhq.org/VinegarSystemSurvey.html) © 2024 by [lunarlattice](https://github.com/lunarlettuce) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+
+[Vinegar Merlin Hardware Survey Report (Dec 2023)](https://vinegarhq.org/VinegarSystemSurvey.Rmd) © 2024 by [lunarlattice](https://github.com/lunarlettuce) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1) (Rmd File)
