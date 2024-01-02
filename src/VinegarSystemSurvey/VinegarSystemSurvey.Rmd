@@ -96,7 +96,7 @@ Considering the great number Steam Deck of users, Roblox may benefit from tappin
 
 ### Processor Age Statistics
 
-```{r eval=FALSE, include=FALSE}
+```{r manualdateconverter, eval=FALSE, include=FALSE}
 age_calc <- function(date) {
 
   date <- as.Date(date, format = "%m/%d/%Y")
@@ -107,7 +107,7 @@ age_calc <- function(date) {
 
 
 
-```{r cpuscraper}
+```{r cpuscraper, eval=FALSE, include=FALSE}
 # WikiChip scraper
 # WARNING: WikiChip is missing a LOT of data, so prepare to do a lot of manual editing.
 
@@ -194,7 +194,7 @@ cpu_age_lookup_tpu <- function(cpuname) {
 
 cpu_stats$cpu_age_in_years <- as.numeric(NA)
 
-for (x in 61:length(cpu_stats$cpu)) { # change starting IDX as csv is filled.
+for (x in 183:length(cpu_stats$cpu)) { # change starting IDX as csv is filled.
   print(paste0(((x / length(cpu_stats$cpu)) * 100),"% completed"))
     tryCatch(
       {
@@ -204,17 +204,29 @@ for (x in 61:length(cpu_stats$cpu)) { # change starting IDX as csv is filled.
         cpu_stats$cpu_age_in_years[x] <- NA
       }
     )
-    Sys.sleep(1) # only sleep if there was a request made.
+    Sys.sleep(1) # anti ratelimit
+    if (x %% 10 == 0) {
+      Sys.sleep(60) # longsleep
+    }
 }
 ```
 
 ```{r eval=FALSE, include=FALSE}
-read.csv("CPUAgeStats.csv") %>%
+
+ages <- read.csv("CPUAgeStats.csv")
+ages %>%
   uncount(n) -> ages_uncounted
 
 ages_uncounted %>%
     ggplot(aes(cpu_age_in_years)) + 
       geom_histogram(na.rm = TRUE)
+
+mean(ages_uncounted$cpu_age_in_years, na.rm = TRUE)
+sd(ages_uncounted$cpu_age_in_years, na.rm = TRUE)
+min(ages_uncounted$cpu_age_in_years, na.rm = TRUE)
+ages$cpu[which(ages$cpu_age_in_years == max(ages_uncounted$cpu_age_in_years, na.rm = TRUE))]
+
+max(ages_uncounted$cpu_age_in_years, na.rm = TRUE)
 
 ```
 
