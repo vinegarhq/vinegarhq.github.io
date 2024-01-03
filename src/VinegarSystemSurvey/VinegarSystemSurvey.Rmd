@@ -107,7 +107,7 @@ age_calc <- function(date) {
 
 
 
-```{r cpuscraper, eval=FALSE, include=FALSE}
+```{r cpuscraper}
 # WikiChip scraper
 # WARNING: WikiChip is missing a LOT of data, so prepare to do a lot of manual editing.
 
@@ -194,7 +194,7 @@ cpu_age_lookup_tpu <- function(cpuname) {
 
 cpu_stats$cpu_age_in_years <- as.numeric(NA)
 
-for (x in 183:length(cpu_stats$cpu)) { # change starting IDX as csv is filled.
+for (x in 1:length(cpu_stats$cpu)) { # change starting IDX as csv is filled.
   print(paste0(((x / length(cpu_stats$cpu)) * 100),"% completed"))
     tryCatch(
       {
@@ -204,7 +204,7 @@ for (x in 183:length(cpu_stats$cpu)) { # change starting IDX as csv is filled.
         cpu_stats$cpu_age_in_years[x] <- NA
       }
     )
-    Sys.sleep(1) # anti ratelimit
+    Sys.sleep(10) # anti ratelimit
     if (x %% 10 == 0) {
       Sys.sleep(60) # longsleep
     }
