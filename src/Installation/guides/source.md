@@ -22,7 +22,7 @@ It is recommended to ensure that you have installed Wine 8.3 or above on your sy
 
 To build Vinegar from source, you will need to install Go; it can be found packaged as `golang` or `go` on some Linux distributions.
 
-Aditionally will need to install the dependencies needed by Gio. The documentation can be found [here](https://gioui.org/doc/install/linux), However you are able to disable the splash window (which uses Gio) by appending the `nosplash` build tag to the build parameters (`VINEGAR_GOFLAGS=--tags=nosplash`).
+Aditionally will need to install the dependencies needed by Gio. The documentation can be found [here](https://gioui.org/doc/install/linux).
 
 Clone Vinegar's git repository and build Vinegar:
 
