@@ -94,6 +94,16 @@ The  following styles are available:
 
 The colors are in hexadecimal format, stored as numbers internally such as `0xff00ff`.
 
+### NVK/Nouveau Support
+
+If you are willing to try out the new open source vulkan driver for Nvidia called "NVK" here are some requirements before using it.
+
+| Requirement | Reason                                                           |
+| ------------ | --------------------------------------------------------------- |
+| Kernel 6.7 and above | Due to [power management and GSP support](https://www.phoronix.com/news/Nouveau-GSP-Merged-Linux-6.7) |
+| 16XX video card and above | Due to [NVK only supporting Turing and above](https://docs.mesa3d.org/drivers/nvk.html) |
+| `nouveau.config=NvGspRm=1` in kernel command line if using 30XX and below video cards | Due to [power management and GSP support](https://www.phoronix.com/news/Nouveau-GSP-Merged-Linux-6.7) |
+
 ### Example configuration
 
 > **Note:** The following configuration file is not meant to be copied or used. It is only shown for demonstrating how the configuration values above are laid out in the actual file.
