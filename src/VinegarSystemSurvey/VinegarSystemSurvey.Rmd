@@ -21,7 +21,7 @@ library(jsonlite)
 
 ![](https://repository-images.githubusercontent.com/590650708/d3e73868-2470-4ba2-aa90-522ea10cc522)
 
-This file (and full data) is available as a .Rmd file at <https://vinegarhq.org/VinegarSystemSurvey.Rmd>
+This file (and full data) is available as a .Rmd file at <https://vinegarhq.org/VinegarSystemSurvey/VinegarSystemSurvey.Rmd>
 
 ## Background
 
@@ -227,7 +227,7 @@ The CPU list (n = `r nrow(ages_uncounted)`) is skewed right with a median age of
 
 `r (sum((!as.logical(merlin$avx)) / nrow(merlin))) * 100`% of the Vinegar userbase does not have AVX.
 
-While the probability of not having AVX is unusual (`r (sum((!as.logical(merlin$avx)) / nrow(merlin)))` \< 0.05), it is a non-zero value. We were not able to confirm whether those with AVX are able to successfully run RoL (as mentioned in [Limitations](#%20Limitations)). Consequently, we have decided to automatically provide a warning to users without AVX.
+While the probability of not having AVX is unusual (`r (sum((!as.logical(merlin$avx)) / nrow(merlin)))` \< 0.05), it is a non-zero value. We were not able to confirm whether those with AVX are able to successfully run RoL (as mentioned in [Limitations](#Limitations)). Consequently, we have decided to automatically provide a warning to users without AVX.
 
 Whether AVX is the actual culprit for the issue with Hyperion is called into question by the results of this survey; more research is warranted, and insight from upstream developers (including from Wine and Roblox) would be beneficial.
 
@@ -264,7 +264,7 @@ Additionally, the large percentage of individuals successfully on Flatpak may in
 
 Merlin is licensed under GPL 3.0. See the Merlin GitHub page for more information.
 
-[Vinegar Merlin Hardware Survey Report (Dec 2023)](https://vinegarhq.org/VinegarSystemSurvey.html) © 2024 by [lunarlattice](https://github.com/lunarlettuce) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+[Vinegar Merlin Hardware Survey Report (Dec 2023)](https://vinegarhq.org/VinegarSystemSurvey/VinegarSystemSurvey.html) © 2024 by [lunarlattice](https://github.com/lunarlettuce) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 
 All raw data produced by Merlin is licensed under CC-BY-SA 4.0 by lunarlattice.
 
