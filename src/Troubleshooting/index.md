@@ -77,6 +77,10 @@ There's no known fix (as of October 14th, 2023), but the following workarounds m
   If none of the workarounds above work or apply, consider using Roblox windowed instead of fullscreen.
   This may also be your GPU not supporting Vulkan or not supporting modern Vulkan; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan that your GPU supports.
 
+### 403: Forbidden while trying to download Studio/Player
+
+Due to Roblox locking down all channels except `live` if there's any value in the `channel` option Roblox will throw a 403 error, this can be easily fixed by removing the `channel` option.
+
 ---
 
 ## Player Issues
