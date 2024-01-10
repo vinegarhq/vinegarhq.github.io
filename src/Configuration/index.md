@@ -38,7 +38,7 @@ This section are the available options for the Studio and Player configurations,
 
 | Option             | Description                                                                                      | Default            |
 | ------------------ | ------------------------------------------------------------------------------------------------ | ------------------ |
-| `channel`          | the deployment channel to be used; **DO NOT ADD THIS TO YOUR CONFIG, ONLY KEPT FOR DEVELOPERS**       | `"LIVE"`           |
+| `channel`          | the deployment channel to be used; **DO NOT ADD THIS TO YOUR CONFIG, ONLY KEPT FOR DEVELOPERS**   | `"LIVE"`           |
 | `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none               |
 | `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`          |
 | `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true`     |
