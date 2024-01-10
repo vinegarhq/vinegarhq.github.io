@@ -79,7 +79,7 @@ There's no known fix (as of October 14th, 2023), but the following workarounds m
 
 ### 403: Forbidden while trying to download Studio/Player
 
-Due to Roblox locking down all channels except `live` if there's any value in the `channel` option Roblox will throw a 403 error, this can be easily fixed by removing the `channel` option.
+This is caused by Roblox locking all channels except `live`, this can be easily fixed by removing the `channel` option.
 
 ---
 
