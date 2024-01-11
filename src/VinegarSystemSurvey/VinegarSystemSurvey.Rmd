@@ -21,7 +21,7 @@ library(jsonlite)
 
 ![](https://repository-images.githubusercontent.com/590650708/d3e73868-2470-4ba2-aa90-522ea10cc522)
 
-This file (and full data) is available as a .Rmd file at <https://vinegarhq.org/VinegarSystemSurvey/VinegarSystemSurvey.Rmd>
+The finalized CSV, Rmd of this file, and dependencies are available [in this GitHub](https://github.com/vinegarhq/vinegarhq.github.io/tree/main/src/VinegarSystemSurvey).
 
 ## Background
 
@@ -53,7 +53,7 @@ The data collected included:
 
 The survey began on December 21, 2023.
 
-## Limitations
+## Limitations {#limitations}
 
 While Merlin was designed to collect as much pertinent information as possible, our users were not willing to provide any identifiers, and were given the opportunity to chose to not participate.
 
@@ -94,7 +94,7 @@ kable(cpu_stats)
 
 Steam Decks are the largest group in the processor sample population, making up `r (sum(grepl('AMD Custom APU 0405|AMD Custom APU 0932', merlin$cpu)) / nrow(merlin)) * 100`% of submissions.
 
-Considering the great number Steam Deck of users, Roblox may benefit from tapping into providing the userbase with a native binary. Additionally, Roblox's concerns over compatbility would be minimal on Steam Deck, as users not only have identical hardware, but are also only able to use Flatpak, ensuring a stable software platform.
+Considering the great number of Steam Deck users, Roblox may benefit from tapping into providing the userbase with a native binary. Additionally, Roblox's concerns over compatbility would be minimal on Steam Deck, as users not only have identical hardware, but are also only able to use Flatpak, ensuring a stable software platform.
 
 ### Processor Age Statistics
 
