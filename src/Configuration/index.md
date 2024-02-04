@@ -30,7 +30,7 @@ If you're using the Flatpak, ensure that the path of the `wineroot` configuratio
 | `[player]` | Binary configuration for Player                |
 | `[studio]` | Binary configuration for Studio                |
 | `[env]`    | Global environment                             |
-| `[splash]` | Configuraton for the loading screen of Vinegar |
+| `[splash]` | Configuration for the loading screen of Vinegar |
 
 ### Binary Configuration
 
