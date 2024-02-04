@@ -17,9 +17,11 @@ Currently, Roblox uses split lock operations. Unfortunately, [this is not consid
 
 Fortunately, you can disable the throttling by setting the [`kernel.split_lock_mitigate` parameter](https://docs.kernel.org/admin-guide/sysctl/kernel.html#split-lock-mitigate-x86-only) to `0`.
 
-- Newer gamemode releases (1.8+) can be configured to automatically disable split lock mitigations while a game is running. For more details, [check Gamemode's README](https://github.com/FeralInteractive/gamemode/blob/master/README.md#configuration).
-- Alternatively, you can create a `sysctl.d` config file to set this parameter during boot.  
-  Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.conf` in your terminal, then reboot your machine to apply the changes.
+Newer gamemode releases (1.8+) can be configured to automatically disable split lock mitigations while a game is running. For more details, [check Gamemode's README](https://github.com/FeralInteractive/gamemode/blob/master/README.md#configuration).
+
+Alternatively, you can create a `sysctl.d` config file to set this parameter during boot.  
+Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.conf` in your terminal, then reboot your machine to apply the changes.
+
 ---
 
 ## General Issues
