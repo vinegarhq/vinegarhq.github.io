@@ -18,8 +18,6 @@ If getting an error about an `EDITOR` variable, this can be temporarily fixed by
 
 | Name                 | Description                                                                                                 | Default |
 | -------------------- | ----------------------------------------------------------------------------------------------------------- | ------- |
-| `wineroot`           | the path to a valid Wine 'root' installation directory.                                                     | none    |
-| `dxvk_version`       | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan.  | `"2.3"` |
 | `multiple_instances` | allow for multiple instances of Roblox to be running simultaneously; requires setting `WINEESYNC` to `"0"`. | `false` |
 | `sanitize_env`       | sanitize the global environment, hand-picked variables are allowed through.                                 | `false` |
 
@@ -36,16 +34,18 @@ If you're using the Flatpak, ensure that the path of the `wineroot` configuratio
 
 This section are the available options for the Studio and Player configurations, they are specified under their sections as listed above.
 
-| Option             | Description                                                                                      | Default            |
-| ------------------ | ------------------------------------------------------------------------------------------------ | ------------------ |
-| `channel`          | the deployment channel to be used; **DO NOT CHANGE, ONLY KEPT FOR DEVELOPERS**                   | `"LIVE"`           |
-| `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`. | none               |
-| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                    | `"D3D11"`          |
-| `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                        | Player: `true`     |
-| `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.  | none               |
-| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                           | `true`             |
-| `gpu`              | the GPU which Vinegar should use for running Roblox, see below table for valid values.           | `"prime-discrete"` |
-| `gamemode`         | automatically enable gamemode via D-Bus desktop portals.                                         | `true`             |
+| Option             | Description                                                                                                | Default            |
+| ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------ |
+| `dxvk_version`     | the DXVK version to be used; this can be set to legacy DXVK for old GPUs that don't support modern Vulkan. | `"2.3"`            |
+| `wineroot`         | the path to a valid Wine 'root' installation directory.                                                    | none               |
+| `channel`          | the deployment channel to be used; **DO NOT CHANGE, ONLY KEPT FOR DEVELOPERS**                             | `"LIVE"`           |
+| `launcher`         | the program that is used to launch Wine when launching Roblox; this can be set to `gamemoderun`.           | none               |
+| `renderer`         | selects the rendering engine to be used by Roblox via FFlags.                                              | `"D3D11"`          |
+| `discord_rpc`      | use Discord's rich presence alongside handling the BloxstrapRPC protocol.                                  | Player: `true`     |
+| `forced_version`   | forces Vinegar to use a specific version, the release channel must be adjusted for the version.            | none               |
+| `dxvk`             | automatically uses DXVK for the application and installs if necessary.                                     | `true`             |
+| `gpu`              | the GPU which Vinegar should use for running Roblox, see below table for valid values.                     | `"prime-discrete"` |
+| `gamemode`         | automatically enable gamemode via D-Bus desktop portals.                                                   | `true`             |
 
 The renderer must be one of the following: `"OpenGL"`, `"D3D11FL10"`, `"D3D11"`, `"Vulkan"`;
 when using DXVK, ensure that the renderer is `"D3D11"`, otherwise Roblox will not utilize DXVK.
@@ -100,12 +100,11 @@ The colors are in hexadecimal format, stored as numbers internally such as `0xff
 ```toml
 # DO NOT COPY, USE ONLY AS EXAMPLE
 
-wineroot = "/home/meow/wine-ge"
-
 [env]
 WINEFSYNC = "1"
 
 [player]
+wineroot = "/home/meow/wine-ge"
 launcher = "gamemoderun"
 dxvk = false
 renderer = "Vulkan"
