@@ -64,7 +64,7 @@ This issue has no known cause, but appears to be more frequent with the Vinegar 
 This issue is most likely caused by Vinegar failing to configure the mimelist entries. This can be fixed by manually adding them.
 First, remove any Roblox related lines in `~/.config/mimeapps.list`, then, under the `[Default Applications]` section add the lines found at the end of [this](https://vinegarhq.org/Installation/guides/source.html#installing-vinegar) chapter.
 
-### Roblox doesn't launch from website if using Librewolf
+### Roblox doesn't launch from website if using Firefox/Librewolf
 
 In about:config set `network.http.referer.XOriginPolicy` to `1` and `network.http.sendRefererHeader` to `2`
 
