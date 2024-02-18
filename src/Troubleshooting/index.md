@@ -38,7 +38,7 @@ Once Wine's wayland driver is introduced (scheduled for next year), this issue s
 
 ### DXVK returns white screen
 
-At the moment DXVK is broken for some people after a roblox update,
+As of 16/02/24 Roblox released an update that broke DXVK,
 a temporary solution is to disable DXVK and use Vulkan instead.
 
 ### White Screen
