@@ -36,6 +36,11 @@ Switching to a real X11 session fixes this issue. Some users have also reported 
 
 Once Wine's wayland driver is introduced (scheduled for next year), this issue should be fixed.
 
+### DXVK returns white screen
+
+As of 16/02/24 Roblox released an update that broke DXVK,
+a temporary solution is to disable DXVK and use Vulkan instead.
+
 ### White Screen
 
 Usually, this is a sign of missing graphics libraries which Wine depends on to work. Check [Lutris Docs: Installing Drivers](https://github.com/lutris/docs/blob/master/InstallingDrivers.md) out for instructions on how to install them.
@@ -46,6 +51,10 @@ This may also indicate that your GPU doesn't meet the minimum Vulkan requirement
 
 Although this normally doesn't happen, the wineserver might continue running in certain cases. Using the `vinegar kill` command should stop it.
 
+### Roblox fails to install
+
+To fix this issue just relaunch Vinegar, if the problem persists it could be an internet connection related issue.
+
 ### No Roblox desktop entries/shortcuts
 
 This issue has no known cause, but appears to be more frequent with the Vinegar Flatpak. Rebooting your system should fix it.
@@ -54,6 +63,10 @@ This issue has no known cause, but appears to be more frequent with the Vinegar 
 
 This issue is most likely caused by Vinegar failing to configure the mimelist entries. This can be fixed by manually adding them.
 First, remove any Roblox related lines in `~/.config/mimeapps.list`, then, under the `[Default Applications]` section add the lines found at the end of [this](https://vinegarhq.org/Installation/guides/source.html#installing-vinegar) chapter.
+
+### Roblox doesn't launch from website if using Firefox/Librewolf
+
+In about:config set `network.http.referer.XOriginPolicy` to `1` and `network.http.sendRefererHeader` to `2`
 
 ### Vinegar doesn't launch if using an Nvidia GPU with Wayland
 
@@ -75,6 +88,14 @@ There's no known fix (as of October 14th, 2023), but the following workarounds m
 - Disabling fullscreen:
   If none of the workarounds above work or apply, consider using Roblox windowed instead of fullscreen.
   This may also be your GPU not supporting Vulkan or not supporting modern Vulkan; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan that your GPU supports.
+
+### UI elements look small
+
+Adjust the DPI settings found in the winecfg GUI, to open it run `flatpak run org.vinegarhq.Vinegar player exec winecfg` or `vinegar player exec winecfg`, go to the `graphics` section to find the DPI settings.
+
+### Camera moves with a delay
+
+Lower your mouse polling rate to 125hz.
 
 ---
 
