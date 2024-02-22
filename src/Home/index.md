@@ -2,6 +2,13 @@
   <img style="max-width: 30%" src="/favicon.svg">
 </p>
 
+<div class="warning">
+  
+[Roblox has discontinued Wine support for Roblox Player as of 22/02/2024](https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/27?u=jrelvas). You will no longer be able to run Roblox Player. Please do not open bug reports about it, **there's nothing we can do.**
+<u>Roblox Studio should continue working.</u>
+
+</div>
+
 ## Welcome to the documentation of the Vinegar project!
 
 - Vinegar is a fast, minimal, and robust bootstrapper for Roblox Player and Roblox Studio that has many ease-of-use features.
