@@ -2,22 +2,25 @@
 
 ## Overlay
 
-In Vinegar, a directory called `overlay` will be copied directly to the Roblox Player and Studio upon launching; this can be used to override files of Roblox, allowing for modifications!
+In Vinegar, a directory called `overlay` will be copied directly to the Roblox Player or Studio - depending on which directory the mod was placed in, upon launching; this can be used to override files of Roblox, allowing for modifications!
 
 The `overlay` folder is not created by default, and it is located always along with the configuration file, which is depending on your install method:
 
 - On Flatpak, it's located in `~/.var/app/org.vinegarhq.Vinegar/config/vinegar/overlay`
 - On other methods, it's located in `~/.config/vinegar/overlay`
 
-Vinegar requires no extra configuration for the folder to work.
+Vinegar requires either a `player` or a `studio` directory to be placed in the overlay directory, each one resulting in the modification being copied appropiately. Changes are irreversible and reverting means removing the deployment (`vinegar uninstall`)
 
 Example replacement of Roblox's default death sound:
 
 ```
-── overlay
-   └── content
-       └── sounds
-           └── ouch.ogg
+~/.config/vinegar
+├── config.toml
+└── overlays
+    └── player
+        └── content
+            └── sounds
+                └── ouch.ogg
 ```
 
 ## FFlags
