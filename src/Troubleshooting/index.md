@@ -47,9 +47,9 @@ Usually, this is a sign of missing graphics libraries which Wine depends on to w
 
 This may also indicate that your GPU doesn't meet the minimum Vulkan requirements; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan supported by your GPU.
 
-### Stale wineserver
+### Failed to open esync shared memory file
 
-Although this normally doesn't happen, the wineserver might continue running in certain cases. Using the `vinegar kill` command should stop it.
+Although this normally doesn't happen, the wineserver process might continue running in certain cases. Using the `vinegar kill` or `flatpak run org.vinegarhq.Vinegar kill` command should stop it, in case that the wineserver process keeps running even after running the command you can try to manually kill it using `killall vinegar`. If you keep getting this issue even after killing wineserver you could try to [disable esync](https://vinegarhq.org/Configuration/index.html).
 
 ### Roblox fails to install
 
