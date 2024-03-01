@@ -49,7 +49,7 @@ This may also indicate that your GPU doesn't meet the minimum Vulkan requirement
 
 ### Failed to open esync shared memory file
 
-Although this normally doesn't happen, the wineserver process might continue running in certain cases. Using the `vinegar kill` or `flatpak run org.vinegarhq.Vinegar kill` command should stop it, in case that the wineserver process keeps running even after running the command you can try to manually kill it using `killall vinegar`. If you keep getting this issue even after killing wineserver you could try to [disable esync](https://vinegarhq.org/Configuration/index.html).
+Although this normally doesn't happen, the wineserver process might continue running in certain cases. Simply restarting your computer is the easiest option as it doesn't involve the use of the terminal. Another option is to use the `vinegar kill` or `flatpak run org.vinegarhq.Vinegar kill` command. If you keep getting this error even after killing wineserver you could try to [disable esync](https://vinegarhq.org/Configuration/index.html).
 
 ### Roblox fails to install
 
