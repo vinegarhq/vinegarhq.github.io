@@ -1,11 +1,11 @@
 # The 2024 Roblox on Linux Block FAQ
-## Aka: The Second Great ROL Famine (as suggested by Jrelvas)
-
+aka: The Second Great ROL Famine (as suggested by Jrelvas)
 ### Why did Roblox decide to block Linux?
 There are multiple reasons, but we’ll be discussing the main contributing factors:
 1. Increased cheat detection on Wine
 2. Floundering of Wine-based exploits in different Discord servers
 3. Maintainability issues
+
 [As Bitdancer stated](https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/33), the 3 contributing factors above played a huge part in motivating Roblox to take this decision. There have recently been multiple instances of Wine-based exploits abusing the weakened version of Hyperion on Wine, and Roblox has an obligation to close up opportunities for malicious behavior.
 
 ![image of a cheater](./dumas.png)
