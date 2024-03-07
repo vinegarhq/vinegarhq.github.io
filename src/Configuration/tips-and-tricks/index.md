@@ -35,7 +35,7 @@ See [Bloxstrap's guide to FastFlags](https://github.com/pizzaboxer/bloxstrap/wik
 
 ## Studio backup
 
-Before you delete your wineprefixes via `vinegar delete` or `flatpak run org.vinegarhq.Vinegar delete`, you should backup data you have on your Studio prefix. This includes your settings, files you have stored etc.
+Before you delete your wineprefixes via `vinegar delete` or `flatpak run org.vinegarhq.Vinegar delete`, you should backup data you have on your Studio prefix. This includes your settings and files you've stored.
 
 The Studio prefix location depends on how you installed Vinegar:
 
@@ -44,6 +44,6 @@ The Studio prefix location depends on how you installed Vinegar:
 
 Where Roblox Studio store their settings and what they store:
 
-- `(studio prefix)/user.reg` : Studio theme, Docking layout
-- `(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalSettings_13.xml`: Display language, Fonts etc 
-- `(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalBasicSettings_13_Studio.xml`: MicroProfiler, Fullscreen etc
+- `(studio prefix)/user.reg`: Studio theme, Docking layout.
+- `(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalSettings_13.xml`: Display language, Fonts, etc. 
+- `(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalBasicSettings_13_Studio.xml`: MicroProfiler, Fullscreen, etc.
