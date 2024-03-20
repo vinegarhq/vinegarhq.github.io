@@ -201,6 +201,19 @@
 <li><code>WINEDEBUG</code>: for performance reasons, this has been set to <code>-all</code>, which disables most of the logging. In order to debug crashes of Wine, it is recommended to set this to an empty string (<code>&quot;&quot;</code>).</li>
 <li><code>DXVK_HUD</code>: is a variable used by DXVK for a hud, for more information about it you can see the <a href="https://github.com/doitsujin/dxvk#hud">DXVK README</a>, which includes various other variables that can be set. This can be set, for example, to <code>fps</code> to display an fps counter.</li>
 </ul>
+<h2 id="studio-backup"><a class="header" href="#studio-backup">Studio backup</a></h2>
+<p>Before you delete your wineprefixes via <code>vinegar delete</code> or <code>flatpak run org.vinegarhq.Vinegar delete</code>, you should backup data you have on your Studio prefix. This includes your settings and files you've stored.</p>
+<p>The Studio prefix location depends on how you installed Vinegar:</p>
+<ul>
+<li>On Flatpak, it's located in <code>~/.var/app/org.vinegarhq.Vinegar/data/vinegar/prefixes/studio</code></li>
+<li>On other methods, it's located in <code>~/.local/share/vinegar/prefixes/studio</code></li>
+</ul>
+<p>Where Roblox Studio store their settings and what they store:</p>
+<ul>
+<li><code>(studio prefix)/user.reg</code>: Studio theme, Docking layout.</li>
+<li><code>(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalSettings_13.xml</code>: Display language, Fonts, etc. </li>
+<li><code>(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalBasicSettings_13_Studio.xml</code>: MicroProfiler, Fullscreen, etc.</li>
+</ul>
 
                     </main>
 
