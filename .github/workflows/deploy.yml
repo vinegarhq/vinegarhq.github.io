@@ -3,24 +3,25 @@ on: [push, workflow_dispatch]
 
 permissions:
   contents: write
-  
+
 jobs:
-    deploy:
-        if: github.ref == 'refs/heads/main'
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-              with:
-                  fetch-depth: 0
-            - name: Install mdbook
-              run: |
-                  mkdir mdbook
-                  curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.36/mdbook-v0.4.36-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
-                  echo `pwd`/mdbook >> $GITHUB_PATH
-            - name: Build docs site
-              run: mdbook build
-            - name: Deploy GitHub Pages
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: book
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install mdbook
+        run: |
+          mkdir mdbook
+          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.36/mdbook-v0.4.36-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
+          echo `pwd`/mdbook >> $GITHUB_PATH
+      - name: Build docs site
+        run: mdbook build
+      - name: Upload docs site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./book
+      - name: Deploy GitHub Pages
+        uses: actions/deploy-pages@v4
