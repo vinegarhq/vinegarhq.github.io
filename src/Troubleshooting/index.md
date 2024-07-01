@@ -30,7 +30,7 @@ Known Vinegar issues which affect both Roblox Player and Roblox Studio:
 
 ### Wine is not supported
 As the name suggests, Wine support in the Roblox Player has been disabled, and is no longer supported.
-You can read more as to why they blocked Linux [here.](https://vinegarhq.org/Home/rol_faq.html)
+For further information, read [here.](https://vinegarhq.org/Home/rol_faq.html)
 
 There are community made work arounds at our [Discord server,](https://discord.gg/vinegarhq-1069506340973707304) such as running Roblox in a virutal machine or via Android emulation with Waydroid. Check out the pinned message in helpdesk for more info.
 
