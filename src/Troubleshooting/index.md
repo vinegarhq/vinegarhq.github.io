@@ -28,7 +28,7 @@ Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.con
 
 Known Vinegar issues which affect both Roblox Player and Roblox Studio:
 
-### Wine is not supported popup error
+### Wine is not supported
 As the name suggests, Roblox player is no longer supported on Linux by its developers, and is thus blocked. We don't know if they will support Linux again in the future.
 You can read more as to why they blocked Linux [here.](https://vinegarhq.org/Home/rol_faq.html)
 
