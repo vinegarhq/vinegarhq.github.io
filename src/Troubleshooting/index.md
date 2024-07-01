@@ -29,7 +29,7 @@ Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.con
 Known Vinegar issues which affect both Roblox Player and Roblox Studio:
 
 ### Wine is not supported
-As the name suggests, Wine support in the Roblox Player has been disabled, and is no longer supported.
+As the name suggests, Wine support in the Roblox Player has been disabled.
 For further information, read [here.](https://vinegarhq.org/Home/rol_faq.html)
 
 Workarounds such as running Roblox in a virtual machine or Android emulation with Waydroid is still possible, read the pinned thread in the helpdesk channel present in the VinegarHQ discord server for more information.
