@@ -32,8 +32,7 @@ Known Vinegar issues which affect both Roblox Player and Roblox Studio:
 As the name suggests, Wine support in the Roblox Player has been disabled.
 For further information, read [here.](https://vinegarhq.org/Home/rol_faq.html)
 
-Workarounds such as running Roblox in a virtual machine or Android emulation with Waydroid is still possible, read the pinned thread in the helpdesk channel present in the VinegarHQ discord server for more information.
-
+Workarounds such as running Roblox in a virtual machine or Android emulation with Waydroid is still possible; read the pinned thread in the helpdesk channel present in the VinegarHQ discord server for more information.
 
 ### Cursor fails to lock
 
