@@ -28,6 +28,12 @@ Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.con
 
 Known Vinegar issues which affect both Roblox Player and Roblox Studio:
 
+### Wine is not supported
+As the name suggests, Wine support in the Roblox Player has been disabled.
+For further information, read [here.](https://vinegarhq.org/Home/rol_faq.html)
+
+Workarounds such as running Roblox in a virtual machine or Android emulation with Waydroid are still possible; read the pinned thread in the helpdesk channel present in the VinegarHQ discord server for more information.
+
 ### Cursor fails to lock
 
 On XWayland, the cursor cannot be locked unless it's invisible. This impacts the functionality of Roblox's first-person and shiftlock modes. This also impacts Studio's edit mode, where the camera rotation depends on the cursor being locked and is broken.
