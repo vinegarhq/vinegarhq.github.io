@@ -158,6 +158,10 @@ This issue is most commonly caused by the Wine build not having the Vulkan Child
 
 - Disabling DXVK in the Vinegar configuration.
 
+### "Necessary graphics drivers not installed" error
+
+This issue can be fixed by switching renderer to Vulkan, instructions on how to do so are located [here](https://vinegarhq.org/Configuration/index.html)
+
 ### Buggy QT fonts
 
 This is a known issue with WineD3D. Enabling DXVK in the configuration file should solve this issue.
