@@ -160,7 +160,7 @@ This issue is most commonly caused by the Wine build not having the Vulkan Child
 
 ### "Necessary graphics drivers not installed" error
 
-This issue can be fixed by switching renderer to Vulkan, instructions on how to do so are located [here](https://vinegarhq.org/Configuration/index.html)
+This issue can be fixed by switching renderer to Vulkan, instructions on how to do so are located [here](https://vinegarhq.org/Configuration/index.html).
 
 ### Buggy QT fonts
 
