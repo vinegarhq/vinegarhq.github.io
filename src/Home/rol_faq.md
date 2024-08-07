@@ -1,6 +1,9 @@
 # The 2024 Roblox on Linux Block FAQ
-aka: The Second Great ROL Famine (as suggested by Jrelvas)
-### Why did Roblox decide to block Linux?
+
+As of August 2024, [Sober](https://sober.vinegarhq.org) can be used to run Roblox on Linux. 
+Wine remains blocked, and we are still unable to provide support for Roblox Player (.exe) through Wine. Roblox Studio should continue working.
+
+### Why did Roblox decide to remove Wine support?
 There are multiple reasons, but we’ll be discussing the main contributing factors:
 1. Increased cheat detection on Wine
 2. Floundering of Wine-based exploits in different Discord servers
@@ -15,15 +18,15 @@ No, Studio will continue to work. Bitdancer has confirmed that Roblox Studio wil
 
 ### What alternatives do we have?
 We currently have two alternatives outside of running Windows:
+1. Sober: [Sober](https://sober.vinegarhq.org) can be used to run the Roblox player, which can offer higher performance as compared to Windows.
 1. Waydroid: Waydroid can be used to run Roblox on x86 Linux systems (albeit with a performance penalty and non-free translation layer usage) to play the mobile version of Roblox Player. Please note that you will not be able to play Desktop-only games, and compatibility may vary from system to system.
 2. Virtualization: Creating a Windows virtual machine is another viable alternative, albeit with more variability. It is required that you pass through a GPU (search VFIO passthrough), enable several Hyper-V hiding features, remove references to VFIO and splice related components, and enable ignore-msrs. Even then, the performance and compatibility of such virtual machines have varied from user to user, and is not a perfect alternative. 
 
-Alternatively, check out Territe’s list of free games you can play.
 
 ### What will happen to Vinegar / Grapejuice?
-Grapejuice is currently in end-of-life status, and will be archived by Brinker soon. Vinegar will continue to be maintained, as Roblox Studio will remain functional (we cannot guarantee functionality, though). A warning message regarding the status of Roblox Player is slated to be implemented in the near future, in conjunction with Roblox’s own error window.
+Grapejuice has gotten abandoned, and Vinegar will continue to be maintained, as Roblox Studio will remain functional (we cannot guarantee functionality, though). A warning message regarding the status of Roblox Player is slated to be implemented in the near future, in conjunction with Roblox’s own error window.
 
-### Can I bypass the Byfron block?
+### Can I bypass the Hyperion block?
 There has not been a single working documented method of bypassing Byfron to date, nor does RoL plan on working on one in the future. While it is not impossible for such a bypass to surface, we discourage discussion regarding bypasses in Vinegar, as the conversations are usually vague and non-constructive. Additionally, attempts to bypass Byfron can lead to automatic bans by Roblox.
 
 ### Why does Roblox hate Linux?
