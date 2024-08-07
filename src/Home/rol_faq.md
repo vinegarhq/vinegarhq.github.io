@@ -17,7 +17,7 @@ There are multiple reasons, but we’ll be discussing the main contributing fact
 No, Studio will continue to work. Bitdancer has confirmed that Roblox Studio will not be receiving Hyperion currently, as it’s only used for game development. Vinegar will continue to maintain Roblox Studio support. However, Roblox may sometimes include breaking changes into Studio that result in several days of downtime while Wine or RoL maintainers fix the issue. Additionally, while Roblox is not considering adding Hyperion to Studio currently, we cannot say that it will hold true in the future.
 
 ### What alternatives do we have?
-We currently have two alternatives outside of running Windows:
+We currently have three alternatives outside of running Windows:
 1. Sober: [Sober](https://sober.vinegarhq.org) can be used to run Roblox, with some players reporting better-than-native performance.
 1. Waydroid: Waydroid can be used to run Roblox on x86 Linux systems (albeit with a performance penalty and non-free translation layer usage) to play the mobile version of Roblox Player. Please note that you will not be able to play Desktop-only games, and compatibility may vary from system to system.
 2. Virtualization: Creating a Windows virtual machine is another viable alternative, albeit with more variability. It is required that you pass through a GPU (search VFIO passthrough), enable several Hyper-V hiding features, remove references to VFIO and splice related components, and enable ignore-msrs. Even then, the performance and compatibility of such virtual machines have varied from user to user, and is not a perfect alternative. 
