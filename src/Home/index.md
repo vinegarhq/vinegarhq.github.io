@@ -3,8 +3,11 @@
 </p>
 
 <div class="warning">
+**You can now play Roblox with [Sober](https://sober.vinegarhq.org)!**
+  
+Wine remains blocked, and we are still unable to provide support for Roblox Player (.exe) through Wine.
 
-[Roblox has discontinued Wine support for Roblox Player as of 22/02/2024](https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/27?u=jrelvas). You will no longer be able to run Roblox Player. Please do not open bug reports about it, **there's nothing we can do.**
+~~[Roblox has discontinued Wine support for Roblox Player as of 22/02/2024](https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/27?u=jrelvas). You will no longer be able to run Roblox Player. Please do not open bug reports about it.~~
 <u>Roblox Studio should continue working.</u>
 
 Please see [the 2024 Roblox on Linux Block FAQ](/Home/rol_faq.md) for more information.
