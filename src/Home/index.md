@@ -3,7 +3,7 @@
 </p>
 
 <div class="warning">
-<b>You can now play Roblox with <a href=https://sober.vinegarhq.org)>Sober!</a></b>
+<b>You can now play Roblox with <a href=https://sober.vinegarhq.org>Sober!</a></b>
   
 <u>Wine remains blocked, and we are still unable to provide support for Roblox Player (.exe) through Wine. Roblox Studio should continue working.</u>
 
