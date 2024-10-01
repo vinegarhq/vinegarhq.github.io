@@ -132,6 +132,15 @@ This issue should be eventually fixed once Wine has a native pipewire driver, bu
 
 Known Roblox Studio issues:
 
+### "unhandled package: RibbonConfig.zip" error
+
+use ```flatpak run org.vinegarhq.Vinegar edit``` to edit the vinegar configuration file, and add:
+```
+[studio]
+forced_version="version-ea7c4a2d814e4dc6"
+```
+(Use CTRL+O and ENTER to write to the file, and CTRL+X to exit)
+
 ### Stuck on the splash screen
 
 Studio is currently broken with 96 DPI rendering. Set the DPI to 97 (already done by default) by running `vinegar exec winecfg` to open the Wine configuration, and then head to the Graphics tab. There should be a DPI option at the bottom of the page.
