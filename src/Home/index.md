@@ -3,9 +3,9 @@
 </p>
 
 <div class="warning">
-
-[Roblox has discontinued Wine support for Roblox Player as of 22/02/2024](https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/27?u=jrelvas). You will no longer be able to run Roblox Player. Please do not open bug reports about it, **there's nothing we can do.**
-<u>Roblox Studio should continue working.</u>
+<b>You can now play Roblox with <a href=https://sober.vinegarhq.org>Sober!</a></b>
+  
+<u>Wine remains blocked, and we are still unable to provide support for Roblox Player (.exe) through Wine. Roblox Studio should continue working.</u>
 
 Please see [the 2024 Roblox on Linux Block FAQ](/Home/rol_faq.md) for more information.
 </div>
