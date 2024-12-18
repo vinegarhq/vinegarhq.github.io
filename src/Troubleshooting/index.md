@@ -36,11 +36,11 @@ Workarounds such as running Roblox in a virtual machine or Android emulation wit
 
 ### Cursor fails to lock
 
-On XWayland, the cursor cannot be locked unless it's invisible. This impacts the functionality of Roblox's first-person and shiftlock modes. This also impacts Studio's edit mode, where the camera rotation depends on the cursor being locked and is broken.
+On XWayland, the cursor cannot be locked unless it's invisible. This impacts Studio's edit mode, where the camera rotation depends on the cursor being locked and is broken.
 
-Switching to a real X11 session fixes this issue. Some users have also reported success with gamescope's `--force-grab-cursor` option, but this doesn't seem to work for everyone.
+Try using [Proton-GE or Umu launcher](https://vinegarhq.org/Configuration/tips-and-tricks/index.html#umu-launcher)
 
-Once Wine's wayland driver is introduced (scheduled for next year), this issue should be fixed.
+Switching to a real X11 session also fixes this issue.
 
 ### DXVK returns white screen
 
@@ -67,8 +67,7 @@ This issue has no known cause, but appears to be more frequent with the Vinegar 
 
 ### Roblox doesn't launch from the website
 
-This issue is most likely caused by Vinegar failing to configure the mimelist entries. This can be fixed by manually adding them.
-First, remove any Roblox related lines in `~/.config/mimeapps.list`, then, under the `[Default Applications]` section add the lines found at the end of [this](https://vinegarhq.org/Installation/guides/source.html#installing-vinegar) chapter.
+This issue is most likely caused by Vinegar failing to configure the mimelist entries. This can be fixed by just adding them, Run `xdg-mime default org.vinegarhq.Vinegar.studio.desktop x-scheme-handler/roblox-studio` (ignore the Qtpaths errors) then `xdg-mime default org.vinegarhq.Vinegar.studio.desktop x-scheme-handler/roblox-studio-auth`
 
 ### Roblox doesn't launch from website if using Firefox/Librewolf
 
@@ -134,13 +133,33 @@ Known Roblox Studio issues:
 
 ### Stuck on the splash screen
 
-Studio is currently broken with 96 DPI rendering. Set the DPI to 97 (already done by default) by running `vinegar exec winecfg` to open the Wine configuration, and then head to the Graphics tab. There should be a DPI option at the bottom of the page.
+This may be caused by you using an older version of Studio, remove the `force-version` option from your configuration. You may need to also run `flatpak run org.vinegarhq.Vinegar delete`
+
+Studio is also currently broken with 96 DPI rendering. Set the DPI to 97 (already done by default) by running `vinegar exec winecfg` to open the Wine configuration, and then head to the Graphics tab. There should be a DPI option at the bottom of the page.
 
 Other DPI values work, as long as they're **NOT** 96. Note that values not divisible by 96 will make the interface blurrier, and that the game world view becomes blurrier as DPI increases. This is a limitation with Wine's X11 implementation.
 
-### Unable to log in - WebView2 error
+### Studio login black window or login failed error
 
-WebView2 is currently not supported, so there's no way to log in directly inside of studio.
+While WebView2 does generally work it may be really buggy and give you a black window or an error While trying to log in.
+
+Use the package/source version of Vinegar with Umu launcher to fix this issue:
+
+Uninstall the previous Vinegar, run `flatpak uninstall --delete-data org.vinegarhq.Vinegar -y`
+
+Follow the instructions listed [here](https://vinegarhq.org/Installation/guides/package.html) to get a vinegar package (some packages may be out of date, get the ones that have vinegar 1.7.8+)
+
+or follow the instructions listed [here](https://vinegarhq.org/Installation/guides/source.html#building-vinegar) for the source version
+
+when installing the source version you may get errors about icons and qtpaths, ignore them
+
+Make sure you have steam installed as umu-launcher needs steam-related components to make proton and the steamrt work correctly
+
+Next, download and extract [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom/releases)
+
+Next follow [this guide](https://vinegarhq.org/Configuration/tips-and-tricks/index.html#umu-launcher) on how to setup Umu launcher.
+
+Next run Vinegar using `vinegar studio run`, you will see the black window again, open the terminal and run `pkill -f webview` (or kill it manually) a new window should popup.
 
 Follow the on-screen prompt and click "Log in via browser". This will open an authentication website in your browser. Once you're done authenticating, you might be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
 
@@ -150,13 +169,7 @@ If you're still unable to log in, try changing your DNS to a viable alternative 
 
 ### "Your GPU is incompatible" error
 
-This issue is most commonly caused by the Wine build not having the Vulkan ChildWindow patch applied. There are a couple solutions:
-
-- Using the [Vinegar flatpak](https://vinegarhq.org/Installation/guides/flatpak.html), which includes the ChildWindow patch;
-
-- Using a Wine build that has the ChildWindow patch enabled (such as [Wine GE](https://github.com/GloriousEggroll/wine-ge-custom));
-
-- Disabling DXVK in the Vinegar configuration.
+Try using [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom/releases) or Umu launcher.
 
 ### "Necessary graphics drivers not installed" error
 
