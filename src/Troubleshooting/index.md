@@ -143,7 +143,9 @@ Other DPI values work, as long as they're **NOT** 96. Note that values not divis
 
 While WebView2 does generally work it may be really buggy and give you a black window or an error While trying to log in.
 
-Use the package/source version of Vinegar with Umu launcher to fix this issue:
+Try to run `flatpak run org.vinegarhq.Vinegar delete` or `vinegar delete` in your terminal to fix this.
+
+If the previous command didn't work try to use the package/source version of Vinegar with Umu launcher to fix this issue:
 
 Uninstall the previous Vinegar, run `flatpak uninstall --delete-data org.vinegarhq.Vinegar -y`
 
