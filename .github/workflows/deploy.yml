@@ -14,14 +14,15 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Install Rust
+        run: rustup update stable && rustup default stable
       - name: Install mdbook
-        run: |
-          mkdir mdbook
-          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.36/mdbook-v0.4.36-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
-          echo `pwd`/mdbook >> $GITHUB_PATH
-      - name: Build docs site
+        uses: taiki-e/install-action@mdbook
+      - name: Install mdbook-linkcheck
+        uses: taiki-e/install-action@mdbook-linkcheck
+      - name: Build Website
         run: mdbook build
-      - name: Upload docs site
+      - name: Upload Website
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./book
