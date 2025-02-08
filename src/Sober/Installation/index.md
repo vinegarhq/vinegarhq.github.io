@@ -10,7 +10,7 @@ Other requirements include:
 - Flatpak installed on your system.
 
 > Sober is not distributed anywhere else but our self-hosted Flatpak repository.<br>
-If you don’t have Flatpak installed on your system, you can install it by going to https://flatpak.org/setup/ and following the guide there for the installation of Flatpak. 
+If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there. 
 
 ## Instructions
 ### To install
@@ -31,7 +31,7 @@ To use the manual installation, you need to download an APK. You should take not
 
 Once the APK is downloaded, select the APK from the file picker and Roblox should now be installed onto Sober.
 
-> If you downloaded an APK that contains the base and the x86-64 split, make sure that **both** of the APKs are selected, otherwise it will not be able to install.
+> If you downloaded an APK that contains the base and the x86-64 split individually, make sure that **both** of the APKs are selected, otherwise it will not be able to install.
 
 ## Post-Install
 
