@@ -12,3 +12,9 @@
   - [Reporting issues to WineHQ](./Troubleshooting/winehq.md)
 - [FAQ](./Home/faq.md)
 - [Contributing](./Contributing/index.md)
+
+# Sober
+- [Installation](./Sober/Installation/index.md)
+- [Configuration]
+- [Troubleshooting]
+- [FAQ]
