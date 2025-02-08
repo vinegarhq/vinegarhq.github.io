@@ -16,5 +16,6 @@
 # Sober
 - [Sober Installation](./Sober/Installation/index.md)
 - [Sober Configuration](./Sober/Configuration/index.md)
+  - [Tips and tricks](./Sober/Configuration/tipsAndTricks.md)
 - [Sober Troubleshooting](./Sober/Troubleshooting/index.md)
 - [Sober FAQ](./Sober/FAQ/index.md)

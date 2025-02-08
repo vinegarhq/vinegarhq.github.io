@@ -4,8 +4,14 @@ If there are any undocumented issues, feel free to [create an issue](https://git
 
 ---
 
-## placeholder
-placeholder
+## Obtaining logs
+
+You should know what error you are getting before asking for any help. Logs usually give out signs of what the error is.
+
+There are two ways of obtaining logs when running Sober:
+
+- Run Sober on the terminal (`flatpak run org.vinegarhq.Sober`)
+- Get the log file at `~/.var/app/org.vinegarhq.Sober/data/sober/appData/logs`
 
 ---
 
@@ -45,7 +51,7 @@ The main culprit behind this is basically due to textures being loaded at the hi
 The solution below should be applied automatically once the crash is first detected.
 
 If it doesn't, append the following FFlags into the `"fflags"` section at `~/.var/app/org.vinegarhq.Sober/config/sober/config.json`
-```
+```json
 "DFIntTextureQualityOverride": 2,
 "DFFlagTextureQualityOverrideEnabled": true
 ```
