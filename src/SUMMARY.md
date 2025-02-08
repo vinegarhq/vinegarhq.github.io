@@ -3,18 +3,18 @@
 - [2024 Roblox Block FAQ](./Home/rol_faq.md)
 
 # Vinegar 
-- [Installation](./Installation/index.md)
+- [Vinegar Installation](./Installation/index.md)
   - [Installing from package](./Installation/guides/package.md)
   - [Installing from source](./Installation/guides/source.md)
-- [Configuration](./Configuration/index.md)
+- [Vinegar Configuration](./Configuration/index.md)
   - [Tips and tricks](./Configuration/tips-and-tricks/index.md)
-- [Troubleshooting](./Troubleshooting/index.md)
+- [Vinegar Troubleshooting](./Troubleshooting/index.md)
   - [Reporting issues to WineHQ](./Troubleshooting/winehq.md)
-- [FAQ](./Home/faq.md)
+- [Vinegar FAQ](./Home/faq.md)
 - [Contributing](./Contributing/index.md)
 
 # Sober
-- [Installation](./Sober/Installation/index.md)
-- [Configuration](./Sober/Configuration/index.md)
-- [Troubleshooting](./Sober/Troubleshooting/index.md)
-- [FAQ](./Sober/FAQ/index.md)
+- [Sober Installation](./Sober/Installation/index.md)
+- [Sober Configuration](./Sober/Configuration/index.md)
+- [Sober Troubleshooting](./Sober/Troubleshooting/index.md)
+- [Sober FAQ](./Sober/FAQ/index.md)
