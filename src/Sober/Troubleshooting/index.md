@@ -74,7 +74,7 @@ Install flatseal and:
 - Disable the wayland socket
 - Enable the X11 sockets
 
-![Turn on XWayland](../images/xwaylandforever.png)
+![Turn on XWayland](../FAQ/xwaylandforever.png)
 
 > This problem should be fixed in Sober version `0.0.0-9619e88`. If there is an issue, you should report it on VinegarHQ's Discord server.
 
