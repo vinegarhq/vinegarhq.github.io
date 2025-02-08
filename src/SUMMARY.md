@@ -16,3 +16,4 @@
 # Sober
 - [Installation](./Sober/Installation/index.md)
 - [Configuration](./Sober/Configuration/index.md)
+- [Troubleshooting](./Sober/Troubleshooting/index.md)
