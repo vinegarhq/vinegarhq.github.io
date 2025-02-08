@@ -17,7 +17,7 @@ In order to run Sober you need:
 ## Q: Is the [GPU here] compatible?
 A: If it was made in the last 8 years or so and has Vulkan support either in Mesa or Nvidia drivers, then yes. If you're not sure, check [GPUInfo](https://vulkan.gpuinfo.org/) and search your graphics card. If it doesn't support Vulkan, Sober should automatically switch to OpenGL. If it doesn't automatically switch, set `use_opengl` to `true` in `~/.var/app/org.vinegarhq.Sober/config/sober/config.json`. If it still doesn't work, you're out of luck.
 
-![Vulkan Supported](../vulkaninfo.png)
+![Vulkan Supported](./vulkaninfo.png)
 
 ## Q: I can't log in to Roblox!
 A: If it didn't say explicitly you have a wrong password or something like that, reopen Sober and check if it logged you in. If that didn't work, try **"Login with Another Device"** on the login page.
@@ -45,7 +45,7 @@ note: there's a proper android anti-tamper being worked on @ roblox. while progr
 ## Q: Roblox is crashing after around 5-10 minutes in game!
 A: There are various issues that could cause this. (You can check [the list of common issues](../Troubleshooting/index.md#known-general-issues)) Mostly, if you're on Wayland it's because Wayland support isn't great at the moment so you'll want make Sober use XWayland. To do this, you can simply run ```flatpak override --user --socket=x11 --nosocket=wayland org.vinegarhq.Sober```. Alternatively, if you prefer a GUI for managing flatpak permissions, you can use [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal). And if you're on X11, don't know how to help you.
 
-![Turn on XWayland](../xwaylandforever.png)
+![Turn on XWayland](./xwaylandforever.png)
 
 
 
