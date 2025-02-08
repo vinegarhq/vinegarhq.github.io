@@ -2,23 +2,18 @@
   <img style="max-width: 30%" src="/favicon.svg">
 </p>
 
-<div class="warning">
-<b>You can now play Roblox with <a href=https://sober.vinegarhq.org>Sober!</a></b>
-  
-<u>Wine remains blocked, and we are still unable to provide support for Roblox Player (.exe) through Wine. Roblox Studio should continue working.</u>
+## Welcome to the home of the VinegarHQ project!
 
-Please see [the 2024 Roblox on Linux Block FAQ](/Home/rol_faq.md) for more information.
-</div>
+Here, you'll find documentation for Vinegar and links to Sober.
 
-
-## Welcome to the documentation of the Vinegar project!
-
-- Vinegar is a fast, minimal, and robust bootstrapper for Roblox Player and Roblox Studio that has many ease-of-use features.
+- Sober is an experimental software interoperability layer, which lets users run *Roblox Player* on Linux.
+- The homepage and installation page for Sober can be found [here](https://sober.vinegarhq.org/).
+<br><br>
+- Vinegar is a fast and robust bootstrapper for *Roblox Studio* that has many ease-of-use features.
 - The software and documentation are both open source, and can be accessed [on GitHub](https://github.com/vinegarhq).
-- There is no graphical configuration interface for Vinegar at this time.
 - Vinegar is an alternative to [Grapejuice](https://brinkervii.gitlab.io/grapejuice/), designed for advanced Linux users.
 
-The Discord server for Vinegar can be found [here](https://discord.gg/dzdzZ6Pps2).
+The Discord server of VinegarHQ can be found [here](https://discord.gg/dzdzZ6Pps2).
 
 ---
 
