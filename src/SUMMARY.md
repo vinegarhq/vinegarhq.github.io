@@ -15,6 +15,3 @@
 
 # Sober
 - [Installation](./Sober/Installation/index.md)
-- [Configuration]
-- [Troubleshooting]
-- [FAQ]
