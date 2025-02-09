@@ -2,6 +2,10 @@
   <img style="max-width: 30%" src="/favicon.svg">
 </p>
 
+<p align="center">
+  <img style="max-width: 30%" src="/sober.svg"><img style="max-width: 30%" src="/vinegar.svg">
+</p>
+
 ## Welcome to the home of the VinegarHQ project!
 
 Here, you'll find documentation for Vinegar and links to Sober.
