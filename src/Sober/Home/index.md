@@ -2,7 +2,7 @@
   <img style="max-width: 30%" src="../../sober.svg">
 </p>
 
-## Welcome to the public knowledge documentation of Sober
+## Welcome to the community-maintained documentation of Sober
 
 - Sober is an experimental software interoperability layer, which lets users run *Roblox Player* on Linux.
 - The homepage and installation page for Sober can be found [here](https://sober.vinegarhq.org/).
