@@ -1,9 +1,6 @@
 <p align="center">
-  <img style="max-width: 30%" src="/favicon.svg">
-</p>
-
-<p align="center">
-  <img style="max-width: 30%" src="/sober.svg"><img style="max-width: 30%" src="/vinegar.svg">
+  <img style="max-width: 16.5%" src="../vinegar.svg">
+  <img style="max-width: 16.5%" src="../sober.svg">
 </p>
 
 ## Welcome to the home of the VinegarHQ project!
