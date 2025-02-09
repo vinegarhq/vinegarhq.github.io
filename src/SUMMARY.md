@@ -14,6 +14,7 @@
 - [Contributing](./Contributing/index.md)
 
 # Sober
+- [Sober Home](./Sober/Home/index.md)
 - [Sober Installation](./Sober/Installation/index.md)
 - [Sober Configuration](./Sober/Configuration/index.md)
   - [Tips and tricks](./Sober/Configuration/tipsAndTricks.md)
