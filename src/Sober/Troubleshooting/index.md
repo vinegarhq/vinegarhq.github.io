@@ -1,4 +1,4 @@
-# Troubleshooting
+# Troubleshooting Sober
 
 If there are any undocumented issues, feel free to [create an issue](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose) to update the documentation!
 

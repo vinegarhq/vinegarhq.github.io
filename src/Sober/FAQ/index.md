@@ -1,4 +1,4 @@
-# FAQ (Frequently Asked Questions)
+# Sober FAQ
 
 
 ## Q: Why Does this exist?
