@@ -63,7 +63,7 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 
 
 ### ERROR: Wayland display connection closed by server (fatal)
-Wayland basically screwed you over. It's not that stable on Sober compared to X11.
+Sober's Wayland backend isn't as stable as the X11 one. Check if the issue still occurs with the X11 backend.
 
 #### Solution
 Run ```flatpak override --user --socket=x11 --nosocket=wayland org.vinegarhq.Sober```
