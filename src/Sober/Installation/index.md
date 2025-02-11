@@ -27,7 +27,7 @@ There are two options: **Automatic** and **Manual** installation. VinegarHQ reco
 #### Manual installation
 To use the manual installation, you need to download an APK. You should take note on which version of the APK Sober is asking.
 
-> You can download an APK from your local trusted APK site, however VinegarHQ recommends obtaining the APKs from [APKMirror](https://www.apkmirror.com/)
+> You can download an APK from your local trusted APK site.
 
 Once the APK is downloaded, select the APK from the file picker and Roblox should now be installed onto Sober.
 
