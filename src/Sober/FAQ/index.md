@@ -7,7 +7,7 @@ A: Because people on Linux still want to be able to play Roblox easily.
 
 ## Q: What is the minimum hardware needed?
 In order to run Sober you need:
-* CPU: Anything with SSE 4.2 or higher (CPUs from 2013+ should be fine)
+* CPU: Any x86_64 CPU with SSE4.2 or higher (CPUs from 2013+ should be fine)
 * RAM: 4 GB, although it might run with less
 * GPU: Vulkan capable graphics card, check "Q: Is the [GPU here] compatible?" for more info*
 * Storage: 1-2 GB
