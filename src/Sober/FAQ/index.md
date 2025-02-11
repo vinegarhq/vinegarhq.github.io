@@ -68,3 +68,6 @@ sober isn't ready for production use, it's not supported, and it can stop workin
 ## Q: Does it work with VR?
 A: No, as the Android version doesn't have support for VR. The Quest version is only on built on ARM and under a translation layer, it performs horribly.
 
+
+## Q: I'm running into an issue which isn't listed here. What should I do?
+A: More often than not, simply restarting Sober or updating it to the latest version fixes the issue. If it persists, consider reporting it in VinegarHQ's Discord Server.
