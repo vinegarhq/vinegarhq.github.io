@@ -30,7 +30,7 @@ There are two installation types: **Automatic** and **Manual**.  Pick **Automati
 #### Manual installation
 To use the manual installation, you need to download an APK. You should take note on which version of the APK Sober is asking.
 
-> You can download an APK from your local trusted APK site.
+> You can download an APK from a trustworthy APK site or mirror. Make sure the service you're using is trustworthy and hasn't tampered with the APK. In case of doubt, you should use the automatic installation instead.
 
 Once the APK is downloaded, select the APK from the file picker and Roblox should now be installed onto Sober.
 
