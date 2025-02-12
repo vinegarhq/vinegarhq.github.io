@@ -6,8 +6,10 @@ Before using Sober, there are some requirements for your setup to be able to run
 Other requirements include:
 
 - Processor: x86-64 CPU **with SEE4.2 support** (SEE4.2 is a mandatory requirement to run Roblox)
-- Graphics: Vulkan 1.1 or later. (or OpenGL ES 3.0 or later for OpenGL operation)
+- Graphics: Vulkan 1.1* or later. (or OpenGL ES 3.0 or later for OpenGL operation)
 - Flatpak installed on your system.
+
+<p class="tiny">[*] Vulkan 1.3 is required for "Future" graphics.<p>
 
 > Sober is not distributed anywhere else but our self-hosted Flatpak repository.<br>
 If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there. 
