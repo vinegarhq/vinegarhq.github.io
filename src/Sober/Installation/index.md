@@ -24,7 +24,8 @@ $ flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
 
 Then in it should appear in your app grid on GNOME or your Application Launcher on KDE/Cinnamon. Open it up and if everything works out, you should see the bootstrapper installation screen.
 
-There are two options: **Automatic** and **Manual** installation. VinegarHQ recommendeds to use the **automatic** installation unless it is necessary to use manual. 
+There are two installation types: **Automatic** and **Manual**.  Pick **Automatic** installation unless you know what you're doing. 
+
 
 #### Manual installation
 To use the manual installation, you need to download an APK. You should take note on which version of the APK Sober is asking.
