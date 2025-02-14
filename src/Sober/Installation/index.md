@@ -26,7 +26,7 @@ $ flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
 
 Then in it should appear in your app grid on GNOME or your Application Launcher on KDE/Cinnamon. Open it up and if everything works out, you should see the bootstrapper installation screen.
 
-There are two installation types: **Automatic** and **Manual**.  Pick **Automatic** installation unless you know what you're doing. 
+There are two installation types: **Automatic** and **Manual**. By default, **Automatic** installation is already checked when you first install Sober. It should be left checked unless you know what you're doing. 
 
 
 #### Manual installation
