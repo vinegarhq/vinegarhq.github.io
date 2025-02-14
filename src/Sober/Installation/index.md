@@ -5,7 +5,7 @@
 Before using Sober, there are some requirements for your setup to be able to run Sober. The requirements are based on [Roblox's official minimum requirements for mobile](https://en.help.roblox.com/hc/en-us/articles/203625474).<br>
 Other requirements include:
 
-- Processor: x86-64 CPU **with SEE4.2 support** (SEE4.2 is a mandatory requirement to run Roblox)
+- Processor: x86-64 CPU **with SEE4.2 support** (see the corresponding [FAQ question](../FAQ/index.md#How-do-I-know-I-meet-the-requirements-to-run-Sober))
 - Graphics: Vulkan 1.1* or later. (or OpenGL ES 3.0 or later for OpenGL operation)
 - Flatpak installed on your system.
 
