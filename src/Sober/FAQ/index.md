@@ -53,5 +53,5 @@ A: No. Releasing Sober on Flathub implies that Sober is ready for production use
 A: No, as the Android version doesn't have support for VR. The Quest version is only on built on ARM and under a translation layer, it performs horribly.
 
 
-## Q: I'm running into an issue which isn't listed here. What should I do?
+## Q: I'm running into an issue which isn't listed here or in the troubleshooting page. What should I do?
 A: More often than not, simply restarting Sober or updating it to the latest version fixes the issue. If it persists, consider reporting it in VinegarHQ's Discord Server.
