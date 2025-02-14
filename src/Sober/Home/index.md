@@ -2,6 +2,16 @@
   <img style="max-width: 30%" src="../../sober.svg">
 </p>
 
+<div class="warning">
+
+  **Notice regarding the recent Sober update**
+  
+  There have been reports of Error 268 (Unexpected client behavior) kicks after Sober was recently updated to 659. It is suspected that Roblox is slowly activating Hyperion onto Android Roblox, but it is not fully confirmed and only applies to some games. While it is unlikely you will be banned for using Sober, the software cannot guarantee the support statuses of some games.
+
+  If you intend to use Sober, please proceed with caution. 
+
+</div>
+
 ## Welcome to the community-maintained documentation of Sober
 
 - Sober is an experimental software interoperability layer, which lets users run *Roblox Player* on Linux.
