@@ -40,7 +40,7 @@ A: There are various issues that could cause this. (You can check [the list of c
 
 
 ## Q: ARM64 support?
-A: Maybe eventually, but right now there are too many issues to deal with to add support right now.
+A: We currently have no plans to support ARM64. It'd take a huge amount of time and effort we can't spare. However, this isn't definitive and could be reconsidered in the future.
 
 
 
