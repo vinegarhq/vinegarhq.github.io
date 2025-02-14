@@ -27,8 +27,8 @@ A: Roblox does not have Studio for Android. Use [Vinegar](https://vinegarhq.org/
 ## Q: Why is Sober closed source?
 A: When the development team was making Sober, they wanted to ensure it wouldn't meet the same fate as Vinegar (being blocked). They recommended to make Sober closed source, to ensure no Exploit developers abuse it. Sadly, this is a necessary measure to ensure the continued existence of Roblox on Linux. On the bright side, this ensures that Sober will not be blocked in the long term, if no exploits are made for it, which the dev team will ensure.
 
-### SQ: But I heard Roblox is working on Hyperion for Android
-A: There is, and it's being worked on as we speak. And while progress towards activation seems to be slow, Hyperion on Android is most likely going to release this year, possibly within Q1 of this year. Sober is most unlikely to be continued once Hyperion has been deployed.
+### SQ: Wasn't Roblox working on Hyperion for Android? What happens then?
+A: That's correct. Despite progress appearing to be slow, it's very likely that Hyperion gets deployed on Android during 2025, possibly within Q1. Once this happen, Sober will probably be discontinued.
 
 
 
