@@ -6,7 +6,7 @@
 
   **Notice regarding the recent Sober update**
   
-  There have been reports of Error 268 (Unexpected client behavior) kicks after Sober was recently updated to 659. It is suspected that Roblox is slowly activating Hyperion onto Android Roblox, but it is not fully confirmed and only applies to some games. While it is unlikely you will be banned for using Sober, the software cannot guarantee the support statuses of some games.
+  There have been reports of Error 268 (Unexpected client behavior) kicks after Sober was recently updated to 659. It is suspected that Roblox is slowly activating Hyperion onto its Android builds, but it is not fully confirmed and only applies to some games. While it is unlikely you will be banned for using Sober, the software cannot guarantee the support statuses of some games.
 
   If you intend to use Sober, please proceed with caution. 
 

@@ -32,8 +32,8 @@ It means that the Roblox build Sober is in has reached it's end of the lifespan.
 | 655                              | 01/09/25           | Yes        | 02/04/25 - 02/08/25                | TBD                |
 | 656                              | 01/16/25           | Yes        | 02/13/25 - 02/18/25                | TBD                |
 | 657                              | 01/24/25           | Yes        | 02/20/25 - 02/28/25                | TBD                |
-| 658 **(Current Sober build)**    | 01/31/25           | Yes        | 02/24/25 - 03/08/25*               | TBD                |
-| 659                              | 02/06/25           | Yes        | 03/10/25 - 03/15/25                | TBD                |
+| 658                              | 01/31/25           | Yes        | 02/24/25 - 03/08/25*               | TBD                |
+| 659 **(Current Sober build)**    | 02/06/25           | Yes        | 03/10/25 - 03/15/25                | TBD                |
   
   **cutoff estimation was pushed two weeks forward from the initial esimation due to holiday vacation
   *this estimation is a week further due to a slightly shorter month
@@ -60,6 +60,12 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 
 > Essentially, to avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel).
 
+
+### I was kicked due to "Unexpected client behavior" (Error 268)
+There has been recent reports after Sober was recently updated. (Commit `0.0.0-379b6ec`) It is suspecteed that Roblox is slowly enabling Hyperion onto its Android builds, but it is not fully confirmed and only applies to some games. While it is unlikely you will be banned for using Sober, the software cannot guarantee the support statuses of some games.
+
+#### Known games affected
+- Anime Vanguards
 
 
 ### ERROR: Wayland display connection closed by server (fatal)
