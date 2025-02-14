@@ -1,6 +1,6 @@
 # Sober Configuration
 
-You can adjust Sober's behavior, where the configuration will be passed on to launching Roblox.
+To adjust Sober or Roblox's behavior, the configuration may be edited. This is done through a configuration file. To edit this file, you may follow the steps below.
 
 ## Editing the configuration
 
@@ -23,8 +23,8 @@ To open the configuation file, open a text editor to `~/.var/app/org.vinegarhq.S
 ### Configuration values
 | Option                | Description                                                                           | Default   |
 | --------------------- | ------------------------------------------------------------------------------------- | --------- |
-| `bring_back_oof`      | brings back the old "oof" sound before it was replaced with the current default one.  | `false`   |
-| `discord_rpc_enabled` | use Discord's rich presence alongside handling the BloxstrapRPC protocol.             | `true`    |
+| `bring_back_oof`      | brings back the old "oof" sound                                                       | `false`   |
+| `discord_rpc_enabled` | use Discord's rich presence through the BloxstrapRPC protocol.                        | `true`    |
 | `fflags`              | a section for inputting additional FFlags to use advanced features                    | -         |
-| `touch-mode`          | enables touchscreen for tablet computers or computers with touchscreens               | `"off"`   |
-| `use_opengl`          | use OpenGL instead of Vulkan                                                          | `false`   |
+| `touch-mode`          | enables mobile controls                                                               | `"off"`   |
+| `use_opengl`          | use OpenGL instead of default Vulkan graphics API                                     | `false`   |
