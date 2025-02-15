@@ -7,7 +7,7 @@ A: Because people on Linux still want to be able to play Roblox easily.
 
 ## Q: How do I know I meet the requirements to run Sober?
 - If you know your CPU very well, any CPUs that is from 2008+ for Intel (Nehalem series or later) or 2011+ for AMD (Bulldozer series or later) should be fine.
-    - If you don't know if your CPU supports SSE4.2, you can run `rep "sse4_2" /proc/cpuinfo` on your terminal. If SSE4.2 is available, it should be highlighted when you run the command.
+    - If you don't know if your CPU supports SSE4.2, you can run `grep "sse4_2" /proc/cpuinfo` on your terminal. If SSE4.2 is available, it should be highlighted when you run the command.
 - For RAM, you should check on your system monitoring application and see the under-load 
 - For GPU, check the next question.
 - For Flatpak installation, simply run `flatpak` on your terminal and it should come out with the following:
