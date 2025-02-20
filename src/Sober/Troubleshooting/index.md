@@ -62,7 +62,7 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 
 
 ### I was kicked due to "Unexpected client behavior" (Error 268)
-There has been recent reports after Sober was recently updated. (Commit `0.0.0-379b6ec`) It is suspecteed that Roblox is slowly enabling Hyperion onto its Android builds, but it is not fully confirmed and only applies to some games. While it is unlikely you will be banned for using Sober, the software cannot guarantee the support statuses of some games.
+There has been recent reports after Sober was recently updated. (Commit `0.0.0-379b6ec`) It is suspected that Roblox is slowly enabling Hyperion onto its Android builds, but it is not fully confirmed and only applies to some games. While it is unlikely you will be banned for using Sober, the software cannot guarantee the support statuses of some games.
 
 #### Known games affected
 - Anime Vanguards
