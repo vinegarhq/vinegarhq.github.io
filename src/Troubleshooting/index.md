@@ -4,10 +4,6 @@ If there are any undocumented issues, feel free to [create an issue](https://git
 
 ---
 
-## Checking AVX Compatibility
-
-Open up a terminal and type the following command: `grep avx /proc/cpuinfo` it will highlight with red the AVX flags, if you get no output it means that your current CPU doesn't support AVX.
-
 ## Disabling Split Lock Detection
 
 Currently, Roblox uses split lock operations. Unfortunately, [this is not considered a good practice](https://lwn.net/Articles/790464/), so by default, the Linux Kernel will throttle any programs that do so. This has been reported to have a major performance hit, sometimes reducing Roblox's frame rate to a mere fraction of what it's supposed to be.
@@ -25,21 +21,19 @@ Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.con
 
 ### Cursor fails to lock
 
-On XWayland, the cursor cannot be locked unless it's invisible, this shouldn't be an issue on Flatpak.
+On XWayland, the cursor cannot be locked unless, this is because WINE doesn't have proper studio mouse locking. This can be fixed by either:
 
-Switching to a real X11 session fixes this issue.
+1. Using the Flatpak version of Vinegar.
 
-Using the [Kron4ek Proton WINE builds](https://github.com/Kron4ek/Wine-Builds/releases) will fix this.
+2. Switching to a real X11 session.
+
+3. Using the [Kron4ek Proton WINE builds](https://github.com/Kron4ek/Wine-Builds/releases).
 
 ### White Screen
 
-Usually, this is a sign of missing graphics libraries which Wine depends on to work (This doesn't apply to Flatpak) check [Lutris Docs: Installing Drivers](https://github.com/lutris/docs/blob/master/InstallingDrivers.md) out for instructions on how to install them.
+Usually, this is a sign of missing graphics libraries which WINE depends on to work, this might mean that your graphics drivers aren't setup correctly, you should check [Lutris Docs: Installing Drivers](https://github.com/lutris/docs/blob/master/InstallingDrivers.md) out for instructions on how to install them.
 
 This may also indicate that your GPU doesn't meet the minimum Vulkan requirements; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan supported by your GPU.
-
-### Failed to open esync shared memory file
-
-Although this normally doesn't happen, the wineserver process might continue running in certain cases. To fix this run `vinegar kill` or `flatpak kill org.vinegarhq.Vinegar` or just restart your computer. If you keep getting this error even after killing wineserver you could try to [disable esync](https://vinegarhq.org/Configuration/index.html).
 
 ### Roblox fails to install
 
@@ -59,7 +53,8 @@ In about:config set `network.http.referer.XOriginPolicy` to `1` and `network.htt
 
 ### Stuttering and freezing (Nvidia GPU)
 
-#### This section may be outdated
+> [!WARNING]
+> This section may be outdated
 
 Although stuttering can happen for many different reasons, it's a very common issue on certain Nvidia cards. It seems that Nvidia's drivers on Wayland have major issues with stuttering and unexplainable frame locking in certain systems, but only if the window is fullscreen. This issue has been confirmed to exist for configurations where the Nvidia GPU drives the display and ones where PRIME offload is used (IGPU drives the display, DGPU renders the game).
 
@@ -82,9 +77,7 @@ Lower your mouse polling rate to 125hz.
 
 ### Unable to log in
 
-WebView2 is currently disabled on Flatpak, you should be able to login using browser login.
-
-If you get a black login window run `pkill -f webview` and you should be prompted to login with your browser.
+If you get a black login window you can add `webview = ""` under `[studio]` in your Vinegar config or you can just run `pkill -f webview` when the black window appears and you should be prompted to login with your browser.
 
 Follow the on-screen prompt and click "Log in via browser". This will open an authentication website in your browser. Once you're done authenticating, you might be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
 
