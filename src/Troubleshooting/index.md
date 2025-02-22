@@ -21,7 +21,7 @@ Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.con
 
 ### Cursor fails to lock
 
-On XWayland, the cursor cannot be locked unless, this is because WINE doesn't have proper studio mouse locking. This can be fixed by either:
+On XWayland, the cursor cannot be locked, this is because WINE doesn't have proper studio mouse locking. This can be fixed by either:
 
 - Using the Flatpak version of Vinegar.
 
