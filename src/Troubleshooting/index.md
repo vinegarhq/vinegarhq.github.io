@@ -23,11 +23,11 @@ Run `echo kernel.split_lock_mitigate=0 | sudo tee /etc/sysctl.d/99-splitlock.con
 
 On XWayland, the cursor cannot be locked unless, this is because WINE doesn't have proper studio mouse locking. This can be fixed by either:
 
-1. Using the Flatpak version of Vinegar.
+- Using the Flatpak version of Vinegar.
 
-2. Switching to a real X11 session.
+- Switching to a real X11 session.
 
-3. Using the [Kron4ek Proton WINE builds](https://github.com/Kron4ek/Wine-Builds/releases).
+- Using the [Kron4ek Proton WINE builds](https://github.com/Kron4ek/Wine-Builds/releases).
 
 ### White Screen
 
