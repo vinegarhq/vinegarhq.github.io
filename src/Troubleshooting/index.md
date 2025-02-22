@@ -43,10 +43,6 @@ To fix this issue just relaunch Vinegar, if the problem persists it could be an 
 
 This issue has no known cause, but appears to be more frequent with the Vinegar Flatpak. Rebooting your system should fix it.
 
-### Roblox doesn't launch from the website
-
-This issue is most likely caused by Vinegar failing to configure the mimelist entries. This can be fixed by adding them, run `xdg-mime default org.vinegarhq.Vinegar.studio.desktop x-scheme-handler/roblox-studio` (You can ignore the QTpath errors)
-
 ### Roblox doesn't launch from website if using Firefox/Librewolf
 
 In about:config set `network.http.referer.XOriginPolicy` to `1` and `network.http.sendRefererHeader` to `2`
