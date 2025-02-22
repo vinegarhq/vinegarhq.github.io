@@ -54,6 +54,10 @@ There's no known fix (as of October 14th, 2023), but the following workarounds m
   If none of the workarounds above work or apply, consider using Roblox windowed instead of fullscreen.
   This may also be your GPU not supporting Vulkan or not supporting modern Vulkan; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan that your GPU supports.
 
+### UI elements look small
+
+Adjust the DPI settings found in the winecfg GUI, to open it run `flatpak run org.vinegarhq.Vinegar` then click on `Configure Wine`, go to the graphics section to find the DPI settings.
+
 ### Camera moves with a delay
 
 Lower your mouse polling rate to 125hz.
