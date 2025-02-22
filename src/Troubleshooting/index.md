@@ -84,4 +84,4 @@ This issue can be fixed by switching renderer to Vulkan, instructions on how to 
 
 ### Flickering widgets and plugin windows
 
-Disabling DXVK in the configuration should solve this issue.
+Change the Roblox Studio renderer from Studio's settings to Vulkan
