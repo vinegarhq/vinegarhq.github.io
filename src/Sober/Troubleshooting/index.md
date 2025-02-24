@@ -113,17 +113,6 @@ If you haven't logged into Sober, you should do it now. Afterwards you will be a
 > Sober does not launch the same way as it usually does on Windows or macOS. Sober will only carry over the join game request, not including login.
 
 
-
-### No shift lock or camera sensitivity options in the ingame settings
-Roblox sometimes forgets you have a mouse and removes the options.
-
-#### Solution
-Move your mouse while joining a game.
-
-> This problem should be fixed in Sober version `0.0.0-1ff9f51`. If there is an issue, you should report it on VinegarHQ's Discord server.
-
-
-
 ### Automatic download isn't working (Long hang time; falls back to manual install)
 ### Installing Sober gives me a 403 error
 - Three out of ten chances is that your ISP is blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
