@@ -6,7 +6,7 @@ Before using Sober, there are some requirements for your setup to be able to run
 Other requirements include:
 
 - Processor: x86-64 CPU **with SEE4.2 support** (see the corresponding [FAQ question](../FAQ/index.md#How-do-I-know-I-meet-the-requirements-to-run-Sober))
-- Graphics: Vulkan 1.1* or later. (or OpenGL ES 3.0 or later for OpenGL operation)
+- Graphics: Vulkan 1.0* or later. (or OpenGL ES 3.0 or later for OpenGL operation)
 - Flatpak installed on your system.
 
 <p class="tiny">[*] Vulkan 1.3 is required for "Future" graphics.<p>

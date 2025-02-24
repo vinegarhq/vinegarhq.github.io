@@ -68,42 +68,6 @@ There has been recent reports after Sober was recently updated. (Commit `0.0.0-3
 - Anime Vanguards
 
 
-### ERROR: Wayland display connection closed by server (fatal)
-Sober's Wayland backend isn't as stable as the X11 one. Check if the issue still occurs with the X11 backend.
-
-#### Solution
-Run ```flatpak override --user --socket=x11 --nosocket=wayland org.vinegarhq.Sober```
-
-OR
-
-Install flatseal and:
-- Disable the wayland socket
-- Enable the X11 sockets
-
-![Turn on XWayland](../FAQ/xwaylandforever.png)
-
-> This problem should be fixed in Sober version `0.0.0-9619e88`. If there is an issue, you should report it on VinegarHQ's Discord server.
-
-
-
-### Error 71 (Protocol error) dispatching to Wayland display
-GTK sometimes messes up Wayland calls for some people. Most people should be fine.
-
-#### Solution
-See above.
-
-> This problem should be fixed in Sober version `0.0.0-9619e88`. If there is an issue, you should report it on VinegarHQ's Discord server.
-
-
-
-### FMOD API error
-Roblox uses FMOD improperly, resulting in FMOD errors sometimes being spammed into the FLog. These errors happen on real Android devices as well, and are usually not a problem.
-
-#### Affected games
-- [Rivals](https://www.roblox.com/games/17625359962)
-- [a dusty trip](https://www.roblox.com/games/16389395869)
-
-
 
 ### Sober just randomly crashes
 Depends on if the logs actually provided something useful. Otherwise, we cannot give a definite answer.

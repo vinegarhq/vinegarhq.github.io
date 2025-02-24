@@ -15,7 +15,7 @@ To open the configuation file, open a text editor to `~/.var/app/org.vinegarhq.S
     "discord_rpc_enabled": true,
     "fflags": null,
     "server_location_indicator_enabled": false,
-    "touch-mode": "off",
+    "touch_mode": "off",
     "use_opengl": false
 }
 ```
@@ -28,5 +28,5 @@ To open the configuation file, open a text editor to `~/.var/app/org.vinegarhq.S
 | `discord_rpc_enabled`               | use Discord's rich presence through the BloxstrapRPC protocol.                        | `true`    |
 | `fflags`                            | a section for inputting additional FFlags to use advanced features                    | -         |
 | `server_location_indicator_enabled` | shows a popup of the location of the server you are connected                         | `false`   |
-| `touch-mode`                        | enables touchscreen controls                                                               | `"off"`   |
+| `touch_mode`                        | enables touchscreen controls                                                               | `"off"`   |
 | `use_opengl`                        | use OpenGL instead of default Vulkan graphics API                                     | `false`   |
