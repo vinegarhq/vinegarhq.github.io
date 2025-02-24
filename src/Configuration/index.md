@@ -1,18 +1,10 @@
 # Configuration
 
-To adjust Vinegar or Roblox's behavior, the configuration may be edited. This is done through a configuration file. To edit this file, you may follow the steps below.
+To adjust Vinegar or Roblox's behavior, the configuration may be edited, which can be done by opening Vinegar and pressing the settings button in the top left.
 
 > **Note:** You only need to edit the configuration file if you want to fine tune Roblox's behavior. Having a configuration file is completely optional!
 
-## Editing the configuration
-
 Anything added to the configuration file is an override over the default configuration.
-
-The configuration file (`config.toml`) may be easily edited by running the `vinegar edit` command. By using the `edit` command, error validation is also included.
-
-If using Flatpak, the command is `flatpak run org.vinegarhq.Vinegar edit`.
-
-If getting an error about an `EDITOR` variable, this can be temporarily fixed by running the command as `export EDITOR=nano; vinegar edit` (which will cause the `nano` editor to be used). Though, it is preferrable to set an `EDITOR` variable permanently, in a place like `.bashrc`.
 
 ## Configuration Values
 
