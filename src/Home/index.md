@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="max-width: 30%" src="/favicon.svg">
+  <img style="max-width: 30%" src="../vinegar.svg">
 </p>
 
 ## Welcome to the home of the VinegarHQ project!
@@ -8,6 +8,7 @@ Here, you'll find documentation for Vinegar and links to Sober.
 
 - Sober is an experimental software interoperability layer, which lets users run *Roblox Player* on Linux.
 - The homepage and installation page for Sober can be found [here](https://sober.vinegarhq.org/).
+- Its documentation can be found [here](../Sober/Home/index.md).
 <br><br>
 - Vinegar is a fast and robust bootstrapper for *Roblox Studio* that has many ease-of-use features.
 - The software and documentation are both open source, and can be accessed [on GitHub](https://github.com/vinegarhq).
