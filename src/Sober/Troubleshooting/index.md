@@ -29,11 +29,11 @@ It means that the Roblox build Sober is in has reached it's end of the lifespan.
 
 | Build #                          | Build release date | Supported? | Estimated cutoff range             | Actual cutoff date |
 | -------------------------------- | ------------------ | ---------- | ---------------------------------- | ------------------ |
-| 655                              | 01/09/25           | Yes        | 02/04/25 - 02/08/25                | TBD                |
-| 656                              | 01/16/25           | Yes        | 02/13/25 - 02/18/25                | TBD                |
-| 657                              | 01/24/25           | Yes        | 02/20/25 - 02/28/25                | TBD                |
 | 658                              | 01/31/25           | Yes        | 02/24/25 - 03/08/25*               | TBD                |
 | 659 **(Current Sober build)**    | 02/06/25           | Yes        | 03/10/25 - 03/15/25                | TBD                |
+| 660                              | 02/13/25           | Yes        | 03/17/25 - 03/22/25                | TBD                |
+| 661                              | 02/20/25           | Yes        | 03/24/25 - 03/29/25                | TBD                |
+| 662                              | 02/27/25           | Yes        | 03/25/25 - 03/29/25                | TBD                |
   
   **cutoff estimation was pushed two weeks forward from the initial esimation due to holiday vacation
   *this estimation is a week further due to a slightly shorter month
