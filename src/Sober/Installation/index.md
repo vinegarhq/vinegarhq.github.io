@@ -43,7 +43,7 @@ Once the APK is downloaded, select the APK from the file picker and Roblox shoul
 Like the official Roblox client, there really isn't anything that you can configure by default outside of the app. But the [tips](../../SUMMARY.md) page is here to help you with some things you might want such as FFlags or bringing the old Oof sound back.
 
 ## Reinstalling Roblox
-To reinstall Roblox, run the follwing command on your terminal:
+To reinstall Roblox, run the following command on your terminal:
 
 ```console
 $ flatpak run org.vinegarhq.Sober --bootstrap
@@ -52,7 +52,7 @@ $ flatpak run org.vinegarhq.Sober --bootstrap
 You are then instructed to go through the installation process again.
 
 ## Uninstalling Sober
-To uninstall Sober, run the following command on your terminal:
+To uninstall Sober, run the following command in your terminal:
 
 ```console
 $ flatpak uninstall org.vinegarhq.Sober
