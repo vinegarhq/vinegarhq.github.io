@@ -27,13 +27,13 @@ It means that the Roblox build Sober is in has reached it's end of the lifespan.
   <summary>Roblox build estimated cutoff table</summary>
   This table provides an estimated range when Roblox cuts out a build. Roblox builds typically last approximately a month before Roblox cuts out the build from being accepted to the servers.
 
-| Build #                          | Build release date | Supported? | Estimated cutoff range             | Actual cutoff date |
-| -------------------------------- | ------------------ | ---------- | ---------------------------------- | ------------------ |
-| 658                              | 01/31/25           | Yes        | 02/24/25 - 03/08/25*               | TBD                |
-| 659 **(Current Sober build)**    | 02/06/25           | Yes        | 03/10/25 - 03/15/25                | TBD                |
-| 660                              | 02/13/25           | Yes        | 03/17/25 - 03/22/25                | TBD                |
-| 661                              | 02/20/25           | Yes        | 03/24/25 - 03/29/25                | TBD                |
-| 662                              | 02/27/25           | Yes        | 03/25/25 - 03/29/25                | TBD                |
+| Build #                          | Build release date | Supported? | Estimated cutoff range             |
+| -------------------------------- | ------------------ | ---------- | ---------------------------------- |
+| 658                              | 01/31/25           | Yes        | 02/24/25 - 03/08/25*               |
+| 659                              | 02/06/25           | Yes        | 03/10/25 - 03/15/25                |
+| 660                              | 02/13/25           | Yes        | 03/17/25 - 03/22/25                |
+| 661 **(Current Sober build)**    | 02/20/25           | Yes        | 03/24/25 - 03/29/25                |
+| 662                              | 02/27/25           | Yes        | 03/25/25 - 03/29/25                |
   
   **cutoff estimation was pushed two weeks forward from the initial esimation due to holiday vacation
   *this estimation is a week further due to a slightly shorter month
