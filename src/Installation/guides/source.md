@@ -16,7 +16,7 @@ Please verify that you pass the [minimum system requirements](../index.md) befor
 
 Before you can install Vinegar, you will have to install Wine first. You can use the guide for your distribution on the [wine wiki](https://wiki.winehq.org/Download). For instance, you can find guides for [Arch](https://wiki.archlinux.org/title/wine) and [Gentoo](https://wiki.gentoo.org/wiki/Wine).
 
-It may also be reccomended to use [Proton GE](https://github.com/GloriousEggroll/proton-ge-custom).
+It may also be recommended to use [Proton GE](https://github.com/GloriousEggroll/proton-ge-custom).
 
 It is recommended to ensure that you have installed Wine 8.3 or above on your system, as Roblox requires a minimum version of 8.0 and may encounter stability issues under 8.3.
 
