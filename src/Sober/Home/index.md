@@ -4,11 +4,13 @@
 
 <div class="warning">
 
-  **Notice regarding the recent Sober update**
+  **Welcome back**
   
-  Due to "The Hunt" event, there has been increased client security in order to prevent cheating during the event. As a result, **Sober may not be available until April 5th, 2025.** Until then, please seek alternative options.
+  Welcome back to Sober after the two week long break. Following the on-platform conclusion of "The Hunt: Mega Edition", we have updated Sober to allow back access into Roblox.
 
-  ![discord message regarding the ongoing disruption of sober](./itsSoverForNow.png)
+  To get the latest version of Sober, please run `flatpak update`. If you can't get the update right now, please allow up to 24 hours for Cloudflare's server to cache the update.
+
+  If there's other questions or concerns that wants to be addressed, please feel free to make an issue report on [Sober's issue tracker](https://github.com/vinegarhq/sober/issues).
 
 </div>
 
