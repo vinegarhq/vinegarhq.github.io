@@ -10,7 +10,7 @@ Other requirements include:
   - Graphics: Vulkan 1.0* or later. (or OpenGL ES 3.0 or later for OpenGL operation)
 - Software:
   - Flatpak installed on your system.
-  - Linux kernel 5.11+
+  - Linux kernel 5.11+ or any other Linux kernel with seccomp support.
 
 <p class="tiny">[*] Vulkan 1.3 is required for "Future" graphics.<p>
 
