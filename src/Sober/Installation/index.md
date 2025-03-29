@@ -5,9 +5,12 @@
 Before using Sober, there are some requirements for your setup to be able to run Sober. The requirements are based on [Roblox's official minimum requirements for mobile](https://en.help.roblox.com/hc/en-us/articles/203625474).<br>
 Other requirements include:
 
-- Processor: x86-64 CPU **with SSE4.2 support** (see the corresponding [FAQ question](../FAQ/index.md#How-do-I-know-I-meet-the-requirements-to-run-Sober))
-- Graphics: Vulkan 1.0* or later. (or OpenGL ES 3.0 or later for OpenGL operation)
-- Flatpak installed on your system.
+- Hardware:
+  - Processor: x86-64 CPU **with SSE4.2 support** (see the corresponding [FAQ question](../FAQ/index.md#How-do-I-know-I-meet-the-requirements-to-run-Sober))
+  - Graphics: Vulkan 1.0* or later. (or OpenGL ES 3.0 or later for OpenGL operation)
+- Software:
+  - Flatpak installed on your system.
+  - Linux kernel 5.11+ or any other Linux kernel with seccomp support.
 
 <p class="tiny">[*] Vulkan 1.3 is required for "Future" graphics.<p>
 
@@ -58,4 +61,4 @@ To uninstall Sober, run the following command in your terminal:
 $ flatpak uninstall org.vinegarhq.Sober
 ```
 
-> By default, this will keep data. If you need to delete the data, pass `--delete-data` before the application ID to do so.
+> By default, this will keep data. If you're having issues with Sober and you wish to fully reinstall it pass `--delete-data` before the application ID to do so.
