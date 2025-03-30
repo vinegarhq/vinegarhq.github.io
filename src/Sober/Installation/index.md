@@ -21,11 +21,33 @@ If you don’t have Flatpak installed on your system, you can install it by goin
 
 ## Instructions
 ### To install
-Once you have Flatpak installed on your system, you can either download the Flatpak link for your software center [here](https://sober.vinegarhq.org/sober.flatpakref), or in your terminal, run:
+
+#### Through Flathub (recommended)
+Sober can be found on [Flathub](https://flathub.org/apps/org.vinegarhq.Vinegar):
+
+<a href="https://flathub.org/apps/org.vinegarhq.Sober">
+	<img width="180" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-en.png"/>
+</a><br><br>
+
+<details>
+ <summary>...or through the following commands</summary>
+
+ ```console
+ $ flatpak install --user flathub org.vinegarhq.Sober
+ $ flatpak run org.vinegarhq.Sober
+ ```
+ 
+</details>
+
+
+#### Through self-hosted repository
+You can either download the Flatpak link for your software center [here](https://sober.vinegarhq.org/sober.flatpakref), or in your terminal, run:
 
 ```console
 $ flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
 ```
+
+### Installing Roblox
 
 After installation, Sober should appear in your app grid on GNOME or your Application Launcher on KDE/Cinnamon. Open it up and if everything works out, you should see the bootstrapper installation screen.
 

@@ -4,13 +4,13 @@
 
 <div class="warning">
 
-  **Welcome back**
-  
-  Welcome back to Sober after the two week long break. Following the on-platform conclusion of "The Hunt: Mega Edition", we have updated Sober to allow back access into Roblox.
+  **Sober is available through Flathub!**
 
-  To get the latest version of Sober, please run `flatpak update`. If you can't get the update right now, please allow up to 24 hours for Cloudflare's server to cache the update.
+  Great news! Sober is now more than ever easily available to download and install. After months and months of self-hosting, the devs have decided to open the access door a bit. No need to worry about installation errors and etc.
 
-  If there's other questions or concerns that wants to be addressed, please feel free to make an issue report on [Sober's issue tracker](https://github.com/vinegarhq/sober/issues).
+  To install, all you have to do is just make sure you have access to the Flathub remote and just type **`flatpak install --user flathub org.vinegarhq.Sober`**.
+
+  > Please note: The Flathub version, until whitelisted for instant updates, will have updates delayed by upwards to 3 hours. If there is any issues that requires instant attention, there will be some downtime before it is able to reach all users.
 
 </div>
 
