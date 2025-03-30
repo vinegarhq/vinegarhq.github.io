@@ -13,9 +13,12 @@ To open the configuation file, open a text editor to `~/.var/app/org.vinegarhq.S
     "bring_back_oof": false,
     "discord_rpc_enabled": true,
     "enable_hidpi": false,
-    "fflags": null,
+    "fflags": {
+        "FFlagExample": true
+    },
     "server_location_indicator_enabled": false,
     "touch_mode": "off",
+    "use_libsecret": false,
     "use_opengl": false
 }
 ```
@@ -29,4 +32,5 @@ To open the configuation file, open a text editor to `~/.var/app/org.vinegarhq.S
 | `fflags`                            | a section for inputting additional FFlags to use advanced features                    | -         |
 | `server_location_indicator_enabled` | shows a popup of the location of the server you are connected                         | `false`   |
 | `touch_mode`                        | enables touchscreen controls                                                          | `"off"`   |
+| `use_libsecret`                     | allows users to store the login cookie securely (**EXPERIMENTAL**)                    | `false`   |
 | `use_opengl`                        | use OpenGL instead of default Vulkan graphics API                                     | `false`   |
