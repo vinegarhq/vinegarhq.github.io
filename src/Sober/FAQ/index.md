@@ -52,12 +52,6 @@ A: There are various issues that could cause this. (You can check [the list of c
 A: We currently have no plans to support ARM64. It'd take a huge amount of time and effort we can't spare. However, this isn't definitive and could be reconsidered in the future.
 
 
-
-## Q: Will Sober be released on Flathub?
-A: No. Releasing Sober on Flathub implies that Sober is ready for production use, and that Sober is likely to keep on working for the long term. Sober isn't a production use-ready software because it's not supported, and support could stop at any time for any reason.
-
-
-
 ## Q: Does it work with VR?
 A: No, as the Android version doesn't have support for VR. The Quest version is only on built on ARM and under a translation layer, it performs horribly.
 
