@@ -14,8 +14,7 @@ Other requirements include:
 
 <p class="tiny">[*] Vulkan 1.3 is required for "Future" graphics.<p>
 
-> Sober is not distributed anywhere else but our self-hosted Flatpak repository.<br>
-If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there. 
+> If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there. 
 
 > At this time, Sober is not available for ARM64 devices
 
