@@ -64,7 +64,7 @@ Once the APK is downloaded, select the APK from the file picker and Roblox shoul
 
 ## Post-Install
 
-Like the official Roblox client, there really isn't anything that you can configure by default outside of the app. But the [tips](../../SUMMARY.md) page is here to help you with some things you might want such as FFlags or bringing the old Oof sound back.
+Like the official Roblox client, there really isn't anything that you can configure by default outside of the app. But the [tips](../Configuration/tipsAndTricks.md) page is here to help you with some things you might want such as FFlags or bringing the old Oof sound back.
 
 ## Reinstalling Roblox
 To reinstall Roblox, run the following command in your terminal:
