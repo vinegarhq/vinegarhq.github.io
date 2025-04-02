@@ -22,7 +22,7 @@ Other requirements include:
 ### To install
 
 #### Through Flathub (recommended)
-Sober can be found on [Flathub](https://flathub.org/apps/org.vinegarhq.Vinegar):
+Sober can be found on [Flathub](https://flathub.org/apps/org.vinegarhq.Sober):
 
 <a href="https://flathub.org/apps/org.vinegarhq.Sober">
 	<img width="180" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-en.png"/>
