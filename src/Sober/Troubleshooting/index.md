@@ -32,7 +32,7 @@ It means that the Roblox build Sober is in has reached it's end of the lifespan.
 | 658                              | 01/31/25           | Yes        | 02/24/25 - 03/08/25*               |
 | 659                              | 02/06/25           | Yes        | 03/10/25 - 03/15/25                |
 | 660                              | 02/13/25           | Yes        | 03/17/25 - 03/22/25                |
-| 661 **(Current Sober build)**    | 02/20/25           | Yes        | 03/24/25 - 03/29/25                |
+| 661                              | 02/20/25           | Yes        | 03/24/25 - 03/29/25                |
 | 662                              | 02/27/25           | Yes        | 03/25/25 - 03/29/25                |
   
   **cutoff estimation was pushed two weeks forward from the initial esimation due to holiday vacation
