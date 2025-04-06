@@ -23,23 +23,6 @@ It means that the Roblox build Sober is in has reached it's end of the lifespan.
 > This is actually an uncommon issue, since it only happens once every approximate two weeks to a month if Sober is left without an update to a newer Roblox build, but this is just here in case it happens.
 > Sober uses a fixed-point release system, which means only one Roblox build is supported at a time per Sober update and there are no automatic updates to the next build. Manually attempting to update Roblox will not work since it requires a specific build version in order to install.
 
-<details>
-  <summary>Roblox build estimated cutoff table</summary>
-  This table provides an estimated range when Roblox cuts out a build. Roblox builds typically last approximately a month before Roblox cuts out the build from being accepted to the servers.
-
-| Build #                          | Build release date | Supported? | Estimated cutoff range             |
-| -------------------------------- | ------------------ | ---------- | ---------------------------------- |
-| 658                              | 01/31/25           | Yes        | 02/24/25 - 03/08/25*               |
-| 659                              | 02/06/25           | Yes        | 03/10/25 - 03/15/25                |
-| 660                              | 02/13/25           | Yes        | 03/17/25 - 03/22/25                |
-| 661 **(Current Sober build)**    | 02/20/25           | Yes        | 03/24/25 - 03/29/25                |
-| 662                              | 02/27/25           | Yes        | 03/25/25 - 03/29/25                |
-  
-  **cutoff estimation was pushed two weeks forward from the initial esimation due to holiday vacation
-  *this estimation is a week further due to a slightly shorter month
-</details>
-
-
 
 ### RBXCRASH: OutOfMemory (Failed to allocate memory. size = [x], alignment = [y])
 
