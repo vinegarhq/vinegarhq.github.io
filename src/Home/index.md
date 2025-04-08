@@ -2,6 +2,20 @@
   <img style="max-width: 30%" src="../vinegar.svg">
 </p>
 
+<div class="warning">
+
+  **Vinegar Advisory:**
+
+  We have received conflicting reports of alleged false terminations regarding Roblox Studio via. Wine.
+  
+  **We advise everyone to stop what you are doing IMMEDIATELY and __do not use Vinegar until further notice__**
+  
+  We are getting into the situation and having this resolved as soon as we can.
+
+  If you are already terminated, **__please contact Roblox support as soon as possible__**.
+
+</div>
+
 ## Welcome to the home of the VinegarHQ project!
 
 Here, you'll find documentation for Vinegar and links to Sober.
