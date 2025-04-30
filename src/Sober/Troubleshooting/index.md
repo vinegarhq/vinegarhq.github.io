@@ -41,7 +41,9 @@ If it doesn't, append the following FFlags into the `"fflags"` section at `~/.va
 
 If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead. Otherwise, you might be out of luck.
 
-> Essentially, to avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel).
+> Setting the override to `0` is not recommended, however this is the lowest possible setting textures are able to render. Only set to `0` at the last resort.
+
+> Setting the texture override will not guarantee that all games will be playable. Essentially, to mostly avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel).
 
 
 ### I was kicked due to "Unexpected client behavior" (Error 268)
@@ -53,11 +55,7 @@ There has been recent reports after Sober was recently updated. (Commit `0.0.0-3
 
 
 ### Sober just randomly crashes
-Depends on if the logs actually provided something useful. 
-
-
-Chances are if you're using Linux in another primary language, Sober crashes since the locale for Sober is primarily English.
-
+Depends on if the logs actually provided something useful.
 
 Otherwise, we cannot give a definite answer.
 
@@ -109,11 +107,11 @@ If you haven't logged into Sober, you should do it now. Afterwards you will be a
 
 
 ### Automatic download isn't working (Long hang time; falls back to manual install)
-### Installing Sober gives me a 403 error
-- Three out of ten chances is that your ISP is blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
-- Three out of ten chances is that your ISP is blocking access to Sober's repo server in Cloudflare, which is what Flatpak is attempting to contact in order to obtain the Flatpak remote in order to download Sober. Otherwise, two out of ten could be that since the repo is a private web page, it cannot be accessed either way.
-
-> There have also been reports of being unable to copy the apk to a directory
+### The manifest could not be reached
+Several scenarios could happen:
+- Your ISP is blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
+- Your ISP is blocking access to Sober's repo server in Cloudflare, which connection is required to get the manifest. The manifest determines if you need to update Sober to the next application version.
+- Otherwise, it could be that since the repo is a private web page, it cannot be accessed either way.
 
 #### Solution
 Use a VPN
@@ -137,7 +135,7 @@ Either your DE does not know that it exists, Flatpak failed to create one when y
 #### Solution
 Wait for the DE to index the shortcut first.
 
-If it doesn't index, make sure that there are both `.desktop` entries in `~/.local/share/flatpak/exports/share/applications` and `/home/[user]/.local/share/flatpak/app/org.vinegarhq.Sober/current/active/export/share/applications`. If there isn't you should create one at `/home/[user]/.local/share/flatpak/app/org.vinegarhq.Sober/current/active/export/share/applications` with the following:
+If it doesn't index, make sure that there are both `.desktop` entries in `~/.local/share/flatpak/exports/share/applications` and `/home/[user]/.local/share/flatpak/app/org.vinegarhq.Sober/current/active/export/share/applications`. If there isn't you should create one at `~/.local/share/flatpak/app/org.vinegarhq.Sober/current/active/export/share/applications` with the following:
 ```
 [Desktop Entry]
 Type=Application
