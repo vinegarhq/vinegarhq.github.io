@@ -37,7 +37,11 @@ We made it closed source to reduce the potential for abuse (which would lead to 
 
 
 ## ARM64 support/VR support?
-Neither are supported. We have no intention of changing this.
+Neither are supported. Porting to ARM64 is virtually impossible since kernel features that is utilized in Sober is not present in the ARM Linux kernel.
+
+For VR, the Quest build does not ship with x86 code like Android does. Doing this have to resort with ARM64 to x86 translation, which is slow and problematic.
+
+We have no intention of changing this.
 
 
 

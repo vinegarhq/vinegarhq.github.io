@@ -96,7 +96,7 @@ Virtual machines are not generally supported. Unless you can passthrough the GPU
 
 
 ### I cannot install Sober on an ARM64 machine
-That's because there isn't any support for ARM devices at the moment. There is no solution to this at the moment, but you're free to try [box64](https://github.com/ptitSeb/box64) and see if that works.
+That's because there isn't any support for ARM devices at the moment. There is no solution to this at the moment.
 
 
 
