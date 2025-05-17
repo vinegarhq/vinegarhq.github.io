@@ -17,16 +17,9 @@ There are two ways of obtaining logs when running Sober:
 
 ## Known General Issues
 
-### It says Roblox is out of date (Error 280), but Sober isn't updating!
-It means that the Roblox build Sober is in has reached it's end of the lifespan. If you are reading this, and Sober hasn't been updated, please wait until they do. Otherwise, you will have to run `flatpak update`.
-
-> This is actually an uncommon issue, since it only happens once every approximate two weeks to a month if Sober is left without an update to a newer Roblox build, but this is just here in case it happens.
-> Sober uses a fixed-point release system, which means only one Roblox build is supported at a time per Sober update and there are no automatic updates to the next build. Manually attempting to update Roblox will not work since it requires a specific build version in order to install.
-
-
 ### RBXCRASH: OutOfMemory (Failed to allocate memory. size = [x], alignment = [y])
 
-That means your graphics card ran out of video memory that Sober is trying to load on. This is especially problematic for NVIDIA users because the drivers have terrible written Linux drivers for VRAM handling. (There has been reports of Intel Haswell and earlier iGPU users facing issues like this too)
+That means your graphics card ran out of video memory that Sober is trying to load on. This is especially problematic for NVIDIA users because the Linux drivers do not have shared VRAM spillover that is present in Windows. Intel Haswell and earlier iGPUs are also experiencing the same issue, though the cause is currently unknown.
 
 The main culprit behind this is basically due to textures being loaded at the highest quality possible, which is the default setting.
 
@@ -43,7 +36,14 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 
 > Setting the override to `0` is not recommended, however this is the lowest possible setting textures are able to render. Only set to `0` at the last resort.
 
-> Setting the texture override will not guarantee that all games will be playable. Essentially, to mostly avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel).
+> Setting the texture override will not guarantee that all games will be playable. Essentially, to mostly avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel or NVK for Turing+).
+
+
+### It says Roblox is out of date (Error 280), but Sober isn't updating!
+It means that the Roblox build Sober is in has reached it's end of the lifespan. If you are reading this, and Sober hasn't been updated, please wait until they do. Otherwise, you will have to run `flatpak update`.
+
+> This is actually an uncommon issue, since it only happens once every approximate two weeks to a month if Sober is left without an update to a newer Roblox build, but this is just here in case it happens.
+> Sober uses a fixed-point release system, which means only one Roblox build is supported at a time per Sober update and there are no automatic updates to the next build. Manually attempting to update Roblox will not work since it requires a specific build version in order to install.
 
 
 ### I was kicked due to "Unexpected client behavior" (Error 268)
