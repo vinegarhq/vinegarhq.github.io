@@ -36,7 +36,7 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 
 > Setting the override to `0` is not recommended, however this is the lowest possible setting textures are able to render. Only set to `0` at the last resort.
 
-> Setting the texture override will not guarantee that all games will be playable. Essentially, to mostly avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel or NVK for Turing+).
+> Setting the texture override will not guarantee that all games will be playable. Essentially, to mostly avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel or NVK for Maxwell-Ada).
 
 
 ### It says Roblox is out of date (Error 280), but Sober isn't updating!
