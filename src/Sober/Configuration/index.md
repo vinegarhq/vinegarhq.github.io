@@ -10,6 +10,7 @@ The configuration file is located at: `~/.var/app/org.vinegarhq.Sober/config/sob
 | ----------------------------------- | ------------------------------------------------------------------------------------- | --------- |
 | `bring_back_oof`                    | Bring back the nostalgic 'oof' sound | `false` |
 | `discord_rpc_enabled`               | Share the game you're playing with your Discord servers and contacts | `true` |
+| `enable_gamemode`                   | Enables gamemode, a tool which enhances game performance | `true` |
 | `enable_hidpi`                      | Scale Sober's game window depending on your screen's pixel density, useful for very high resolution displays/laptops | `false`   |
 | `fflags`                            | Experimental internal Roblox configration. We don't recommend or support using this | - |
 | `server_location_indicator_enabled` | Show a popup with the location of the gameserver you connected to upon visiting an experience | `false` |
