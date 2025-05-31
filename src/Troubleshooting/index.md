@@ -64,7 +64,7 @@ Lower your mouse polling rate to 125hz.
 
 ### Unable to log in
 
-If you're not using the Flatpak version of Vinegar add `webview = ""` under `[studio]` in your Vinegar config or you can just run `pkill -f webview` when the black window appears and you should be prompted to login with your browser.
+If you're not using the Flatpak version of Vinegar and you get a black login window add `webview = ""` under `[studio]` in your Vinegar config or you can just run `pkill -f webview` when the black window appears and you should be prompted to login with your browser.
 
 Follow the on-screen prompt and click "Log in via browser". This will open an authentication website in your browser. Once you're done authenticating, you might be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
 
