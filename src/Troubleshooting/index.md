@@ -64,11 +64,13 @@ Lower your mouse polling rate to 125hz.
 
 ### Unable to log in
 
-If you get a black login window you can add `webview = ""` under `[studio]` in your Vinegar config or you can just run `pkill -f webview` when the black window appears and you should be prompted to login with your browser.
+If you're not using the Flatpak version of Vinegar add `webview = ""` under `[studio]` in your Vinegar config or you can just run `pkill -f webview` when the black window appears and you should be prompted to login with your browser.
 
 Follow the on-screen prompt and click "Log in via browser". This will open an authentication website in your browser. Once you're done authenticating, you might be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
 
-If clicking on the button doesn't do anything you may need to install the `xdg-desktop-portal-gtk` package, the name may differ on some distributions.
+If clicking on the button doesn't do anything you may need to install the `xdg-desktop-portal-gtk` package, the name may differ on some distributions, then reboot your system.
+
+You may also need to give an environment variable to Vinegar for the login to work: `flatpak override --env XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar`
 
 If all steps were followed correctly, studio should automatically log into your account.
 
