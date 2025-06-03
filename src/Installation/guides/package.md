@@ -70,7 +70,7 @@ games-util/vinegar **
 
 [![Alpine Linux Edge](https://repology.org/badge/version-for-repo/alpine_edge/vinegar.svg?header=Alpine%20Linux%20Edge&style=flat-square)](https://pkgs.alpinelinux.org/package/edge/community/x86_64/vinegar)
 
-Vinegar's Alpine package resides within the [Community repository](https://wiki.alpinelinux.org/wiki/Repositories#Community). The Community repository should already be added out of the box. If you don't have it enabled, a guide on enabling the Community repository is available: [Managing repositories - Alpine Linux wiki](https://wiki.alpinelinux.org/wiki/Repositories#Managing_repositories]).
+Vinegar's Alpine package resides within the [Edge Community repository](https://wiki.alpinelinux.org/wiki/Repositories#Community). The Edge Community repository should already be added out of the box. If you don't have it enabled, a guide on enabling the Edge Community repository is available: [Managing repositories - Alpine Linux wiki](https://wiki.alpinelinux.org/wiki/Repositories#Managing_repositories]).
 
 ```console
 # apk add vinegar
