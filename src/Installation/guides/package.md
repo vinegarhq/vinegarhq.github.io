@@ -68,9 +68,9 @@ games-util/vinegar **
 
 ### Alpine Linux
 
-[![Alpine Linux Edge](https://repology.org/badge/version-for-repo/alpine_edge/vinegar.svg?header=Alpine%20Linux%20Edge&style=flat-square)](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/vinegar)
+[![Alpine Linux Edge](https://repology.org/badge/version-for-repo/alpine_edge/vinegar.svg?header=Alpine%20Linux%20Edge&style=flat-square)](https://pkgs.alpinelinux.org/package/edge/community/x86_64/vinegar)
 
-Vinegar's Alpine package resides within the [Edge testing repository](https://wiki.alpinelinux.org/wiki/Repositories#Edge). A guide on enabling the Edge repository is available: [Managing repositories - Alpine Linux wiki](https://wiki.alpinelinux.org/wiki/Repositories#Managing_repositories]).
+Vinegar is available from Alpine Linux v3.22 onwards.
 
 ```console
 # apk add vinegar
