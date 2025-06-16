@@ -53,6 +53,12 @@ There has been recent reports after Sober was recently updated. (Commit `0.0.0-3
 - Anime Vanguards
 
 
+### It says Sober couldn't run because my CPU does not have a required feature! (x86-64-v2 or newer)
+Unfortunately there is nothing we can do to resolve this issue. Most likely, your CPU does not support SSE4.2, which is a mandatory hardware requirement to run even Roblox on Android alone.
+
+#### Solution
+Use a CPU that is from 2008+ (for Intel) or 2013+ (for AMD).
+
 
 ### Sober just randomly crashes
 Depends on if the logs actually provided something useful.
