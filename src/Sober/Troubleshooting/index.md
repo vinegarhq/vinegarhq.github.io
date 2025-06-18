@@ -99,11 +99,19 @@ If you haven't logged into Sober, you should do it now. Afterwards you will be a
 
 
 ### Automatic download isn't working (Long hang time; falls back to manual install)
+Your ISP could be blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
+
+#### Solution
+Use a VPN
+
+
+
 ### The manifest could not be reached
 Several scenarios could happen:
-- Your ISP is blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
-- Your ISP is blocking access to Sober's repo server in Cloudflare, which connection is required to get the manifest. The manifest determines if you need to update Sober to the next application version.
+- Your ISP could be blocking access to Sober's repo server in Cloudflare, which connection is required to get the manifest. The manifest determines if you need to update Sober to the next application version.
 - Otherwise, it could be that since the repo is a private web page, it cannot be accessed either way.
+
+> As a last resort, Sober will attempt to contact the manifest through GitHub's raw user content URL. Sober will crash if it also fails to contact the manifest through that URL.
 
 #### Solution
 Use a VPN
