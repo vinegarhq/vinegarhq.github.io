@@ -39,20 +39,6 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 > Setting the texture override will not guarantee that all games will be playable. Essentially, to mostly avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel or NVK for Maxwell-Ada).
 
 
-### It says Roblox is out of date (Error 280), but Sober isn't updating!
-It means that the Roblox build Sober is in has reached it's end of the lifespan. If you are reading this, and Sober hasn't been updated, please wait until they do. Otherwise, you will have to run `flatpak update`.
-
-> This is actually an uncommon issue, since it only happens once every approximate two weeks to a month if Sober is left without an update to a newer Roblox build, but this is just here in case it happens.
-> Sober uses a fixed-point release system, which means only one Roblox build is supported at a time per Sober update and there are no automatic updates to the next build. Manually attempting to update Roblox will not work since it requires a specific build version in order to install.
-
-
-### I was kicked due to "Unexpected client behavior" (Error 268)
-There has been recent reports after Sober was recently updated. (Commit `0.0.0-379b6ec`) It is suspected that Roblox is slowly enabling Hyperion onto its Android builds, but it is not fully confirmed and only applies to some games. While it is unlikely you will be banned for using Sober, the software cannot guarantee the support statuses of some games.
-
-#### Known games affected
-- Anime Vanguards
-
-
 ### It says Sober couldn't run because my CPU does not have a required feature! (x86-64-v2 or newer)
 Unfortunately there is nothing we can do to resolve this issue. Most likely, your CPU does not support SSE4.2, which is a mandatory hardware requirement to run even Roblox on Android alone.
 
