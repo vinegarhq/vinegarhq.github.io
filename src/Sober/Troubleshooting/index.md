@@ -107,7 +107,6 @@ Use a VPN
 
 
 ### The manifest could not be reached
-Several scenarios could happen:
 - Your ISP could be blocking access to Sober's repo server in Cloudflare, which connection is required to get the manifest. The manifest determines if you need to update Sober to the next application version.
 - Otherwise, it could be that since the repo is a private web page, it cannot be accessed either way.
 
