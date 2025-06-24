@@ -35,6 +35,9 @@ Use [Vinegar](https://vinegarhq.org/) for Roblox Studio.
 We made it closed source to reduce the potential for abuse (which would lead to Roblox blocking us again)
 
 
+## Is Sober ever going to be distributed outside of Flatpak?
+Unfortunately no. It is the same reason as to why Sober is closed source. Additionally, we can implment tight restrictions in order to further prevent attempted abuse.
+
 
 ## ARM64 support/VR support?
 Neither are supported. Porting to ARM64 is virtually impossible since kernel features that is utilized in Sober is not present in the ARM Linux kernel.
