@@ -36,7 +36,7 @@ We made it closed source to reduce the potential for abuse (which would lead to 
 
 
 ## Is Sober ever going to be distributed outside of Flatpak?
-Unfortunately no. It is the same reason as to why Sober is closed source. Additionally, we can implment tight restrictions in order to further prevent attempted abuse.
+Unfortunately no. It is for the same reason as to why Sober is closed source. Additionally, this allows us to implement tighter restrictions in order to prevent any abuse.
 
 
 ## ARM64 support/VR support?
