@@ -2,14 +2,6 @@
   <img style="max-width: 30%" src="../../sober.svg">
 </p>
 
-<div class="warning">
-
-  **Sober is available through Flathub!**
-
-  To install Sober, [make sure Flatpak is set up](https://flathub.org/setup), then just [get the app](https://flathub.org/apps/org.vinegarhq.Sober).
-
-</div>
-
 ## Welcome to the documentation of Sober
 
 - Sober is an experimental software interoperability layer, which lets users run the **Android release of Roblox** on Linux.
