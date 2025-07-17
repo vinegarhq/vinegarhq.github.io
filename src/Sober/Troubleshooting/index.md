@@ -11,7 +11,7 @@ You should know what error you are getting before asking for any help. Logs usua
 There are two ways of obtaining logs when running Sober:
 
 - Run Sober on the terminal (`flatpak run org.vinegarhq.Sober`)
-- Get the log file at `~/.var/app/org.vinegarhq.Sober/data/sober/appData/logs`
+- Get the log file at `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/`
 
 ---
 
