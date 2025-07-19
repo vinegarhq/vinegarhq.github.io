@@ -176,7 +176,7 @@ Roblox broke the keybind to enter chat on Android builds, specifically on games 
 > Roblox began to migrate all games to the new chat system [since May 13th, 2025](https://devforum.roblox.com/t/update-on-legacy-chat-deprecation-and-textchatservice-migration/3376880). It may take some time before all games are switched out from legacy chat.
 
 
-### Sober called a termination without an active exception / Sober crashed by the X server
+### Sober called a termination without an active exception / Sober crashed by the Xorg server
 
 Unfortunately there is yet a root cause for this issue.
 
