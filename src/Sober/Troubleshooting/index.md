@@ -178,7 +178,7 @@ Roblox broke the keybind to enter chat on Android builds, specifically on games 
 
 ### Sober called a termination without an active exception / Sober crashed by the Xorg server
 
-Unfortunately there is yet to identify a root cause for this issue.
+Unfortunately a root cause for this issue is yet to be identified.
 
 For some reason, we are beginning to recieve elevated reports of Sober sometimes crashing in Xorg sessions beginning in the week of July 7th.
 
