@@ -90,4 +90,8 @@ This issue can be fixed by switching renderer to Vulkan, instructions on how to 
 
 ### Flickering widgets and plugin windows
 
-Change the Roblox Studio renderer from Studio's settings to Vulkan
+Change the Roblox Studio renderer from Studio's settings to Vulkan.
+
+### Linux files inaccessible from file explorer dialog (import/export)
+
+Run `flatpak override --filesystem=home org.vinegarhq.Vinegar` to expose your Linux home directory to Vinegar. When using the file explorer, expand the / and then expand home.
