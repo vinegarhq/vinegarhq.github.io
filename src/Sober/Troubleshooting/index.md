@@ -185,3 +185,42 @@ For some reason, we are beginning to recieve elevated reports of Sober sometimes
 #### Solution
 
 Use the Wayland session
+
+
+
+### My audio is crackling / acting weird!
+Whether it's from your microphone or in-game audio, the exact cause of this issue is unknown and may depend on your audio setup.
+
+#### Solution
+Sober uses PulseAudio as its audio driver by default. Switching to PipeWire or ALSA may help mitigate this issue.
+
+In order to switch to PipeWire as the audio driver, run the following command:
+```console
+$ flatpak override --user --filesystem=xdg-run/pipewire-0 --env=SDL_AUDIO_DRIVER=pipewire org.vinegarhq.Sober
+```
+
+In order to switch to ALSA as the audio driver, run this command instead:
+```console
+$ flatpak override --user --env=SDL_AUDIO_DRIVER=alsa org.vinegarhq.Sober
+```
+
+
+### When I try to join games from the Roblox website or click on private server links, nothing happens!
+Sober depends on the OpenURI portal for opening Roblox links. If you're experiencing issues related to that, then your desktop environment / window manager may not have set up XDG portals correctly.
+
+#### Solution
+Install the `xdg-desktop-portal-gtk` package from your distribution's repositories if you haven't done so already, then restart your device before proceeding with the next step.
+
+If you're on a desktop environment or window manager that uses X11, you can run the following script to setup the portal automatically:
+```console
+#!/bin/bash
+mkdir ~/.config/xdg-desktop-portal
+echo -e '[preferred]\ndefault=gtk' > ~/.config/xdg-desktop-portal/$(echo ${XDG_CURRENT_DESKTOP,,})-portals.conf
+systemctl --user restart xdg-desktop-portal.service xdg-desktop-portal-gtk.service
+xdg-mime default org.vinegarhq.Sober.desktop x-scheme-handler/roblox-player
+```
+
+If you're on a desktop environment or window manager that uses Wayland, XDG portals should work out of the box. If you're still experiencing issues, run the following command:
+```console
+xdg-mime default org.vinegarhq.Sober.desktop x-scheme-handler/roblox-player
+```
