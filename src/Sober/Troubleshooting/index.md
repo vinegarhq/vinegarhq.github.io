@@ -60,7 +60,7 @@ $ flatpak override --user --env=LC_ALL=en_US.UTF-8 org.vinegarhq.Sober
 
 
 ### It says Sober couldn't launch because my card does not support Vulkan
-Please see question #4 on [the FAQ](../FAQ/index.html#q-is-the-gpu-here-compatible). Otherwise, you will have to use OpenGL.
+Please see question #4 on [the FAQ](../FAQ/index.html#is-my-gpu-compatible). Otherwise, you will have to use OpenGL.
 
 
 
