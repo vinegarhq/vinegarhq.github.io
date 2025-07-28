@@ -19,7 +19,7 @@ There are two ways of obtaining logs when running Sober:
 
 ### RBXCRASH: OutOfMemory (Failed to allocate memory. size = [x], alignment = [y])
 
-That means your graphics card ran out of video memory that Sober is trying to load on. This is especially problematic for NVIDIA users because the Linux drivers do not have shared VRAM spillover that is present in Windows. Intel Haswell and earlier iGPUs are also experiencing the same issue, though the cause is currently unknown.
+That means your graphics card ran out of video memory that Sober is trying to load on. This is especially problematic for NVIDIA users because their Linux drivers do not have shared VRAM spillover that is present in Windows. Intel Haswell and earlier iGPUs are also experiencing the same issue, though the cause is currently unknown.
 
 The main culprit behind this is basically due to textures being loaded at the highest quality possible, which is the default setting.
 
