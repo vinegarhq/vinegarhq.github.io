@@ -93,7 +93,7 @@ That's because there isn't any support for ARM devices at the moment. There is n
 
 
 ### I launched Sober through the browser. It says I cannot join a game because I don't have the permission to do so! (Error 524)
-If you haven't logged into Sober, you should do it now. Afterwards you will be able to join from the browser for future sessions. Otherwise, it could be just a generic 524.
+If you haven't logged into Sober, you should do it now. Afterwards you will be able to join from the browser for future sessions. If you're still receiving the error, please check if you're joining on the correct account. Otherwise, it could be just a generic 524.
 
 > Sober does not launch the same way as it usually does on Windows or macOS. Sober will only carry over the join game request, not including login.
 
