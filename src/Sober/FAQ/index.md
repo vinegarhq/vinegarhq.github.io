@@ -1,4 +1,4 @@
-# Frequently Questioned Answers
+# Sober FAQs
 
 
 ## Why Does this exist?
