@@ -40,12 +40,9 @@ Unfortunately no. This is because it would be more easier to debug Sober using a
 
 
 ## ARM64 support/VR support?
-Neither are supported. Porting to ARM64 is virtually impossible since kernel features that is utilized in Sober is not present in the ARM Linux kernel.
+We are currently experimenting with ARM support for Sober, but it is not production-ready yet. Previously, it was (virtually) impossible to port Sober to ARM due to missing kernel features for the Linux ARM kernel that is required for Sober to operate.
 
-For VR, the Quest build does not ship with x86 code like Android does. Doing this have to resort with ARM64 to x86 translation, which is slow and problematic.
-
-We have no intention of changing this.
-
+For VR, the Quest build does not ship with x86 code like Android does. Doing this have to resort with ARM64 to x86 translation, which is slow and problematic. We have no intention of changing this.
 
 
 ## How does Sober work? Is it official? Will it get blocked by Roblox?

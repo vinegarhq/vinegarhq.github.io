@@ -88,7 +88,7 @@ Virtual machines are not generally supported. Unless you can passthrough the GPU
 
 
 ### I cannot install Sober on an ARM64 machine
-That's because there isn't any support for ARM devices at the moment. There is no solution to this at the moment.
+That's because there currently isn't any support for ARM devices. Please see question #8 on [the FAQ](../FAQ/index.html#arm64-supportvr-support).
 
 
 
