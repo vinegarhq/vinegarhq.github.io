@@ -95,3 +95,7 @@ Change the Roblox Studio renderer from Studio's settings to Vulkan.
 ### Linux files inaccessible from file explorer dialog (import/export)
 
 Run `flatpak --user override --filesystem=home org.vinegarhq.Vinegar` to expose your Linux home directory to Vinegar. When using the file explorer, expand the / and then expand home.
+
+### Unable to launch Vinegar with the following error: `No provider of eglGetCurrentContext found.`
+
+Run `flatpak --user override --nosocket=wayland org.vinegarhq.Vinegar` to force Vinegar to use the X11 backend on Wayland desktops.
