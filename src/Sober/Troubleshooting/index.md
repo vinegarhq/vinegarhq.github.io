@@ -182,11 +182,11 @@ There are various variants where Xorg crashes Sober.
 
 Unfortunately, we have no idea what is causing most of the variants. However, a specific Xorg crash is caused when Roblox was attempting to call Vulkan with invalid parameters, mostly on Nvidia GPUs.
 
-> We have been receiving elevated reports of Sober sometimes crashing in Xorg sessions beginning in the week of July 7th.
+> We have been receiving elevated reports of this issue beginning in the week of July 7th.
 
 #### Solution
 
-Use the Wayland session
+Use the Wayland session to reduce chances of Xorg crashes
 
 
 
@@ -226,3 +226,12 @@ If you're on a desktop environment or window manager that uses Wayland, XDG port
 ```console
 xdg-mime default org.vinegarhq.Sober.desktop x-scheme-handler/roblox-player
 ```
+
+
+### I have a HiDPI display and turned on Sober's HiDPI setting, but it isn't working!
+
+Please double check that the setting is on and you are **not** using X11. X11 does not have support for HiDPI.
+
+#### Solution
+
+Use the Wayland session for your DE where possible
