@@ -9,8 +9,7 @@ Additionally, ensure the requirements below:
 
 - Processor: X86-64 CPU.
 - Graphics: Vulkan 1.1 support.
-- Wine: 8.0 and onwards.
-  - A specialized/patched version of Wine may be required for general usage of Studio.
+- Wine: 10.13 and onwards (Wine is pre-installed if using Flatpak).
 
 ## Using Flatpak (recommended)
 
