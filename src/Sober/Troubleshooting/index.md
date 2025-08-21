@@ -235,3 +235,8 @@ Please double check that the setting is on and you are **not** using X11. X11 do
 #### Solution
 
 Use the Wayland session for your DE where possible
+
+
+### Pixelated outlines
+
+Unfortunately, this has been a longstanding issue for Sober as a result of using the Android client. We cannot fix this.
