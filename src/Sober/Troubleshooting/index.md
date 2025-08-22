@@ -246,6 +246,8 @@ Unfortunately, this has been a longstanding issue for Sober as a result of using
 
 This is mainly because the client wants to load the textures at enough low quality to run mobile phones.
 
+#### Solution
+
 If you want it at higher quality, append the following FFlags into the `"fflags"` section at `~/.var/app/org.vinegarhq.Sober/config/sober/config.json`
 ```json
 "DFIntTextureQualityOverride": 3,
