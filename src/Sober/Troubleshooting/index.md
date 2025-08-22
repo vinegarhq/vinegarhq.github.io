@@ -242,7 +242,7 @@ Use the Wayland session for your DE where possible
 Unfortunately, this has been a longstanding issue for Sober as a result of using the Android client. We cannot fix this.
 
 
-### My avatar's clothing looks pixelated
+### My avatar's clothing looks pixelated or low quality
 
 This is mainly because the client wants to load the textures at enough low quality to run mobile phones.
 
