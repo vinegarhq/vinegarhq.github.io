@@ -240,3 +240,16 @@ Use the Wayland session for your DE where possible
 ### Pixelated outlines
 
 Unfortunately, this has been a longstanding issue for Sober as a result of using the Android client. We cannot fix this.
+
+
+### My avatar's clothing looks pixelated
+
+This is mainly because the client wants to load the textures at enough low quality to run mobile phones.
+
+If you want it at higher quality, append the following FFlags into the `"fflags"` section at `~/.var/app/org.vinegarhq.Sober/config/sober/config.json`
+```json
+"DFIntTextureQualityOverride": 3,
+"DFFlagTextureQualityOverrideEnabled": true
+```
+
+> Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
