@@ -260,7 +260,7 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 
 ### Sober crashes on hybrid graphics with the following error: `vkGetPhysicalDeviceSurfacePresentModesKHR failed`
 
-This is mainly an issue on laptops with NVIDIA GPUs, where Sober is unable to wake up the discrete GPU for unknown reasons. It is said to be a problem with the latest NVIDIA drivers.
+This is mainly an issue on systems with NVIDIA GPUs, where Sober is unable to wake up the discrete GPU for unknown reasons. It is said to be a problem with the latest NVIDIA drivers.
 
 #### Solution
 
