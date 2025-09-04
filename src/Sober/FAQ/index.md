@@ -51,3 +51,6 @@ Sober crafts a specialized runtime for the Android version of Roblox. Effectivel
 All PC-only features and experiences are available on Sober thanks to our special runtime.
 
 Sober is unofficial research software. Roblox may choose to prevent Sober clients from using their services at any time.
+
+## Multi Instances support?
+No, as Roblox considers this practice malicious. Even if it weren't the case, we would rather not let Sober be used (or be as unintuitive as possible to use) in bot farms.
