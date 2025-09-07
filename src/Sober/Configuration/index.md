@@ -5,9 +5,9 @@ You may adjust application behavior by editing the default configuration file.
 The configuration file is located at: `~/.var/app/org.vinegarhq.Sober/config/sober/config.json`. Open it with your favorite editor.
 
 > Unless you know what you are doing, we encourage you to use the settings menu instead (by right clicking Sober in your app menu and select "Settings" or run `flatpak run org.vinegarhq.Sober config` in your terminal). Improperly formatting this JSON may lead to Sober not being able to launch.<br>
-> **Please read all warnings posted on the file before editing this file.** 
+> **Please read all warnings posted before editing this file.** 
 
-> If you mess something up, you can reset this file by deleting it. Sober will regenerate the files back to its default values.
+> If you mess something up, you can reset this file by deleting it. Sober will regenerate the file back to its default values.
 
 ## Reference
 
