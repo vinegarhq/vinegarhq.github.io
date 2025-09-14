@@ -70,7 +70,7 @@ Follow the on-screen prompt and click "Log in via browser". This will open an au
 
 If clicking on the button doesn't do anything you may need to install the `xdg-desktop-portal-gtk` package, the name may differ on some distributions, then reboot your system.
 
-You may also need to give an environment variable to Vinegar for the login to work: `flatpak override --env XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar`
+You may also need to give an environment variable to Vinegar for the login to work: `flatpak --user override --env XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar`
 
 If all steps were followed correctly, studio should automatically log into your account.
 
