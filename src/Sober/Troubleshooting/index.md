@@ -265,3 +265,8 @@ This is mainly an issue on systems with NVIDIA GPUs, where Sober is unable to wa
 #### Solution
 
 Run an application utilizing Vulkan (e.g. vkcube) in order to wake up the discrete GPU. Sober should be able to launch afterwards.
+
+
+### Sober crashes when joining a game
+
+It depends what game you are trying to join. We are aware that joining 17+ games will crash Sober, but the root cause for this is currently unknown.
