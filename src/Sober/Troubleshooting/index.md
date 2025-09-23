@@ -234,7 +234,9 @@ Please double check that the setting is on and you are **not** using X11. X11 do
 
 #### Solution
 
-Use the Wayland session for your DE where possible. Otherwise, override the socket to Wayland with the following command:
+Use the Wayland session for your DE where possible.
+
+> The following command is not recommended as it will mess up mouse positioning and speed. If you wish to proceed at your own risk, override the socket to Wayland with the following command:
 ```shell
 flatpak override --user --socket=wayland --nosocket=x11 org.vinegarhq.Sober
 ```
