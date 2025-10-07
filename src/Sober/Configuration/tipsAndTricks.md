@@ -2,9 +2,9 @@
 
 ## Asset Overlay
 
-The files in `asset_overlay` located at `~/.var/app/org.vinegarhq.Sober/data/sober` will get used over the ones used by Roblox. Depending on the directory the files were placed in, this will allow for modifications to be made! The modifications will happen as the files are placed correctly, and is reversable simply by clearing out the directory.
+The files in `asset_overlay` located at `~/.var/app/org.vinegarhq.Sober/data/sober` will get used over the ones used by Roblox. Depending on the directory the files were placed in, this will allow for modifications to be made! The modifications will happen after an app restart, and is reversable simply by clearing out the directory.
 
-The `asset_overlay` directory mirrors the `assets` directory at the same path. Example of replacing the mouse cursor:
+The `asset_overlay` directory mirrors the `assets` directory at the same path. **This means you have to recreate the folder sturcture as seen in `assets` into `asset_overlay` in order for your modifications to work!** Example of replacing the mouse cursor:
 
 ```
 ~/.var/app/org.vinegarhq.Sober/data/sober/asset_overlay
@@ -12,7 +12,9 @@ The `asset_overlay` directory mirrors the `assets` directory at the same path. E
     └── textures
         └── Cursors
             └── KeyboardMouse
-                └── ArrowFarCursor.png
+                ├── ArrowCursor.png
+                ├── ArrowFarCursor.png
+                └── IBeamCursor.png
 ```
 
 ## Fullscreen
