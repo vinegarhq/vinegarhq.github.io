@@ -191,21 +191,12 @@ Use the Wayland session to reduce chances of Xorg crashes
 
 
 ### My audio is crackling / acting weird!
-Whether it's from your microphone or in-game audio, the exact cause of this issue is unknown and may depend on your audio setup.
+Whether it's from your microphone or in-game audio, this seems to be an issue with PipeWire's settings.
 
 #### Solution
-Sober uses PulseAudio as its audio driver by default. Switching to PipeWire or ALSA may help mitigate this issue.
+Sober uses PulseAudio as its audio driver by default, however PipeWire may still be doing PulseAudio's work.
 
-In order to switch to PipeWire as the audio driver, run the following command:
-```console
-$ flatpak override --user --filesystem=xdg-run/pipewire-0 --env=SDL_AUDIO_DRIVER=pipewire org.vinegarhq.Sober
-```
-
-In order to switch to ALSA as the audio driver, run this command instead:
-```console
-$ flatpak override --user --env=SDL_AUDIO_DRIVER=alsa org.vinegarhq.Sober
-```
-
+[This reddit comment](https://www.reddit.com/r/linux_gaming/comments/1gy347h/comment/lylqijj/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) explains how to fix this issue.
 
 ### When I try to join games from the Roblox website or click on private server links, nothing happens!
 Sober depends on the OpenURI portal for opening Roblox links. If you're experiencing issues related to that, then your desktop environment / window manager may not have set up XDG portals correctly.
@@ -268,5 +259,6 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 This is mainly an issue on systems with NVIDIA GPUs, where Sober is unable to wake up the discrete GPU for unknown reasons. It is said to be a problem with the latest NVIDIA drivers.
 
 #### Solution
+
 
 Run an application utilizing Vulkan (e.g. vkcube) in order to wake up the discrete GPU. Sober should be able to launch afterwards.
