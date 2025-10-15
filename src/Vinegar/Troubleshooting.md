@@ -40,6 +40,12 @@ This can be fixed by either:
 - Using the Flatpak version of Vinegar or using VinegarHQ's [Wine builds](https://github.com/vinegarhq/wine-builds)
 - If cursor fails to lock, switching to a real X11 session.
 
+### WebView Installer or Roblox Studio is missing, corrupt or doesn't run
+
+WebView or Studio's downloads or installation has been corrupt.
+- For WebView, Press 'Clear Cache' in Vinegar's menu within the settings page.
+- For Studio, Press 'Uninstall Studio' next to the main run button.
+
 ### Files inaccessible or missing from file dialog (import/export)
 
 Use [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) to expose specific files or
