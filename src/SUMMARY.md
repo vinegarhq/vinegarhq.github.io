@@ -2,14 +2,12 @@
 - [Home](./Home/index.md)
 - [2024 Roblox Block FAQ](./Home/rol_faq.md)
 
-# Vinegar 
+# Vinegar
 - [Vinegar Installation](./Installation/index.md)
   - [Installing from package](./Installation/guides/package.md)
   - [Installing from source](./Installation/guides/source.md)
-- [Vinegar Configuration](./Configuration/index.md)
-  - [Tips and tricks](./Configuration/tips-and-tricks/index.md)
+- [Vinegar Tips and tricks](./Tips/index.md)
 - [Vinegar Troubleshooting](./Troubleshooting/index.md)
-  - [Reporting issues to WineHQ](./Troubleshooting/winehq.md)
 - [Vinegar FAQ](./Home/faq.md)
 - [Contributing](./Contributing/index.md)
 
