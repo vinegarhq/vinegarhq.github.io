@@ -14,6 +14,12 @@ flatpak run org.vinegarhq.Vinegar manage
 vinegar manage
 ```
 
+### Studio crashing upon startup with unexpected crash / corruption
+
+This is due to a Wine bug when you upgrade Vinegar. To workaround this, simply delete all data in Vinegar's settings;
+Ensure you have your Studio settings backed up! These can be found by pressing 'Open Files' next to the main run button, and going to:
+`drive_c/users/<user>/AppData/Local/Roblox`. The user `steamuser` might be present, which is from Vinegar's past usage of Proton, which you must move or backup to your new user.
+
 ### Flickering widgets and plugin windows
 
 Change the Roblox Studio renderer from Studio's settings to D3D11 and disable DXVK. Optionally, if you are on a multi monitor setup,
