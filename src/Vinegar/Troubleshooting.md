@@ -1,20 +1,79 @@
-# Troubleshooting
+# Troubleshooting Issues
 
 If there are any undocumented issues, feel free to [create an issue](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose) to update the documentation!
 
----
+### Can't open Settings / Manager
 
-## Issues
+To open Vinegar's settings page, you have to right click on Vinegar's desktop entry in your application launcher, or
+type "Manage". Otherwise, it will vary depending on your launcher.
 
-### Cursor fails to lock
+You may run the manager from the CLI (discouraged):
+```
+flatpak run org.vinegarhq.Vinegar manage
+# Or if from a source installation:
+vinegar manage
+```
 
-On XWayland, the cursor cannot be locked, this is because WINE doesn't have proper studio mouse locking. This can be fixed by either:
+### Flickering widgets and plugin windows
 
-- Using the Flatpak version of Vinegar.
+Change the Roblox Studio renderer from Studio's settings to D3D11 and disable DXVK. Optionally, if you are on a multi monitor setup,
+Create the registry key `HKEY_CURRENT_USER\Software\Wine\X11 Driver\UseEGL` as necessary and set it to `"Y"` (`REG_SZ`),
+which may improve D3D11 (non-DXVK).
 
-- Switching to a real X11 session.
+### Can't dock plugin windows
 
-- Using the [Kron4ek Proton WINE builds](https://github.com/Kron4ek/Wine-Builds/releases).
+You may enable Virtual desktop mode by opening the Wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings.
+
+This is unsolveable if Studio is running using the winewayland driver and not running under Xwayland.
+
+### Cursor fails to lock / Studio closes without any message
+
+These are due to specific Wine issues, as this is because Wine doesn't currently have the proper patches.
+This can be fixed by either:
+
+- Using the Flatpak version of Vinegar or using VinegarHQ's [Wine builds](https://github.com/vinegarhq/wine-builds)
+- If cursor fails to lock, switching to a real X11 session.
+
+### Files inaccessible or missing from file dialog (import/export)
+
+Use [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) to expose specific files or
+run `flatpak --user override --filesystem=home org.vinegarhq.Vinegar` to expose your Linux home directory to Vinegar.
+When using the file explorer, expand the / and then expand home.
+
+### Unable to log in
+
+There are currently two ways to login to Roblox Studio, being either from the browser or using the login dialog.
+The login dialog depends on 'Web Pages' being enabled in Vinegar's setings, which may be a simple black screen, to fix that, you must disable it.
+
+For browser login, follow the on-screen prompt and click "Log in via browser".
+This will open Roblox's authentication page in your default browser. Afterwards, You may be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
+
+If clicking on the "Log in via browser" button doesn't do anything or/and these logs appear in Vinegar:
+```
+Failed to call portal: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.OpenURI” on object at path /org/freedesktop/portal/desktop
+```
+You must install the `xdg-desktop-portal-gtk` package, the name may differ on some distributions, then reboot your system.
+
+You may also need to give an environment variable to Vinegar for the login to work: `flatpak --user override --env XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar`
+
+If all steps were followed correctly, studio should automatically log into your account.
+
+If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`. Studio authentication is known to be broken with certain DNS providers.
+
+### UI elements look small
+
+Open the wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings and going to the graphics section to find the DPI settings.
+
+### Camera moves with a delay
+
+Lower your mouse polling rate to 125hz, or change the renderer to D3D11.
+
+### "Your GPU is incompatible" / "Necessary graphics drivers not installed" error
+
+Make sure your drivers are installed correctly, if that doesn't help you can:
+
+- Disable DXVK in Vinegar's settings, and change the renderer to Vulkan or D3D11.
+- Use the [Vinegar Flatpak](Installation/guides/flatpak.html)
 
 ### White Screen
 
@@ -22,80 +81,6 @@ Usually, this is a sign of missing graphics libraries which WINE depends on to w
 
 This may also indicate that your GPU doesn't meet the minimum Vulkan requirements; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan supported by your GPU.
 
-### Roblox fails to install
-
-To fix this issue just relaunch Vinegar, if the problem persists it could be an internet connection related issue.
-
 ### No Roblox desktop entries/shortcuts
 
 This issue has no known cause, but appears to be more frequent with the Vinegar Flatpak. Rebooting your system should fix it.
-
-### Roblox doesn't launch from website if using Firefox/Librewolf
-
-In about:config set `network.http.referer.XOriginPolicy` to `1` and `network.http.sendRefererHeader` to `2`
-
-### Stuttering and freezing (Nvidia GPU)
-
-> [!WARNING]
-> This section may be outdated
-
-Although stuttering can happen for many different reasons, it's a very common issue on certain Nvidia cards. It seems that Nvidia's drivers on Wayland have major issues with stuttering and unexplainable frame locking in certain systems, but only if the window is fullscreen. This issue has been confirmed to exist for configurations where the Nvidia GPU drives the display and ones where PRIME offload is used (IGPU drives the display, DGPU renders the game).
-
-There's no known fix (as of October 14th, 2023), but the following workarounds might help depending on the system:
-
-- Switching to X11:
-  Unfortunately, NVIDIA's drivers still have many Wayland/XWayland issues. Reverting to X11 might be the easiest fix.
-
-- Using integrated graphics (only for systems with PRIME render offload):
-  Vinegar chooses the discrete graphics by default if using the Vulkan or DXVK. Configuring Vinegar to use the integrated graphics instead could potentially improve stability, at the cost of performance. To achieve this, `MESA_VK_DEVICE_SELECT_FORCE_DEFAULT_DEVICE = "1"` may be added to Vinegar's env configuration.
-  If the stutters are gone after doing this, they were being caused by Nvidia's drivers.
-
-- Disabling fullscreen:
-  If none of the workarounds above work or apply, consider using Roblox windowed instead of fullscreen.
-  This may also be your GPU not supporting Vulkan or not supporting modern Vulkan; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan that your GPU supports.
-
-### UI elements look small
-
-Adjust the DPI settings found in the winecfg GUI, to open it run `flatpak run org.vinegarhq.Vinegar` then click on `Configure Wine`, go to the graphics section to find the DPI settings.
-
-### Camera moves with a delay
-
-Lower your mouse polling rate to 125hz.
-
-### Unable to log in
-
-If you're not using the Flatpak version of Vinegar and you get a black login window add `webview = ""` under `[studio]` in your Vinegar config or you can just run `pkill -f webview` when the black window appears and you should be prompted to login with your browser.
-
-Follow the on-screen prompt and click "Log in via browser". This will open an authentication website in your browser. You may need to set Firefox as your default browser for the website to open. Once you're done authenticating, you might be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
-
-If clicking on the button doesn't do anything you may need to install the `xdg-desktop-portal-gtk` package, the name may differ on some distributions, then reboot your system.
-
-You may also need to give an environment variable to Vinegar for the login to work: `flatpak --user override --env XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar`
-
-If all steps were followed correctly, studio should automatically log into your account.
-
-If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`. Studio authentication is known to be broken with certain DNS providers. 
-
-### "Your GPU is incompatible" error
-
-Make sure your drivers are installed correctly, if that doesn't help you can:
-
-- Use the [Vinegar flatpak](https://vinegarhq.org/Installation/guides/flatpak.html)
-
-- Disable DXVK in the configuration
-
-### "Necessary graphics drivers not installed" error
-
-This issue can be fixed by switching renderer to Vulkan, instructions on how to do so are located [here](https://vinegarhq.org/Configuration/index.html).
-
-### Flickering widgets and plugin windows
-
-Change the Roblox Studio renderer from Studio's settings to Vulkan.
-
-### Linux files inaccessible from file explorer dialog (import/export)
-
-Run `flatpak --user override --filesystem=home org.vinegarhq.Vinegar` to expose your Linux home directory to Vinegar. When using the file explorer, expand the / and then expand home.
-
-### Unable to launch Vinegar with the following error: `No provider of eglGetCurrentContext found.`
-
-Run `flatpak --user override --nosocket=wayland org.vinegarhq.Vinegar` to force Vinegar to use the X11 backend on Wayland desktops.
