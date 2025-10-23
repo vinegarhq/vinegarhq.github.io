@@ -270,3 +270,9 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
 
+
+### My FFlags are not applying!
+
+This is due to security implications imposed by Roblox in order to combat cheating through Fast Flags, almost none of which are supposed to be used by regular users. Otherwise, make sure that the FFlag is a valid and whitelisted flag to use.
+
+> The list of allowed Fast Flags can be found in the [DevForum announcement](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569/)
