@@ -270,3 +270,10 @@ This is mainly an issue on systems with NVIDIA GPUs, where Sober is unable to wa
 #### Solution
 
 Run an application utilizing Vulkan (e.g. vkcube) in order to wake up the discrete GPU. Sober should be able to launch afterwards.
+
+
+### My FFlags are not applying!
+
+This is due to security implications imposed by Roblox in order to combat cheating through Fast Flags, almost none of which are supposed to be used by regular users. Otherwise, make sure that the FFlag is a valid and whitelisted flag to use.
+
+> The list of allowed Fast Flags can be found in the [DevForum announcement](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569/)
