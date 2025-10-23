@@ -79,6 +79,14 @@ GPUs using Mesa should be fine as long as it's recent. If you're using an NVIDIA
 You can update by typing `flatpak update` on your terminal.
 
 
+### Sober crashes on hybrid graphics with the following error: `vkGetPhysicalDeviceSurfacePresentModesKHR failed`
+
+This is mainly an issue on systems with NVIDIA GPUs, where Sober is unable to wake up the discrete GPU for unknown reasons. It is said to be a problem with the latest NVIDIA drivers.
+
+#### Solution
+
+Run an application utilizing Vulkan (e.g. vkcube) in order to wake up the discrete GPU. Sober should be able to launch afterwards.
+
 
 ### I'm running a virtual machine, but I cannot launch Sober!
 Virtual machines are not generally supported. Unless you can passthrough the GPU, it's advised against so to try and run Sober on a virtual machine.
@@ -261,15 +269,6 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
-
-
-### Sober crashes on hybrid graphics with the following error: `vkGetPhysicalDeviceSurfacePresentModesKHR failed`
-
-This is mainly an issue on systems with NVIDIA GPUs, where Sober is unable to wake up the discrete GPU for unknown reasons. It is said to be a problem with the latest NVIDIA drivers.
-
-#### Solution
-
-Run an application utilizing Vulkan (e.g. vkcube) in order to wake up the discrete GPU. Sober should be able to launch afterwards.
 
 
 ### My FFlags are not applying!
