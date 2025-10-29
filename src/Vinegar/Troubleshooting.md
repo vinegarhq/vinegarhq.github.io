@@ -28,9 +28,11 @@ which may improve D3D11 (non-DXVK).
 
 ### Can't dock plugin windows
 
-You may enable Virtual desktop mode by opening the Wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings.
+This issue occurs most often on Wayland desktops, you may either use [xwayland-satellite](https://github.com/Supreeeme/xwayland-satellite) 
+or enable Virtual desktop mode by opening the Wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings,
+and going to 'Graphics'.
 
-This is unsolveable if Studio is running using the winewayland driver and not running under Xwayland.
+This currently has no fix if Studio is running using the winewayland driver and not running under xwayland or Xwayland-satellite.
 
 ### Cursor fails to lock / Studio closes without any message
 
