@@ -39,8 +39,8 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 > Setting the texture override will not guarantee that all games will be playable. Essentially, to mostly avoid this problem without downscaling textures, you would need an NVIDIA GPU that has 4 GB or greater VRAM. Alternatively, you could also use a Mesa capable GPU (AMD/Intel or NVK for Maxwell-Ada).
 
 
-### It says Sober couldn't run because my CPU does not have a required feature! (x86-64-v2 or newer)
-Unfortunately there is nothing we can do to resolve this issue. Most likely, your CPU does not support SSE4.2, which is a mandatory hardware requirement to run even Roblox on Android alone.
+### Sober does not launch! It only produced two lines of logs and that's it!
+If you are sure that nothing else seems wrong, unfortunately there is nothing we can do to resolve this issue. Most likely, your CPU does not support SSE4.2, which is a mandatory hardware requirement to run even Roblox on Android alone.
 
 #### Solution
 Use a CPU that is from 2008+ (for Intel) or 2013+ (for AMD).
