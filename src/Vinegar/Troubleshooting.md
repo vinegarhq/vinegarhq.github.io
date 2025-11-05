@@ -87,7 +87,7 @@ Lower your mouse polling rate to 125hz, or change the renderer to D3D11.
 Make sure your drivers are installed correctly, if that doesn't help you can:
 
 - Disable DXVK in Vinegar's settings, and change the renderer to Vulkan or D3D11.
-- Use the [Vinegar Flatpak](Installation/guides/flatpak.html)
+- Use the [Vinegar Flatpak](./Installation/guides/package.html)
 
 ### White Screen
 

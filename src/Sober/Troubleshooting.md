@@ -60,7 +60,7 @@ $ flatpak override --user --env=LC_ALL=en_US.UTF-8 org.vinegarhq.Sober
 
 
 ### It says Sober couldn't launch because my card does not support Vulkan
-Please see question #4 on [the FAQ](../FAQ/index.html#is-my-gpu-compatible). Otherwise, you will have to use OpenGL.
+Please see question #4 on [the FAQ](./FAQ/index.html#is-my-gpu-compatible). Otherwise, you will have to use OpenGL.
 
 
 
@@ -96,7 +96,7 @@ Virtual machines are not generally supported. Unless you can passthrough the GPU
 
 
 ### I cannot install Sober on an ARM64 machine
-That's because there currently isn't any support for ARM devices. Please see question #8 on [the FAQ](../FAQ/index.html#arm64-supportvr-support).
+That's because there currently isn't any support for ARM devices. Please see question #8 on [the FAQ](./FAQ/index.html#arm64-supportvr-support).
 
 
 

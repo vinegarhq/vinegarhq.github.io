@@ -7,7 +7,7 @@ Because people on Linux still want to be able to play Roblox, for some reason.
 
 
 ## I'm having an issue with Sober
-Check out the [troubleshooting page](../Troubleshooting/index.md). If the issue persists, make an issue on [our GitHub](https://github.com/vinegarhq/sober), or on the VinegarHQ Discord server.
+Check out the [troubleshooting page](../Troubleshooting.html). If the issue persists, make an issue on [our GitHub](https://github.com/vinegarhq/sober), or on the VinegarHQ Discord server.
 
 
 
