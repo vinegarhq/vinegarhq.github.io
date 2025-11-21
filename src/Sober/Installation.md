@@ -6,7 +6,7 @@ Before using Sober, there are some requirements for your setup to be able to run
 Other requirements include:
 
 - Hardware:
-  - Processor: x86-64 CPU **with SSE4.2 support** (see [more info here](./FAQ/index.html#How-do-I-know-I-meet-the-requirements-to-run-Sober))
+  - Processor: x86-64 CPU **with SSE4.1+ support** (see [more info here](./FAQ/index.html#How-do-I-know-I-meet-the-requirements-to-run-Sober))
   - Graphics: Vulkan 1.0 or later, or OpenGL ES 3.0 or later
   - Linux kernel 5.11
 
