@@ -16,7 +16,8 @@ The configuration file is located at: `~/.var/app/org.vinegarhq.Sober/config/sob
 | `allow_gamepad_permission`          | Enables the service to use gamepads or controllers                                                                    | `false`   |
 | ~~`bring_back_oof`~~                | ~~Brings back the nostalgic 'oof' sound~~ (Removed in patch 1.6.0)                                                    |~~`false`~~|
 | `close_on_leave`                    | Closes Sober upon leaving a game                                                                                      | `true`    |
-| `discord_rpc_enabled`               | Shares the game you're playing with your Discord servers and contacts                                                 | `true`    |
+| `discord_rpc_enabled`               | Shares the game you're playing with your Discord servers and contacts                                                 | `false`   |
+| `discord_rpc_show_join_button`      | Allows other players to join games directly off your Discord profile                                                  | `false`   |
 | `enable_gamemode`                   | Enables gamemode, a tool which enhances game performance                                                              | `true`    |
 | `enable_hidpi`                      | Scales Sober's game window depending on your screen's pixel density, useful for very high resolution displays/laptops | `false`   |
 | `fflags`                            | Experimental internal Roblox configration. We don't recommend or support using this                                   | -         |
@@ -25,3 +26,4 @@ The configuration file is located at: `~/.var/app/org.vinegarhq.Sober/config/sob
 | `use_console_experience`            | Uses the console UI instead of the desktop UI. (Please note that games may register you as a console user)            | `false`   |
 | `use_libsecret`                     | Uses libsecret for storing the session cookie instead of plaintext, experimental                                      | `false`   |
 | `use_opengl`                        | Uses OpenGL instead of Vulkan as the graphics API, useful as a workaround for certain issues, like "OutOfMemory" reperated crashes | `false` |
+| `graphics_optimization_mode`        | "quality" - Roblox will give desktop-like graphics, default; "balanced" - Roblox will strike strike a balance between high and low graphics quality; "performance" Roblox will maximize performance at the cost of graphics quality, resulting in noticeably lower LOD fidelity and lower texture quality.                                                        | `"quality"` |
