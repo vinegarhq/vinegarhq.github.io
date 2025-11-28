@@ -55,9 +55,3 @@ Sober is unofficial research software. Roblox may choose to prevent Sober client
 
 ## Multi Instances support?
 No, as Roblox considers this practice malicious. Even if it weren't the case, we would rather not let Sober be used (or be as unintuitive as possible to use) in bot farms.
-
-
-
-
-
-
