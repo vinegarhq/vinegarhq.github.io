@@ -10,12 +10,15 @@ Other requirements include:
   - Graphics: Vulkan 1.0 or later, or OpenGL ES 3.0 or later
   - Linux kernel 5.11
 
-> If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there. 
+ >SSE4.2 will be emulated on SSE4.1 CPUs, performance will not be optimal.
 
 ## Instructions
 ### To install
 
 #### Through Flathub (recommended)
+
+> If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there.
+
 Sober can be found on [Flathub](https://flathub.org/apps/org.vinegarhq.Sober):
 
 <a href="https://flathub.org/apps/org.vinegarhq.Sober">
@@ -61,3 +64,4 @@ $ flatpak uninstall org.vinegarhq.Sober
 ```
 
 > By default, this will keep data. If you're having issues with Sober and you wish to fully reinstall it pass `--delete-data` before the application ID to do so.
+
