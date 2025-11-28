@@ -13,7 +13,7 @@ Check out the [troubleshooting page](../Troubleshooting.html). If the issue pers
 
 ## How do I know I meet the requirements to run Sober?
 
->SSE4.2 will be emulated on SSE4.1 CPUs, don't expect good performance.
+>SSE4.2 will be emulated on SSE4.1 CPUs, performance will not be optimal.
 
 - For CPU, you can run `grep "sse4_1" /proc/cpuinfo` and `grep "sse4_2" /proc/cpuinfo` respectively. After running the commands SSE4.1 and 4.2 should be highlighted if your CPU supports them.
 - For RAM, see if memory pressure is too high while running Sober.
@@ -57,6 +57,7 @@ Sober is unofficial research software. Roblox may choose to prevent Sober client
 
 ## Multi Instances support?
 No, as Roblox considers this practice malicious. Even if it weren't the case, we would rather not let Sober be used (or be as unintuitive as possible to use) in bot farms.
+
 
 
 
