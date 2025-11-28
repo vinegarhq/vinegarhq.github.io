@@ -12,7 +12,7 @@ Check out the [troubleshooting page](../Troubleshooting.html). If the issue pers
 
 
 ## How do I know I meet the requirements to run Sober?
-- For CPU, you can run `grep "sse4_1" /proc/cpuinfo` on your terminal. If SSE4.1 is available, it should be highlighted when you run the command.*
+- For CPU, you can run `grep "sse4_1" /proc/cpuinfo` on your terminal. If SSE4.1 is available, it should be highlighted when you run the command.
 - For RAM, see if memory pressure is too high while running Sober.
 - For GPU, check the next question.
 - For Flatpak installation, make sure you followed the guide [here](https://flathub.org/setup).
@@ -54,4 +54,5 @@ Sober is unofficial research software. Roblox may choose to prevent Sober client
 
 ## Multi Instances support?
 No, as Roblox considers this practice malicious. Even if it weren't the case, we would rather not let Sober be used (or be as unintuitive as possible to use) in bot farms.
+
 
