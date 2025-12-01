@@ -96,7 +96,7 @@ This is due to security implications imposed by Roblox in order to combat cheati
 
 
 ### "Failed to initalize core functionality. Check your security settings."
-`ptrace` must be enabled to run Sober. Double check your kernel settings to make sure it is.
+`ptrace` and `yama` must be enabled to run Sober. Double check your kernel settings to make sure it is.
 
 
 ### I'm running a virtual machine, but I cannot launch Sober!
