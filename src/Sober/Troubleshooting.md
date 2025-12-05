@@ -95,9 +95,6 @@ This is due to security implications imposed by Roblox in order to combat cheati
 > The list of allowed Fast Flags can be found in the [DevForum announcement](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569/)
 
 
-### "Failed to initalize core functionality. Check your security settings."
-`ptrace` and `yama` must be enabled to run Sober. Double check your kernel settings to make sure it is.
-
 
 ### I'm running a virtual machine, but I cannot launch Sober!
 Virtual machines are not generally supported. Unless you can passthrough the GPU, it's advised against so to try and run Sober on a virtual machine.
