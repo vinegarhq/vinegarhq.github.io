@@ -2,10 +2,9 @@
 
 ## Requirements
 
-Before using Sober, there are some requirements for your setup to be able to run Sober. The requirements are based on [Roblox's official minimum requirements for mobile](https://en.help.roblox.com/hc/en-us/articles/203625474).<br>
+The requirements to be able to run Sober are based on [Roblox's official minimum requirements for mobile](https://en.help.roblox.com/hc/en-us/articles/203625474).<br>
 Other requirements include:
 
-- Hardware:
   - Processor: x86-64 CPU **with SSE4.1+ support** (see [more info here](./FAQ/index.html#How-do-I-know-I-meet-the-requirements-to-run-Sober))
   - Graphics: Vulkan 1.0 or later, or OpenGL ES 3.0 or later
   - Linux kernel 5.11
@@ -64,4 +63,5 @@ $ flatpak uninstall org.vinegarhq.Sober
 ```
 
 > By default, this will keep data. If you're having issues with Sober and you wish to fully reinstall it pass `--delete-data` before the application ID to do so.
+
 
