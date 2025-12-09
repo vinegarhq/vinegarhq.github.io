@@ -78,22 +78,12 @@ If you're still unable to log in, try changing your DNS to a viable alternative 
 
 Open the wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings and going to the graphics section to find the DPI settings.
 
-### Camera moves with a delay
-
-Lower your mouse polling rate to 125hz, or change the renderer to D3D11.
-
 ### "Your GPU is incompatible" / "Necessary graphics drivers not installed" error
 
 Make sure your drivers are installed correctly, if that doesn't help you can:
 
 - Disable DXVK in Vinegar's settings, and change the renderer to Vulkan or D3D11.
 - Use the [Vinegar Flatpak](./Installation/guides/package.html)
-
-### White Screen
-
-Usually, this is a sign of missing graphics libraries which WINE depends on to work, this might mean that your graphics drivers aren't setup correctly, you should check [Lutris Docs: Installing Drivers](https://github.com/lutris/docs/blob/master/InstallingDrivers.md) out for instructions on how to install them.
-
-This may also indicate that your GPU doesn't meet the minimum Vulkan requirements; Use the OpenGL renderer, or set the installed DXVK version to one which includes a legacy version of Vulkan supported by your GPU.
 
 ### No Roblox desktop entries/shortcuts
 
