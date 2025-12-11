@@ -42,6 +42,10 @@ This can be fixed by either:
 - Using the Flatpak version of Vinegar or using VinegarHQ's [Wine builds](https://github.com/vinegarhq/wine-builds)
 - If cursor fails to lock, switching to a real X11 session.
 
+### Exit status 53
+
+Open the Vinegar settings, then click the three dots, then click "Uninstall Studio".
+
 ### WebView Installer or Roblox Studio is missing, corrupt or doesn't run
 
 WebView or Studio's downloads or installation has been corrupt.
