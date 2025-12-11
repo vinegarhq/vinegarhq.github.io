@@ -44,7 +44,7 @@ This can be fixed by either:
 
 ### Exit status 53
 
-Open the Vinegar setting, then click the three dots, then click "Uninstall Studio".
+Open the Vinegar settings, then click the three dots, then click "Uninstall Studio".
 
 ### WebView Installer or Roblox Studio is missing, corrupt or doesn't run
 
