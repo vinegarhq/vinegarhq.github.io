@@ -54,9 +54,7 @@ WebView or Studio's downloads or installation has been corrupt.
 
 ### Files inaccessible or missing from file dialog (import/export)
 
-Use [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) to expose specific files or
-run `flatpak --user override --filesystem=home org.vinegarhq.Vinegar` to expose your Linux home directory to Vinegar.
-When using the file explorer, expand the / and then expand home.
+Put your RBXL files in the documents folder, then when using the file explorer, expand the / and then expand home and get to the documents folder.
 
 ### Unable to log in
 
