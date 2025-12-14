@@ -82,6 +82,22 @@ If you're still unable to log in, try changing your DNS to a viable alternative 
 
 Open the wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings and going to the graphics section to find the DPI settings.
 
+### GPU must be explicitly defined for OpenGL
+
+Find the Device ID of your discrete GPU by running `lspci | grep -i vga` or `inxi -G`. 
+
+If using lspci, the Device ID should look something like this: `00:0X.0`, remove the zeros and take the number (if the Device ID is a letter: `00:0f.0`, convert it from hexadecimal to decimal, so "f" would be 15). 
+
+If using inxi, the Device ID is the number before the GPU name, it should look like this: `Device-X`, take the number after `Device-`.
+
+After getting the Device ID, copy one of these commands:
+
+If using Flatpak: `mkdir -p ~/.var/app/org.vinegarhq.Vinegar/config/vinegar; echo -e '[studio]\ngpu = "(YOUR GPU's DEVICE ID)"' > ~/.var/app/org.vinegarhq.Vinegar/config/vinegar/config.toml` 
+
+If using Source/Package: `mkdir -p ~/.config/vinegar; echo -e '[studio]\ngpu = "(YOUR GPU's DEVICE ID)"' > ~/.config/vinegar/config.toml`
+
+Then replace `(YOUR GPU's DEVICE ID)` with your GPU's Device ID and run the command.
+
 ### "Your GPU is incompatible" / "Necessary graphics drivers not installed" error
 
 Make sure your drivers are installed correctly, if that doesn't help you can:
