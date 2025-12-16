@@ -1,6 +1,6 @@
 <p align="center">
   <img style="max-width: 28%" src="../vinegar.svg">
-  <img style="max-width: 28%" src="../sober.svg">
+  <img style="width: 364px; max-width: 28%" src="../sober.svg">
 </p>
 
 ## Welcome to the home of the VinegarHQ project!
