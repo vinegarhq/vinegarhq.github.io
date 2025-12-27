@@ -9,7 +9,8 @@
 - [Vinegar Tips and tricks](./Vinegar/TipsAndTricks.md)
 - [Vinegar Troubleshooting](./Vinegar/Troubleshooting.md)
 - [Vinegar FAQ](./Vinegar/FAQ.md)
-- [Contributing](./Vinegar/Contributing.md)
+- [Contributing](./Vinegar/Contributing/index.md)
+  - [Translating Vinegar](./Vinegar/Contributing/guides/translation.md)
 
 # Sober
 - [Sober Installation](./Sober/Installation.md)
