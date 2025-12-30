@@ -11,7 +11,7 @@ To translate Vinegar, one must already have an environment setup capable of comp
 In order to translate Vinegar, you must first generate a template file with all of Vinegar's strings dumped onto it with the following commands (inside the source directory):
 
 ```console
-find . -name '*.go' | xargs xgettext --language=Go --keyword=_ --keyword=i18n.Local --keyword=Local --keyword=i18n.LocalDomain:2 --keyword=LocalDomain:2 --omit-header -o default.pot
+find . -name '*.go' | xargs xgettext --language=Go --keyword=_ --keyword=i18n.Local --keyword=Local --keyword=L --keyword=i18n.LocalDomain:2 --keyword=LocalDomain:2 --omit-header -o default.pot
 find . -name '*.ui' | xargs xgettext --language=Glade --omit-header --join-existing -o default.pot 
 ```
 
