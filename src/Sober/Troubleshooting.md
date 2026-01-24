@@ -95,6 +95,14 @@ This is due to security implications imposed by Roblox in order to combat cheati
 > The list of allowed Fast Flags can be found in the [DevForum announcement](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569/)
 
 
+### It says there's a frozen instance of Sober running in the background
+
+This is caused by zombie Sober processes that refused to close properly when closing the application. This is generally uncommon to encounter, but it is a known issue.
+
+#### Solution
+
+Launch your DE's built-in system monitor app or install [Mission Control](https://missioncenter.io/), search, and kill any remaining lingering Sober processes. Otherwise, restart your computer as instructed in the popup.
+
 
 ### I'm running a virtual machine, but I cannot launch Sober!
 Virtual machines are not generally supported. Unless you can passthrough the GPU, it's advised against so to try and run Sober on a virtual machine.
