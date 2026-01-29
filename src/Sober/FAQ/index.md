@@ -37,7 +37,7 @@ We made it closed source to reduce the potential for abuse (which would lead to 
 
 
 ## Is Sober ever going to be distributed outside of Flatpak?
-Unfortunately no. This is because it would be more easier to debug Sober using a reproducible runtime environment. However, this may change in the future, as we are in consideration about native packages, with the first rollout potentially in the AUR.
+Unfortunately no. This is because it would be more easier to debug Sober using a reproducible runtime environment.
 
 
 ## ARM64 support/VR support?
@@ -55,3 +55,4 @@ Sober is unofficial research software. Roblox may choose to prevent Sober client
 
 ## Multi Instances support?
 No, as Roblox considers this practice malicious. Even if it weren't the case, we would rather not let Sober be used (or be as unintuitive as possible to use) in bot farms.
+
