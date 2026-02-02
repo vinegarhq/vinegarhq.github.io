@@ -20,12 +20,6 @@ This is due to a Wine bug when you upgrade Vinegar. To workaround this, simply d
 Ensure you have your Studio settings backed up! These can be found by pressing 'Open Files' next to the main run button, and going to:
 `drive_c/users/<user>/AppData/Local/Roblox`. The user `steamuser` might be present, which is from Vinegar's past usage of Proton, which you must move or backup to your new user.
 
-### Flickering widgets and plugin windows
-
-Change the Roblox Studio renderer from Studio's settings to D3D11 and disable DXVK. Optionally, if you are on a multi monitor setup,
-Create the registry key `HKEY_CURRENT_USER\Software\Wine\X11 Driver\UseEGL` as necessary and set it to `"Y"` (`REG_SZ`),
-which may improve D3D11 (non-DXVK).
-
 ### Can't dock plugin windows
 
 This issue occurs most often on Wayland desktops, you may either use [xwayland-satellite](https://github.com/Supreeeme/xwayland-satellite) 
