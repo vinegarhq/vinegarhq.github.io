@@ -27,17 +27,3 @@ Example replacement of Roblox's default death sound:
 
 See [Bloxstrap's guide to FastFlags](https://github.com/pizzaboxer/bloxstrap/wiki/A-guide-to-FastFlags).
 
-## Studio backup
-
-Before you delete your wineprefixes via `Vinegar > Delete Data` you should backup data you have on your Studio prefix. This includes your settings and files you've stored.
-
-The Studio prefix location depends on how you installed Vinegar:
-
-- On Flatpak, it's located in `~/.var/app/org.vinegarhq.Vinegar/data/vinegar/prefixes/studio`
-- On other methods, it's located in `~/.local/share/vinegar/prefixes/studio`
-
-Where Roblox Studio store their settings and what they store:
-
-- `(studio prefix)/user.reg`: Studio theme, Docking layout.
-- `(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalSettings_13.xml`: Display language, Fonts, etc. 
-- `(studio prefix)/drive_c/users/(username)/AppData/Local/Roblox/GlobalBasicSettings_13_Studio.xml`: MicroProfiler, Fullscreen, etc.
