@@ -22,8 +22,3 @@ Example replacement of Roblox's default death sound:
             └── sounds
                 └── ouch.ogg
 ```
-
-## FFlags
-
-See [Bloxstrap's guide to FastFlags](https://github.com/pizzaboxer/bloxstrap/wiki/A-guide-to-FastFlags).
-
