@@ -27,13 +27,14 @@ or untick the "Allow the window manager to control the windows" option in the Ad
 
 Wine's native Wayland driver currently doesn't support this functionality and therefore doesn't offer a solution.
 
-### Cursor fails to lock / Studio closes without any message
+### Cursor fails to lock when moving around the camera
 
-These are due to specific Wine issues, as this is because Wine doesn't currently have the proper patches.
+This is an issue with Xwayland, which only allows the cursor to lock when its invisible.
+
 This can be fixed by either:
 
-- Using the Flatpak version of Vinegar or using VinegarHQ's [Wine builds](https://github.com/vinegarhq/wine-builds)
-- If cursor fails to lock, switching to a real X11 session.
+- Using [Kombucha](https://github.com/vinegarhq/kombucha.git) (automatically pulled by Vinegar)
+- Switching to an X11 session
 
 ### Exit status 53
 
