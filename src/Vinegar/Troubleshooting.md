@@ -22,11 +22,10 @@ Ensure you have your Studio settings backed up! These can be found by pressing '
 
 ### Can't dock plugin windows
 
-This issue occurs most often on Wayland desktops, you may either use [xwayland-satellite](https://github.com/Supreeeme/xwayland-satellite) 
-or enable Virtual desktop mode by opening the Wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings,
-and going to 'Graphics'.
+This issue occurs both on Wayland and X11-based desktop environments. You may enable Virtual Desktop in Vinegar's settings
+or untick the "Allow the window manager to control the windows" option in the Advanced Wine Settings to mitigate this.
 
-This currently has no fix if Studio is running using the winewayland driver and not running under xwayland or Xwayland-satellite.
+Wine's native Wayland driver currently doesn't support this functionality and therefore doesn't offer a solution.
 
 ### Cursor fails to lock / Studio closes without any message
 
