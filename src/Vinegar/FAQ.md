@@ -2,9 +2,9 @@
 
 ### What is the best configuration?
 
-This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either the D3D11 renderer with DXVK or Vulkan.
+This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either DXVK or Vulkan.
 
-It is also recommended to use Wine Staging with Vinegar, as it contains patches such as Esync that can provide a noticeable performance boost; set the environment variable `WINEESYNC=1`, additionally if your Wine build is TKG or is patched with Fsync, you can use the environment variable `WINEFSYNC=1` to enable it.
+It is also recommended to enable the NTSync kernel driver if your Linux kernel supports it (see [System Requirements](https://vinegarhq.org/Vinegar/Installation/index.html)).
 
 Vinegar also changes the Wineprefix version. While this does not increase performance, it increases compatibility.
 
@@ -12,9 +12,9 @@ Vinegar also changes the Wineprefix version. While this does not increase perfor
 
 As stated in the DXVK README:
 
-> A Vulkan-based translation layer for Direct3D 9/10/11 which allows running 3D applications on Linux using Wine.
+> A Vulkan-based translation layer for Direct3D 8/9/10/11 which allows running 3D applications on Linux using Wine.
 
-The only real difference is that Roblox's Vulkan is native, which means there is no translation layer. It is best to experiment on your system to see which one is better. Some users report that Vulkan can provide lower latency, while others report DXVK performs significantly better.
+The only real difference is that Roblox's Vulkan is native, which means there is no translation layer. It is best to experiment on your system to see which one is better. Some users report that Vulkan can provide lower latency, while others report DXVK performing significantly better.
 
 ### Why Go?
 

@@ -20,27 +20,21 @@ This is due to a Wine bug when you upgrade Vinegar. To workaround this, simply d
 Ensure you have your Studio settings backed up! These can be found by pressing 'Open Files' next to the main run button, and going to:
 `drive_c/users/<user>/AppData/Local/Roblox`. The user `steamuser` might be present, which is from Vinegar's past usage of Proton, which you must move or backup to your new user.
 
-### Flickering widgets and plugin windows
-
-Change the Roblox Studio renderer from Studio's settings to D3D11 and disable DXVK. Optionally, if you are on a multi monitor setup,
-Create the registry key `HKEY_CURRENT_USER\Software\Wine\X11 Driver\UseEGL` as necessary and set it to `"Y"` (`REG_SZ`),
-which may improve D3D11 (non-DXVK).
-
 ### Can't dock plugin windows
 
-This issue occurs most often on Wayland desktops, you may either use [xwayland-satellite](https://github.com/Supreeeme/xwayland-satellite) 
-or enable Virtual desktop mode by opening the Wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings,
-and going to 'Graphics'.
+This issue occurs both on Wayland and X11-based desktop environments. You may enable Virtual Desktop in Vinegar's settings
+or untick the "Allow the window manager to control the windows" option in the Advanced Wine Settings to mitigate this.
 
-This currently has no fix if Studio is running using the winewayland driver and not running under xwayland or Xwayland-satellite.
+Wine's native Wayland driver currently doesn't support this functionality and therefore doesn't offer a solution.
 
-### Cursor fails to lock / Studio closes without any message
+### Cursor fails to lock when moving around the camera
 
-These are due to specific Wine issues, as this is because Wine doesn't currently have the proper patches.
+This is an issue with Xwayland, which only allows the cursor to lock when its invisible.
+
 This can be fixed by either:
 
-- Using the Flatpak version of Vinegar or using VinegarHQ's [Wine builds](https://github.com/vinegarhq/wine-builds)
-- If cursor fails to lock, switching to a real X11 session.
+- Using [Kombucha](https://github.com/vinegarhq/kombucha.git) (automatically pulled by Vinegar)
+- Switching to an X11 session
 
 ### Exit status 53
 
