@@ -1,15 +1,21 @@
 # Installation
 
-## Requirements
+## System Requirements
 
-Before using Vinegar, there are some requirements for your setup to be able to run Roblox.
+Before installing Vinegar, there are some requirements for your system to fulfill in order to be able to run Roblox Studio.
 
-Ensure your system meets [Roblox's official minimum requirements](https://en.help.roblox.com/hc/en-us/articles/203312800).
-Additionally, ensure the requirements below:
+Ensure that your system meets the minimum requirements below:
 
-- Processor: X86-64 CPU.
-- Graphics: Vulkan 1.1 support.
-- Wine: 10.13 and onwards (Wine is pre-installed if using Flatpak).
+- OS: Linux kernel version 2.6.22 or later
+- Processor: x86-64/AMD64 type CPU
+- Memory: 3 GB RAM
+- Graphics: OpenGL 4.4 capable
+
+The following requirements are recommended for a smoother experience:
+
+- OS: Linux kernel version 6.14 or later ([NTSync](https://www.phoronix.com/news/Linux-6.14-NTSYNC-Driver-Ready))
+- Graphics: Vulkan 1.3 capable[*](https://github.com/doitsujin/dxvk/wiki/Driver-support#required-vulkan-features)
+- Memory: 8 GB RAM
 
 ## Using Flatpak (recommended)
 
