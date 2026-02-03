@@ -12,14 +12,6 @@ Please verify that you pass the [minimum system requirements](../index.md) befor
 
 </div>
 
-## Installing Wine
-
-Before you can install Vinegar, you will have to install Wine first. You can use the guide for your distribution on the [Wine wiki](https://wiki.winehq.org/Download). For instance, you can find guides for [Arch](https://wiki.archlinux.org/title/wine) and [Gentoo](https://wiki.gentoo.org/wiki/Wine).
-
-It may also be recommended to use [Proton GE](https://github.com/GloriousEggroll/proton-ge-custom).
-
-It is necessary that you use Wine 10.13 and onwards, Studio will have major issues on previous versions or may not run at all.
-
 ## Build
 
 To build Vinegar from source, you will first need to make sure you have the following dependencies installed:
