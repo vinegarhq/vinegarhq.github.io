@@ -86,3 +86,12 @@ Make sure your drivers are installed correctly, if that doesn't help you can:
 ### No Roblox desktop entries/shortcuts
 
 This issue has no known cause, but appears to be more frequent with the Vinegar Flatpak. Rebooting your system should fix it.
+
+### Studio not working when offloaded to an Nvidia GPU (hybrid graphics)
+
+This appears to be an issue with both the Nvidia drivers and Flatpak.
+
+To solve this, either run the following command or switch to a non-Flatpak package of Vinegar.
+```
+flatpak --user override --nosocket=wayland org.vinegarhq.Vinegar
+```
