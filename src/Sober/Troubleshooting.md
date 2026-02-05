@@ -2,7 +2,6 @@
 
 If there are any undocumented issues, feel free to [create an issue](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose) to update the documentation!
 
----
 
 ## Obtaining logs
 
@@ -13,7 +12,6 @@ There are two ways of obtaining logs when running Sober:
 - Run Sober on the terminal (`flatpak run org.vinegarhq.Sober`)
 - Get the log file at `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/`
 
----
 
 ## Known General Issues
 
@@ -282,6 +280,7 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 "DFIntTextureQualityOverride": 3,
 "DFFlagTextureQualityOverrideEnabled": true
 ```
+
 
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
