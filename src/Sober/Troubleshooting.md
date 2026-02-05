@@ -96,7 +96,7 @@ This is caused by zombie Sober processes that refused to close properly when clo
 
 #### Solution
 
-Launch your DE's built-in system monitor app or install [Mission Control](https://missioncenter.io/), search, and kill any remaining lingering Sober processes. Otherwise, restart your computer as instructed in the popup.
+Run `flatpak kill org.vinegarhq.Sober` or launch your DE's built-in system monitor app (or a system monitor app like [Mission Center(https://missioncenter.io/)), search, and kill any remaining lingering Sober processes. Otherwise, restart your computer as instructed in the popup.
 
 
 ### I'm running a virtual machine, but I cannot launch Sober!
@@ -277,7 +277,6 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 "DFIntTextureQualityOverride": 3,
 "DFFlagTextureQualityOverrideEnabled": true
 ```
-
 
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
