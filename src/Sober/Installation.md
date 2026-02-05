@@ -53,7 +53,7 @@ Once the APK is downloaded, select the APK from the file picker.
 
 ## Post-Install
 
-You can configure Sober to do things like bringing back the old 'oof' sound, or enabling server location indicators. See our [configuration docs](../Configuration/index.md) for more info.
+You can configure Sober to do things like changing the death sound, or enabling server location indicators. See our [configuration docs](../Configuration/index.md) for more info.
 
 ## Uninstalling Sober
 To uninstall Sober, run the following command in your terminal:
