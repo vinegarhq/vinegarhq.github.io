@@ -14,7 +14,6 @@ The configuration file is located at: `~/.var/app/org.vinegarhq.Sober/config/sob
 | Option                              | Description                                                                                                           | Default   |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------- |
 | `allow_gamepad_permission`          | Enables the service to use gamepads or controllers                                                                    | `false`   |
-| ~~`bring_back_oof`~~                | ~~Brings back the nostalgic 'oof' sound~~ (Removed in patch 1.6.0)                                                    |~~`false`~~|
 | `close_on_leave`                    | Closes Sober upon leaving a game                                                                                      | `true`    |
 | `discord_rpc_enabled`               | Shares the game you're playing with your Discord servers and contacts                                                 | `false`   |
 | `discord_rpc_show_join_button`      | Allows other players to join games directly off your Discord profile                                                  | `false`   |
