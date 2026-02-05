@@ -51,10 +51,7 @@ Otherwise, we cannot give a definite answer.
 
 
 #### Solution
-If you are sure your primary language is set anything but English, launch Sober using this command:
-```console
-$ flatpak override --user --env=LC_ALL=en_US.UTF-8 org.vinegarhq.Sober
-```
+Check the rest of this page to see if you can find a solution, or ask on our Discord server or make a GitHub issue if you can't find anything.
 
 
 ### It says Sober couldn't launch because my card does not support Vulkan
@@ -282,3 +279,4 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 ```
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
+
