@@ -71,7 +71,7 @@ Update your distro to a newer version by following a distro-specific guide.
 GPUs using Mesa should be fine as long as it's recent. If you're using an NVIDIA card, the driver version installed on your system must match with the Flatpak NVIDIA drivers that is installed on the system. (For example, the installed 560 system drivers cannot run with NVIDIA Flatpak 555 drivers)
 
 #### Solution
-You can update by typing `flatpak update` on your terminal.
+Update by running `flatpak update` in your terminal.
 
 
 ### Sober crashes on hybrid graphics with the following error: `vkGetPhysicalDeviceSurfacePresentModesKHR failed`
@@ -278,5 +278,6 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 "DFFlagTextureQualityOverrideEnabled": true
 ```
 
-> Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
 
+
+> Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
