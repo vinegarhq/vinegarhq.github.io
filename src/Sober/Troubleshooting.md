@@ -100,9 +100,9 @@ Run `flatpak kill org.vinegarhq.Sober` or launch your DE's built-in system monit
 
 
 ### I'm running a virtual machine, but I cannot launch Sober!
-Virtual machines are not generally supported. Unless you can passthrough the GPU, it's advised against so to try and run Sober on a virtual machine.
+Virtual machines are not supported, unless you can passthrough the GPU. We advise against trying to run Sober in a virtual machine.
 
-> It kinda does have support, depending if the VM host you're running has OpenGL support, but you're going to get terrible performance out of it.
+> It does have some degree of support, depending on if the VM host you're running has OpenGL support, but you're going to get terrible performance out of it.
 
 
 
@@ -280,3 +280,4 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
+
