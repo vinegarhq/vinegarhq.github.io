@@ -5,7 +5,7 @@
 The requirements to be able to run Sober are based on [Roblox's official minimum requirements for mobile](https://en.help.roblox.com/hc/en-us/articles/203625474).<br>
 Other requirements include:
 
-  - Processor: x86-64 CPU **with SSE4.1+ support** (see [more info here](./FAQ/index.html#How-do-I-know-I-meet-the-requirements-to-run-Sober))
+  - Processor: x86-64 CPU **with SSE4.1+ support** (see [more info here](./FAQ/index.html#how-do-i-know-i-meet-the-requirements-to-run-sober))
   - Graphics: Vulkan 1.0 or later, or OpenGL ES 3.0 or later
   - Linux kernel 5.11
 
@@ -53,7 +53,7 @@ Once the APK is downloaded, select the APK from the file picker.
 
 ## Post-Install
 
-You can configure Sober to do things like bringing back the old 'oof' sound, or enabling server location indicators. See our [configuration docs](../Configuration/index.md) for more info.
+You can configure Sober to do things like changing the death sound, or enabling server location indicators. See our [configuration docs](../Configuration/index.md) for more info.
 
 ## Uninstalling Sober
 To uninstall Sober, run the following command in your terminal:

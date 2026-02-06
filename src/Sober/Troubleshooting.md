@@ -2,7 +2,6 @@
 
 If there are any undocumented issues, feel free to [create an issue](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose) to update the documentation!
 
----
 
 ## Obtaining logs
 
@@ -13,7 +12,6 @@ There are two ways of obtaining logs when running Sober:
 - Run Sober on the terminal (`flatpak run org.vinegarhq.Sober`)
 - Get the log file at `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/`
 
----
 
 ## Known General Issues
 
@@ -53,14 +51,11 @@ Otherwise, we cannot give a definite answer.
 
 
 #### Solution
-If you are sure your primary language is set anything but English, launch Sober using this command:
-```console
-$ flatpak override --user --env=LC_ALL=en_US.UTF-8 org.vinegarhq.Sober
-```
+Check the rest of this page to see if you can find a solution, or ask on our Discord server or make a GitHub issue if you can't find anything.
 
 
 ### It says Sober couldn't launch because my card does not support Vulkan
-Please see question #4 on [the FAQ](./FAQ/index.html#is-my-gpu-compatible). Otherwise, you will have to use OpenGL.
+Please see question #4 on [the FAQ](./FAQ/index.html#is-my-gpu-compatible).
 
 
 
@@ -76,7 +71,7 @@ Update your distro to a newer version by following a distro-specific guide.
 GPUs using Mesa should be fine as long as it's recent. If you're using an NVIDIA card, the driver version installed on your system must match with the Flatpak NVIDIA drivers that is installed on the system. (For example, the installed 560 system drivers cannot run with NVIDIA Flatpak 555 drivers)
 
 #### Solution
-You can update by typing `flatpak update` on your terminal.
+Update by running `flatpak update` in your terminal.
 
 
 ### Sober crashes on hybrid graphics with the following error: `vkGetPhysicalDeviceSurfacePresentModesKHR failed`
@@ -90,7 +85,7 @@ Run an application utilizing Vulkan (e.g. vkcube) in order to wake up the discre
 
 ### My FFlags are not applying!
 
-This is due to security implications imposed by Roblox in order to combat cheating through Fast Flags, almost none of which are supposed to be used by regular users. Otherwise, make sure that the FFlag is a valid and whitelisted flag to use.
+This is due to security implications imposed by Roblox in order to combat cheating through Fast Flags, almost none of which are supposed to be used by regular users. Make sure that the FFlag is a valid and whitelisted to use.
 
 > The list of allowed Fast Flags can be found in the [DevForum announcement](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569/)
 
@@ -101,13 +96,13 @@ This is caused by zombie Sober processes that refused to close properly when clo
 
 #### Solution
 
-Launch your DE's built-in system monitor app or install [Mission Control](https://missioncenter.io/), search, and kill any remaining lingering Sober processes. Otherwise, restart your computer as instructed in the popup.
+Run `flatpak kill org.vinegarhq.Sober` or launch your DE's built-in system monitor app (or a system monitor app like [Mission Center](https://missioncenter.io/)), search, and kill any remaining lingering Sober processes. Otherwise, restart your computer as instructed in the popup.
 
 
 ### I'm running a virtual machine, but I cannot launch Sober!
-Virtual machines are not generally supported. Unless you can passthrough the GPU, it's advised against so to try and run Sober on a virtual machine.
+Virtual machines are not supported, unless you can passthrough the GPU. We advise against trying to run Sober in a virtual machine.
 
-> It kinda does have support, depending if the VM host you're running has OpenGL support, but you're going to get terrible performance out of it.
+> It does have some degree of support, depending on if the VM host you're running has OpenGL support, but you're going to get terrible performance out of it.
 
 
 
@@ -282,6 +277,7 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 "DFIntTextureQualityOverride": 3,
 "DFFlagTextureQualityOverrideEnabled": true
 ```
+
 
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.

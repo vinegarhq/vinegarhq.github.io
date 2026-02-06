@@ -37,7 +37,7 @@ We made it closed source to reduce the potential for abuse (which would lead to 
 
 
 ## Is Sober ever going to be distributed outside of Flatpak?
-Unfortunately no. This is because it would be more easier to debug Sober using a reproducible runtime environment.
+Unfortunately no. This is because it is easier to debug Sober in a reproducible runtime environment.
 
 
 ## ARM64 support/VR support?
