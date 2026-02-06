@@ -81,7 +81,7 @@ Open the wine configurator by pressing on the cog icon next to the Wine section 
 Make sure your drivers are installed correctly, if that doesn't help you can:
 
 - Disable DXVK in Vinegar's settings, and change the renderer to Vulkan or D3D11.
-- Use the [Vinegar Flatpak](./Installation/guides/package.html)
+- Use the [Vinegar Flatpak](https://flathub.org/en/apps/org.vinegarhq.Vinegar)
 
 ### No Roblox desktop entries/shortcuts
 
