@@ -4,7 +4,7 @@ If there are any undocumented issues, feel free to [create an issue](https://git
 
 <div class="warning">
 
-There is currently a problem on Arch Linux and Arch-based users specifically that's preventing Flatpak from automatically pulling NVIDIA Flatpak drivers utilizing the frozen 580xx driver branch due to the drivers being advanced to the next patch without any Flatpak equivalent drivers. Due to this, **this may cause the issue of sober unable to detect a graphics device**.
+There is currently a problem on Arch Linux and Arch-based users specifically that's preventing Flatpak from automatically pulling NVIDIA Flatpak drivers utilizing the frozen 580xx driver branch due to the drivers being advanced to the next patch without any Flatpak equivalent drivers. Due to this, **this may cause the issue of Sober unable to detect a graphics device**.
 
 This is caused by Flathub having [issues with their GPG keys that's preventing builds from being signed and published](https://status.flathub.org/).
 
