@@ -1,6 +1,6 @@
 # Troubleshooting Sober
 
-If there are any undocumented issues, feel free to [create an issue](https://github.com/vinegarhq/sober/issues/new/choose) to update the documentation!
+If there are any undocumented issues, fork this repository and feel free to [create a pull request](https://github.com/vinegarhq/vinegarhq.github.io/pulls) to update the documentation!
 
 
 ## Obtaining logs
