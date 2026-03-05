@@ -25,4 +25,7 @@ The toggle for fullscreen in the Roblox app has never worked on mobile builds. H
 
 ## FFlags
 
-See [Bloxstrap's guide to FastFlags](https://github.com/pizzaboxer/bloxstrap/wiki/A-guide-to-FastFlags).
+Due to recent changes by Roblox, only specific approved FastFlags can now be overridden locally. If a flag is not on the official allowlist, it will be ignored even if configured correctly.
+
+See [FastFlags Allowlist](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569).
+
