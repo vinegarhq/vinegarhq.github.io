@@ -38,7 +38,7 @@ Since September 2025, Fast Flags have since been locked down to a select few in 
 | `DFIntCSGLevelOfDetailSwitchingDistanceL34`   | integer       | Sets level of detail culling for CSG models in studs (graphic levels 3 and 4)   | 0-1000             |
 
 ### Rendering Fast Flags
-If you intend to use the perfer Vulkan/OpenGL flags, we recommend 
+If you intend to use the perfer Vulkan/OpenGL flags, we recommend running `flatpak run org.vinegarhq.Sober config` on your terminal and select the "Force Legacy Rendering" instead. 
 
 | FFlag Name                                    | Type          | Description                                                               | Accepted Values (in range)    |
 | --------------------------------------------- | ------------- | ------------------------------------------------------------------------- | ------------------ |
