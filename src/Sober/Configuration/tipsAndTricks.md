@@ -25,7 +25,36 @@ The toggle for fullscreen in the Roblox app has never worked on mobile builds. H
 
 ## FFlags
 
-Due to recent changes by Roblox, only specific approved FastFlags can now be overridden locally. If a flag is not on the official allowlist, it will be ignored even if configured correctly.
+FFlags (or "Fast Flags") allows for local configuration overrides for the Roblox client. This system was originally developed to be used by Roblox engineers to dynamically update engine configurations on the fly via. over-the-air ("OTA") configuration updates rather than pushing an update to the client binaries every time.
 
-See [FastFlags Allowlist](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569).
+Since September 2025, Fast Flags have since been locked down to a select few in [a whitelist system](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569). If a flag is not on the official allowlist, it will be ignored even if configured correctly.
 
+### Geometry Fast Flags
+| FFlag Name                                    | Type          | Description                                                               | Accepted Values    |
+| --------------------------------------------- | ------------- | ------------------------------------------------------------------------- | ------------------ |
+| `DFIntCSGLevelOfDetailSwitchingDistance`      | integer       | Sets level of detail culling for CSG models in studs                      |                    |
+| `DFIntCSGLevelOfDetailSwitchingDistanceL12`   | integer       | Sets level of detail culling for CSG models in studs (graphic levels 1 and 2)   |                    |
+| `DFIntCSGLevelOfDetailSwitchingDistanceL23`   | integer       | Sets level of detail culling for CSG models in studs (graphic levels 2 and 3)   |                    |
+| `DFIntCSGLevelOfDetailSwitchingDistanceL34`   | integer       | Sets level of detail culling for CSG models in studs (graphic levels 3 and 4)   |                    |
+
+### Rendering Fast Flags
+| FFlag Name                                    | Type          | Description                                                               | Accepted Values    |
+| --------------------------------------------- | ------------- | ------------------------------------------------------------------------- | ------------------ |
+| `FFlagHandleAltEnterFullscreenManually`       | bool          | Enables manual control for true fullscreen (is not relevant for Sober)    |                    |
+| `DFFlagTextureQualityOverrideEnabled`         | bool          | Enables texture quality to be overrided by `DFIntTextureQualityOverride`  |                    |
+| `DFIntTextureQualityOverride`                 | integer       | Sets texture quality level. (`DFFlagTextureQualityOverrideEnabled` must be set to true first) |0, 1, 2, 3 |
+| `FIntDebugForceMSAASamples`                   | integer       | Force MSAA anti-aliasing sample rate                                      | 1, 2, 3            |
+| `DFFlagDisableDPIScale`                       | bool          | Disables DPI downscaling                                                  |                    |
+| `FFlagDebugGraphicsPreferD3D11`               | bool          | Prefers DirectX 11 for rendering (is not relevant for Sober)              |                    |
+| `FFlagDebugSkyGray`                           | bool          | Overrides the skybox color to gray, removes atmospheric stars             |                    |
+| `DFFlagDebugPauseVoxelizer`                   | bool          | TBD                                                                       |                    |
+| `DFIntDebugFRMQualityLevelOverride`           | integer       | Overrides graphic quality level (does not affect render distance)         |                    |
+| `FIntFRMMaxGrassDistance`                     | integer       | Sets the maximum distance for grass rendering in studs                    | -                  |
+| `FIntFRMMinGrassDistance`                     | integer       | Sets the minimum distance for grass rendering in studs                    | -                  |
+| `FFlagDebugGraphicsPreferVulkan`              | bool          | Prefers Vulkan for rendering                                              |                    |
+| `FFlagDebugGraphicsPreferOpenGL`              | bool          | Prefers OpenGL for rendering                                              |                    |
+
+### User interface Fast Flags
+| FFlag Name                                    | Type          | Description                                                               | Accepted Values    |
+| --------------------------------------------- | ------------- | ------------------------------------------------------------------------- | ------------------ |
+| `FIntGrassMovementReducedMotionFactor`        | integer       | Reduces grass movement by `x` factor                                      |                    |
