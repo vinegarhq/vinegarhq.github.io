@@ -45,7 +45,7 @@ If you intend to use the perfer Vulkan/OpenGL flags, we recommend running `flatp
 | `FFlagHandleAltEnterFullscreenManually`       | bool          | Enables manual control for true fullscreen (is not relevant for Sober)    | true/false         |
 | `DFFlagTextureQualityOverrideEnabled`         | bool          | Enables texture quality to be overrided by `DFIntTextureQualityOverride`  | true/false         |
 | `DFIntTextureQualityOverride`                 | integer       | Sets texture quality level. (`DFFlagTextureQualityOverrideEnabled` must be set to true first) |0-3 |
-| `FIntDebugForceMSAASamples`                   | integer       | Force MSAA anti-aliasing sample rate                                      | 1, 2, 4            |
+| `FIntDebugForceMSAASamples`                   | integer       | Force MSAA anti-aliasing sample rate                                      | 1; 2; 4            |
 | `DFFlagDisableDPIScale`                       | bool          | Disables DPI downscaling (is not relevant for Sober)                      | true/false         |
 | `FFlagDebugGraphicsPreferD3D11`               | bool          | Prefers DirectX 11 for rendering (is not relevant for Sober)              | true/false         |
 | `FFlagDebugSkyGray`                           | bool          | Overrides the skybox color to gray, removes atmospheric stars             | true/false         |
