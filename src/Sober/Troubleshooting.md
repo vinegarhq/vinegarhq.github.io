@@ -121,7 +121,7 @@ If you haven't logged into Sober, you should do it now. Afterwards you will be a
 Your ISP could be blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
 
 #### Solution
-Use a VPN
+Use a VPN or, change your DNS Servers to something like [Mullvad's](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls) or [Cloudflare's](https://developers.cloudflare.com/1.1.1.1/).
 
 
 
@@ -132,7 +132,7 @@ Use a VPN
 > As a last resort, Sober will attempt to contact the manifest through GitHub's raw user content URL. Sober will crash if it also fails to contact the manifest through that URL.
 
 #### Solution
-Use a VPN
+Use a VPN or, change your DNS Servers to something like [Mullvad's](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls) or [Cloudflare's](https://developers.cloudflare.com/1.1.1.1/).
 
 
 
@@ -279,4 +279,6 @@ If you want it at higher quality, append the following FFlags into the `"fflags"
 ```
 
 > Please keep in mind that if you are using an NVIDIA card with VRAM capacity less than 4 GB, please be mindful of the [OutOfMemory crash](#rbxcrash-outofmemory-failed-to-allocate-memory-size--x-alignment--y) when attempting to play as it will render **all** textures at the highest quality possible. Proceed at your own risk.
+
+
 
