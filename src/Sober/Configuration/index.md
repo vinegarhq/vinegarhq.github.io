@@ -19,7 +19,7 @@ The configuration file is located at: `~/.var/app/org.vinegarhq.Sober/config/sob
 | `discord_rpc_show_join_button`      | Allows other players to join games directly off your Discord profile                                                  | `false`   |
 | `enable_gamemode`                   | Enables gamemode, a tool which enhances game performance                                                              | `true`    |
 | `enable_hidpi`                      | Scales Sober's game window depending on your screen's pixel density, useful for very high resolution displays/laptops | `false`   |
-| `fflags`                            | Experimental internal Roblox configration. We don't recommend or support using this                                   | -         |
+| `fflags`                            | Experimental internal Roblox configration. We don't recommend or support using this. (see [FFlags on tips and tricks page](./tipsAndTricks.md#fflags)) | -         |
 | `server_location_indicator_enabled` | Shows a popup with the location of the gameserver you connected to upon visiting an experience                        | `false`   |
 | `touch_mode`                        | "off" - touchscreen is disabled, default; "on" - touchscreen is enabled, experiences will use the mobile UI; "fake-off" - touchscreen is enabled, experiences will use the desktop UI | `"off"`   |
 | `use_console_experience`            | Uses the console UI instead of the desktop UI. (Please note that games may register you as a console user)            | `false`   |
