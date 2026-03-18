@@ -28,15 +28,6 @@ $ makepkg -si
 
 Alternatively install `vinegar` with an AUR helper.
 
-### Fedora (COPR)
-
-[![COPR Package](https://img.shields.io/badge/dynamic/json?color=50a4db&label=Fedora%20COPR&style=flat-square&query=builds.latest.source_package.version&url=https%3A%2F%2Fcopr.fedorainfracloud.org%2Fapi_3%2Fpackage%3Fownername%3Dthegu5%26projectname%3Dvinegar%26packagename%3Dvinegar%26with_latest_build%3DTrue)](https://copr.fedorainfracloud.org/coprs/thegu5/vinegar/)
-
-```console
-# dnf copr enable thegu5/vinegar
-# dnf install vinegar
-```
-
 ### Gentoo
 
 [![Gentoo Package](https://img.shields.io/badge/Gentoo-ebuild-6e56af?style=flat-square)](https://github.com/vinegarhq/ebuild)
@@ -97,21 +88,3 @@ home.packages = [
 ```
 
 Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`
-
-### Source Mage
-
-[![Source Mage Package](https://img.shields.io/badge/Source%20Mage-spell-fe0000?style=flat-square)](https://github.com/sourcemage/grimoire-z-rejected/tree/master/z-games/vinegar)
-
-First, make sure the `games` grimoire is added:
-
-```console
-# scribe add games
-```
-
-Then, cast the spell:
-
-```console
-# cast vinegar
-```
-
-(Do note that on 64-bit systems, 32-bit Wine will have to be sourced elsewhere as there is no multilib support)
