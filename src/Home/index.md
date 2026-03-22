@@ -11,8 +11,7 @@ Here, you'll find documentation for Vinegar and Sober.
 - The homepage and installation page for Sober can be found [here](https://sober.vinegarhq.org/).
 <br><br>
 - Vinegar is a fast and robust bootstrapper for *Roblox Studio* that has many ease-of-use features.
-- The software and documentation are both open source, and can be accessed [on GitHub](https://github.com/vinegarhq).
-- Vinegar is an alternative to the now discontinued [Grapejuice](https://brinkervii.gitlab.io/grapejuice/) project.
+- The software and documentation are both open source, which can be accessed [on GitHub](https://github.com/vinegarhq).
 
 The Discord server of VinegarHQ can be found [here](https://discord.gg/dzdzZ6Pps2).
 
