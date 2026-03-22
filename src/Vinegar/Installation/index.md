@@ -6,20 +6,20 @@ Before installing Vinegar, there are some requirements for your system to fulfil
 
 Ensure that your system meets the minimum requirements below:
 
-- OS: Linux kernel version 2.6.22 or later
+- OS: Linux kernel >=2.6.22
 - Processor: x86-64/AMD64 type CPU
 - Memory: 3 GB RAM
 - Graphics: OpenGL 4.4 capable
 
 The following requirements are recommended for a smoother experience:
 
-- OS: Linux kernel version 6.14 or later ([NTSync](https://www.phoronix.com/news/Linux-6.14-NTSYNC-Driver-Ready))
-- Graphics: Vulkan 1.3 capable[*](https://github.com/doitsujin/dxvk/wiki/Driver-support#required-vulkan-features)
+- OS: Linux kernel >=6.14
 - Memory: 8 GB RAM
+- Graphics: Vulkan 1.4 capable
 
 ## Using Flatpak (recommended)
 
-Vinegar can be found on [Flathub](https://flathub.org/apps/org.vinegarhq.Vinegar):
+Vinegar can be found on Flathub:
 
 <a href="https://flathub.org/apps/org.vinegarhq.Vinegar">
 	<img width="180" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-en.png"/>
@@ -32,7 +32,6 @@ Vinegar can be found on [Flathub](https://flathub.org/apps/org.vinegarhq.Vinegar
 
 ```console
 $ flatpak install flathub org.vinegarhq.Vinegar
-$ flatpak run org.vinegarhq.Vinegar
 ```
 
 **To uninstall:**
