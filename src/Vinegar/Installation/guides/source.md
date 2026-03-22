@@ -12,25 +12,23 @@ Please verify that your system fulfills the [minimum requirements](../index.md) 
 
 ## Build
 
-To build Vinegar from source, you will first need to make sure you have the following dependencies installed:
+To build Vinegar from source, you first need to make sure that you have the following dependencies installed:
 - Go >=1.22.0
 - GTK4
 - Libadwaita
 
-Clone Vinegar's git repository and build Vinegar:
+To clone Vinegar's git repository and start building, run the following commands:
 
 ```console
-$ git clone https://github.com/vinegarhq/vinegar
+$ git clone https://github.com/vinegarhq/vinegar.git
 $ cd vinegar
 $ make
 ```
 
 ## Install
 
-To install Vinegar (in the source directory of vinegar):
+To install Vinegar, run the following command inside of its source directory:
 
 ```console
-# make install
+$ pkexec make install
 ```
-
-This will install Vinegar itself, icons for Roblox and Vinegar, and Vinegar's desktop files.
