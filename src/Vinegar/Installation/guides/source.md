@@ -1,4 +1,4 @@
-# Installation from your package manager
+# Installation from source
 
 <div class="warning">
 
