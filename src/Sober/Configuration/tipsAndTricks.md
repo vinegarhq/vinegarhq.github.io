@@ -60,3 +60,26 @@ If you intend to use the perfer Vulkan/OpenGL flags, we recommend running `flatp
 | FFlag Name                                    | Type          | Description                                                               | Accepted Values    |
 | --------------------------------------------- | ------------- | ------------------------------------------------------------------------- | ------------------ |
 | `FIntGrassMovementReducedMotionFactor`        | bool          | Reduces motion for grass                                                  | true/false         |
+
+## Latest Mesa drivers
+
+Flathub tends to hold major updates to the Mesa 3D library for a period of time. Fortunately, there is a mesa-git extension available in Flathub's beta repository, allowing you to enjoy the latest improvements to this graphics library. **The following instructions do NOT apply to the proprietary NVIDIA driver (not nouveau), as it comes with its own 3D library.**
+
+To add the Flathub beta repository, run the following command in your terminal:
+```console
+$ flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+```
+
+To install the mesa-git extension, run the following command in your terminal:
+```console
+$ flatpak install flathub-beta org.freedesktop.Platform.GL.mesa-git
+```
+After running that last command, you will be greeted by a selection of Flatpaks to choose from. Choose the one with the highest number after the third slash that does NOT have `beta` appended to it.
+
+Once that is settled, you can run the following command to make Sober use the mesa-git extension by default.
+
+```console
+$ mkdir $XDG_DATA_HOME/applications && cat /var/lib/flatpak/exports/share/applications/org.vinegarhq.Sober.desktop | sed 's/Exec=/Exec=env FLATPAK_GL_DRIVERS=mesa-git /' > $XDG_DATA_HOME/applications/org.vinegarhq.Sober.desktop
+```
+
+If Sober opens to an error message that says `SDL_CreateWindow failed: Could not get EGL display`, then the mesa-git extension may have been installed for the wrong branch. In that case, run the second command again, then choose the Flatpak with the next highest number after the third slash (the ones with `beta` appended to them are not included).
