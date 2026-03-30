@@ -63,7 +63,7 @@ If you intend to use the perfer Vulkan/OpenGL flags, we recommend running `flatp
 
 ## Latest Mesa drivers
 
-Flathub tends to hold major updates to the Mesa 3D library for a period of time. Fortunately, there is a mesa-git extension available in Flathub's beta repository, allowing you to enjoy the latest improvements to this graphics library. **The following instructions do NOT apply to the proprietary NVIDIA driver (not nouveau), as it comes with its own 3D library.**
+Flathub tends to hold major updates to the Mesa 3D library for a period of time. Fortunately, there is a mesa-git extension available in Flathub's beta repository, allowing you to receive the latest bug fixes and performance improvements to this graphics library, which in turn may improve Sober's performance. If your GPU has been released very recently and is only supported by the latest version of Mesa, then you would want this extension as well. Do note that this is still a beta extension, so bugs are to be expected. **This does NOT apply to the proprietary NVIDIA driver (not nouveau), as it comes with its own seperate 3D library.**
 
 To add the Flathub beta repository, run the following command in your terminal:
 ```console
