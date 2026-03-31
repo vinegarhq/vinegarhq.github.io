@@ -28,7 +28,7 @@ If it was made in the last 8 years or so and has Vulkan support either in Mesa o
 
 
 ## Studio support?
-Use [Vinegar](https://vinegarhq.org/) for Roblox Studio.
+Use [Vinegar](../../Vinegar/Installation/index.md) for Roblox Studio.
 
 
 
