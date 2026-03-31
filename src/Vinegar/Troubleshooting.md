@@ -33,8 +33,10 @@ This is an issue with Xwayland, which only allows the cursor to lock when its in
 
 This can be fixed by either:
 
-- Using [Kombucha](https://github.com/vinegarhq/kombucha.git) (automatically pulled by Vinegar)
-- Switching to an X11 session
+- Using [Kombucha](https://github.com/vinegarhq/kombucha.git) instead of base Wine (automatically pulled by Vinegar)
+- Disabling Xwayland native scaling if you're on GNOME
+- Using Wine's native Wayland driver (discouraged)
+- Switching to an X11 session if available
 
 ### Exit status 53
 
