@@ -14,7 +14,7 @@ As stated in the DXVK README:
 
 > A Vulkan-based translation layer for Direct3D 8/9/10/11 which allows running 3D applications on Linux using Wine.
 
-The only real difference is that Roblox's Vulkan is native, which means there is no translation layer. It is best to experiment on your system to see which one is better. Some users report that Vulkan can provide lower latency, while others report DXVK performing significantly better.
+The only real difference is that Roblox's Vulkan is native, which means there is no translation layer. It is best to experiment on your system to see which one is better. Some users report that Vulkan can provide lower latency and resource usage, while others report DXVK performing significantly better.
 
 ### Why Go?
 
