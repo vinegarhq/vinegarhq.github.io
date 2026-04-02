@@ -3,10 +3,10 @@
 - [2024 Roblox Block FAQ](./Home/rol_faq.md)
 
 # Vinegar
-- [Installation](./Vinegar/Installation/index.md)
+- [Installation](./Vinegar/Installation.md)
 - [Tips and Tricks](./Vinegar/Configuration/TipsAndTricks.md)
 - [Troubleshooting](./Vinegar/Troubleshooting.md)
-- [FAQ](./Vinegar/FAQ.md)
+- [FAQ](./Vinegar/FAQ/index.md)
 - [Contributing](./Vinegar/Contributing/index.md)
   - [Translating Vinegar](./Vinegar/Contributing/guides/Translation.md)
 
