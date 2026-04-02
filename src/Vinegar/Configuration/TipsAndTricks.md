@@ -1,4 +1,4 @@
-# Tips and tricks
+# Tips and Tricks
 
 ## Overlay
 

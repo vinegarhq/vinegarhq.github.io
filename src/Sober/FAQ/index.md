@@ -1,4 +1,4 @@
-# Sober FAQs
+# Sober FAQ
 
 
 ## Why Does this exist?

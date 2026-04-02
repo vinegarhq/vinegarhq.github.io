@@ -1,4 +1,4 @@
-# FAQ
+# Vinegar FAQ
 
 ### What is the best configuration?
 
