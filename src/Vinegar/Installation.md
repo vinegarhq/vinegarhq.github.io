@@ -120,7 +120,7 @@ home.packages = [
 
 Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`
 
-#### Through building the source code
+#### Through building the source code (discouraged)
 
 To build Vinegar from source, you first need to make sure that you have the following dependencies installed:
 - Go >=1.22.0
