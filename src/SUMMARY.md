@@ -8,7 +8,7 @@
 - [Troubleshooting](./Vinegar/Troubleshooting.md)
 - [FAQ](./Vinegar/FAQ/index.md)
 - [Contributing](./Vinegar/Contributing/index.md)
-  - [Translating Vinegar](./Vinegar/Contributing/guides/Translation.md)
+  - [Translating Vinegar](./Vinegar/Contributing/Guides/Translation.md)
 
 # Sober
 - [Installation](./Sober/Installation.md)
