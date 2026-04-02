@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-To translate Vinegar, one must already have an environment setup capable of compiling Vinegar as detailed in the last section of the [Installation guide](../../Installation.md).
+To translate Vinegar, one must already have an environment setup capable of compiling Vinegar as detailed in the [last section of the Installation guide](../../Installation.md#through-building-the-source-code-discouraged).
 
 ## Translating a new language
 
@@ -32,7 +32,7 @@ Translations are located in the `data\po` directory, updating an existing transl
 
 ## Testing
 
-To test a translation, you must build Vinegar with the changes you made as detailed in the last section of the [Installation guide](../../Installation.md), set the system language to your desired language and launch Vinegar.
+To test a translation, you must build Vinegar with the changes you made as detailed in the [last section of the Installation guide](../../Installation.md#through-building-the-source-code-discouraged), set the system language to your desired language and launch Vinegar.
 
 ## Contributing
 

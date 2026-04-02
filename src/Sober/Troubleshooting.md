@@ -55,7 +55,7 @@ Check the rest of this page to see if you can find a solution, or ask on our Dis
 
 
 ### It says Sober couldn't launch because my card does not support Vulkan
-Please see question #4 on [the FAQ](./FAQ/index.html#is-my-gpu-compatible).
+Please see question #4 on [the FAQ](./FAQ/index.md#is-my-gpu-compatible).
 
 
 
@@ -107,7 +107,7 @@ Virtual machines are not supported, unless you can passthrough the GPU. We advis
 
 
 ### I cannot install Sober on an ARM64 machine
-That's because there currently isn't any support for ARM devices. Please see question #8 on [the FAQ](./FAQ/index.html#arm64-supportvr-support).
+That's because there currently isn't any support for ARM devices. Please see question #8 on [the FAQ](./FAQ/index.md#arm64-supportvr-support).
 
 
 

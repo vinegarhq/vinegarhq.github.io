@@ -4,7 +4,7 @@
 
 This can vary from system to system. The most important factor in Wine's performance is the renderer. If your graphics card supports Vulkan, it's recommended to use either DXVK or Vulkan.
 
-It is also recommended to enable the NTSync driver if your Linux kernel supports it (see [Tips and Tricks](../Configuration/TipsAndTricks.md) for more details).
+It is also recommended to enable the NTSync driver if your Linux kernel supports it (see [Tips and Tricks](../Configuration/TipsAndTricks.md#ntsync) for more details).
 
 Vinegar also changes the Wineprefix version. While this does not increase performance, it increases compatibility.
 
