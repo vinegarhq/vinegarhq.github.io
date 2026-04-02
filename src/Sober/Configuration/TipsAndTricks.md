@@ -63,6 +63,8 @@ If you intend to use the perfer Vulkan/OpenGL flags, we recommend running `flatp
 
 ## Latest Mesa drivers
 
+Mesa 3D is an open source graphics library providing implementations of OpenGL, Vulkan and more. It is the backbone of computer graphics under Linux and other Unix-like operating systems.
+
 Flathub tends to hold major updates to the Mesa 3D library for a period of time. Fortunately, there is a mesa-git extension available in Flathub's beta repository, allowing you to receive the latest bug fixes and performance improvements to this graphics library, which in turn may improve Sober's performance. If your GPU has been released very recently and is only supported by the latest version of Mesa, then you would want this extension as well.
 
 Do note that this extension is unstable and little to no testing is done by the Flathub maintainers to ensure its quality, so bugs are to be expected. **Everything mentioned in this section does NOT apply to the proprietary NVIDIA driver (not nouveau), as it comes with its own separate 3D library.**
