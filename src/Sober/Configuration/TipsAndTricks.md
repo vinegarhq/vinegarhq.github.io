@@ -83,7 +83,7 @@ After running that last command, you will be greeted by a selection of Flatpaks 
 Once that is settled, you can run the following command to make Sober use the mesa-git extension by default.
 
 ```console
-$ mkdir $XDG_DATA_HOME/applications && cat /var/lib/flatpak/exports/share/applications/org.vinegarhq.Sober.desktop | sed 's/Exec=/Exec=env FLATPAK_GL_DRIVERS=mesa-git /' > $XDG_DATA_HOME/applications/org.vinegarhq.Sober.desktop
+$ mkdir $XDG_DATA_HOME/applications; cat /var/lib/flatpak/exports/share/applications/org.vinegarhq.Sober.desktop | sed 's/Exec=/Exec=env FLATPAK_GL_DRIVERS=mesa-git /' > $XDG_DATA_HOME/applications/org.vinegarhq.Sober.desktop
 ```
 
 If Sober opens to an error message that says `SDL_CreateWindow failed: Could not get EGL display`, then the mesa-git extension may have been installed for the wrong branch. In that case, run the second command again, then choose the Flatpak with the next highest number after the third slash (the ones with `beta` appended to them are not included).
