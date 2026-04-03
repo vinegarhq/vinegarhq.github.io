@@ -49,7 +49,7 @@ $ flatpak uninstall --delete-data org.vinegarhq.Vinegar
 
 #### Through distribution-specific packages
 
-The Vinegar community hosts a couple distribution-specific packages to make native installation easier.
+The Vinegar community hosts a couple distribution-specific packages to make native installation easier. However, they are not to be considered as officially supported by the Vinegar maintainer.
 
 [![AUR](https://img.shields.io/aur/version/vinegar?label=AUR&style=flat-square)](https://aur.archlinux.org/packages/vinegar)
 
