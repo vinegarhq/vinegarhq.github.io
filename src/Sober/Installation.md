@@ -15,7 +15,9 @@ The following requirements are recommended for a smoother experience:
   - Processor: x86-64/AMD64 type CPU with SSE4.2 support
   - Graphics: Vulkan 1.1 capable
 
->SSE4.1 and SSE4.2 are CPU instruction sets used in Intel and AMD microprocessors. Roblox's APK for x86-64 has been build to specifically require SSE4.2 and as such, CPUs that don't support this instruction set are unable to run Sober. Sober will emulate SSE4.2 on CPUs that only support up to SSE4.1, though performance will not be optimal. To find out whether your CPU supports either of these instruction sets, see [this page](./FAQ/index.md#how-do-i-know-i-meet-the-requirements-to-run-sober).
+> SSE4.1 and SSE4.2 are CPU instruction sets used in Intel and AMD microprocessors. Roblox's APK for x86-64 has been built to specifically require SSE4.2 and as such, CPUs that don't support this instruction set are unable to run Sober. Sober will emulate SSE4.2 on CPUs that only support up to SSE4.1, though performance will not be optimal. To find out whether your CPU supports either of these instruction sets, see [this page](./FAQ/index.md#how-do-i-know-i-meet-the-requirements-to-run-sober).
+
+> At this time, Sober does not support devices with ARM processors.
 
 ## Instructions
 ### To install
