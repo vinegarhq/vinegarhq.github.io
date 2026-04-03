@@ -129,10 +129,12 @@ $ make install
 ```
 
 ## Uninstalling Vinegar
-To uninstall Vinegar, run the following command in your terminal:
+To uninstall the Vinegar Flatpak, run the following command in your terminal:
 
 ```console
 $ flatpak uninstall org.vinegarhq.Vinegar
 ```
 
 > By default, this will keep Vinegar's data. If you're having issues with Vinegar and you wish to fully reinstall it, pass the `--delete-data` option before the application ID to do so.
+
+If you're using a distribution-specific package of Vinegar, please consult the manual of your package manager on how to uninstall packages.
