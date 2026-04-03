@@ -2,7 +2,6 @@
 
 ## System Requirements
 
-
 Before installing Vinegar, there are some requirements for your system to fulfill in order to be able to run Roblox Studio. These requirements are based on [Roblox Studio's official system requirements](https://create.roblox.com/docs/studio/setup).<br>
 
 Ensure that your system meets the minimum requirements below:
@@ -17,7 +16,6 @@ The following requirements are recommended for a smoother experience:
   - OS: Linux kernel >=6.14
   - Memory: 8 GB RAM
   - Graphics: Vulkan 1.4 capable
-
 
 ## Instructions
 ### To install
@@ -89,7 +87,7 @@ $ emerge -av games-util/vinegar
 Alternatively, you can use the live ebuild by creating a `/etc/portage/package.accept_keywords/vinegar` file with the following content:
 
 ```
-games-util/vinegar
+games-util/vinegar **
 ```
 
 [![Alpine Linux Edge](https://repology.org/badge/version-for-repo/alpine_edge/vinegar.svg?header=Alpine%20Linux%20Edge&style=flat-square)](https://pkgs.alpinelinux.org/package/edge/community/x86_64/vinegar)
@@ -100,7 +98,7 @@ Vinegar is available for Alpine Linux v3.22 and onwards.
 $ apk add vinegar
 ```
 
-[![Nixpkgs Unstable Package](https://repology.org/badge/version-for-repo/nix_unstable/vinegar.svg?header=Nixpkgs%20Unstable%20Package&style=flat-square)](https://search.nixos.org/packages?channel=unstable&show=vinegar)
+[![Nixpkgs Unstable](https://repology.org/badge/version-for-repo/nix_unstable/vinegar.svg?header=Nixpkgs%20Unstable&style=flat-square)](https://search.nixos.org/packages?channel=unstable&show=vinegar)
 
 Vinegar's Nix package resides in the [Unstable repository](https://nixos.wiki/wiki/Nix_channels). It can be installed system-wide with [`environment.systemPackages`](https://search.nixos.org/options?show=environment.systemPackages):
 
