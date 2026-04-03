@@ -30,22 +30,11 @@ Vinegar can be found on Flathub:
 	<img width="180" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-en.png"/>
 </a><br><br>
 
-<details>
-<summary>The Flatpak can also be installed/uninstalled using commands.</summary>
-
-**To install:**
+The Flatpak can also be installed using the following command:
 
 ```console
 $ flatpak install flathub org.vinegarhq.Vinegar
 ```
-
-**To uninstall:**
-
-```console
-$ flatpak uninstall --delete-data org.vinegarhq.Vinegar
-```
-
-</details>
 
 #### Through distribution-specific packages
 
@@ -138,3 +127,12 @@ To install Vinegar, run the following command inside of its source directory:
 ```console
 $ make install
 ```
+
+## Uninstalling Vinegar
+To uninstall Vinegar, run the following command in your terminal:
+
+```console
+$ flatpak uninstall org.vinegarhq.Vinegar
+```
+
+> By default, this will keep Vinegar's data. If you're having issues with Vinegar and you wish to fully reinstall it, pass the `--delete-data` option before the application ID to do so.
