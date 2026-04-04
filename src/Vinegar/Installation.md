@@ -112,6 +112,7 @@ Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`
 To build Vinegar from source, you first need to make sure that you have the following dependencies installed:
 - Go >=1.22.0
 - GTK4
+- Gettext
 - Libadwaita
 
 To clone Vinegar's git repository and start building, run the following commands:
