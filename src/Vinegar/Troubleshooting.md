@@ -111,7 +111,7 @@ $ flatpak update
 Due to technical limitations with the driver itself, the version inside of the Flatpak environment needs
 to match with the one on the host, otherwise issues may occur with Flatpak apps that require GPU acceleration.
 
-### No Roblox desktop entries/shortcuts
+### No Vinegar desktop entry
 
 This issue has no known cause, but appears to be more frequent with the Vinegar Flatpak. Rebooting your system should fix it.
 
