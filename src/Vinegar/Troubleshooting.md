@@ -38,9 +38,11 @@ This can be fixed by either:
 - Using Wine's native Wayland driver (discouraged)
 - Switching to an X11 session if available
 
-### Exit status 53
+### Studio fails to run and gives an exit status 53
 
-Open the Vinegar settings, then click the three dots, then click "Uninstall Studio".
+This error is usually caused by a corrupted Studio installation.
+
+To solve this, you need to uninstall Studio, which you can do from the "kebab" menu located inside of Vinegar's settings.
 
 ### WebView Installer or Roblox Studio is missing, corrupt or doesn't run
 
