@@ -2,16 +2,21 @@
 
 If there are any undocumented issues, feel free to [create an issue](https://github.com/vinegarhq/vinegarhq.github.io/issues/new/choose) to update the documentation!
 
-### Can't open Settings / Manager
+### Can't open settings
 
-To open Vinegar's settings page, you have to right click on Vinegar's desktop entry in your application launcher, or
-type "Manage". Otherwise, it will vary depending on your launcher.
+To open Vinegar's settings, you have to right click on Vinegar's desktop entry or type
+"Manage" in your application launcher. Otherwise, it will vary depending on your launcher.
 
-You may run the manager from the CLI (discouraged):
+You may also open its settings from the CLI (discouraged):
+
+```console
+$ flatpak run org.vinegarhq.Vinegar manage
 ```
-flatpak run org.vinegarhq.Vinegar manage
-# Or if from a source installation:
-vinegar manage
+
+If you're on a non-Flatpak installation, run the following instead:
+
+```console
+$ vinegar manage
 ```
 
 ### Studio crashing upon startup with unexpected crash / corruption
