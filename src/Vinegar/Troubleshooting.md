@@ -52,12 +52,6 @@ This error is usually caused by a corrupted Studio installation.
 
 To solve this, you need to uninstall Studio, which you can do from the "kebab" menu located inside of Vinegar's settings.
 
-### WebView Installer or Roblox Studio is missing, corrupt or doesn't run
-
-WebView or Studio's downloads or installation has been corrupt.
-- For WebView, Press 'Clear Cache' in Vinegar's menu within the settings page.
-- For Studio, Press 'Uninstall Studio' next to the main run button.
-
 ### Files inaccessible or missing from file dialog (import/export)
 
 Use [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) to expose specific files or
