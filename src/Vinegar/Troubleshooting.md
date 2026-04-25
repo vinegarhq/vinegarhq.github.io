@@ -85,9 +85,12 @@ $ flatpak --user override --env=XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vin
 If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`.
 Studio authentication is known to be broken with certain DNS providers.
 
-### UI elements look small
+### Studio's UI is too small
 
-Open the wine configurator by pressing on the cog icon next to the Wine section in Vinegar's settings and going to the graphics section to find the DPI settings.
+Wine's DPI is set to 96 by default, which primarily targets 1080p monitors.
+
+To change Wine's DPI to something more readable, open the 'Advanced Wine Settings' inside of Vinegar's settings, then change the tab
+of the newly spawned "Wine configuration" window to "Graphics" and adjust the DPI value to suit your needs.
 
 ### "Your GPU is incompatible" / "Necessary graphics drivers not installed" error
 
