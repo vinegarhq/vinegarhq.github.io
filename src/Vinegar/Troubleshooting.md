@@ -92,12 +92,24 @@ Wine's DPI is set to 96 by default, which primarily targets 1080p monitors.
 To change Wine's DPI to something more readable, open the 'Advanced Wine Settings' inside of Vinegar's settings, then change the tab
 of the newly spawned "Wine configuration" window to "Graphics" and adjust the DPI value to suit your needs.
 
-### "Your GPU is incompatible" / "Necessary graphics drivers not installed" error
+### Studio complains about the GPU being incompatible
 
-Make sure your drivers are installed correctly, if that doesn't help you can:
+If you're on an Nvidia GPU and use the proprietary drivers, make sure they have been installed properly.
+You can run the following command to do exactly that:
 
-- Disable DXVK in Vinegar's settings, and change the renderer to Vulkan or D3D11.
-- Use the [Vinegar Flatpak](https://flathub.org/en/apps/org.vinegarhq.Vinegar)
+```console
+$ nvidia-smi
+```
+
+If you installed Vinegar from Flathub and recently upgraded your Nvidia drivers, you should run the following
+command to sync the driver version inside of the Flatpak environment with the one on the host:
+
+```console
+$ flatpak update
+```
+
+Due to technical limitations with the driver itself, the version inside of the Flatpak environment needs
+to match with the one on the host, otherwise issues may occur with Flatpak apps that require GPU acceleration.
 
 ### No Roblox desktop entries/shortcuts
 
