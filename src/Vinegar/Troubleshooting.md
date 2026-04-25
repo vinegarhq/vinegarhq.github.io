@@ -19,11 +19,13 @@ If you're on a non-Flatpak installation, run the following instead:
 $ vinegar manage
 ```
 
-### Studio crashing upon startup with unexpected crash / corruption
+### Studio crashing upon launch after upgrading Vinegar
 
-This is due to a Wine bug when you upgrade Vinegar. To workaround this, simply delete all data in Vinegar's settings;
-Ensure you have your Studio settings backed up! These can be found by pressing 'Open Files' next to the main run button, and going to:
-`drive_c/users/<user>/AppData/Local/Roblox`. The user `steamuser` might be present, which is from Vinegar's past usage of Proton, which you must move or backup to your new user.
+This is due to a Wine bug that occurs when you upgrade Vinegar from versions older than 1.9.1. To workaround this, simply delete the prefix data,
+which you can do from the "kebab" menu located inside of Vinegar's settings. Ensure that you have your Studio settings saved somewhere else before
+doing so, as Vinegar versions older than 1.9.1 did not automatically back those up. They can be found through the 'Open Files' option inside of
+the "kebab" menu, and the following path: `prefixes/studio/drive_c/users/<user>/AppData/Local/Roblox`. The user `steamuser` might be present,
+which is from Vinegar's past usage of Proton, which you must move or backup to your new user.
 
 ### Can't dock plugin windows
 
