@@ -60,23 +60,30 @@ When using the file explorer, expand the / and then expand home.
 
 ### Unable to log in
 
-There are currently two ways to login to Roblox Studio, being either from the browser or using the login dialog.
-The login dialog depends on 'Web Pages' being enabled in Vinegar's setings, which may be a simple black screen, to fix that, you must disable it.
+There are currently two ways to log into Studio, either via a web browser or a WebView showing the Roblox login page.
+The WebView depends on the 'Web Pages' setting inside of Vinegar's settings and depending on your setup, it may
+just appear as a black or white window that can't be interacted with. In that case, you will have to disable the
+"Web Pages" setting and log into Studio via your web browser.
 
-For browser login, follow the on-screen prompt and click "Log in via browser".
-This will open Roblox's authentication page in your default browser. Afterwards, You may be prompted to allow the use of the `roblox-studio-auth` protocol. Make sure to say "yes".
+For browser login, follow the on-screen prompt and click on "Log in via browser". This will open Roblox's access authorization
+page in your default web browser, unless you aren't already logged into the Roblox website. After hitting "Continue", you may be
+prompted by the site to open Vinegar, so make sure to select "Open Vinegar".
 
-If clicking on the "Log in via browser" button doesn't do anything or/and these logs appear in Vinegar:
+You need to install the `xdg-desktop-portal-gtk` package from your Linux distribution's repositories if clicking on the
+"Log in via browser" button doesn't do anything and or the following output appears in Vinegar's logs:
+
 ```
 Failed to call portal: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.OpenURI” on object at path /org/freedesktop/portal/desktop
 ```
-You must install the `xdg-desktop-portal-gtk` package, the name may differ on some distributions, then reboot your system.
 
-You may also need to give an environment variable to Vinegar for the login to work: `flatpak --user override --env XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar`
+You may also need to run the following command for browser login to work on your setup:
 
-If all steps were followed correctly, studio should automatically log into your account.
+```console
+$ flatpak --user override --env=XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar
+```
 
-If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`. Studio authentication is known to be broken with certain DNS providers.
+If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`.
+Studio authentication is known to be broken with certain DNS providers.
 
 ### UI elements look small
 
