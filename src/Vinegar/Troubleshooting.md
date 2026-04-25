@@ -35,15 +35,15 @@ in the Advanced Wine Settings.
 
 Wine's Wayland driver currently doesn't support any of these functionalities and therefore doesn't offer a solution.
 
-### Cursor fails to lock when moving around the camera
+### Cursor fails to lock when moving around the viewport camera
 
-This is an issue with Xwayland, which only allows the cursor to lock when its invisible.
+This is an issue with Xwayland, which currently only allows the cursor to lock when its hidden.
 
 This can be fixed by either:
 
 - Using [Kombucha](https://github.com/vinegarhq/kombucha.git) instead of base Wine (automatically pulled by Vinegar)
 - Disabling Xwayland native scaling if you're on GNOME
-- Using Wine's native Wayland driver (discouraged)
+- Using Wine's Wayland driver (discouraged)
 - Switching to an X11 session if available
 
 ### Studio fails to run and gives an exit status 53
