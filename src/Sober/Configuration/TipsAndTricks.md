@@ -59,7 +59,8 @@ If you intend to use the perfer Vulkan/OpenGL flags, we recommend running `flatp
 ### User interface Fast Flags
 | FFlag Name                                    | Type          | Description                                                               | Accepted Values    |
 | --------------------------------------------- | ------------- | ------------------------------------------------------------------------- | ------------------ |
-| `FIntGrassMovementReducedMotionFactor`        | bool          | Reduces motion for grass                                                  | true/false         |
+| `FIntGrassMovementReducedMotionFactor`        | bool          | Grass motion frequency (supposedly, but does not work)
+                                                  | 0-1000         |
 
 ## Latest Mesa drivers
 
