@@ -13,7 +13,7 @@ Ensure that your system meets the minimum requirements below:
 
 The following requirements are recommended for a smoother experience:
 
-  - OS: Linux kernel >=6.14
+  - OS: Linux kernel >=6.14 ([NTSync support](./Configuration/TipsAndTricks.md#ntsync))
   - Memory: 8 GB RAM
   - Graphics: Vulkan 1.4 capable
 
