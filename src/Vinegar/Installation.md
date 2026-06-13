@@ -17,7 +17,7 @@ The following requirements are recommended for a smoother experience:
   - Memory: 8 GB RAM
   - Graphics: Vulkan 1.4 capable
 
-> The Wine builds provided by Vinegar are compiled to utilize the SSE4.1 CPU instruction set for further optimization, so CPUs that don't support this instruction set are unable to run Studio. There is little reason to change this, as Sober requires at least said CPU instruction set to run.
+> The Wine builds provided by Vinegar have been compiled to utilize the SSE4.1 CPU instruction set for further optimization, so CPUs that don't support this instruction set are unable to run Studio. There is little reason to change this, as Sober requires at least said CPU instruction set in order to run.
 
 ## Instructions
 ### To install
@@ -40,7 +40,7 @@ $ flatpak install flathub org.vinegarhq.Vinegar
 
 #### Through distribution-specific packages
 
-The Vinegar community hosts a couple distribution-specific packages to make native installation easier. However, they are not to be considered as officially supported by the Vinegar maintainer.
+The Vinegar community maintains a couple distribution-specific packages to make native installation easier. However, they are not to be considered as officially supported by the Vinegar maintainer.
 
 [![AUR](https://img.shields.io/aur/version/vinegar?label=AUR&style=flat-square)](https://aur.archlinux.org/packages/vinegar)
 
@@ -140,4 +140,4 @@ $ flatpak uninstall org.vinegarhq.Vinegar
 
 > By default, this will keep Vinegar's data. If you're having issues with Vinegar and you wish to fully reinstall it, pass the `--delete-data` option before the application ID to do so.
 
-If you're using a distribution-specific package of Vinegar, please consult the manual of your package manager on how to uninstall packages.
+If you're using a distribution-specific package of Vinegar, please consult the man page of your package manager on how to uninstall packages.
