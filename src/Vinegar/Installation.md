@@ -17,6 +17,8 @@ The following requirements are recommended for a smoother experience:
   - Memory: 8 GB RAM
   - Graphics: Vulkan 1.4 capable
 
+> The Wine builds provided by Vinegar are compiled to utilize the SSE4.1 CPU instruction set for further optimization, so CPUs that don't support this instruction set are unable to run Studio. There is little reason to change this, as Sober requires at least said CPU instruction set to run.
+
 ## Instructions
 ### To install
 
