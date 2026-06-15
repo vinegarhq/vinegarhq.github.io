@@ -118,7 +118,7 @@ Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`
 
 #### Through building the source code
 
-Building Vinegar from source is only meant for developers and shouldn't be necesary for the vast majority of users. To build Vinegar from source, you first need to make sure that you have the following dependencies installed:
+Building Vinegar from source is only meant for developers and shouldn't be necessary for the vast majority of users. To build Vinegar from source, you first need to make sure that you have the following dependencies installed:
 - Go >=1.22.0
 - GTK4
 - Gettext
