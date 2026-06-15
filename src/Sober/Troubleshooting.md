@@ -73,7 +73,7 @@ GPUs using Mesa should be fine as long as it's recent. If you're using an NVIDIA
 #### Solution
 Update by running `flatpak update` in your terminal.
 
-Alternatively, you could try to run `prime-run flatpak run org.vinegarhq.Sober` in your terminal to force Sober to use dedicated NVIDIA GPU.
+Alternatively, you could try to run `flatpak override --env=__NV_PRIME_RENDER_OFFLOAD=1 --env=__GLX_VENDOR_LIBRARY_NAME=nvidia org.vinegarhq.Sober` in your terminal to force Sober to use dedicated NVIDIA GPU.
 
 ### Sober crashes on hybrid graphics with the following error: `vkGetPhysicalDeviceSurfacePresentModesKHR failed`
 
