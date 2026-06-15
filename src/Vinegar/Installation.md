@@ -11,7 +11,7 @@ Ensure that your system meets the minimum requirements below:
   - Memory: 3 GB RAM
   - Graphics: OpenGL 4.4 capable
 
-The following requirements are recommended for a smoother experience:
+The following requirements are recommended for an optimal experience:
 
   - OS: Linux kernel >=6.14 ([NTSync support](./Configuration/TipsAndTricks.md#ntsync))
   - Memory: 8 GB RAM
@@ -23,7 +23,7 @@ The following requirements are recommended for a smoother experience:
 
 ### Through Flatpak
 
-> If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there.
+> If you don’t have Flatpak installed on your system, follow the instructions that apply to your Linux distribution on [Flatpak's setup page](https://flatpak.org/setup/).
 
 Vinegar is officially distributed on Flathub:
 
@@ -39,7 +39,7 @@ $ flatpak install flathub org.vinegarhq.Vinegar
 
 ### Through distribution-specific packages
 
-The Vinegar community maintains a couple distribution-specific packages to make native installation easier. However, they are not to be considered as officially supported by the Vinegar maintainer.
+The Vinegar community maintains a couple distribution-specific packages to make native installation easier. These packages aren't officially supported by the Vinegar maintainer, so any issues related to packaging need to be reported in their respective bugtracker.
 
 #### Arch Linux and derivatives
 
