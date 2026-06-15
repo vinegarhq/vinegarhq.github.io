@@ -21,11 +21,11 @@ The following requirements are recommended for a smoother experience:
 
 ## Installing Vinegar
 
-### Through Flatpak (recommended)
+### Through Flatpak
 
 > If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there.
 
-Vinegar can be found on Flathub:
+Vinegar is officially distributed on Flathub:
 
 <a href="https://flathub.org/apps/org.vinegarhq.Vinegar">
 	<img width="180" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-en.png"/>
@@ -116,9 +116,9 @@ home.packages = [
 
 Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`
 
-#### Through building the source code (discouraged)
+#### Through building the source code
 
-To build Vinegar from source, you first need to make sure that you have the following dependencies installed:
+Building Vinegar from source is only meant for developers and shouldn't be necesary for the vast majority of users. To build Vinegar from source, you first need to make sure that you have the following dependencies installed:
 - Go >=1.22.0
 - GTK4
 - Gettext
