@@ -19,10 +19,9 @@ The following requirements are recommended for a smoother experience:
 
 > The Wine builds provided by Vinegar have been compiled to utilize the SSE4.1 CPU instruction set for further optimization, so CPUs that don't support this instruction set are unable to run Studio. There is little reason to change this, as Sober requires at least said CPU instruction set in order to run.
 
-## Instructions
-### To install
+## Installing Vinegar
 
-#### Through Flatpak (recommended)
+### Through Flatpak (recommended)
 
 > If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there.
 
@@ -38,9 +37,11 @@ The Flatpak can also be installed using the following command:
 $ flatpak install flathub org.vinegarhq.Vinegar
 ```
 
-#### Through distribution-specific packages
+### Through distribution-specific packages
 
 The Vinegar community maintains a couple distribution-specific packages to make native installation easier. However, they are not to be considered as officially supported by the Vinegar maintainer.
+
+#### Arch Linux and derivatives
 
 [![AUR](https://img.shields.io/aur/version/vinegar?label=AUR&style=flat-square)](https://aur.archlinux.org/packages/vinegar)
 
@@ -53,6 +54,8 @@ $ makepkg -si
 ```
 
 Alternatively install `vinegar` with an AUR helper.
+
+#### Gentoo
 
 [![Gentoo](https://img.shields.io/badge/Gentoo-ebuild-6e56af?style=flat-square)](https://github.com/vinegarhq/ebuild)
 
@@ -81,6 +84,8 @@ Alternatively, you can use the live ebuild by creating a `/etc/portage/package.a
 games-util/vinegar **
 ```
 
+#### Alpine Linux
+
 [![Alpine Linux Edge](https://repology.org/badge/version-for-repo/alpine_edge/vinegar.svg?header=Alpine%20Linux%20Edge&style=flat-square)](https://pkgs.alpinelinux.org/package/edge/community/x86_64/vinegar)
 
 Vinegar is available for Alpine Linux v3.22 and onwards.
@@ -88,6 +93,8 @@ Vinegar is available for Alpine Linux v3.22 and onwards.
 ```console
 $ apk add vinegar
 ```
+
+#### NixOS
 
 [![Nixpkgs Unstable](https://repology.org/badge/version-for-repo/nix_unstable/vinegar.svg?header=Nixpkgs%20Unstable&style=flat-square)](https://search.nixos.org/packages?channel=unstable&show=vinegar)
 
