@@ -47,7 +47,7 @@ Use a CPU that is from 2008+ (for Intel) or 2013+ (for AMD).
 ### Roblox exited the game with an unknown error (exit code -1)
 Most likely, you are trying to join a game with [Android Remote Attestation](https://en.help.roblox.com/hc/en-us/articles/49648939984916-Android-Remote-Attestation) enabled. (the real error code is actually `318` in this case)
 
-Unfortuantely, since ARA checks if the device is real and Sober is not a real device, we cannot fix this.
+Unfortuantely, since ARA checks if the device is real and Sober is not a real device, we cannot fix this without having the game developers disable ARA entirely.
 
 > [Rivals](https://www.roblox.com/games/17625359962/) is the only reported game with Android Remote Attestation enabled.
 
