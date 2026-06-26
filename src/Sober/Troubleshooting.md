@@ -113,12 +113,6 @@ That's because there currently isn't any support for ARM devices. Please see que
 
 
 
-### I launched Sober through the browser. It says I cannot join a game because I don't have the permission to do so! (Error 524)
-If you haven't logged into Sober, you should do it now. Afterwards you will be able to join from the browser for future sessions. If you're still receiving the error, please check if you're joining on the correct account. (This is mostly applicable when joining private servers) Otherwise, it could be just a generic 524.
-
-> Sober does not launch the same way as it usually does on Windows or macOS. Sober will only carry over the join game request, not including login.
-
-
 ### Automatic download isn't working (Long hang time; falls back to manual install)
 Your ISP could be blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
 
