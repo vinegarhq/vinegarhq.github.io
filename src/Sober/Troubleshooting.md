@@ -190,12 +190,6 @@ Following the order as listed above:
 If all else fails, use OpenGL instead by enabling it through the config file.
 
 
-### I can't use slash (/) to enter chat!
-
-Roblox broke the keybind to enter chat on Android builds, specifically on games with legacy chat. Only Roblox themselves can fix this, there is nothing the Sober developers can do. Games that use the modern chat system should work fine.
-
-> Roblox began to migrate all games to the new chat system [since May 13th, 2025](https://devforum.roblox.com/t/update-on-legacy-chat-deprecation-and-textchatservice-migration/3376880). It may take some time before all games are switched out from legacy chat.
-
 
 ### Sober called a termination without an active exception / Sober crashed by the Xorg server
 
