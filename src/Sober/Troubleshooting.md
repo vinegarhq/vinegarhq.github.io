@@ -191,20 +191,6 @@ If all else fails, use OpenGL instead by enabling it through the config file.
 
 
 
-### Sober called a termination without an active exception / Sober crashed by the Xorg server
-
-There are various variants where Xorg crashes Sober.
-
-Unfortunately, we have no idea what is causing most of the variants. However, a specific Xorg crash is caused when Roblox was attempting to call Vulkan with invalid parameters, mostly on Nvidia GPUs.
-
-> We have been receiving elevated reports of this issue beginning in the week of July 7th.
-
-#### Solution
-
-Use the Wayland session to reduce chances of Xorg crashes
-
-
-
 ### My audio is crackling / acting weird!
 Whether it's from your microphone or in-game audio, the exact cause of this issue is unknown and may depend on your audio setup.
 
