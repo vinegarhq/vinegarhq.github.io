@@ -41,11 +41,8 @@ Unfortunately no. This is because it is easier to debug Sober in a reproducible 
 
 
 ## ARM64 support/VR support?
-<div class="notice">
 
-We currently have an open beta for Sober ARM! Join our [Discord server](https://discord.com/invite/dzdzZ6Pps2) and search for "[TESTERS WANTED!] Sober for ARM open beta testing" in `#sober-only`!
-
-</div>
+> We currently have an open beta for Sober ARM! Join our [Discord server](https://discord.com/invite/dzdzZ6Pps2) and search for "[TESTERS WANTED!] Sober for ARM open beta testing" in `#sober-only`!
 
 We are currently experimenting with ARM support for Sober, but it is not production-ready yet. Previously, it was (virtually) impossible to port Sober to ARM due to missing kernel features for the Linux ARM kernel that is required for Sober to operate.
 
