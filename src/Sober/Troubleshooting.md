@@ -45,6 +45,8 @@ If you are sure that nothing else seems wrong, unfortunately there is nothing we
 #### Solution
 Use a CPU that is from 2008+ (for Intel) or 2013+ (for AMD).
 
+> Please note at this time as a consequence of the aforementioned AVX issue, this raises Intel compatability from 2008+ to 2011+ for Intel Core or 2008+ to 2020+ for Intel Pentium and Celeron.
+
 
 
 ### Sober just randomly crashes
