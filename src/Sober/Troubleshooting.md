@@ -40,6 +40,8 @@ If it doesn't work, set the `"DFIntTextureQualityOverride"` FFlag to `1` instead
 ### Sober does not launch! It only produced two lines of logs and that's it!
 If you are sure that nothing else seems wrong, unfortunately there is nothing we can do to resolve this issue. Most likely, your CPU does not support SSE4.2, which is a mandatory hardware requirement to run even Roblox on Android alone.
 
+> In Sober Version 1.7.1, there is currently an issue where CPUs that has the SSE4.2 requirements, but does not have AVX instructions, will not launch. We are trying to get that issue fixed.
+
 #### Solution
 Use a CPU that is from 2008+ (for Intel) or 2013+ (for AMD).
 
