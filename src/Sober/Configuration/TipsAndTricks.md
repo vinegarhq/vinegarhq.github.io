@@ -21,7 +21,7 @@ The `asset_overlay` directory mirrors `packages/com.roblox.client/base.apk/asset
 
 The toggle for fullscreen in the Roblox app has never worked on mobile builds. However, this can be replicated by pressing the `F11` key. 
 
-> Note that Sober remembers the fullscreen state, and will automatically fullscreen again on a relaunch. You cannot close Sober within the Roblox app as well.
+> Note that Sober remembers the fullscreen state, and will automatically fullscreen again on a relaunch. You can exit the app from the "More" menu or by enabling `close_on_leave` in the config.
 
 ## FFlags
 
