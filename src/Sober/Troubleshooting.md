@@ -133,13 +133,10 @@ Use a VPN or, change your DNS Servers to something like [Mullvad's](https://mull
 
 
 ### Attempting to manually install the Roblox APK goes straight to "Invalid Bundle" screen
-Sober wasn't able to find or open a file picker because it was invalid and does not know what to do, so it displays "Invalid Bundle" without prompting to choose an APK file. This is sometimes problematic for several DEs that don't come with their own file pickers.
-
-#### DEs affected
-- Hyprland
+The APKs provided were most likely incomplete or the wrong version. In rare cases, Sober will ask for the wrong version in the manual installation UI compared to what it needs.
 
 #### Solution
-Make sure that the file picker for your DE is installed and set correctly.
+Make sure both the base and `x86_64` or `arm64_v8a` split APKs are present (and are both selected if they are individual files). The correct version is usually stated in the file `~/.var/app/org.vinegarhq.Sober/data/sober/state`. Alternatively, use the Automatic Installation method if possible.
 
 
 
