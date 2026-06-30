@@ -20,9 +20,6 @@ The following requirements are recommended for a smoother experience:
 > At this time, Sober does not support devices with ARM processors.
 
 ## Instructions
-### To install
-
-#### Through Flathub (recommended)
 
 > If you don’t have Flatpak installed on your system, you can install it by going to [Flatpak's setup page](https://flatpak.org/setup/) and following the guide there.
 

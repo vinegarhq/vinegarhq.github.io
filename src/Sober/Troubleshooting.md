@@ -117,12 +117,6 @@ That's because there currently isn't any support for ARM devices. Please see que
 
 
 
-### I launched Sober through the browser. It says I cannot join a game because I don't have the permission to do so! (Error 524)
-If you haven't logged into Sober, you should do it now. Afterwards you will be able to join from the browser for future sessions. If you're still receiving the error, please check if you're joining on the correct account. (This is mostly applicable when joining private servers) Otherwise, it could be just a generic 524.
-
-> Sober does not launch the same way as it usually does on Windows or macOS. Sober will only carry over the join game request, not including login.
-
-
 ### Automatic download isn't working (Long hang time; falls back to manual install)
 Your ISP could be blocking access to Google Play's APIs, which is what Sober is attempting to contact in order to download the correct APK file. Otherwise, either you should check your internet connection or the API is down.
 
@@ -143,13 +137,10 @@ Use a VPN or, change your DNS Servers to something like [Mullvad's](https://mull
 
 
 ### Attempting to manually install the Roblox APK goes straight to "Invalid Bundle" screen
-Sober wasn't able to find or open a file picker because it was invalid and does not know what to do, so it displays "Invalid Bundle" without prompting to choose an APK file. This is sometimes problematic for several DEs that don't come with their own file pickers.
-
-#### DEs affected
-- Hyprland
+The APKs provided were most likely incomplete or the wrong version. In rare cases, Sober will ask for the wrong version in the manual installation UI compared to what it needs.
 
 #### Solution
-Make sure that the file picker for your DE is installed and set correctly.
+Make sure both the base and `x86_64` or `arm64_v8a` split APKs are present (and are both selected if they are individual files). The correct version is usually stated in the file `~/.var/app/org.vinegarhq.Sober/data/sober/state`. Alternatively, use the Automatic Installation method if possible.
 
 
 
@@ -192,26 +183,6 @@ Following the order as listed above:
 - Open Chrome and type `chrome://flags/#crostini-gpu-support` into the search bar. Enable it and reboot.
 
 If all else fails, use OpenGL instead by enabling it through the config file.
-
-
-### I can't use slash (/) to enter chat!
-
-Roblox broke the keybind to enter chat on Android builds, specifically on games with legacy chat. Only Roblox themselves can fix this, there is nothing the Sober developers can do. Games that use the modern chat system should work fine.
-
-> Roblox began to migrate all games to the new chat system [since May 13th, 2025](https://devforum.roblox.com/t/update-on-legacy-chat-deprecation-and-textchatservice-migration/3376880). It may take some time before all games are switched out from legacy chat.
-
-
-### Sober called a termination without an active exception / Sober crashed by the Xorg server
-
-There are various variants where Xorg crashes Sober.
-
-Unfortunately, we have no idea what is causing most of the variants. However, a specific Xorg crash is caused when Roblox was attempting to call Vulkan with invalid parameters, mostly on Nvidia GPUs.
-
-> We have been receiving elevated reports of this issue beginning in the week of July 7th.
-
-#### Solution
-
-Use the Wayland session to reduce chances of Xorg crashes
 
 
 
