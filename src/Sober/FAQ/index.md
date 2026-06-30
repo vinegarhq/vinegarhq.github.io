@@ -36,8 +36,10 @@ Use [Vinegar](../../Vinegar/Installation.md) for Roblox Studio.
 We made it closed source to reduce the potential for abuse (which would lead to Roblox blocking us again)
 
 
+
 ## Is Sober ever going to be distributed outside of Flatpak?
 Unfortunately no. This is because it is easier to debug Sober in a reproducible runtime environment.
+
 
 
 ## ARM64 support/VR support?
@@ -49,6 +51,7 @@ We are currently experimenting with ARM support for Sober, but it is not product
 For VR, the Quest build does not ship with x86 code like Android does. Doing this have to resort with ARM64 to x86 translation, which is slow and problematic. We have no intention of changing this.
 
 
+
 ## How does Sober work? Is it official? Will it get blocked by Roblox?
 Sober crafts a specialized runtime for the Android version of Roblox. Effectively, it bridges the small gap between Android and Linux, allowing for a native unofficial port. 
 
@@ -56,6 +59,12 @@ All PC-only features and experiences are available on Sober thanks to our specia
 
 Sober is unofficial research software. Roblox may choose to prevent Sober clients from using their services at any time.
 
-## Multi Instances support?
-No, as Roblox considers this practice malicious. Even if it weren't the case, we would rather not let Sober be used (or be as unintuitive as possible to use) in bot farms.
 
+
+## Multi Instances support?
+No, as [Roblox considers this practice malicious](https://devforum.roblox.com/t/is-fishstrap-bloxstrap-no-longer-allowed-on-the-platform/3829253/13). Even if it weren't the case, we would rather not let Sober be used (or be as unintuitive as possible to use) in bot farms.
+
+
+
+## Can I install Sober on Windows Subsystem for Linux?
+In all due respect, we would rather have you use what's already given to you instead of attempting extra hurdles to make a graphical program work on WSL.
