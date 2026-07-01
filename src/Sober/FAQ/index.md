@@ -67,4 +67,6 @@ No, as [Roblox considers this practice malicious](https://devforum.roblox.com/t/
 
 
 ## Can I install Sober on Windows Subsystem for Linux?
-In all due respect, we would rather have you use what's already given to you instead of attempting extra hurdles to make a graphical program work on WSL.
+With all due respect, we would rather have you use the offical Windows client instead of going the extra hurdles of trying to make this work.
+
+We're not gonna stop you from trying, and we really don't support this method, but it really would be much more easier for you to just use the official client.
