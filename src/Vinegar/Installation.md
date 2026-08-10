@@ -118,7 +118,7 @@ home.packages = [
 
 Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`.
 
-#### Through building the source code
+### Through building the source code
 
 **Building Vinegar from source is mainly meant for developers and shouldn't be necessary for the vast majority of users.**
 
