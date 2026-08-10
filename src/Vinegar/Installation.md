@@ -39,7 +39,9 @@ $ flatpak install flathub org.vinegarhq.Vinegar
 
 ### Through distribution-specific packages
 
-The Vinegar community maintains a couple distribution-specific packages to make native installation easier. These packages aren't officially supported by the Vinegar maintainer, so any issues related to packaging need to be reported in their respective bugtracker.
+The Vinegar community maintains a couple of distribution-specific packages to make native installation easier.
+
+**Do note that these packages aren't officially supported by the Vinegar maintainer and there's no gurantee regarding their safety.**
 
 #### Arch Linux and derivatives
 
