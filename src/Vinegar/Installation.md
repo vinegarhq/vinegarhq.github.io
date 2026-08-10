@@ -2,7 +2,7 @@
 
 ## System Requirements
 
-Before installing Vinegar, there are some requirements for your system to fulfill in order to be able to run Roblox Studio. These requirements are based on [Roblox Studio's official system requirements](https://create.roblox.com/docs/studio/setup).<br>
+There are some requirements for your system to fulfill to run Roblox Studio with Vinegar. Some of these are sourced from [Roblox Studio's system requirements for Windows](https://create.roblox.com/docs/studio/setup).<br>
 
 Ensure that your system meets the minimum requirements below:
 
@@ -17,7 +17,7 @@ The following requirements are recommended for an optimal experience:
   - Memory: 8 GB RAM
   - Graphics: Vulkan 1.4 capable
 
-> The Wine builds provided by Vinegar have been compiled to utilize the SSE4.1 CPU instruction set for further optimization, so CPUs that don't support this instruction set are unable to run Studio. There is little reason to change this, as Sober requires at least said CPU instruction set in order to run.
+> [Vinegar's own Wine builds](https://github.com/vinegarhq/kombucha) have been built to use the SSE4.1 CPU instruction set for better performance, so CPUs that don't support it are unable to run Studio out of the box. Sober requires at least SSE4.1 to run, so there is little reason to change this behavior.
 
 ## Installing Vinegar
 
