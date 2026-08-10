@@ -116,7 +116,7 @@ home.packages = [
 ];
 ```
 
-Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`
+Testing in a temporary shell can also be done using `nix shell nixpkgs#vinegar`.
 
 #### Through building the source code
 
