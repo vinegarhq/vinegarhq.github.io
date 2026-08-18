@@ -52,7 +52,12 @@ Unfortunately, since ARA checks if the device is real and Sober is not a real de
 
 > Please contact the developers of the game through their official channels regarding this if you have trouble connecting.
 
-> [Rivals](https://www.roblox.com/games/17625359962/) and [Sniper Duels](https://www.roblox.com/games/109397169461300/) are the only reported games with Android Remote Attestation enabled.
+### Affected games
+The following games that has confirmed reports where ARA is enabled:
+- [Rivals](https://www.roblox.com/games/17625359962/)
+- [Sniper Duels](https://www.roblox.com/games/109397169461300/)
+- [Murder Mystery 2](https://www.roblox.com/games/142823291/)
+
 
 #### Can't you just emulate or find a way to bypass it?
 By doing so, we would be risking breaking some form of Terms of Service (either set by Roblox or Google) by circumventing security measures in place and would put Sober in a position where we could get banned by Roblox.
