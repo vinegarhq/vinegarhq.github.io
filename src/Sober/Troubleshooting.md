@@ -52,7 +52,7 @@ Unfortunately, since ARA checks if the device is real and Sober is not a real de
 
 > Please contact the developers of the game through their official channels regarding this if you have trouble connecting.
 
-### Affected games
+#### Affected games
 The following games that has confirmed reports where ARA is enabled:
 - [Rivals](https://www.roblox.com/games/17625359962/)
 - [Sniper Duels](https://www.roblox.com/games/109397169461300/)
