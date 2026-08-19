@@ -57,6 +57,7 @@ The following games that has confirmed reports where ARA is enabled:
 - [Rivals](https://www.roblox.com/games/17625359962/)
 - [Sniper Duels](https://www.roblox.com/games/109397169461300/)
 - [Murder Mystery 2](https://www.roblox.com/games/142823291/)
+- [Adopt Me](https://www.roblox.com/games/920587237)
 
 
 #### Can't you just emulate or find a way to bypass it?
