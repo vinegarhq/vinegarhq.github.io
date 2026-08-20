@@ -59,6 +59,8 @@ The following games that has confirmed reports where ARA is enabled:
 - [Murder Mystery 2](https://www.roblox.com/games/142823291/)
 - [Adopt Me](https://www.roblox.com/games/920587237)
 
+> As of 08/20/26, all games listed currently have ARA disabled. Do note that ARA may be re-enabled at any time. 
+
 
 #### Can't you just emulate or find a way to bypass it?
 By doing so, we would be risking breaking some form of Terms of Service (either set by Roblox or Google) by circumventing security measures in place and would put Sober in a position where we could get banned by Roblox.
