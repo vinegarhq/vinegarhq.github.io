@@ -17,8 +17,6 @@ The following requirements are recommended for an optimal experience:
   - Memory: 8 GB RAM
   - Graphics: Vulkan 1.4 capable
 
-> [Vinegar's own Wine builds](https://github.com/vinegarhq/kombucha) have been built to use the SSE4.1 CPU instruction set for better performance, so CPUs that don't support it are unable to run Studio out of the box. Sober requires at least SSE4.1 to run, so there is little reason to change this behavior.
-
 ## Installing Vinegar
 
 ### Through Flatpak
