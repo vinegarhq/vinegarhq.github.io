@@ -58,32 +58,17 @@ Use [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) to expose
 run `flatpak --user override --filesystem=home org.vinegarhq.Vinegar` to expose your Linux home directory to Vinegar.
 When using the file explorer, expand the / and then expand home.
 
-### Unable to log in
+### Can't log into Studio
 
-There are currently two ways to log into Studio, either via a web browser or a WebView showing the Roblox login page.
-The WebView depends on the 'Web Pages' setting inside of Vinegar's settings and depending on your setup, it may
-just appear as a black or white window that can't be interacted with. In that case, you will have to disable the
-"Web Pages" setting and log into Studio via your web browser.
+Studio offers two ways to log in, the main one being a WebView showing the Roblox login page and the other, which
+acts as a fallback method, is via your default web browser, which requires you to have already logged into the Roblox
+website.
 
-For browser login, follow the on-screen prompt and click on "Log in via browser". This will open Roblox's access authorization
-page in your default web browser, unless you aren't already logged into the Roblox website. After hitting "Continue", you may be
-prompted by the site to open Vinegar, so make sure to select "Open Vinegar".
-
-You need to install the `xdg-desktop-portal-gtk` package from your Linux distribution's repositories if clicking on the
-"Log in via browser" button doesn't do anything and or the following output appears in Vinegar's logs:
-
-```
-Failed to call portal: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.OpenURI” on object at path /org/freedesktop/portal/desktop
-```
-
-You may also need to run the following command for browser login to work on your setup:
-
-```console
-$ flatpak --user override --env=XDG_DESKTOP_PORTAL_BACKEND=gtk org.vinegarhq.Vinegar
-```
-
-If you're still unable to log in, try changing your DNS to a viable alternative such as `1.1.1.1` or `8.8.8.8`.
-Studio authentication is known to be broken with certain DNS providers.
+If you're experiencing issues with the main method, you can toggle off the Web Pages setting in Vinegar to use the
+fallback one. Assuming you installed Vinegar as a Flatpak, this will require your desktop environment to have XDG Desktop
+Portals set up, which may not be the case for a large portion of X11-based desktop environments. If you're on an X11 session
+and are experiencing issues with the fallback method, either set up XDG Desktop Portals for your specific desktop environment
+or switch to a non-Flatpak installation of Vinegar.
 
 ### Studio's UI is too small
 
