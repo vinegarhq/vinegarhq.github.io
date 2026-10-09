@@ -41,7 +41,7 @@ This is an issue with Xwayland, which currently only allows the cursor to lock w
 
 This can be fixed by either:
 
-- Using [Kombucha](https://github.com/vinegarhq/kombucha.git) instead of base Wine (automatically pulled by Vinegar)
+- Using [Kombucha](https://github.com/vinegarhq/kombucha.git) instead of stock Wine (automatically used by Vinegar)
 - Disabling Xwayland native scaling if you're on GNOME
 - Using Wine's Wayland driver (discouraged)
 - Switching to an X11 session if available
