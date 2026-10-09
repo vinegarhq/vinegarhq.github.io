@@ -98,9 +98,10 @@ to match with the one on the host, otherwise issues may occur with Flatpak apps 
 
 ### Studio not working when offloaded to an Nvidia GPU (hybrid graphics)
 
-This appears to be an issue with both the Nvidia drivers and Flatpak.
+This issue appears to only occur when using both the Nvidia drivers and the Flatpak.
 
-To solve this, either run the following command or switch to a non-Flatpak package of Vinegar.
+To solve this, either run the following command to disable Wayland support within the Flatpak (this makes zero difference
+if you're on an X11 session) or switch to a non-Flatpak installation of Vinegar.
 ```
 flatpak --user override --nosocket=wayland org.vinegarhq.Vinegar
 ```
