@@ -47,7 +47,8 @@ This can be fixed by either:
 
 This error is usually caused by a corrupted Studio installation.
 
-To solve this, you need to uninstall Studio, which you can do from the "kebab" menu located inside of Vinegar's settings.
+To solve this, clear the cache and reinstall Studio, which is done through the menu located in the top right of Vinegar's
+settings.
 
 ### Files inaccessible or missing from file dialog (import/export)
 
