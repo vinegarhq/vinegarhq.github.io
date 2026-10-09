@@ -29,11 +29,8 @@ which is from Vinegar's past usage of Proton, which you must move or backup to y
 
 ### Can't dock plugin windows
 
-This issue affects the vast majority of desktop environments. To workaround this, enable 'Virtual Desktops' in Vinegar's settings, which
-will tell Wine to use its virtual desktop feature, or if you're on an X11 session, untick the "Allow the window manager to control the windows" option
-in the Advanced Wine Settings.
-
-Wine's Wayland driver currently doesn't support any of these functionalities and therefore doesn't offer a solution.
+This issue affects every desktop environment and standalone window manager, except for awesomewm for an unknown reason. To
+workaround this, toggle on Virtual Desktops in Vinegar's settings.
 
 ### Cursor fails to lock when moving around the viewport camera
 
