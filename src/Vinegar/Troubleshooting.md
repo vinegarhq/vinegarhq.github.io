@@ -123,3 +123,7 @@ To solve this, either run the following command or switch to a non-Flatpak packa
 ```
 flatpak --user override --nosocket=wayland org.vinegarhq.Vinegar
 ```
+
+### "We could not open the place [Place ID]. Failed to fetch place info."
+
+Studio sometimes doesn't log out the user properly, which explains the inability to open places. Relogging should resolve this error.
