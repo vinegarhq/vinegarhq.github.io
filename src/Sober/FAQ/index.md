@@ -44,9 +44,7 @@ Unfortunately no. This is because it is easier to debug Sober in a reproducible 
 
 ## ARM64 support/VR support?
 
-> We currently have an open beta for Sober ARM! Join our [Discord server](https://discord.com/invite/dzdzZ6Pps2) and search for "[TESTERS WANTED!] Sober for ARM open beta testing" in `#sober-only`!
-
-We are currently experimenting with ARM support for Sober, but it is not production-ready yet. Previously, it was (virtually) impossible to port Sober to ARM due to missing kernel features for the Linux ARM kernel that is required for Sober to operate.
+Previously, it was (virtually) impossible to port Sober to ARM due to missing kernel features for the Linux ARM kernel that is required for Sober to operate. We used to have an open beta for it, but Sober on ARM is no longer being developed as of September 2026 as maintaining builds for two seperate architectures would be difficult.
 
 For VR, the Quest build does not ship with x86 code like Android does. Doing this have to resort with ARM64 to x86 translation, which is slow and problematic. We have no intention of changing this.
 
