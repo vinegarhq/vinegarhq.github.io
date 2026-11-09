@@ -50,7 +50,7 @@ If you intend to use the perfer Vulkan/OpenGL flags, we recommend running `flatp
 | `FFlagDebugGraphicsPreferD3D11`               | bool          | Prefers DirectX 11 for rendering (is not relevant for Sober)              | true/false         |
 | `FFlagDebugSkyGray`                           | bool          | Overrides the skybox color to gray, removes atmospheric stars             | true/false         |
 | `DFFlagDebugPauseVoxelizer`                   | bool          | Disables voxel lighting                                                   | true/false         |
-| `DFIntDebugFRMQualityLevelOverride`           | integer       | Overrides graphic quality level (does not affect render distance)         | 0-21               |
+| `DFIntDebugFRMQualityLevelOverride`           | integer       | Overrides graphic quality level. Since a recent Roblox update it also forces the render distance to match that level, and the in-game graphics slider no longer changes it | 0-21               |
 | `FIntFRMMaxGrassDistance`                     | integer       | Sets the maximum distance for grass rendering in studs                    | 0-1000             |
 | `FIntFRMMinGrassDistance`                     | integer       | Sets the minimum distance for grass rendering in studs                    | 0-1000             |
 | `FFlagDebugGraphicsPreferVulkan`              | bool          | Prefers Vulkan for rendering                                              | true/false         |
