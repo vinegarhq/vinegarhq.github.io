@@ -46,20 +46,11 @@ Use a CPU that is from 2008+ (for Intel) or 2013+ (for AMD).
 
 
 ### I can't join a game because Roblox said it could not verify the integrity of the game! (Error 318)
-You are trying to join a game with [Android Remote Attestation](https://en.help.roblox.com/hc/en-us/articles/49648939984916-Android-Remote-Attestation) enabled.
+You are trying to join a game with [Device Trust API](https://create.roblox.com/docs/scripting/security/device-trust) implemented.
 
-Unfortunately, since ARA checks if the device is real and Sober is not a real device, we cannot fix this on our part.
+Unfortunately, since the API checks if the device is real and Sober is not a real device, we cannot fix this on our part.
 
 > Please contact the developers of the game through their official channels regarding this if you have trouble connecting.
-
-#### Affected games
-The following games that has confirmed reports where ARA is enabled:
-- [Rivals](https://www.roblox.com/games/17625359962/)
-- [Sniper Duels](https://www.roblox.com/games/109397169461300/)
-- [Murder Mystery 2](https://www.roblox.com/games/142823291/)
-- [Adopt Me](https://www.roblox.com/games/920587237)
-
-> As of 08/20/26, all games listed currently have ARA disabled. Do note that ARA may be re-enabled for these games at any time without notice. 
 
 
 #### Can't you just emulate or find a way to bypass it?
