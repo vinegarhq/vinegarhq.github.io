@@ -24,6 +24,10 @@ We chose Golang for its library management, performance, and ease of programming
 
 As most of Vinegar's development team previously contributed to Grapejuice, we encountered major difficulties due to its choice of language, Python.
 
+### Pasting not working?
+
+Text can only be pasted if it was copied from an X11 environment. Run the application you are attempting to copy from in an XWayland session. This can be done for most chromium based browsers by passing in the flag `--ozone-platform=x11`
+
 For instance, packaging Python libraries was extremely tedious. Grapejuice relied on pip being able to connect to the internet, a privilege not available in Flatpak packaging. Additionally, Grapejuice relied on a highly complex internal build system, which produced several files in various locations, while Golang can output single executables.
 
 As a compiled language, Golang also offers superior performance to interpreted languages, helping Vinegar launch quicker. Golang is also easier to program, has better error handling and cleaner code than Python.
